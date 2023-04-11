@@ -1,4 +1,4 @@
-name: 自动部署Hexo-GitHub Actions Build and Deploy
+name: Build and Deploy Hexo
 on:
   push:
     branches:
@@ -7,29 +7,28 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 1. git checkout...
-      uses: actions/checkout@v1
-    - name: 2. setup nodejs...
-      uses: actions/setup-node@v1     
-    - name: 3. install hexo...
+    - name: Checkout 🛎️
+      uses: actions/checkout@master
+      
+    - name: Use Node.js 12
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '12'
+
+    - name: Install Pandoc
       run: |
-        npm install hexo-cli -g
-        npm i -S hexo-prism-plugin -g
-        npm install hexo-generator-search --save -g
-        npm i hexo-permalink-pinyin  -g
-        npm i --save hexo-wordcount -g
-        npm install hexo-filter-github-emojis  -g
-        npm install hexo-generator-feed  -g
+        sudo apt-get install pandoc
+        
+    - name: Install and Build 🔧 
+      run: |
+        npm install -g hexo-cli
         npm install
-    - name: 4. hexo generate public files...
-      run: |
         hexo clean
-        hexo g
-    # 提交到我们的存放静态资源的仓库
-    - name: Build and Deploy
-      uses: y4code/hexo-deploy-action@master
-      env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_REPOSITORY: gavinblog/blog-anzhiyu # The repository the action should deploy to.
-        BRANCH: gh  # The branch the action should deploy to.
-        PUBLISH_DIR: ./public # The folder the action should deploy.
+        hexo generate
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: public
