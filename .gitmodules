@@ -1,3 +1,4 @@
 [submodule "themes/anzhiyu"]
 	path = themes/anzhiyu
 	url = https://github.com/fixit-theme/hexo-theme-anzhiyu.git
+	branch = dev
