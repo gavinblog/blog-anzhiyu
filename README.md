@@ -1,2 +1,0 @@
-# blog-anzhiyu
-blog-hexo
