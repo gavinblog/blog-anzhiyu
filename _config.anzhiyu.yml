@@ -1,7 +1,7 @@
 menu:
-  博客2:
-    文章2: /archives/ || fas fa-archive
-    分类: /categories/ || fas fa-shapes
+  博客1:
+    文章1: /archives/ || fas fa-archive
+    分类2: /categories/ || fas fa-shapes
     标签: /tags/ || fas fa-tags
 
   友链:
