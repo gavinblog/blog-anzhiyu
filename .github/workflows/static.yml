@@ -34,9 +34,10 @@ jobs:
       # 下载 hexo-cli 脚手架及相关安装包
       run: |
         npm i hexo-theme-anzhiyu
-        npm install -g hexo-cli --no-fund
+        npm install hexo-cli --no-fund
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
+        npm ls --depth 0
 
     - name: Generate files
       # 编译 markdown 文件
