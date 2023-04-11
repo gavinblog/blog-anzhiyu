@@ -15,7 +15,9 @@ jobs:
 
     steps:
     - name: Checkout codes
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
+      with:
+        submodules: true # 加载子模块，避免初始化过程中的额外加载。
 
     - name: Setup node
       # 设置 node.js 环境
