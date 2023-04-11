@@ -1,4 +1,4 @@
-name: Build and Deploy Hexo
+name: 自动部署Build and Deploy Hexo
 on:
   push:
     branches:
