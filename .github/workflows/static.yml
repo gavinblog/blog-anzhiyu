@@ -24,7 +24,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: hexo cl | hexo g | hexo d
+        run: | 
+          npm install -g hexo-cli
+          npm install hexo-renderer-pug hexo-renderer-stylus --save
+          hexo cl | hexo g | hexo d
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
