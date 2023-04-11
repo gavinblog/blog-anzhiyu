@@ -1,6 +1,6 @@
 menu:
   博客:
-    文章: /archives/ || fas fa-archive
+    文章2: /archives/ || fas fa-archive
     分类: /categories/ || fas fa-shapes
     标签: /tags/ || fas fa-tags
 
