@@ -1,10 +1,10 @@
 menu:
-  博客1:
-    文章1: /archives/ || fas fa-archive
-    分类2: /categories/ || fas fa-shapes
+  博客:
+    隧道: /archives/ || fas fa-archive
+    分类: /categories/ || fas fa-shapes
     标签: /tags/ || fas fa-tags
 
-  友链2:
+  友链:
     友人帐: /link/ || fas fa-link
     朋友圈: /fcircle/ || fab fa-artstation
     留言板: /comments/ || fas fa-envelope
@@ -241,7 +241,7 @@ post_edit:
   enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:  https://gavinblog/blog-anzhiyu/edit/master/
+  url:
 
 # Related Articles
 related_post:
@@ -289,7 +289,7 @@ addtoany:
   enable: false
   item: facebook,twitter,wechat,sina_weibo,email,copy_link
 
-# Comments System 评论插件
+# Comments System
 # --------------------------------------
 
 comments:
@@ -328,7 +328,7 @@ valine:
   option:
 
 # waline - A simple comment system with backend support fork from Valine
-# https://waline.js.org/ 评论插件
+# https://waline.js.org/
 waline:
   serverURL: # Waline server address url
   bg: # waline background
@@ -713,9 +713,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
