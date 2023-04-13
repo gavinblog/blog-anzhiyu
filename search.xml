@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/04/13/hello-world/"/>
+      <url>/2023/04/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> demo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 示例 </tag>
+            
+            <tag> demo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一个域名</title>
+      <link href="/2023/04/13/notes/my-first-domain/index/"/>
+      <url>/2023/04/13/notes/my-first-domain/index/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>终于买了我的人生中第一个域名。 <a href="https://geekswg.top/">geekswg.top</a><br>用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01</p></blockquote><span id="more"></span><p>前端时间苦于，github自带的G<a href="https://geekswg.github.io/">ithub Pages</a> 提供二级域名，经常访问不了，而且速度比较慢。就下决心买了个域名。</p><h2 id="域名购买"><a href="#域名购买" class="headerlink" title="域名购买"></a>域名购买</h2><p>域名购买商 ：<a href="https://www.namesilo.com/">Namesilo</a></p><blockquote><p>Bing搜索了好长时间，选择他的原因。</p></blockquote><ol><li>便宜，相对稳定靠谱，</li><li>国外域名，不用备案。</li><li>支持支付宝支付方式。</li></ol><h2 id="域名使用"><a href="#域名使用" class="headerlink" title="域名使用"></a>域名使用</h2><p>使用<a href="https://dash.cloudflare.com/b942112d61495edf9c0b0c4d790c4448/add-site">CloudFlare-DNS域名解析</a><br>添加网站，安装指引一步步操作即可。<br>登录 Namesilo，添加dns记录，绑定成功后，即可使用。</p><h3 id="子域名管理"><a href="#子域名管理" class="headerlink" title="子域名管理"></a>子域名管理</h3><p>Namesilo供应商可支持50个子域名。<br>使用CloudFlare管理子域名。<br>在CloudFlare的控制主页，<code>网站</code> 选择自己已经绑定的域名，点击 <code>DNS</code> ,然后 <code>添加记录</code>。<br>常用的两种类型：</p><ul><li>A     : 用于绑定IP的。</li><li>CNAME : 用于绑定名称的。不过，名称可以是任意大写字母或空格字符的完整子串<br>绑定步骤主要两个步骤</li></ul><ol><li>在CloudFlare DNS中添加CNAME类型记录（这个最常用）</li><li>在你需要自定义域名的地方，输入第一给步骤中你生成的子域名，然后按照提示一步步绑定即可成功</li><li>成功后需要几分钟更新DNS记录，大概十分钟后，即可正常访问你的子域名了。</li></ol><p>如我的子域名：<br><a href="https://hexo.geekswg.top/">hexo.geekswg.top</a><br><a href="https://blog.geekswg.top/">blog.geekswg.top</a></p><h2 id="CloudFlare加速"><a href="#CloudFlare加速" class="headerlink" title="CloudFlare加速"></a>CloudFlare加速</h2><p>CloudFlare控制台的pages页面操作简单<br>传送地址： <a href="https://dash.cloudflare.com/b942112d61495edf9c0b0c4d790c4448/pages">https://dash.cloudflare.com/b942112d61495edf9c0b0c4d790c4448/pages</a></p><h2 id="Netlify加速"><a href="#Netlify加速" class="headerlink" title="Netlify加速"></a>Netlify加速</h2><p>Netlify加速Github-Pags 操作简单，目前国内可直接访问<br>传送地址： <a href="https://www.netlify.com/">https://www.netlify.com/</a></p><h2 id="图床使用"><a href="#图床使用" class="headerlink" title="图床使用"></a>图床使用</h2><p><a href="https://picx.xpoet.cn/">Pixc</a>超级好用的免费图床，Github仓库作为存储，CDN加速。<br>传送地址： <a href="https://picx.xpoet.cn/">https://picx.xpoet.cn/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 建站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于Docker</title>
+      <link href="/2023/04/02/ai/aigen/cursor-docker/"/>
+      <url>/2023/04/02/ai/aigen/cursor-docker/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这一片关于Docker的文章，由AI工具Cursor写作<br>作者: <a href="https://www.cursor.so/">Cursor</a><br><code>Ctrl + K</code>: 使用md写一篇1万字的关于docker的博文</p></blockquote><span id="more"></span><h1 id="Docker-从入门到精通"><a href="#Docker-从入门到精通" class="headerlink" title="Docker: 从入门到精通"></a>Docker: 从入门到精通</h1><h2 id="什么是-Docker？"><a href="#什么是-Docker？" class="headerlink" title="什么是 Docker？"></a>什么是 Docker？</h2><p>Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。</p><h2 id="Docker-的优势"><a href="#Docker-的优势" class="headerlink" title="Docker 的优势"></a>Docker 的优势</h2><p>Docker 的优势主要有以下几点：</p><ul><li><strong>轻量级</strong>：Docker 容器非常轻量级，启动速度快，占用资源少。</li><li><strong>可移植性</strong>：Docker 容器可以在任何地方运行，无需担心环境差异。</li><li><strong>可扩展性</strong>：Docker 容器可以很容易地进行扩展，支持水平和垂直扩展。</li><li><strong>易于管理</strong>：Docker 容器可以很容易地进行管理，支持自动化部署和运维。</li></ul><h2 id="Docker-的基本概念"><a href="#Docker-的基本概念" class="headerlink" title="Docker 的基本概念"></a>Docker 的基本概念</h2><p>在使用 Docker 之前，需要了解一些基本概念：</p><ul><li><strong>镜像（Image）</strong>：Docker 镜像是一个只读的模板，可以用来创建 Docker 容器。镜像可以包含操作系统、应用程序和依赖项等。</li><li><strong>容器（Container）</strong>：Docker 容器是从 Docker 镜像创建的运行实例。容器可以运行、停止、删除和暂停等。</li><li><strong>仓库（Repository）</strong>：Docker 仓库是用来存储 Docker 镜像的地方。Docker 官方提供了 Docker Hub 仓库，也可以使用私有仓库。</li></ul><h2 id="Docker-的安装"><a href="#Docker-的安装" class="headerlink" title="Docker 的安装"></a>Docker 的安装</h2><p>在安装 Docker 之前，需要先安装 Docker 的依赖项：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release</span><br></pre></td></tr></table></figure><p>然后，添加 Docker 的 GPG 密钥：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ curl -fsSL https://download.docker.com$ sudo apt-key add -$ sudo add-apt-repository <span class="string">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu <span class="subst">$(lsb_release -cs)</span> stable&quot;</span></span><br><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cursor帮我写的代码</title>
+      <link href="/2023/03/26/ai/aigen/code-writed-by-cursor/"/>
+      <url>/2023/03/26/ai/aigen/code-writed-by-cursor/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>记录由AI工具帮忙写的代码，越来越离不开Cusor了。<br>作者: <a href="https://www.cursor.so/">Cursor</a></p></blockquote><span id="more"></span><h2 id="白名单功能"><a href="#白名单功能" class="headerlink" title="白名单功能"></a>白名单功能</h2><h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><blockquote><p><code>Ctrl + K</code> 实现方法一个白名单网站数组，判断当前的文字是否在白名单内，如果在则放行跳转。</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> whitelist = [<span class="string">&#x27;example.com&#x27;</span>, <span class="string">&#x27;google.com&#x27;</span>, <span class="string">&#x27;facebook.com&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">checkWhitelist</span>(<span class="params">url</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> hostname = <span class="keyword">new</span> <span class="title function_">URL</span>(url).<span class="property">hostname</span>;</span><br><span class="line">  <span class="keyword">return</span> whitelist.<span class="title function_">includes</span>(hostname);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="title function_">checkWhitelist</span>(<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>)) &#123;</span><br><span class="line">  <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>写的不错满足我的要求，比我自己想的实现方法简单不少。</p><h3 id="指令-数组遍历"><a href="#指令-数组遍历" class="headerlink" title="指令 数组遍历"></a>指令 数组遍历</h3><blockquote><p><code>Ctrl + K</code> js数组遍历写法</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5 forEach</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 for...of</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 entries() + destructuring</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [index, item] <span class="keyword">of</span> arr.<span class="title function_">entries</span>()) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(index, item);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 entries() + forEach()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">entries</span>().<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item[<span class="number">0</span>], item[<span class="number">1</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 map()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">map</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 reduce()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">reduce</span>(<span class="keyword">function</span>(<span class="params">prev, curr, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(prev, curr, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 filter()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">filter</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 find()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">find</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 findIndex()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">findIndex</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 some()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">some</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6 every()</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">arr.<span class="title function_">every</span>(<span class="keyword">function</span>(<span class="params">item, index</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(item, index);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// for loop</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// for loop with cached length</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, len = arr.<span class="property">length</span>; i &lt; len; i++) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// while loop</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (i &lt; arr.<span class="property">length</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> ChatGPT </tag>
+            
+            <tag> Code </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于ChatGPT</title>
+      <link href="/2023/03/26/ai/aigen/md-writeby-cursor/"/>
+      <url>/2023/03/26/ai/aigen/md-writeby-cursor/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这一片关于ChatGPT的文章，由AI工具Cursor写作<br>作者: <a href="https://www.cursor.so/">Cursor</a></p></blockquote><span id="more"></span><h2 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a>ChatGPT</h2><p>ChatGPT是一个基于GPT-2的聊天机器人，它可以与用户进行自然语言交互。ChatGPT使用了GPT-2的预训练模型，可以生成高质量的自然语言文本，从而实现了智能聊天的功能。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>ChatGPT可以回答用户的问题、提供建议、进行闲聊等。用户可以通过输入文本与ChatGPT进行交互，ChatGPT会根据用户的输入生成相应的回复。ChatGPT还可以进行多轮对话，从而更好地理解用户的意图和需求。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>用户可以通过访问ChatGPT的网站或者使用ChatGPT的API进行交互。在网站上，用户可以直接输入文本与ChatGPT进行交互；在API上，用户可以通过发送HTTP请求与ChatGPT进行交互。ChatGPT的API支持多种编程语言，包括Python、Java、JavaScript等。</p><h2 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h2><p>相比于传统的聊天机器人，ChatGPT具有以下优势：</p><ul><li>生成的回复更加自然、流畅，更接近人类的表达方式；</li><li>可以进行多轮对话，更好地理解用户的意图和需求；</li><li>可以根据用户的输入进行个性化的回复，从而提高用户的满意度。</li></ul><h2 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h2><p>虽然ChatGPT具有很多优势，但它也存在一些局限性：</p><ul><li>由于使用了预训练模型，ChatGPT的回复可能会受到模型训练数据的影响，从而出现一些不合理的回复；</li><li>ChatGPT无法理解一些复杂的语言结构，例如双关语、歧义等；</li><li>ChatGPT无法进行真正的理解和推理，只能生成基于模型的回复。虽然ChatGPT存在一些局限性，但它仍然是一种非常有用的工具，可以帮助人们更好地进行自然语言交互。随着人工智能技术的不断发展，ChatGPT的性能也将不断提高，未来它有望成为人们进行自然语言交互的首选工具之一。ChatGPT的应用场景非常广泛，可以用于客服、教育、娱乐等领域。例如，在客服领域，ChatGPT可以代替人工客服进行自然语言交互，从而提高客户服务的效率和质量；在教育领域，ChatGPT可以作为智能辅导工具，帮助学生进行学习和答疑；在娱乐领域，ChatGPT可以作为智能聊天伴侣，陪伴用户度过闲暇时光。随着ChatGPT技术的不断发展，它的应用场景也将越来越广泛。ChatGPT是一种非常有用的工具，可以帮助人们更好地进行自然语言交互。它具有很多优势，例如生成的回复更加自然、流畅，可以进行多轮对话，可以根据用户的输入进行个性化的回复，从而提高用户的满意度。虽然ChatGPT存在一些局限性，但随着人工智能技术的不断发展，它的性能也将不断提高，未来它有望成为人们进行自然语言交互的首选工具之一。ChatGPT的应用场景非常广泛，可以用于客服、教育、娱乐等领域。一次性写完，让我们期待ChatGPT的未来发展。ChatGPT的未来发展将会受到人工智能技术的不断发展和应用场景的不断扩大的影响。随着人工智能技术的不断发展，ChatGPT的性能也将不断提高，例如可以更好地理解复杂的语言结构、进行真正的理解和推理等。同时，ChatGPT的应用场景也将不断扩大，例如可以用于医疗、金融、法律等领域。在医疗领域，ChatGPT可以作为智能诊断工具，帮助医生进行疾病诊断和治疗方案的制定；在金融领域，ChatGPT可以作为智能投资顾问，帮助投资者进行投资决策；在法律领域，ChatGPT可以作为智能法律顾问，帮助律师进行法律咨询和案件分析。随着ChatGPT技术的不断发展和应用场景的不断扩大，它将成为人们进行自然语言交互的重要工具之一，为人们的生活和工作带来更多的便利和效率。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> ChatGPT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Electron是什么？</title>
+      <link href="/2023/03/26/ai/aigen/cursor-electron/index/"/>
+      <url>/2023/03/26/ai/aigen/cursor-electron/index/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这一片关于ChatGPT的文章，由AI工具Cursor写作<br>作者: <a href="https://www.cursor.so/">Cursor</a></p></blockquote><span id="more"></span><blockquote><p><code>Ctrl + K</code>: 使用md写一篇管理electron的博文，并且告诉我如何学习他。</p></blockquote><h2 id="管理Electron"><a href="#管理Electron" class="headerlink" title="管理Electron"></a>管理Electron</h2><p>Electron是一个流行的框架，用于构建跨平台的桌面应用程序。在本文中，我们将讨论如何管理Electron应用程序。</p><h2 id="安装Electron"><a href="#安装Electron" class="headerlink" title="安装Electron"></a>安装Electron</h2><p>要开始使用Electron，您需要安装它。您可以使用npm安装Electron：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install electron --save-dev</span><br></pre></td></tr></table></figure><h2 id="创建Electron应用程序"><a href="#创建Electron应用程序" class="headerlink" title="创建Electron应用程序"></a>创建Electron应用程序</h2><p>要创建Electron应用程序，请使用Electron Quick Start模板。您可以从Electron官方网站下载模板，或者使用以下命令从GitHub克隆模板：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/electron/electron-quick-start</span><br></pre></td></tr></table></figure><h2 id="学习Electron"><a href="#学习Electron" class="headerlink" title="学习Electron"></a>学习Electron</h2><p>要学习Electron，您可以阅读Electron官方文档。官方文档提供了有关Electron的详细信息，包括如何使用Electron构建应用程序的指南和教程。</p><p>您还可以参考Electron社区中的其他资源，例如Electron应用程序的示例和教程。这些资源可以帮助您更深入地了解Electron，并学习如何使用它构建更复杂的应用程序。</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>在本文中，我们讨论了如何管理Electron应用程序，并提供了一些学习Electron的资源。希望这些信息对您有所帮助！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> Electron </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Share Cursor</title>
+      <link href="/2023/03/23/share/share-cursor/index/"/>
+      <url>/2023/03/23/share/share-cursor/index/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/230323185021-cursor-home.png" alt="Cursor Home"></p><blockquote><p> <a href="https://www.cursor.so/">Cursor </a><br>最重要的是这个是 开源免费，国内直接访问的AI助手小工具.<br>开源地址 <a href="https://github.com/getcursor/cursor">https://github.com/getcursor/cursor</a></p></blockquote><p>Build Software. Fast.<br>Write, edit, and chat about your code with a pful AI</p><h2 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h2><ol><li><p>快捷键：<code>Ctrl + K</code> 输入你的描述，自然语言对话，他就能根据你的描述要求开始写代码了，如果实现代码比较长的话，他可能不会一次性写完代码，写道一半停止了，你继续按快捷键告诉他继续写就可以了。</p></li><li><p>快捷键 <code>Ctrl + L</code> 可以和他自然聊天，比如问题某段代码什么意思，或者问他写的代码如何运行，经过测试，他的回答都十分的智能，而且上下文理解的非常顺畅，就像和一个助理在正常聊天。</p></li></ol><h3 id="食用预览"><a href="#食用预览" class="headerlink" title="食用预览"></a>食用预览</h3><ul><li><p><code>Ctrl + K</code> 让他帮你写代码<br><img src="/230323185021-cursor1.png" alt="Cursor Home"><br><img src="/230323185021-cursor2.png" alt="Cursor Home"></p></li><li><p><code>Ctrl + L</code> 帮助你运行程序，有什么问题都可以直接问他，比如让如何安装依赖，翻译代码，解释代码的含义。<br><img src="/230323185021-cursor3.png" alt="Cursor Home"></p></li></ul><blockquote><p>总结下来，使用虽然比较简单，但是还是需要有一定的编程思维和判断能力，因为在测试的时候，使用pthon代码的时候用到了一个库，调用库的时候居然自己创造了一个方法。我在调试的运行他帮我写的代码时。居然报错了，说不存在这个方法，我去搜下这个库，确实没发现他使用的这个方法！让我哭笑不得，一方面说明这个代码应该是AI自己借鉴别人代码，如何根据我的需求，他自己编写的。2.说明这个程序呀有时候会胡诌一些不存在的东西，或者自己创造一些，但是肯定有问题，需要自己判断去修改。 </p></blockquote><p>整体使用下来，效果令人吃惊，值得尝试一下。<br><a href="https://www.cursor.so/">官方地址</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> share </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> ChatGPT </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>New Bing 国内正常访问方法</title>
+      <link href="/2023/03/18/ai/new-bing-visit/index/"/>
+      <url>/2023/03/18/ai/new-bing-visit/index/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>记录国内正常网络环境直接访问New Bing的方法。<br>之前的插件方法已经失效<br>截止目前以下方法可正常访问，使用 <a href="https://github.com/oldj/SwitchHosts">SwitchHosts</a> 插件<br>note abstract info tip success question warning failure danger bug example quote</p></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近百度文心一言发布了，还在内测申请，<a href="https://yiyan.baidu.com/welcome">申请地址</a>,不知道个人需要多长时间可以通过申请。<br>最近的AI搜索引擎比较火，我之前申请的new bing体验了，还是比较厉害的，现在又升级了，对话限制提高到了15次对了。不过国内的网络不能直接访问bing.com&#x2F;new,这一点比较难受，今天在晚上看到一个工具可以解决，国内直接访问new bing的方法。</p><p>前提你已经通过new bing 的waitlist，不然你还是用不上new bing哟！</p><span id="more"></span><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><blockquote><p>使用 <a href="https://github.com/oldj/SwitchHosts">SwitchHosts</a><br>SwitchHosts 是一个管理、切换多个 hosts 方案的工具。 它是一个免费开源软件，支持 Windows、Mac、Linux 三大桌面操作系统。</p></blockquote><ul><li>快速切换 Hosts 方案</li><li>Hosts 语法高亮</li><li>支持从网络加载远程 Hosts 配置</li><li>可从系统菜单栏图标快速切换 Hosts</li></ul><p>下载后 注意使用 <strong>管理员身份运行</strong><br>新增-本地-确定，然后在右边输入以下配置hosts方案<br>操作如下图</p><p><img src="/230318-switchhosts.png" alt="配置" title="配置"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># Windows 推荐管理工具：SwitchHosts</span><br><span class="line"># 新必应主页：https://www.bing.com/new</span><br><span class="line"></span><br><span class="line"># 说明1：如果失效，请在编辑里点击刷新，查看 Hosts 配置否有更新</span><br><span class="line"># 说明2：如果配置获取失败，网址打不开，请连接手机热点尝试</span><br><span class="line"># 说明3：以下Hosts配置内容可以自行复制使用，本地址仅为方便导入和后续更新</span><br><span class="line"></span><br><span class="line">#必应主页相关</span><br><span class="line">20.196.210.19 bing.com</span><br><span class="line">20.196.210.19 www.bing.com </span><br><span class="line">20.196.210.19 r.bing.com</span><br><span class="line">20.196.210.19 cn.bing.com</span><br><span class="line"></span><br><span class="line">#Edge浏览器侧边栏相关</span><br><span class="line">20.196.210.19 edgeservices.bing.com</span><br><span class="line">20.196.210.19 sydney.bing.com</span><br></pre></td></tr></table></figure><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>接下来就可以正常在浏览器输入 <a href="https://www.bing.com/new">https://www.bing.com/new</a><br>就能愉快的和new bing玩耍了。</p><p><img src="/230318164630-new-bing.png" alt="new bing" title="new bing chat"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> New Bing </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分享VSCode插件</title>
+      <link href="/2023/03/04/share/share-vscode-plugins/"/>
+      <url>/2023/03/04/share/share-vscode-plugins/</url>
+      
+        <content type="html"><![CDATA[<p>所有分享资源来自互联网，如有侵权请告知，会立即删除</p><blockquote><p>分享 VSCode 插件，提升编码效率，插件侠篇。</p></blockquote><p>小技巧：vscode插件栏目中，热门标签类目下的插件都是比较优秀和好用的插件，不知道用什么插件时去哪里可以发现很多宝藏的插件！推荐里面也能找到你想要的，微软这方面做的还是非常不错的。</p><span id="more"></span><h2 id="AI类-辅助写代码工具"><a href="#AI类-辅助写代码工具" class="headerlink" title="AI类-辅助写代码工具"></a>AI类-辅助写代码工具</h2><table><thead><tr><th align="left"><center><strong>插件链接</strong></center></th><th align="left"><strong>描述</strong></th><th align="left"><strong>备注</strong></th></tr></thead><tbody><tr><td align="left"><a href="https://marketplace.visualstudio.com/items?itemName=aminer.codegeex">CodeGeex</a></td><td align="left">免费的AI编程助手、代码自动生成、代码智能补全、代码翻译、支持多种语言、适配主流IDE</td><td align="left">国产，免费</td></tr><tr><td align="left"><a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode">微软IntelliCode</a></td><td align="left">AI-assisted development</td><td align="left">微软自家的</td></tr><tr><td align="left"><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a></td><td align="left">Your AI pair programmer</td><td align="left">代码能力比较强</td></tr></tbody></table><h2 id="tools-工具类"><a href="#tools-工具类" class="headerlink" title="tools-工具类"></a>tools-工具类</h2><h2 id="git功能增强"><a href="#git功能增强" class="headerlink" title="git功能增强"></a>git功能增强</h2><blockquote><p>vscode自带的git插件只能提交和更新代码，不能查看和查看远程的分支历史提交记录。</p></blockquote><table><thead><tr><th align="left">链接</th><th align="left">描述</th><th align="left">备注</th></tr></thead><tbody><tr><td align="left"><a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">Git History</a></td><td align="left">View git log, file history, compare branches or commits</td><td align="left">查看git提交记录和比较提交信息</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> share </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+            <tag> vscode </tag>
+            
+            <tag> plugins </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ShareAnything-分享一切</title>
+      <link href="/2023/03/01/share/share/"/>
+      <url>/2023/03/01/share/share/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>所有分享资源来自互联网，如有侵权请告知，会立即删除</p></blockquote><blockquote><p>分享 音乐、软件、网站等一切我觉得好玩或者有用的资源</p></blockquote><p>软件都是我用过的，大家可以放心食用，不给任何产品推广。</p><span id="more"></span><h2 id="music-favor-收藏"><a href="#music-favor-收藏" class="headerlink" title="music-favor-收藏"></a>music-favor-收藏</h2><h2 id="Free-Software-软件"><a href="#Free-Software-软件" class="headerlink" title="Free-Software-软件"></a>Free-Software-软件</h2><p>分享一些用过就离不开的开源软件或者免费的软件，免费且实用。<br>注意：并不是所有的开源软件都是免费的，留意开源协议即可。</p><table><thead><tr><th align="left"><center><strong>链接</strong></center></th><th align="left"><strong>描述</strong></th><th align="left"><strong>备注</strong></th></tr></thead><tbody><tr><td align="left"><a href="https://otp.landian.vip/zh-cn/download.html">Office部署工具</a></td><td align="left">一个强大且实用的 Office 部署工具。系统要求：Windows 7 SP1 或更高版本，不支持其他操作系统（例如 Linux 或 macOS）。</td><td align="left">推荐安装绿色免费好管理</td></tr><tr><td align="left"><a href="https://verycapture.com/cn/download.html">verycapture</a></td><td align="left">VeryCapture专业的屏幕截取软件，提升办公效率，让用户有更多时间投入业务</td><td align="left">截图、免费、</td></tr><tr><td align="left"><a href="https://lxmusic.toside.cn/">音乐-lx-music</a></td><td align="left">一个免费&amp;开源的音乐查找工具</td><td align="left">手机电脑双端、绿色、音乐、下载手机电脑双端、绿色、音乐、下载</td></tr><tr><td align="left"><a href="https://github.com/dotnetcore/FastGithub/releases">FastGithub</a></td><td align="left">github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题。</td><td align="left">国内稳定访问</td></tr><tr><td align="left"><a href="https://github.com/2dust/v2rayN/releases">V2rayN科学上网</a></td><td align="left">科学上网客户端软件</td><td align="left"><a href="#free">#订阅地址</a></td></tr><tr><td align="left"><a href="https://www.7-zip.org/">7-Zip</a></td><td align="left">7-Zip is free software with open source. 高效，高压，开源，小巧</td><td align="left">别再用winrar了，缺点UI丑了点</td></tr><tr><td align="left"><a href="https://github.com/M2Team/NanaZip/releases/">NanaZip</a></td><td align="left">基于7-zip开发</td><td align="left">支持适配win11右键菜单</td></tr><tr><td align="left"><a href="https://github.com/torchgm/RoundedTB/releases">RoundedTB</a></td><td align="left">Add margins, rounded corners and segments to your taskbars!</td><td align="left">win11任务栏美化</td></tr><tr><td align="left"><a href="https://www.virtualbox.org/">VirtualBox</a></td><td align="left">VirtualBox is a powerful x86 and AMD64&#x2F;Intel64 virtualization product for enterprise as well as home use. Not only is VirtualBox an extremely feature rich, high performance product for enterprise customers, it is also the only professional solution that is freely available as Open Source Software under the terms of the GNU General Public License (GPL) version 3. See “About VirtualBox” for an introduction.</td><td align="left">Oracle旗下免费虚拟机软件,小巧，扔掉VM吧</td></tr></tbody></table><h2 id="apps-安卓软件"><a href="#apps-安卓软件" class="headerlink" title="apps-安卓软件"></a>apps-安卓软件</h2><blockquote><p>android 手机软件分享</p><table><thead><tr><th align="left"><strong>下载地址</strong></th><th align="left"><strong>功能描述</strong></th><th align="left"><strong>备注</strong></th></tr></thead><tbody><tr><td align="left"><a href="https://share.weiyun.com/s7FnuI6E">闪电侠</a></td><td align="left">闪电侠-无广告免费手机影视盒子软件，自带影视源</td><td align="left">别再用爱优腾的vip超级vip了</td></tr><tr><td align="left"><a href="http://饭太硬.ga/">TVBox类影视软件</a></td><td align="left">开源壳子 TVbox相关免费资源推荐，免费影视的软件</td><td align="left">各种vip各种套路限制</td></tr></tbody></table></blockquote><h2 id="website"><a href="#website" class="headerlink" title="website"></a>website</h2><p>👉 <a href="http://geekswg.js.cool/website/" title="网站收藏">点击这里查看</a></p><h2 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h2><h3 id="nbtab"><a href="#nbtab" class="headerlink" title="nbtab"></a>nbtab</h3><blockquote><p>简约不简单，浏览器tab页<br><img src="https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/posts2023/230330-nbtab.webp" alt="230330-nbtab" title="nbtab"></p></blockquote><h3 id="wetab"><a href="#wetab" class="headerlink" title="wetab"></a>wetab</h3><blockquote><p>wetab, chatgpt组件非常好。<br><img src="https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/posts2023/230330-wetab.webp" alt="230330-wetab" title="wetab"></p></blockquote><h3 id="itab"><a href="#itab" class="headerlink" title="itab"></a>itab</h3><blockquote><p>功能丰富，插件多。<br><img src="https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/posts2023/230330-itab.webp" alt="230330-itab" title="itab"></p></blockquote><h2 id="other-其他"><a href="#other-其他" class="headerlink" title="other-其他"></a>other-其他</h2><h3 id="free"><a href="#free" class="headerlink" title="free"></a>free</h3><blockquote><p>v2rayN免费订阅地址:</p></blockquote><ol><li><a href="https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2">https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2</a></li><li><a href="https://raw.fastgit.org/Pawdroid/Free-servers/main/sub">https://raw.fastgit.org/Pawdroid/Free-servers/main/sub</a></li><li><a href="https://kxswa.tk/v2ray">https://kxswa.tk/v2ray</a></li></ol><p>其他内容</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> share </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+            <tag> 资源 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>notes1</title>
+      <link href="/2023/02/27/notes/notes1/index/"/>
+      <url>/2023/02/27/notes/notes1/index/</url>
+      
+        <content type="html"><![CDATA[<p>Hello world<br>这里使用MD语法编写你的文章</p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> notes </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>New Bing 申请教程</title>
+      <link href="/2023/02/20/ai/new-bing/index/"/>
+      <url>/2023/02/20/ai/new-bing/index/</url>
+      
+        <content type="html"><![CDATA[<p>最近除了有很红的ChatGPT AI 聊天机器人之外，还有很多人跃跃欲试新版Bing（New Bing），因为微软将新版Bing 结合了比ChatGPT 更强大的新一代OpenAI 语言模型，不仅能询问复杂问题、提供建议与解决方法，Bing 也会查看网路搜寻结果，迅速为我们提供摘要。<br>记录申请过程中遇到各种问题以及解决办法。</p><span id="more"></span><h2 id="申请New-Bing"><a href="#申请New-Bing" class="headerlink" title="申请New Bing"></a>申请New Bing</h2><blockquote><p>申请地址 ： <a href="https://bing.com/new">https://bing.com/new</a></p></blockquote><p>由于某些原因，国内无法直接访问 new bing 。</p><ol><li>通过科学上网方式直接访问</li><li>使用 HeaderEditor 插件 下载链接：<a href="https://microsoftedge.microsoft.com/addons/detail/header-editor/afopnekiinpekooejpchnkgfffaeceko">点击下载</a><br>启用插件<br>配置插件<br><img src="/newbing-header-editor.png" alt="配置截图" title="配置截图"><br>配置参数<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 匹配规则</span><br><span class="line">^http(s?)://(.*).bing\.com/(.*)</span><br><span class="line"></span><br><span class="line">// 头名称</span><br><span class="line">x-forwarded-for</span><br><span class="line"></span><br><span class="line">// 头内容</span><br><span class="line">8.8.8.8   或者  4.2.2.2</span><br></pre></td></tr></table></figure></li></ol><h2 id="老账户无法加入waitlist"><a href="#老账户无法加入waitlist" class="headerlink" title="老账户无法加入waitlist"></a>老账户无法加入waitlist</h2><p>老的微软账户是不是提示<br><img src="/newbing.png" alt="new bing 申请waitlist错误" title="new bing 申请waitlist错误"></p><ol><li><p>使用科学上网地址非国内地址，申请一个新的微软账户加入 new bing <a href="https://www.bing.com/new">waitlist</a></p></li><li><p>继续使用老账户申请</p><blockquote><p>如果在申请 new bing waitlist 等候名单遇到 错误提示信息</p></blockquote></li><li><p>出错了，请重试</p></li><li><p>Something went wrong, please try again later.</p></li></ol><p>原因就是 Microsoft rewards 已经在国内使用过了，账户被禁用了。</p><p>解决方案如下：</p><ol><li>退出Bing Rewards计划: <a href="https://rewards.bing.com/optout">https://rewards.bing.com/optout</a> ,请注意退出计划会清除积分</li><li>重新加入Bing Rewards计划: <a href="https://rewards.bing.com/">https://rewards.bing.com</a></li><li>清除cookie后，再次申请加入新版必应( <a href="https://www.bing.com/new">https://www.bing.com/new</a> )，即可正常加入候补列表</li></ol><h2 id="New-Bing-上手体验"><a href="#New-Bing-上手体验" class="headerlink" title="New Bing 上手体验"></a>New Bing 上手体验</h2><blockquote><p>使用体验非常好，尤其是上下文语境做的让人非常舒服，总之是一个合格而且优秀的助手<br>推荐下载 <a href="https://www.microsoftedgeinsider.com/zh-cn/download/dev">Edge-Dev</a> 体验效果非常好</p></blockquote><p><img src="/newbing.gif" alt="Edge-Dev new bing 使用预览" title="Edge-Dev new bing 使用预览"></p><blockquote><p>网页中使用bing-chat</p></blockquote><p><a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">https://www.bing.com/search?q=Bing+AI&amp;showconv=1&amp;FORM=hpcodx</a></p><p><img src="/newbing.png" alt="web new bing 使用预览" title="web new bing 使用预览"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ChatGPT </tag>
+            
+            <tag> bing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
