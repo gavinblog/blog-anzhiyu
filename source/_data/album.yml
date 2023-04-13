@@ -1,0 +1,29 @@
+# 相册集
+
+- class_name: 世界各地夕阳与风景
+  path_name: /wordScenery
+  description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
+  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
+  album_list:
+    - date: 2022/10/26 01:00:00
+      content: 湘潭的一角。
+      address: 湖南湘潭
+      from: 再吃一口就减肥
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+    - date: 2022-10-24
+      content: 湖南信息学院长椅下的夕阳。
+      address: 湖南长沙
+      image:
+        - https://bu.dusays.com/2023/04/09/64329399db122.webp
+        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
+
+- class_name: 我的日常
+  path_name: /dailyPhoto
+  description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
+  cover: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
+  album_list:
+    - date: 2022-10-24
+      content: 老妹的画
+      image:
+        - https://bu.dusays.com/2023/04/09/643293997b92b.jpeg

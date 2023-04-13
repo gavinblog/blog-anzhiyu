@@ -1,6 +1,10 @@
 ---
-title: 关于我
-date: 2023-04-11 18:01:00
----
+title: about
+date: 2023-04-13 14:52:58
 
-## About Me 关于我
+aside: false
+top_img: false
+background: "#f8f9fe"
+comments: false
+type: "about"
+---

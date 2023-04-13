@@ -1,0 +1,104 @@
+# 关于页面
+
+- class_name: 关于我
+  subtitle: 毕少侠也在江湖✨
+  avatarImg: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp
+  name: 毕十三
+  description: 是一名 游荡于互联网的网民，喜欢编程，擅长各种C-V语言的编程。
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 程序
+      - 体验
+  helloAbout: Hello World!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - EDU,软件工程专业
+    img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
+  statistic:
+    link: /archives
+    text: 我的文章
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，合肥市
+    background: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg
+    backgroundDark: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 1900
+    selfInfoTips2: 互联网大学
+    selfInfoContent2: 软件工程
+    selfInfoTips3: 现在职业
+    selfInfoContent3: CodeFarmer👨‍🎓
+  personalities:
+    author_name: 提倡者
+    personality_type: INFJ-T
+    photo_url: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e9643611ec.jpg
+    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 往者不可谏，
+    maxim_bottom: 来者犹可追。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼
+    buff_bottom: 二次元指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: 使命召19-战争地带2
+    game_uid: "geekswg#"
+    game_bg: https://img02.anzhiy.cn/adminuploads/1/2022/12/19/63a079ca63c8a.webp
+  comic:
+    comic_tips: 爱好番剧
+    comic_title: 追番
+    comic_list:
+      - name: 约定的梦幻岛
+        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/63988658aa1b1.webp
+      - name: 咒术回战
+        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398864e572ed.webp
+      - name: 紫罗兰永恒花园
+        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886315d658.webp
+      - name: 鬼灭之刃
+        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/639886403d472.webp
+      - name: JOJO的奇妙冒险 黄金之风
+        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398862649585.webp
+  like:
+    like_tips: 关注偏好
+    like_title: 数码科技
+    like_bg: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp
+    like_bottom: 手机、电脑软硬件
+  music:
+    music_tips: 音乐偏好
+    music_title: 许嵩、民谣、华语流行
+    music_bg: https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg
+    music_link: /music
+# 打赏列表  
+  reward_list:
+    - name: 毕十一
+      amount: 1000
+      datatime: 2022-08-19
+      suffix:  
+    - name: 毕十二
+      amount: 11
+      datatime: 2022-08-19
+      suffix:  亿
+    - name: 毕十三
+      amount: 66
+      datatime: 2023-04-10
+      suffix: 比特币
+
+  extra: false

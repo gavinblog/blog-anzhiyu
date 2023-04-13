@@ -5,10 +5,10 @@
 theme: anzhiyu
 
 # Site
-title: 毕少侠也在江湖
-subtitle: ''
-description: ''
-keywords:
+title: 毕少侠
+subtitle: '毕少侠也在江湖-subtitle'
+description: '毕少侠也在江湖-description'
+keywords: ['geekswg','毕少侠']
 author: 毕少侠
 language: zh-CN
 timezone: ''
@@ -21,6 +21,7 @@ permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
 
 # Directory
 source_dir: source
@@ -105,3 +106,38 @@ ignore:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+# ------------------------- 以下内容都是自定义添加 -------------------------
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
+  
+# 追番插件
+# https://github.com/HCLonely/hexo-bilibili-bangumi
+bangumi: # 追番设置
+  enable: true
+  source: bili
+  path:
+  vmid: 372204786
+  title: "追番列表"
+  quote: "生命不息，追番不止！"
+  show: 1
+  lazyload: false
+  loading:
+  showMyComment: false
+  pagination: false
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  proxy:
+    host: "代理host"
+    port: "代理端口"
+  extra_options:
+    top_img: false
+    lazyload:
+      enable: false  
