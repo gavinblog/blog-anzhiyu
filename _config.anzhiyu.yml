@@ -908,18 +908,18 @@ home_top:
   subTitle: 万物可爱。
   siteText: ANZHIY.CN
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: 笔记
+      path: /categories/notes/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: fas fa-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: 分享
+      path: /categories/share/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: fas fa-burn
-    - name: 生活
-      path: /categories/生活日常/
+    - name: AI
+      path: /categories/ai/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: fas fa-book

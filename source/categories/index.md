@@ -16,24 +16,24 @@ top_img: false
 <div id='libCategories'>
 <div id="lib-cards" class="container">
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/前端开发/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/notes/")'>
 <card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e144528fb.webp">
-<h1 slot="header">前端</h1>
-<p slot="content">前端学习之路。</p>
+<h1 slot="header">笔记</h1>
+<p slot="content">日常笔记，好记性不然烂笔头</p>
 </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/大学生涯/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/share/")'>
   <card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e1433f197.webp">
-    <h1 slot="header">大学生活</h1>
-    <p slot="content">在大学期间发生的一些事儿。</p>
+    <h1 slot="header">分享</h1>
+    <p slot="content">这里分享我用过的软件，资源，和好用的插件。</p>
   </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/生活日常/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")'>
   <card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e142a69a9.webp">
-    <h1 slot="header">生活</h1>
-    <p slot="content">和好朋友👬们一起经历的有趣事。</p>
+    <h1 slot="header">AI</h1>
+    <p slot="content">AI人工只能都在这里。</p>
   </card>
 </a>
 
