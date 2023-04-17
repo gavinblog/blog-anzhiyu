@@ -35,6 +35,11 @@ nav:
         - name: 博客
           link: https://geekswg.top/
           icon: /img/favicon.png
+    - title: 网页
+      item:
+        - name: ChatGPT
+          link: https://chat4.aichatos.com/
+          icon: /imgs/favicon.png      
     - title: 项目
       item:
         - name: 安知鱼云盘
