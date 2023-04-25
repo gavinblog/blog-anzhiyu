@@ -1,7 +1,8 @@
 menu:
-  其他:
+  导航:
     博客-Hugo: https://geekswg.top || fas fa-link
     博客-Hexo: https://hexo.geekswg.top || fas fa-link
+    AI-ChatGPT: https://chat.aichatos.top/ || fas fa-link
 
   博客:
     文章: /archives/ || fas fa-archive
@@ -35,11 +36,11 @@ nav:
         - name: 博客
           link: https://geekswg.top/
           icon: /img/favicon.png
-    - title: 网页
       item:
         - name: ChatGPT
-          link: https://chat4.aichatos.com/
-          icon: /imgs/favicon.png      
+          link: https://chat.aichatos.top/
+          icon: /imgs/favicon.png
+          
     - title: 项目
       item:
         - name: 安知鱼云盘
