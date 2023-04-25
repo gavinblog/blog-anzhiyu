@@ -227,11 +227,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const highlightShrinkClass = isHighlightShrink === true ? "closed" : "";
 
     if (isHighlightShrink !== undefined) {
-      highlightShrinkEle = `<i class="fas fa-angle-down expand ${highlightShrinkClass}"></i>`;
+      highlightShrinkEle = `<i class="anzhiyufont anzhiyu-icon-angle-down expand ${highlightShrinkClass}"></i>`;
     }
 
     if (isHighlightCopy) {
-      highlightCopyEle = '<div class="copy-notice"></div><i class="fas fa-paste copy-button"></i>';
+      highlightCopyEle = '<div class="copy-notice"></div><i class="anzhiyufont anzhiyu-icon-paste copy-button"></i>';
     }
 
     const copy = (text, ctx) => {
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (highlightHeightLimit && item.offsetHeight > highlightHeightLimit + 30) {
         const ele = document.createElement("div");
         ele.className = "code-expand-btn";
-        ele.innerHTML = '<i class="fas fa-angle-double-down"></i>';
+        ele.innerHTML = '<i class="anzhiyufont anzhiyu-icon-angle-double-down"></i>';
         ele.addEventListener("click", expandCode);
         fragment.appendChild(ele);
       }
@@ -385,46 +385,78 @@ document.addEventListener("DOMContentLoaded", function () {
       arr.forEach(i => {
         const alt = i.alt ? `alt="${replaceDq(i.alt)}"` : "";
         const title = i.title ? `title="${replaceDq(i.title)}"` : "";
-        str += `<div class="fj-gallery-item"><img src="${i.url}" ${alt + title}"></div>`;
+        const address = i.address ? i.address : "";
+        if (address) {
+          str += `<div class="fj-gallery-item"><div class="tag-address">${address}</div><img src="${i.url}" ${
+            alt + title
+          }"></div>`;
+        } else {
+          str += `<div class="fj-gallery-item"><img src="${i.url}" ${alt + title}"></div>`;
+        }
       });
+
       return str;
     };
 
     const lazyloadFn = (i, arr, limit) => {
-      const loadItem = limit;
+      const loadItem = Number(limit);
       const arrLength = arr.length;
       if (arrLength > loadItem) i.insertAdjacentHTML("beforeend", htmlStr(arr.splice(0, loadItem)));
       else {
         i.insertAdjacentHTML("beforeend", htmlStr(arr));
         i.classList.remove("lazyload");
       }
+      window.lazyLoadInstance.update();
       return arrLength > loadItem ? loadItem : arrLength;
     };
 
     const fetchUrl = async url => {
+      console.info(url);
       const response = await fetch(url);
       return await response.json();
     };
 
     const runJustifiedGallery = (item, arr) => {
-      if (!item.classList.contains("lazyload")) item.innerHTML = htmlStr(arr);
-      else {
-        const limit = item.getAttribute("data-limit");
-        lazyloadFn(item, arr, limit);
-        const clickBtnFn = () => {
-          const lastItemLength = lazyloadFn(item, arr, limit);
-          fjGallery(
-            item,
-            "appendImages",
-            item.querySelectorAll(`.fj-gallery-item:nth-last-child(-n+${lastItemLength})`)
-          );
-          anzhiyu.loadLightbox(item.querySelectorAll("img"));
-          lastItemLength < limit && item.nextElementSibling.removeEventListener("click", clickBtnFn);
-        };
-        item.nextElementSibling.addEventListener("click", clickBtnFn);
+      const limit = item.getAttribute("data-limit") ?? arr.length;
+      if (!item.classList.contains("lazyload") || arr.length < limit) {
+        // 不懒加载
+        item.innerHTML = htmlStr(arr);
+      } else {
+        if (!item.classList.contains("btn_album_detail_lazyload")) {
+          // 滚动懒加载
+          lazyloadFn(item, arr, limit);
+          const clickBtnFn = () => {
+            const lastItemLength = lazyloadFn(item, arr, limit);
+            fjGallery(
+              item,
+              "appendImages",
+              item.querySelectorAll(`.fj-gallery-item:nth-last-child(-n+${lastItemLength})`)
+            );
+            anzhiyu.loadLightbox(item.querySelectorAll("img"));
+            lastItemLength < Number(limit) && (window.runJustifiedGalleryNextElementSiblingLazyloadFn = null);
+          };
+
+          window.runJustifiedGalleryNextElementSiblingLazyloadFn = clickBtnFn;
+        } else {
+          // 按钮懒加载
+          lazyloadFn(item, arr, limit);
+          const clickBtnFn = () => {
+            const lastItemLength = lazyloadFn(item, arr, limit);
+            fjGallery(
+              item,
+              "appendImages",
+              item.querySelectorAll(`.fj-gallery-item:nth-last-child(-n+${lastItemLength})`)
+            );
+            anzhiyu.loadLightbox(item.querySelectorAll("img"));
+            lastItemLength < limit && item.nextElementSibling.removeEventListener("click", clickBtnFn);
+          };
+          item.nextElementSibling.addEventListener("click", clickBtnFn);
+        }
       }
+
       anzhiyu.initJustifiedGallery(item);
       anzhiyu.loadLightbox(item.querySelectorAll("img"));
+      window.lazyLoadInstance.update();
     };
 
     const addJustifiedGallery = () => {
@@ -475,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const scroolTask = anzhiyu.throttle(() => {
       const currentTop = window.scrollY || document.documentElement.scrollTop;
       const isDown = scrollDirection(currentTop);
-      if (currentTop > 56) {
+      if (currentTop > 16) {
         if (isDown) {
           if ($header.classList.contains("nav-visible")) $header.classList.remove("nav-visible");
           if (isChatBtnShow && isChatShow === true) {
@@ -657,7 +689,7 @@ document.addEventListener("DOMContentLoaded", function () {
       $body.classList.add("read-mode");
       const newEle = document.createElement("button");
       newEle.type = "button";
-      newEle.className = "fas fa-sign-out-alt exit-readmode";
+      newEle.className = "anzhiyufont anzhiyu-icon-sign-out-alt exit-readmode";
       $body.appendChild(newEle);
 
       function clickFn() {
@@ -757,6 +789,15 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
     }
   });
+
+  //监听蒙版关闭
+  document.addEventListener(
+    "touchstart",
+    e => {
+      anzhiyu.removeRewardMask();
+    },
+    false
+  );
 
   /**
    * menu
@@ -884,7 +925,6 @@ document.addEventListener("DOMContentLoaded", function () {
     backToTop: () => {
       document.querySelectorAll("#article-container .tabs .tab-to-top").forEach(function (item) {
         item.addEventListener("click", function () {
-          console.info(1);
           anzhiyu.scrollToDest(anzhiyu.getEleTop(anzhiyu.getParents(this, ".tabs")) - 60, 300);
         });
       });
@@ -1091,6 +1131,19 @@ document.addEventListener("DOMContentLoaded", function () {
           }, 500);
         }
       }
+
+      function runLazyLoad() {
+        const runFn = window.runJustifiedGalleryNextElementSiblingLazyloadFn;
+        if (runFn) {
+          runFn();
+        }
+      }
+
+      // 如果当前为相册详情页
+      const albumDetailGalleryLoadMore = document.getElementById("album_detail_gallery_load_more");
+      if (albumDetailGalleryLoadMore && anzhiyu.isInViewPortOfOne(albumDetailGalleryLoadMore)) {
+        setTimeout(runLazyLoad, 100);
+      }
     }
 
     // 绑定滚动处理函数
@@ -1105,7 +1158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const root = document.querySelector(":root");
     if (path !== undefined) {
       var httpRequest = new XMLHttpRequest(); //第一步：建立所需的对象
-      httpRequest.open("GET", path + "?imageAve", true); //第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
+      httpRequest.open("GET", path + "?imageAve", true); //第二步：打开连接  将请求参数写在url中
       httpRequest.send(); //第三步：发送请求  将请求参数写在URL中
       /**
        * 获取数据后的处理程序
@@ -1270,7 +1323,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navMusicEl.querySelector("#nav-music meting-js").aplayer.on("pause", function () {
           navMusicEl.classList.remove("playing");
           document.getElementById("menu-music-toggle").innerHTML =
-            '<i class="fa-solid fa-play"></i><span>播放音乐</span>';
+            '<i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
           document.getElementById("nav-music-hoverTips").innerHTML = "音乐已暂停";
           document.querySelector("#consoleMusic").classList.remove("on");
           anzhiyu_musicPlaying = false;
@@ -1319,7 +1372,7 @@ document.addEventListener("DOMContentLoaded", function () {
     GLOBAL_CONFIG.isPhotoFigcaption && addPhotoFigcaption();
     scrollFn();
 
-    const $jgEle = document.querySelectorAll("#article-container .fj-gallery");
+    const $jgEle = document.querySelectorAll("#content-inner .fj-gallery");
     $jgEle.length && runJustifiedGallery($jgEle);
 
     runLightbox();
