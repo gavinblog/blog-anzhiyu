@@ -1,4 +1,7 @@
 menu:
+  AI:
+    文心一言: https://yiyan.baidu.com/ || fas fa-link
+    文心一格: https://yige.baidu.com/ || fas fa-link
   导航:
     博客-Hugo: https://geekswg.top || fas fa-link
     博客-Hexo: https://hexo.geekswg.top || fas fa-link
@@ -35,14 +38,23 @@ nav:
       item:
         - name: 博客
           link: https://geekswg.top/
-          icon: /img/favicon.png
-      item:
+          icon: /imgs/favicon.png #  /img/favicon.png
         - name: ChatGPT
           link: https://chat.aichatos.top/
-          icon: /imgs/favicon.png
+          icon: 
           
-    - title: 项目
+    - title: 常用网址
       item:
+        - name: 在线工具
+          link: https://tool.lu/
+          icon: /imgs/favicon.png
+        - name: 免费图床
+          link: https://picx.xpoet.cn/
+          icon: /imgs/favicon.png
+        - name: 文心一言
+          link: https://yiyan.baidu.com/
+          icon: /imgs/favicon.png
+
         - name: 安知鱼云盘
           link: https://cloud.anzhiy.cn/
           icon: https://img02.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png
