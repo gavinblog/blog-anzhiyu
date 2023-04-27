@@ -581,7 +581,7 @@ footer_bg: false
 rightside-bottom: 100px
 
 # Enter transitions (开啓网页进入效果)
-enter_transitions: true
+enter_transitions: false
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -1039,7 +1039,7 @@ greetingBox:
 
 # 文章顶部ai摘要
 post_head_ai_description:
-  enable: true
+  enable: false
   gptName: AnZhiYu
   mode: local # 默认模式 可选值: tianli/local
   switchBtn: true # 可以配置是否显示切换按钮 以切换tianli/local

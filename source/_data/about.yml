@@ -23,7 +23,10 @@
     title: 无限进步
     item:
       - EDU,软件工程专业
-        img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
+      - EDU2,软件工程专业
+      - EDU2,软件工程专业
+      
+    img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
   statistic:
     link: /archives
     text: 我的文章
