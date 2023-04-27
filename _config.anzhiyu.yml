@@ -701,7 +701,7 @@ preloader:
   # 1. fullpage-loading
   # 2. pace (progress bar)
   # else all
-  source: 3
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
   avatar: /imgs/favicon.png # 自定义头像
@@ -729,7 +729,7 @@ aside:
       text: 了解更多
       link: /about/
   card_announcement:
-    enable: false
+    enable: true
     content: Hello , Welcome Here
   card_weixin:
     enable: false
