@@ -21,17 +21,17 @@
     title: 无限进步
     item:
       - EDU,软件工程专业
-      - EDU2,软件工程专业
-      - EDU3,软件工程专业
-    img: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png
+    img: /imgs/t.png
   statistic:
     link: /archives
-    text: 我的文章
+    text: 文章隧道
+    cover: /imgs/t.png
+
   map:
     title: 我现在住在
     StrengthenTitle: 中国，合肥市
-    background: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg
-    backgroundDark: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ebf1f3e65.jpg
+    background: /imgs/t.png
+    backgroundDark: /imgs/t.png
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 1921
@@ -39,10 +39,11 @@
     selfInfoContent2: 软件工程-计算机科学与技术
     selfInfoTips3: 现在职业
     selfInfoContent3: CodeFarmer👨‍🎓
+
   personalities:
     author_name: 提倡者
     personality_type: INFJ-T
-    photo_url: https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e9643611ec.jpg
+    photo_url: /imgs/t.png # 个人照片
     personality_img: https://www.16personalities.com/static/images/personality-types/avatars/infj-advocate.svg
     name_url: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
   
@@ -60,7 +61,7 @@
     game_tips: 爱好游戏
     game_title: 使命召19-战争地带2.0
     game_uid: "geekswg#123456"
-    game_bg: https://img02.anzhiy.cn/adminuploads/1/2022/12/19/63a079ca63c8a.webp
+    game_bg: /imgs/t.png
 
   comic:
     comic_tips: 爱好番剧
@@ -101,5 +102,10 @@
       amount: 13
       datatime: 2023-04-10
       suffix: 万
+
+    - name: 毕十四
+      amount: 14
+      datatime: 2023-04-10
+      suffix: 贝壳  
 
   extra: false
