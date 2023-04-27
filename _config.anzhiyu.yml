@@ -270,9 +270,9 @@ anchor: false
 # toc (目录)
 toc:
   post: true
-  page: false
+  page: true
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
 
 post_copyright:
@@ -287,10 +287,10 @@ reward:
   enable: false
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: /imgs/t.png
       link:
       text: wechat
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: /imgs/t.png
       link:
       text: alipay
 
@@ -340,7 +340,7 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq,facebook,twitter
 
 # AddToAny
 # https://www.addtoany.com/
@@ -391,7 +391,7 @@ valine:
 waline:
   serverURL: https://geek-waline.zeabur.app/ # Waline server address url
   bg: # waline background
-  pageview: false
+  pageview: true
   option:
 
 # Twikoo
@@ -423,8 +423,8 @@ chat_hide_show: false
 # chatra
 # https://chatra.io/
 chatra:
-  enable: false
-  id:
+  enable: true
+  id: GLzsvy6qAitQ9QoHA
 
 # tidio
 # https://www.tidio.com/
