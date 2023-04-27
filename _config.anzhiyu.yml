@@ -589,7 +589,7 @@ enter_transitions: false
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -598,7 +598,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
-  enable: true
+  enable: false
   mobile: true
 
 # canvas_nest
@@ -614,25 +614,25 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # open particle animation (冒光特效)
   shake: false #  open shake (抖动特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
   mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
-  enable: true
+  enable: false
   mobile: false
 
 # Mouse click effects: words (鼠标点击效果: 文字)
 ClickShowText:
-  enable: true
+  enable: false
   text:
     - I
     - LOVE
@@ -1029,13 +1029,13 @@ essay:
 
 # ptool 文章底部工具
 ptool:
-  enable: true
+  enable: false
   categories: true # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
 
 # 欢迎语配置
 greetingBox:
-  enable: true
+  enable: false
 
 # 文章顶部ai摘要
 post_head_ai_description:

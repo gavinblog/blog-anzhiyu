@@ -10,10 +10,10 @@
     title1: Talk is Cheap
     title2: Show Me the Code 
     word:
-      - 学习-Study
-      - 生活-Living
-      - 程序-Coding
-      - 分享-Sharing
+      - 学习Study
+      - 生活Living
+      - 程序Coding
+      - 分享Sharing
   helloAbout: Hello World!
   skillsTips:
     tips: 技能
