@@ -1,0 +1,50 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: Java
+      color: "#fff"
+      icon: https://bu.dusays.com/2023/04/09/643293b1184e9.jpg
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://bu.dusays.com/2023/04/09/643293b0f0abe.png
+    - name: Photoshop
+      color: "#4082c3"
+      icon: https://bu.dusays.com/2022/12/15/639aa3a5c240e.png
+    - name: Node
+      color: "#333"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg
+    - name: Webpack
+      color: "#2e3a41"
+      icon: https://bu.dusays.com/2023/04/09/643293b68026c.png
+    - name: Pinia
+      color: "#fff"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/pinia-logo.svg
+    - name: Python
+      color: "#fff"
+      icon: https://bu.dusays.com/2023/04/09/643293b1230f7.png
+    - name: Vite
+      color: "#937df7"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/vite-logo.svg
+    - name: Flutter
+      color: "#4499e4"
+      icon: https://bu.dusays.com/2023/04/09/643293b1055c2.png
+    - name: Vue
+      color: "#b8f0ae"
+      icon: https://bu.dusays.com/2023/04/09/643293b6788bd.png
+    - name: React
+      color: "#222"
+      icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://bu.dusays.com/2022/12/15/639aa3a5c251e.png
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://bu.dusays.com/2023/04/09/643293b121f02.png
+    - name: HTML
+      color: "#e9572b"
+      icon: https://bu.dusays.com/2022/12/15/639aa3a5c241c.png
+    - name: Git
+      color: "#df5b40"
+      icon: https://bu.dusays.com/2023/04/09/643293b10ccdd.webp
+    - name: Apifox
+      color: "#e65164"
+      icon: https://bu.dusays.com/2022/11/19/6378d6458c6b6.png
