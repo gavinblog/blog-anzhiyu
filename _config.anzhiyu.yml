@@ -46,6 +46,38 @@ nav:
           link: https://chat.aichatos.top/
           icon: 
           
+    - title: 博客
+      item:
+        - name: 博客
+          link: https://geekswg.top/
+          icon: /imgs/favicon.png #  /img/favicon.png
+        - name: 自建ChatGPT
+          link: http://chatgpt.geekswg.top/
+          icon: 
+    - title: AI大模型
+      item:
+        - name: ChatGPT
+          link: https://chat.openai.com/
+          icon: 
+        - name: AutoChatGPT
+          link: https://github.com/7flash/AutoChatGPT
+          icon: 
+        - name: Bing-图像创建者
+          link: https://bing.com/create
+          icon: 
+        - name: Stable Diffusion Online
+          link: https://stablediffusionweb.com/
+          icon: 
+        - name: 文心一言
+          link: https://yiyan.baidu.com/
+          icon: 
+        - name: 文心一格
+          link: https://yige.baidu.com/
+          icon: 
+        - name: 讯飞星火
+          link: https://xinghuo.xfyun.cn/
+          icon: 
+    
     - title: 常用网址
       item:
         - name: 在线工具
@@ -61,6 +93,8 @@ nav:
         - name: 安知鱼云盘
           link: https://cloud.anzhiy.cn/
           icon: https://img02.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png
+  
+
 
 # Code Blocks (代码相关)
 # --------------------------------------
