@@ -13,6 +13,7 @@
       - 程序Coding
       - 分享Sharing
   helloAbout: Hello World!
+  
   skillsTips:
     tips: 技能
     title: 开启创造力
@@ -21,7 +22,8 @@
     title: 无限进步
     item:
       - EDU,软件工程专业
-    img: /imgs/t.png
+    img: /imgs/about-edu.png
+
   statistic:
     link: /archives
     text: 文章隧道
@@ -69,15 +71,15 @@
     comic_list:
       - name: 三体
         href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/63988658aa1b1.webp
+        cover: /imgs/t.png
       - name: 秦时明月
         href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://img02.anzhiy.cn/adminuploads/1/2022/12/13/6398864e572ed.webp
+        cover: /imgs/t.png
 
   like:
     like_tips: 关注偏好
     like_title: 数码科技
-    like_bg: 
+    like_bg: /imgs/t.png
     like_bottom: 手机、电脑软硬件
 
   music:
