@@ -1,8 +1,10 @@
 menu:
   AI:
     自建ChatGPT: http://chatgpt.geekswg.top/
+    Stable Diffusion Online: https://stablediffusionweb.com/
     文心一言: https://yiyan.baidu.com/ || fas fa-link
     文心一格: https://yige.baidu.com/ || fas fa-link
+    
   导航:
     博客-Hugo: https://geekswg.top || fas fa-link
     博客-Hexo: https://hexo.geekswg.top || fas fa-link
