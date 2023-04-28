@@ -615,8 +615,8 @@ canvas_ribbon:
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
-  enable: true
-  mobile: true
+  enable: false
+  mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -660,7 +660,7 @@ ClickShowText:
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化页面显示)
 beautify:
@@ -672,7 +672,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
+  global-font-size: 16px
   code-font-size:
   font-family:
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
@@ -925,7 +925,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: Images is loading ...
+  placeholder: /imgs/t.png
   blur: true
 
 # PWA
@@ -1010,7 +1010,7 @@ friends_vue:
   enable: true
   vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
   apiurl: https://friends.anzhiy.cn/ # 朋友圈后端地址
-  top_background: https://img02.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg
+  top_background: /imgs/bg-main.webp
 
 # 黑色模式粒子效果canvas
 universe:
