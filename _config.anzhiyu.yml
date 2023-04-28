@@ -588,7 +588,7 @@ tag_ui: # 留空或 index
 # Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: var(--anzhiyu-background)
+background: '/imgs/bg-main.webp' #var(--anzhiyu-background)
 
 # Footer Background
 footer_bg: '/imgs/bg-main.webp'
