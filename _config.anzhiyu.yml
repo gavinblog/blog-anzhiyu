@@ -640,7 +640,7 @@ activate_power_mode:
 fireworks:
   enable: true
   zIndex: 9999 # -1 or 9999
-  mobile: false
+  mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
@@ -656,7 +656,7 @@ ClickShowText:
     - YOU
   fontSize: 15px
   random: false
-  mobile: false
+  mobile: true
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -667,7 +667,7 @@ beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: "#F47466"
+  title-prefix-icon-color: "#F47466"  
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
