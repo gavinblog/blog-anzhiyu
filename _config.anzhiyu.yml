@@ -114,16 +114,14 @@ copy:
     enable: false
     limit_count: 50
 
-# social settings (社交图标设置)
-# formal:
-#   icon: link || the description || Animation
+#社交信息
 social:
-  Github: https://github.com/geekswg || icon-gitHub || faa-tada
-  Email: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=geekswg@qq.com || icon-youxiang || faa-tada
-  RSS: atom.xml || icon-rss || faa-tada
-  # BiliBili: https://space.bilibili.com/372204786 || icon-bilibili || faa-tada
-  QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || icon-QQ1 || faa-tada
-
+  Github: https://github.com/geekswg || anzhiyu-icon-github
+  Email: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=geekswg@qq.com || anzhiyu-icon-envelope
+  RSS: http://geekswg.js.cool/index.xml || anzhiyu-icon-rss
+  BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
+  QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
+# 作者状态
 author_status:
   enable: true
   status: ✍️
@@ -262,7 +260,7 @@ index_post_content:
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Post
 # --------------------------------------
@@ -386,13 +384,17 @@ valine:
   tagMeta: "博主,小伙伴,访客"
   option:
 
+# waline 评论插件配置
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
   serverURL: https://geek-waline.zeabur.app/ # Waline server address url
-  bg: # waline background
-  pageview: true
+  bg: /imgs/bg-waline.webp # waline background
+  pageview: false
   option:
+    meta: ["nick", "mail", "link"]
+    locale:
+      placeholder: 生活明朗，万物可爱
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
@@ -415,7 +417,7 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -450,6 +452,7 @@ crisp:
   enable: false
   website_id:
 
+# 页脚配置
 # Footer Settings
 # --------------------------------------
 footer:
@@ -457,24 +460,26 @@ footer:
     enable: true
     since: 2020
   custom_text:
-  copyright: false # Copyright of theme and framework
   runtime:
     enable: true
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    launch_time: 04/01/2010 13:14:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
-    work_description: 距离月入25k也就还差一个大佬带我~
+    work_description: 但行好事，莫问前程
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
-    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+    offduty_description: 天高任鸟飞，海阔凭鱼跃
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
       message: 博客框架为Hexo_v5.4.0 #徽标提示语
-    - link: https://www.dogecloud.com/
-      shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
-      message: 本站使用多吉云为静态资源提供CDN加速
-    - link: https://github.com/
+    - link: https://anzhiy.cn/
+      shields: https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg
+      message: 本站使用AnZhiYu主题
+    # - link: https://www.dogecloud.com/
+    #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
+    #   message: 本站使用多吉云为静态资源提供CDN加速
+    - link: https://github.com/gavinblog/blog-anzhiyu
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
       message: 本站项目由Github托管
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -737,17 +742,18 @@ aside:
   card_announcement:
     enable: false
     content: 欢迎来看我的博客鸭~
-  card_weixin:
+  #微信公众号
+  card_weixin: 
     enable: true
-    face: https://img02.anzhiy.cn/adminuploads/1/2022/09/11/631ddb7c9b250.png
-    backFace: https://img02.anzhiy.cn/adminuploads/1/2022/09/11/631ddeb0900b7.png
+    face: /imgs/t.png
+    backFace: /imgs/bg-waline.webp
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: false
+    enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
@@ -1012,7 +1018,7 @@ console:
 
 # 51a统计配置
 LA:
-  enable: true
+  enable: false
   ck: K2mM1vs6nmCWtp4K
   LingQueMonitorID: K2p99vzdYjQNd6HL
 
@@ -1048,7 +1054,30 @@ visitorMail:
 # 即刻页面配置
 essay:
   enable: true
-  top_background:
+  # 即刻页面 背景图
+  top_background: /imgs/t.png
+
+# ptool 文章底部工具
+ptool:
+  enable: true
+  categories: false # 是否显示分类
+  mode: # 运营模式与责任，不配置不显示
+
+# 欢迎语配置
+greetingBox:
+  enable: false
+
+# 文章顶部ai摘要
+post_head_ai_description:
+  enable: true
+  gptName: GeekChatGPT
+  mode: local # 默认模式 可选值: tianli/local
+  switchBtn: true # 可以配置是否显示切换按钮 以切换tianli/local
+  btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
+  randomNum: 3 # 按钮最大的随机次数，也就是一篇文章最大随机出来几种
+  basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
+  key: xxxx
+  Referer: https://xx.xx/
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)

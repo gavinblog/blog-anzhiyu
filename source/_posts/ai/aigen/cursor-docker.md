@@ -18,15 +18,10 @@ categories: ["AI"]
 #   enable: true
 #   url: ""
 featuredImage: "/images/posts/featured-image-preview.jpg"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
 
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+ai:
+  - Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。
+  - 本文真不错
 ---
 > 这一片关于Docker的文章，由AI工具Cursor写作
 作者: [Cursor](https://www.cursor.so/)

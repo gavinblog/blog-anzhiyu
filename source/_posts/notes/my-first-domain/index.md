@@ -14,15 +14,10 @@ categories: ["notes"]
 #   enable: true
 #   url: ""
 featuredImage: "/images/posts/featured-image-preview.jpg"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
 
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+ai:
+  - 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/)
+  - 本文摘要由ChatGPT智能生成。
 ---
 > 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/)
 > 用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01
