@@ -688,7 +688,7 @@ hr_icon:
 
 # the subtitle on homepage (主页subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度参数)
@@ -703,7 +703,7 @@ subtitle:
   # source: 2  调用一句网（简体） http://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source , 再显示 sub 的内容
-  source: 1
+  source: 3
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
     - 生活明朗&#44;万物可爱&#44;人间值得&#44;未来可期.
@@ -734,7 +734,7 @@ aside:
     category: true
   card_author:
     enable: true
-    type: 1 # 1为使用头像card 2为不适用头像card
+    type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
     description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div>
     button:
       enable: true
@@ -743,7 +743,7 @@ aside:
       link: /about/
   card_announcement:
     enable: true
-    content: 欢迎来看我的博客鸭~
+    content: 莫愁前路无知己，天下谁人不识君
   #微信公众号
   card_weixin: 
     enable: true
