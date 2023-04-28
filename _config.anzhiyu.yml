@@ -181,31 +181,31 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: '/imgs/default-cover.webp'
+index_img: /imgs/bg-main.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: '/imgs/default-cover.webp'
+default_top_img: /imgs/default-cover.webp
 
 # The banner image of archive page
-archive_img: '/imgs/t.png'
+archive_img: /imgs/t.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
-tag_img:
+tag_img: /imgs/t.png
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: '/imgs/t.png'
+tag_per_img: /imgs/t.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分类页面的 top_img)
-category_img: '/imgs/t.png'
+category_img: /imgs/t.png
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: '/imgs/t.png'
+category_per_img: /imgs/t.png
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -591,12 +591,13 @@ tag_ui: # 留空或 index
 background: var(--anzhiyu-background)
 
 # Footer Background
-footer_bg: true
+footer_bg: '/imgs/bg-main.webp'
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom: 100px
 
-# Enter transitions (开啓网页进入效果)
+# Enter transitions (开啓网页进入效果) 
+#网页开始效果 开启后 下面部分功能才能使用
 enter_transitions: true
 
 # Background effects (背景特效)
@@ -605,7 +606,7 @@ enter_transitions: true
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -614,13 +615,13 @@ canvas_ribbon:
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -630,10 +631,10 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: false #  open shake (抖动特效)
-  mobile: false
+  shake: true #  open shake (抖动特效)
+  mobile: true
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
@@ -689,6 +690,7 @@ hr_icon:
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
+# enter_transitions: true 时下面才生效
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
@@ -708,7 +710,9 @@ subtitle:
   source: 3
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
-    - 生活明朗&#44;万物可爱&#44;人间值得&#44;未来可期.
+    - 莫笑少年江湖梦，谁不少年梦江湖。曾经年少立志三千里，如今踌躇百步无寸功。
+    - 懵懂半生，庸碌尘世中，转眼高堂皆白发，儿女蹒跚学堂中。碎银几两催人老。
+    - 心仍少，皱纹却上眉目中，浮生醉酒回梦里。青春人依旧，只叹时光太匆匆！
 
 # Loading Animation (加载动画)
 preloader:
@@ -845,7 +849,7 @@ rightside_item_order:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: true
+medium_zoom: false
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
@@ -857,7 +861,7 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
@@ -902,7 +906,7 @@ aplayerInject:
 # 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: top-center
+  position: top-right
   bg_light: "#3b70fc" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
@@ -921,7 +925,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder:
+  placeholder: Images is loading ...
   blur: true
 
 # PWA
@@ -1020,7 +1024,7 @@ bubble:
 console:
   enable: true
 
-# 51a统计配置
+# 51a统计配置  https://user.51.la/i/product
 LA:
   enable: true
   ck: K2mM1vs6nmCWtp4K
@@ -1032,9 +1036,9 @@ diytitle:
   leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
   backTitle: ♪(^∇^*)欢迎肥来！
 
-# 留言弹幕配置
+# 留言弹幕配置  注意 仅支持Twikoo
 comment_barrage_config:
-  enable: true
+  enable: false
   # 同时最多显示弹幕数
   maxBarrage: 1
   # 弹幕显示间隔时间ms
@@ -1064,19 +1068,19 @@ essay:
 # ptool 文章底部工具
 ptool:
   enable: true
-  categories: false # 是否显示分类
+  categories: true # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
 
 # 欢迎语配置
 greetingBox:
-  enable: false
+  enable: true
 
 # 文章顶部ai摘要
 post_head_ai_description:
   enable: true
-  gptName: GeekChatGPT
+  gptName: Geek-人工-ChatGPT
   mode: local # 默认模式 可选值: tianli/local
-  switchBtn: true # 可以配置是否显示切换按钮 以切换tianli/local
+  switchBtn: false # 可以配置是否显示切换按钮 以切换tianli/local
   btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
   randomNum: 3 # 按钮最大的随机次数，也就是一篇文章最大随机出来几种
   basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
