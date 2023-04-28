@@ -2477,8 +2477,23 @@ figure.highlight pre .javascript .function {
 .error404 + #rightside {
   display: none;
 }
- {
-  body: 1;
+#about-page .author-content-item-group.column.mapAndInfo {
+  width: 100%;
+}
+#about-page .author-content-item-group.column {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+#about-page .author-content-item.map {
+  width: 50%;
+}
+#about-page .author-content-item.selfInfo {
+  height: 100%;
+  width: 49%;
 }
 .article-sort {
   margin-left: 10px;
@@ -4864,6 +4879,15 @@ h1.page-title + .tag-cloud-list {
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
 }
+#chatra:not(.chatra--expanded) {
+  visibility: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
+  filter: alpha(opacity=0) !important;
+  pointer-events: none;
+}
 #post-comment .comment-head {
   margin-bottom: 20px;
   font-size: 0.8em !important;
@@ -6078,9 +6102,6 @@ blockquote {
 }
 #article-container.post-content li:hover::marker {
   color: var(--pseudo-hover);
-}
-#article-container.post-content ul > li {
-  list-style-type: circle;
 }
 #article-container > :last-child {
   margin-bottom: 0 !important;
@@ -7300,6 +7321,12 @@ blockquote {
   background: url("/img/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
+  background-image: none;
+}
+#waline-wrap textarea {
+  background: url("/imgs/bg-waline.webp") 100% 100% no-repeat;
+}
+#waline-wrap textarea:focus {
   background-image: none;
 }
 .fireworks {
