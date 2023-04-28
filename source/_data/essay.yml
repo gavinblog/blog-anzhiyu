@@ -2,6 +2,8 @@
 
 - class_name: 即刻短文
   essay_list:
+    - content: 如
+      date: 2023/04/28
     - content: 音乐支持了参数设置自定义歌单
       date: 2023/01/02
       link: https://anzhiy.cn/music/?id=7269231710&server=tencent

@@ -99,30 +99,28 @@ nav:
           link: https://cloud.anzhiy.cn/
           icon: /imgs/favicon.png
   
-
-
 # Code Blocks (代码相关)
 # --------------------------------------
-
+# 代码块设置 ， 主题
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 330 # unit: px
-code_word_wrap: false
+highlight_height_limit: 420 # unit: px  #代码折叠高度
+code_word_wrap: true #自动换行
 
-# copy settings
+# copy settings 版权信息
 # copyright: Add the copyright information after copied content (複制的内容后面加上版权信息)
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 #社交信息
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
-  Email: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=geekswg@qq.com || anzhiyu-icon-envelope
+  Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
   RSS: http://geekswg.js.cool/index.xml || anzhiyu-icon-rss
   BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
   QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
@@ -177,10 +175,10 @@ favicon: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #/img/
 # Avatar (头像)
 avatar:
   img: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
-  effect: false
+  effect: true
 
 # Disable all banner image
-disable_top_img: '/imgs/bg-main.webp'
+disable_top_img: false
 
 # The banner image of home page
 index_img: '/imgs/default-cover.webp'
@@ -202,12 +200,12 @@ tag_per_img: '/imgs/t.png'
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分类页面的 top_img)
-category_img:
+category_img: '/imgs/t.png'
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: '/imgs/t.png'
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -277,14 +275,14 @@ toc:
   number: true
   expand: true
   style_simple: false # for post
-
+# 文章版权信息
 post_copyright:
   enable: true
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-
+#打赏信息
 # Sponsor/reward
 reward:
   enable: false
@@ -348,12 +346,11 @@ sharejs:
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
-  item: facebook,twitter,wechat,sina_weibo,email,copy_link
+  enable: true
+  item: wechat,sina_weibo,email,copy_link,facebook,twitter
 
 # Comments System 评论插件
 # --------------------------------------
-
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
@@ -570,10 +567,10 @@ theme_color:
   meta_theme_color_dark: "#18171d"
 
 # 表格隔行变色
-table_interlaced_discoloration: false
+table_interlaced_discoloration: true
 
 # 首页双栏显示
-article_double_row: false
+article_double_row: true
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
@@ -594,13 +591,13 @@ tag_ui: # 留空或 index
 background: var(--anzhiyu-background)
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom: 100px
 
 # Enter transitions (开啓网页进入效果)
-enter_transitions: false
+enter_transitions: true
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -608,7 +605,7 @@ enter_transitions: false
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -640,22 +637,22 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠标点击效果: 文字)
 ClickShowText:
-  enable: false
+  enable: true
   text:
-    # - I
-    # - LOVE
-    # - YOU
+    - I
+    - LOVE
+    - YOU
   fontSize: 15px
   random: false
   mobile: false
@@ -748,7 +745,7 @@ aside:
       link: /about/
   card_announcement:
     enable: true
-    content: 莫愁前路无知己，天下谁人不识君
+    content: 但行好事，莫问前程
   #微信公众号
   card_weixin: 
     enable: true
