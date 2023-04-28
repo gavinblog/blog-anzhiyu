@@ -180,16 +180,16 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: false
+disable_top_img: '/imgs/bg-main.webp'
 
 # The banner image of home page
-index_img: false
+index_img: '/imgs/default-cover.webp'
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: '/imgs/default-cover.webp'
 
 # The banner image of archive page
-archive_img: false
+archive_img: '/imgs/t.png'
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
@@ -198,7 +198,7 @@ tag_img:
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: '/imgs/t.png'
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分类页面的 top_img)
