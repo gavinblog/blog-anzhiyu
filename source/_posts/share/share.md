@@ -11,15 +11,10 @@ tags: ["分享","资源","软件"]
 categories: ["share"]
 
 featuredImage: "/images/posts/featured-image-preview.jpg"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
 
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+ai:
+  - 分享一些用过就离不开的开源软件或者免费的软件，免费且实用。注意：并不是所有的开源软件都是免费的，留意开源协议即可。分享 音乐、软件、网站等一切我觉得好玩或者有用的资源。
+  - 由人工Geek ChatGPT生成摘要内容。
 ---
 
 > 所有分享资源来自互联网，如有侵权请告知，会立即删除

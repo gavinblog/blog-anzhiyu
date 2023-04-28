@@ -20,8 +20,8 @@ categories: ["AI"]
 featuredImage: "/images/posts/featured-image-preview.jpg"
 
 ai:
-  - Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。
-  - 本文真不错
+  - 什么是 Docker？Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。Docker 的优势主要有以下几点
+  - 由人工Geek ChatGPT生成摘要内容。
 ---
 > 这一片关于Docker的文章，由AI工具Cursor写作
 作者: [Cursor](https://www.cursor.so/)

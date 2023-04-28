@@ -16,14 +16,14 @@ categories: ["notes"]
 featuredImage: "/images/posts/featured-image-preview.jpg"
 
 ai:
-  - 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/)
-  - 本文摘要由ChatGPT智能生成。
+  - 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/),用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01
+  - 由人工Geek ChatGPT生成摘要内容。
 ---
 > 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/)
 > 用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01
 <!--more-->
 
-前端时间苦于，github自带的G[ithub Pages](https://geekswg.github.io/) 提供二级域名，经常访问不了，而且速度比较慢。就下决心买了个域名。
+前端时间苦于，github自带的[Github Pages](https://geekswg.github.io/) 提供二级域名，经常访问不了，而且速度比较慢。就下决心买了个域名。
 
 ## 域名购买
 

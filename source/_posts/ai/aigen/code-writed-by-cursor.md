@@ -27,6 +27,10 @@ featuredImage: "/images/posts/featured-image-preview.jpg"
 #     src: featured-image-preview.jpg
 
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+
+ai:
+  - 记录由AI工具帮忙写的代码，越来越离不开Cusor了。> `Ctrl + K` 实现方法一个白名单网站数组，判断当前的文字是否在白名单内，如果在则放行跳转。
+  - 由人工Geek ChatGPT生成摘要内容。
 ---
 > 记录由AI工具帮忙写的代码，越来越离不开Cusor了。
 作者: [Cursor](https://www.cursor.so/)

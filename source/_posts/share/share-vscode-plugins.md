@@ -11,15 +11,10 @@ tags: ["分享","vscode","plugins"]
 categories: ["share"]
 
 featuredImage: "/images/posts/featured-image-preview.jpg"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
 
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+ai:
+  - 所有分享资源来自互联网，如有侵权请告知，会立即删除> 分享 VSCode 插件，提升编码效率，插件侠篇。小技巧：vscode插件栏目中，热门标签类目下的插件都是比较优秀和好用的插件，不知道用什么插件时去哪里可以发现很多宝藏的插件！推荐里面也能找到你想要的，微软这方面做的还是非常不错的。
+  - 由人工Geek ChatGPT生成摘要内容。
 ---
 
 所有分享资源来自互联网，如有侵权请告知，会立即删除
