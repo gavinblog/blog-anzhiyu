@@ -1020,7 +1020,7 @@ console:
 
 # 51a统计配置
 LA:
-  enable: false
+  enable: true
   ck: K2mM1vs6nmCWtp4K
   LingQueMonitorID: K2p99vzdYjQNd6HL
 
@@ -1034,7 +1034,7 @@ diytitle:
 comment_barrage_config:
   enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 3
+  maxBarrage: 1
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
