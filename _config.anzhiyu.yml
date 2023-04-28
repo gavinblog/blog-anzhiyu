@@ -1,11 +1,14 @@
 menu:
+
+  主页: http://geekswg.top/ || fas fa-link
+
   AI:
-    自建ChatGPT: http://chatgpt.geekswg.top/
-    Stable Diffusion Online: https://stablediffusionweb.com/
+    自建ChatGPT: http://chatgpt.geekswg.top/ || fas fa-link
+    Stable Diffusion Online: https://stablediffusionweb.com/ || fas fa-link
     文心一言: https://yiyan.baidu.com/ || fas fa-link
     文心一格: https://yige.baidu.com/ || fas fa-link
     
-  导航:
+  导航: 
     博客-Hugo: https://geekswg.top || fas fa-link
     博客-Hexo: https://hexo.geekswg.top || fas fa-link
     AI-ChatGPT: https://chat.aichatos.top/ || fas fa-link
@@ -21,15 +24,17 @@ menu:
     留言板: /comments/ || fas fa-envelope
 
   我的:
-    音乐馆: /music/ || fas fa-music
+    🎶音乐馆: /music/ || fas fa-music
     追番页: /bangumis/ || icon-bilibili1
     相册集: /album/ || fas fa-images
     #小空调: /air-conditioner/ || fas fa-fan
 
-  关于:
+  关于​:
     关于本人: /about/ || icon-zhifeiji
     闲言碎语: /essay/ || fas fas fa-lightbulb
-    随便逛逛: javascript:toRandomPost() || fas fa-shoe-prints
+    🔀随便逛逛: javascript:toRandomPost() || fas fa-shoe-prints
+
+  🏆​毕少侠: /about/ || icon-zhifeiji
 
 # nav相关配置
 nav:
