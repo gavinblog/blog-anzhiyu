@@ -3,7 +3,10 @@ title: categories
 date: 2023-04-13 13:21:48
 
 aside: false
-top_img: false
+
+# 是否显示顶部图片
+top_img: /imgs/default-cover.webp
+
 ---
 
 <style>
@@ -17,21 +20,21 @@ top_img: false
 <div id="lib-cards" class="container">
 
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/notes/")'>
-<card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e144528fb.webp">
+<card data-image="/imgs/default-cover.webp">
 <h1 slot="header">笔记</h1>
 <p slot="content">日常笔记，好记性不然烂笔头</p>
 </card>
 </a>
 
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/share/")'>
-  <card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e1433f197.webp">
+  <card data-image="/imgs/default-cover.webp">
     <h1 slot="header">分享</h1>
     <p slot="content">这里分享我用过的软件，资源，和好用的插件。</p>
   </card>
 </a>
 
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")'>
-  <card data-image="https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315e142a69a9.webp">
+  <card data-image="/imgs/default-cover.webp">
     <h1 slot="header">AI</h1>
     <p slot="content">AI人工只能都在这里。</p>
   </card>

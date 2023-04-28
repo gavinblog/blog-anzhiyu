@@ -16,12 +16,14 @@
   
   skillsTips:
     tips: 技能
-    title: 开启创造力
+    title: Java是世界上最好的语言
   careers:
     tips: 生涯
-    title: 无限进步
+    title: 学海无涯，回头是岸
     item:
       - EDU,软件工程专业
+      - EDU2,软件工程专业
+      - EDU3,软件工程专业
     img: /imgs/about-edu.png
 
   statistic:

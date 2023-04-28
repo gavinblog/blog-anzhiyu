@@ -213,8 +213,8 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
-  default_cover:
-    - /img/default_cover.jpg
+  default_cover: # 默认封面
+    - /imgs/default-cover.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -996,7 +996,7 @@ home_top:
   banner:
     tips: 新品主题
     title: Theme-AnZhiYu
-    image: https://img02.anzhiy.cn/adminuploads/1/2023/03/27/64215d46a1ca6.webp
+    image: /imgs/t.png
     link: https://anzhiy.cn/posts/220c.html
 
 # 朋友圈配置
