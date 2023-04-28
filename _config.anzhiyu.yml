@@ -92,7 +92,7 @@ nav:
 
         - name: 安知鱼云盘
           link: https://cloud.anzhiy.cn/
-          icon: https://img02.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png
+          icon: /imgs/favicon.png
   
 
 
@@ -720,7 +720,7 @@ aside:
   hide: false
   button: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   display:
     archive: true
     tag: true
@@ -1014,7 +1014,7 @@ console:
 LA:
   enable: true
   ck: K2mM1vs6nmCWtp4K
-  LingQueMonitorID:
+  LingQueMonitorID: K2p99vzdYjQNd6HL
 
 # 标签卖萌
 diytitle:
@@ -1024,9 +1024,9 @@ diytitle:
 
 # 留言弹幕配置
 comment_barrage_config:
-  enable: false
+  enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 1
+  maxBarrage: 3
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
