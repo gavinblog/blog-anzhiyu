@@ -728,6 +728,7 @@ preloader:
 
 # aside (侧边栏)
 # --------------------------------------
+# 作者信息配置
 aside:
   enable: true
   hide: false
