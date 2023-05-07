@@ -392,7 +392,7 @@ valine:
 waline:
   serverURL: https://geek-waline.zeabur.app/ # Waline server address url
   bg: /imgs/bg-waline.webp # waline background
-  pageview: false
+  pageview: true
   option:
     meta: ["nick", "mail", "link"]
     locale:
@@ -419,7 +419,7 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -427,7 +427,7 @@ chat_hide_show: false
 # chatra
 # https://chatra.io/
 chatra:
-  enable: true
+  enable: false
   id: GLzsvy6qAitQ9QoHA
 
 # tidio
@@ -460,7 +460,7 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2011
   custom_text:
   runtime:
     enable: true
