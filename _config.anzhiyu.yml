@@ -528,9 +528,9 @@ footer:
             link: https://github.com/travellings-link/travellings
       - title: 主题
         links:
-          - title: 文档
-            link: /docs/
-          - title: 源码
+          - title: 主题文档
+            link: https://anzhiy.cn/docs/
+          - title: 主题源码
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
           - title: 更新日志
             link: /update/
