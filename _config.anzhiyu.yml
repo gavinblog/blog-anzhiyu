@@ -893,7 +893,7 @@ readmode: true
 
 # dark mode 夜间模式
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自动切换 dark mode和 light mode)
