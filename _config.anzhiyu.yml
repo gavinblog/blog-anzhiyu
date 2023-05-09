@@ -490,7 +490,66 @@ footer:
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
-
+  # 底部导航 >= 1.1.9
+  socialBar:
+    enable: false
+    centerImg:
+    left:
+      - title: email
+        link: mailto:geekswg@qq.com
+        icon: anzhiyufont anzhiyu-icon-envelope
+      - title: 微博
+        link: https://weibo.com/u/123456
+        icon: anzhiyufont anzhiyu-icon-weibo
+      - title: facebook
+        link: https://www.facebook.com/profile.php?id=100092208016288&sk=about
+        icon: anzhiyufont anzhiyu-icon-envelope
+    right:
+      - title: Github
+        link: https://github.com/geekswg
+        icon: anzhiyufont anzhiyu-icon-github
+      - title: Bilibili
+        link: https://space.bilibili.com/39865904
+        icon: anzhiyufont anzhiyu-icon-bilibili
+      - title: 抖音
+        link: https://www.douyin.com/user/MS4wLjABAAAA7wEzz2PEAVqUc8bQxcCPGOV9r1zmjMooBHGKcVuP1Es
+        icon: anzhiyufont anzhiyu-icon-envelope
+  list:
+    enable: false
+    randomFriends: 3
+    project:
+      - title: 服务
+        links:
+          - title: 51la统计
+            link: https://v6.51.la/
+          - title: 十年之约
+            link: https://www.foreverblog.cn/
+          - title: 开往
+            link: https://github.com/travellings-link/travellings
+      - title: 主题
+        links:
+          - title: 文档
+            link: /docs/
+          - title: 源码
+            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+          - title: 更新日志
+            link: /update/
+      - title: 导航
+        links:
+          - title: 即刻短文
+            link: /essay/
+          - title: 友链文章
+            link: /fcircle/
+          - title: 留言板
+            link: /comments/
+      - title: 协议
+        links:
+          - title: 隐私协议
+            link: /privacy/
+          - title: Cookies
+            link: /cookies/
+          - title: 版权协议
+            link: /copyright/
 # Analysis
 # --------------------------------------
 
@@ -547,13 +606,14 @@ site_verification:
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
-# 主题颜色配置
+
 theme_color:
   enable: true
-  #   main: "#3b70fc"
+  main: "#3b70fc"
+  dark_main: "#0084ff"
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
-  text_selection: "#3b70fc"
+  text_selection: "#2128bd"
   link_color: "var(--anzhiyu-fontcolor)"
   meta_color: "var(--anzhiyu-fontcolor)"
   #   hr_color: "#A4D8FA"
@@ -562,7 +622,7 @@ theme_color:
   toc_color: "#3b70fc"
   #   blockquote_padding_color: "#3b70fc"
   #   blockquote_background_color: "#3b70fc"
-  scrollbar_color: "#3b70fc"
+  scrollbar_color: "var(--anzhiyu-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
 
