@@ -1,9 +1,9 @@
 # 友链配置文件
 
 - class_name: 博客
-  # hundredSuffix: "!w120   flink_style: flexcard || anzhiyu
-  hundredSuffix: "!w12
+  # 可以自行配置 hundredSuffix: "!w120"    flink_style: flexcard || anzhiyu
   flink_style: anzhiyu
+  hundredSuffix: "!w12"
   link_list:
     - name: 毕少侠-Hugo
       link: https://geekswg.top/
