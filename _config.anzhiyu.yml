@@ -460,7 +460,7 @@ footer:
   owner:
     enable: true
     since: 2011
-  custom_text:
+  custom_text: copyright@geekswg 2010 ~ Now
   runtime:
     enable: true
     launch_time: 04/01/2010 13:14:00 # 网站上线时间
@@ -647,10 +647,10 @@ tag_ui: # 留空或 index
 # Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: var(--anzhiyu-background) #var(--anzhiyu-background)
+background: var(--anzhiyu-background)
 
 # Footer Background
-footer_bg: 
+footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom: 100px
