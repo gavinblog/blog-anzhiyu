@@ -33,10 +33,8 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install hexo dependencies
-      # 下载 hexo-cli 脚手架及相关安装包 # npm i hexo-theme-anzhiyu npm update hexo-theme-anzhiyu
+      # 下载 hexo-cli 脚手架及相关安装包
       run: |
-        git clone -b dev https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
-        git pull
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
