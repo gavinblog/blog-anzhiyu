@@ -20,62 +20,7 @@
       avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
       descr: 毕少侠也在江湖。
       siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
-
+    
 - class_name: 框架
   flink_style: flexcard
   link_list:
@@ -91,7 +36,7 @@
 
 
 - class_name: 推荐博客
-  flink_style: anzhiyu
+  flink_style: flexcard
   link_list:
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
@@ -111,7 +56,7 @@
 
 - class_name: 小伙伴
   class_desc: 那些人，那些事
-  flink_style: flexcard
+  flink_style: anzhiyu
   link_list:
     - name: 安知鱼
       link: https://anzhiy.cn/
@@ -287,6 +232,61 @@
       avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
       descr: 毕少侠也在江湖By hexo-theme-anzhiyu
       siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hexo
+      link: https://hexo.geekswg.top/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
+      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hexo
+      link: https://hexo.geekswg.top/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
+      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hexo
+      link: https://hexo.geekswg.top/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
+      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
+    - name: 毕少侠-Hugo
+      link: https://geekswg.js.cool/
+      avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png
+      descr: 毕少侠也在江湖。
+      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.png

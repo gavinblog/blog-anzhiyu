@@ -1,5 +1,5 @@
 ---
-title: link
+title: 莫愁前路无知己，天下谁人不识君
 date: 2023-04-13 13:34:33
 
 type: link # 友链页面
