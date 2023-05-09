@@ -870,7 +870,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (简繁转换)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
