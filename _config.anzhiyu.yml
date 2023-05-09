@@ -1,38 +1,37 @@
 menu:
 
-  主页: http://geekswg.top/ || fas fa-link
+  主页: http://geekswg.top/ || anzhiyu-icon-link
 
   AI:
-    自建ChatGPT: http://chatgpt.geekswg.top/ || fas fa-link
-    Stable Diffusion Online: https://stablediffusionweb.com/ || fas fa-link
-    文心一言: https://yiyan.baidu.com/ || fas fa-link
-    文心一格: https://yige.baidu.com/ || fas fa-link
+    自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
+    Stable Diffusion Online: https://stablediffusionweb.com/ || anzhiyu-icon-link
+    文心一言: https://yiyan.baidu.com/ || anzhiyu-icon-link
+    文心一格: https://yige.baidu.com/ || anzhiyu-icon-link
     
   导航: 
-    博客-Hugo: https://geekswg.top || fas fa-link
-    博客-Hexo: https://hexo.geekswg.top || fas fa-link
-    AI-ChatGPT: https://chat.aichatos.top/ || fas fa-link
+    博客-Hugo: https://geekswg.top || anzhiyu-icon-link
+    博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
+    AI-ChatGPT: https://chat.aichatos.top/ || anzhiyu-icon-link
 
   博客:
-    文章: /archives/ || fas fa-archive
-    分类: /categories/ || fas fa-shapes
-    标签: /tags/ || fas fa-tags
+    文章: /archives/ || anzhiyu-icon-box-archive
+    分类: /categories/ || anzhiyu-icon-shapes
+    标签: /tags/ || anzhiyu-icon-tags
 
   友链:
-    友人帐: /link/ || fas fa-link
-    朋友圈: /fcircle/ || fab fa-artstation
-    留言板: /comments/ || fas fa-envelope
+    友人帐: /link/ || anzhiyu-icon-link
+    朋友圈: /fcircle/ || anzhiyu-icon-artstation
+    留言板: /comments/ || anzhiyu-icon-envelope
 
   我的:
-    🎶音乐馆: /music/ || fas fa-music
-    追番页: /bangumis/ || icon-bilibili1
-    相册集: /album/ || fas fa-images
+    追番页: /bangumis/ || anzhiyu-icon-bilibili
+    相册集: /album/ || anzhiyu-icon-images
     #小空调: /air-conditioner/ || fas fa-fan
 
-  关于​:
-    关于本人: /about/ || icon-zhifeiji
-    闲言碎语: /essay/ || fas fas fa-lightbulb
-    🔀随便逛逛: javascript:toRandomPost() || fas fa-shoe-prints
+  关于:
+    关于本人: /about/ || anzhiyu-icon-paper-plane
+    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1  
 
   🏆​毕少侠: /about/ || icon-zhifeiji
 
