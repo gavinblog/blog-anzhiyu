@@ -1868,7 +1868,7 @@ i.anzhiyu-icon-hashtag {
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
   --pseudo-hover: #ff7242;
   --headline-presudo: var(--anzhiyu-fontcolor);
-  --scrollbar-color: #3b70fc;
+  --scrollbar-color: var(--anzhiyu-scrollbar);
 }
 body {
   position: relative;
@@ -1981,7 +1981,7 @@ table td {
   border: var(--style-border-always);
 }
 *::selection {
-  background: #3b70fc;
+  background: #2128bd;
   color: #f7f7f7;
 }
 button {
