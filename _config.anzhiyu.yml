@@ -492,7 +492,7 @@ footer:
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   # 底部导航 >= 1.1.9
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
       - title: email
@@ -1147,6 +1147,11 @@ post_head_ai_description:
   basicWordCount: 1000 # 最低获取字符数, 最小1000, 最大1999
   key: xxxx
   Referer: https://xx.xx/
+
+# 快捷键配置 >=1.1.10 增加功能
+shortcutKey:
+  enable: true
+  delay: 300 # shift按下延时多久开启
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)

@@ -2,7 +2,10 @@
 
 - class_name: 即刻短文
   essay_list:
-    - content: 如
+    - content: hello world !
+      date: 2023/04/28
+      link: https://geekswg.js.cool/
+    - content: hello world !
       date: 2023/04/28
     - content: 音乐支持了参数设置自定义歌单
       date: 2023/01/02
