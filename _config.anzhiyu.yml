@@ -44,7 +44,7 @@ menu:
 nav:
   enable: true
   travelling: true
-  clock: true
+  clock: true  # 左上角天气挂件开关
   menu:
     - title: 网页
       item:
