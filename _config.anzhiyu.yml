@@ -179,7 +179,7 @@ favicon: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #/img/
 # Avatar (头像)
 avatar:
   img: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
-  effect: true
+  effect: false  # 头像一直旋转
 
 # Disable all banner image
 disable_top_img: false
@@ -495,10 +495,10 @@ footer:
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
-  # 底部导航 >= 1.1.9
+
   socialBar:
     enable: true
-    centerImg:
+    centerImg: /imgs/zhifeiji.gif # 必须配置这个才显示
     left:
       - title: email
         link: mailto:geekswg@qq.com
@@ -547,14 +547,14 @@ footer:
             link: /fcircle/
           - title: 留言板
             link: /comments/
-      - title: 协议
-        links:
-          - title: 隐私协议
-            link: /privacy/
-          - title: Cookies
-            link: /cookies/
-          - title: 版权协议
-            link: /copyright/
+      #- title: 协议  #协议学要自己写页面，我直接注释了
+      #  links:
+      #    - title: 隐私协议
+      #      link: /privacy/
+      #    - title: Cookies
+      #      link: /cookies/
+      #    - title: 版权协议
+      #      link: /copyright/
 
 # Analysis
 # --------------------------------------
