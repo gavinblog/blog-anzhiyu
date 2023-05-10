@@ -2,6 +2,8 @@
 var anzhiyu_musicFirst = false;
 // 音乐播放状态
 var anzhiyu_musicPlaying = false;
+// 是否开启快捷键
+var anzhiyu_keyboard = false
 
 var adjectives = [
   "美丽的",
@@ -411,7 +413,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const fetchUrl = async url => {
-      console.info(url);
       const response = await fetch(url);
       return await response.json();
     };
@@ -488,7 +489,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 當滾動條小于 56 的時候
     if (document.body.scrollHeight <= innerHeight) {
       $rightside.style.cssText = "opacity: 1; transform: translateX(-58px)";
-      return;
     }
 
     // find the scroll direction
@@ -563,20 +563,20 @@ document.addEventListener("DOMContentLoaded", function () {
       const $cardTocLayout = document.getElementById("card-toc");
       $cardToc = $cardTocLayout.getElementsByClassName("toc-content")[0];
       $tocLink = $cardToc.querySelectorAll(".toc-link");
-      const $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
+      // const $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
       isExpand = $cardToc.classList.contains("is-expand");
 
-      scrollPercent = currentTop => {
-        const docHeight = $article.clientHeight;
-        const winHeight = document.documentElement.clientHeight;
-        const headerHeight = $article.offsetTop;
-        const contentMath =
-          docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
-        const scrollPercent = (currentTop - headerHeight) / contentMath;
-        const scrollPercentRounded = Math.round(scrollPercent * 100);
-        const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 0 : scrollPercentRounded;
-        $tocPercentage.textContent = percentage;
-      };
+      // scrollPercent = currentTop => {
+      //   const docHeight = $article.clientHeight;
+      //   const winHeight = document.documentElement.clientHeight;
+      //   const headerHeight = $article.offsetTop;
+      //   const contentMath =
+      //     docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
+      //   const scrollPercent = (currentTop - headerHeight) / contentMath;
+      //   const scrollPercentRounded = Math.round(scrollPercent * 100);
+      //   const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 0 : scrollPercentRounded;
+      //   $tocPercentage.textContent = percentage;
+      // };
 
       window.mobileToc = {
         open: () => {
@@ -672,7 +672,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.tocScrollFn = function () {
       return anzhiyu.throttle(function () {
         const currentTop = window.scrollY || document.documentElement.scrollTop;
-        isToc && scrollPercent(currentTop);
+        // isToc && scrollPercent(currentTop);
         findHeadPosition(currentTop);
       }, 100)();
     };
@@ -752,6 +752,16 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         consoleEl.classList.add("show");
       }
+      const consoleKeyboard = document.querySelector("#consoleKeyboard");
+      if (consoleKeyboard) {
+        if (localStorage.getItem("keyboardToggle") === "true") {
+          consoleKeyboard.classList.add("on");
+          anzhiyu_keyboard = true;
+        } else {
+          consoleKeyboard.classList.remove("on");
+          anzhiyu_keyboard = false;
+        }
+      }
     },
 
     runMobileToc: () => {
@@ -796,7 +806,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e => {
       anzhiyu.removeRewardMask();
     },
-    false
+    { passive: true }
   );
 
   /**
@@ -1027,49 +1037,64 @@ document.addEventListener("DOMContentLoaded", function () {
     let body = document.querySelector("body");
     body.appendChild(div);
 
-    document.getElementById("post-comment").addEventListener("DOMNodeInserted", dom => {
-      if (dom.target.classList && dom.target.classList.value == "OwO-body") {
-        let owo_body = dom.target;
-
-        // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
-        owo_body.addEventListener("contextmenu", e => e.preventDefault());
-
-        // 鼠标移入
-        owo_body.addEventListener("mouseover", e => {
-          if (e.target.tagName == "IMG" && flag) {
-            flag = 0;
-            // 移入300毫秒后显示盒子
-            owo_time = setTimeout(() => {
-              let height = e.target.clientHeight * m; // 盒子高
-              let width = e.target.clientWidth * m; // 盒子宽
-              let left = e.x - e.offsetX - (width - e.target.clientWidth) / 2; // 盒子与屏幕左边距离
-              if (left + width > body.clientWidth) {
-                left -= left + width - body.clientWidth + 10;
-              } // 右边缘检测，防止超出屏幕
-              if (left < 0) left = 10; // 左边缘检测，防止超出屏幕
-              let top = e.y - e.offsetY; // 盒子与屏幕顶部距离
-
-              // 设置盒子样式
-              div.style.height = height + "px";
-              div.style.width = width + "px";
-              div.style.left = left + "px";
-              div.style.top = top + "px";
-              div.style.display = "flex";
-              // 在盒子中插入图片
-              div.innerHTML = `<img src="${e.target.src}">`;
-            }, 300);
+    // 监听 post-comment 元素的子元素添加事件
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        const addedNodes = mutation.addedNodes;
+        // 判断新增的节点中是否包含 OwO-body 类名的元素
+        for (let i = 0; i < addedNodes.length; i++) {
+          const node = addedNodes[i];
+          if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains("OwO-body")) {
+            const owo_body = node;
+            // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
+            owo_body.addEventListener("contextmenu", e => e.preventDefault());
+            // 鼠标移入
+            owo_body.addEventListener("mouseover", handleMouseOver);
+            // 鼠标移出
+            owo_body.addEventListener("mouseout", handleMouseOut);
           }
-        });
-
-        // 鼠标移出
-        owo_body.addEventListener("mouseout", e => {
-          // 隐藏盒子
-          div.style.display = "none";
-          flag = 1;
-          clearTimeout(owo_time);
-        });
-      }
+        }
+      });
     });
+
+    // 配置 MutationObserver 选项
+    const config = { childList: true, subtree: true };
+
+    // 开始监听
+    observer.observe(document.getElementById("post-comment"), config);
+
+    function handleMouseOver(e) {
+      if (e.target.tagName == "IMG" && flag) {
+        flag = 0;
+        // 移入100毫秒后显示盒子
+        owo_time = setTimeout(() => {
+          let height = e.target.clientHeight * m; // 盒子高
+          let width = e.target.clientWidth * m; // 盒子宽
+          let left = e.x - e.offsetX - (width - e.target.clientWidth) / 2; // 盒子与屏幕左边距离
+          if (left + width > body.clientWidth) {
+            left -= left + width - body.clientWidth + 10;
+          } // 右边缘检测，防止超出屏幕
+          if (left < 0) left = 10; // 左边缘检测，防止超出屏幕
+          let top = e.y - e.offsetY; // 盒子与屏幕顶部距离
+
+          // 设置盒子样式
+          div.style.height = height + "px";
+          div.style.width = width + "px";
+          div.style.left = left + "px";
+          div.style.top = top + "px";
+          div.style.display = "flex";
+          // 在盒子中插入图片
+          div.innerHTML = `<img src="${e.target.src}">`;
+        }, 100);
+      }
+    }
+
+    function handleMouseOut(e) {
+      // 隐藏盒子
+      div.style.display = "none";
+      flag = 1;
+      clearTimeout(owo_time);
+    }
   };
 
   // 网页百分比
