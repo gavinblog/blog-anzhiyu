@@ -1,5 +1,5 @@
 ---
-title: categories
+title: 非学无以广才，非志无以成学
 date: 2023-04-13 13:21:48
 
 aside: false
@@ -22,7 +22,7 @@ top_img: /imgs/default-cover.webp
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/notes/")'>
 <card data-image="/imgs/default-cover.webp">
 <h1 slot="header">笔记</h1>
-<p slot="content">日常笔记，好记性不然烂笔头</p>
+<p slot="content">日常笔记，好记性不如烂笔头</p>
 </card>
 </a>
 
@@ -36,7 +36,7 @@ top_img: /imgs/default-cover.webp
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")'>
   <card data-image="/imgs/default-cover.webp">
     <h1 slot="header">AI</h1>
-    <p slot="content">AI人工只能都在这里。</p>
+    <p slot="content">AI人工智能都在这里。</p>
   </card>
 </a>
 
