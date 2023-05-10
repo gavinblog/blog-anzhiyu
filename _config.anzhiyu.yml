@@ -891,16 +891,17 @@ translate:
 # Read Mode (閲读模式)
 readmode: true
 
-# dark mode 夜间模式
+# dark mode 夜间模式 
+# 关了，有点有小问题，目前没找到那个地方有问题，把主页欢迎关了才行，浅色主题配色才能正常显示，自己根据需求配置吧。
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自动切换 dark mode和 light mode)
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 1
+  autoChangeMode: false
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
