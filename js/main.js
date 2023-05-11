@@ -195,10 +195,15 @@ document.addEventListener("DOMContentLoaded", function () {
    * 首頁top_img底下的箭頭
    */
   const scrollDownInIndex = () => {
+    const $bbTimeList = document.getElementById("bbTimeList");
     const $scrollDownEle = document.getElementById("scroll-down");
     $scrollDownEle &&
       $scrollDownEle.addEventListener("click", function () {
-        anzhiyu.scrollToDest(document.getElementById("content-inner").offsetTop, 300);
+        if ($bbTimeList) {
+          anzhiyu.scrollToDest($bbTimeList.offsetTop, 300);
+        } else {
+          anzhiyu.scrollToDest(document.getElementById("content-inner").offsetTop, 300);
+        }
       });
   };
 
@@ -485,6 +490,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollFn = function () {
     const $rightside = document.getElementById("rightside");
     const innerHeight = window.innerHeight + 56;
+    let lastScrollTop = 0;
 
     // 當滾動條小于 56 的時候
     if (document.body.scrollHeight <= innerHeight) {
@@ -507,6 +513,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const scroolTask = anzhiyu.throttle(() => {
       const currentTop = window.scrollY || document.documentElement.scrollTop;
       const isDown = scrollDirection(currentTop);
+
+      const delta = Math.abs(lastScrollTop - currentTop);
+      if (delta < 50 && delta!=0) {
+        // ignore small scrolls
+        return;
+      }
+      lastScrollTop = currentTop;
       if (currentTop > 16) {
         if (isDown) {
           if ($header.classList.contains("nav-visible")) $header.classList.remove("nav-visible");
