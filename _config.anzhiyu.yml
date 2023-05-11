@@ -211,6 +211,10 @@ category_img: /imgs/t.png
 #  - category name: xxxxx
 category_per_img: /imgs/t.png
 
+
+# 开启一图流 >=1.1.11
+OneGraphFlow: false
+
 cover:
   # display the cover or not (是否显示文章封面)
   index_enable: true
@@ -506,9 +510,9 @@ footer:
       - title: 微博
         link: https://weibo.com/u/123456
         icon: anzhiyufont anzhiyu-icon-weibo
-      - title: facebook
-        link: https://www.facebook.com/profile.php?id=100092208016288&sk=about
-        icon: anzhiyufont anzhiyu-icon-envelope
+      #- title: facebook
+      #  link: https://www.facebook.com/profile.php?id=100092208016288&sk=about
+      #  icon: anzhiyufont anzhiyu-icon-facebook1
     right:
       - title: Github
         link: https://github.com/geekswg
@@ -518,7 +522,7 @@ footer:
         icon: anzhiyufont anzhiyu-icon-bilibili
       - title: 抖音
         link: https://www.douyin.com/user/MS4wLjABAAAA7wEzz2PEAVqUc8bQxcCPGOV9r1zmjMooBHGKcVuP1Es
-        icon: anzhiyufont anzhiyu-icon-envelope
+        icon: anzhiyufont anzhiyu-icon-tiktok
   list:
     enable: true
     randomFriends: 3
@@ -894,7 +898,7 @@ readmode: true
 # dark mode 夜间模式 
 # 关了，有点有小问题，目前没找到那个地方有问题，把主页欢迎关了才行，浅色主题配色才能正常显示，自己根据需求配置吧。
 darkmode:
-  enable: false
+  enable: true
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自动切换 dark mode和 light mode)
@@ -995,6 +999,7 @@ lazyload:
   field: site # site/post
   placeholder: /imgs/t.png
   blur: true
+  progressive: true #>=1.1.11
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -1134,10 +1139,15 @@ essay:
   top_background: /imgs/t.png
 
 # ptool 文章底部工具
+# ptool 文章底部工具
 ptool:
   enable: true
-  categories: true # 是否显示分类
+  share_mobile: true
+  share_weibo: true
+  share_copyurl: true
+  categories: false # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
+
 
 # 欢迎语配置
 greetingBox:
