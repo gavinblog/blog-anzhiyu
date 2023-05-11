@@ -1050,8 +1050,8 @@ envelope_comment:
 home_top:
   enable: true # 开关
   timemode: date #date/updated
-  title: home_top-title
-  subTitle: home_top-subTitle
+  title: 等风来
+  subTitle: 不如追风去
   siteText: 毕少侠也在江湖
   category:
     - name: 笔记
