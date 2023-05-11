@@ -99,18 +99,18 @@ nav:
           link: https://yiyan.baidu.com/
           icon: /imgs/favicon.png
 
-        - name: 安知鱼云盘
-          link: https://cloud.anzhiy.cn/
-          icon: /imgs/favicon.png
+        #- name: 安知鱼云盘
+        #  link: https://cloud.anzhiy.cn/
+        #  icon: /imgs/favicon.png
   
 # Code Blocks (代码相关)
 # --------------------------------------
 # 代码块设置 ， 主题
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: pale #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 420 # unit: px  #代码折叠高度
+highlight_height_limit: 512 # unit: px  #代码折叠高度
 code_word_wrap: true #自动换行
 
 # copy settings 版权信息
@@ -474,9 +474,9 @@ footer:
   runtime:
     enable: true
     launch_time: 04/01/2010 13:14:00 # 网站上线时间
-    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+    work_img: /imgs/zhifeiji.gif #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 但行好事，莫问前程
-    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+    offduty_img: /imgs/zhifeiji.gif #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
     offduty_description: 天高任鸟飞，海阔凭鱼跃
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
@@ -502,7 +502,7 @@ footer:
 
   socialBar:
     enable: true
-    centerImg: /imgs/zhifeiji.gif # 必须配置这个才显示
+    centerImg: /imgs/zhifeiji.gif # 底部导航图标，默认是头像
     left:
       - title: 主页
         link: https://geekswg.js.cool
