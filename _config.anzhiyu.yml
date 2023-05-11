@@ -504,6 +504,9 @@ footer:
     enable: true
     centerImg: /imgs/zhifeiji.gif # 必须配置这个才显示
     left:
+      - title: 主页
+        link: https://geekswg.js.cool
+        icon: anzhiyufont anzhiyu-icon-paper-plane
       - title: email
         link: mailto:geekswg@qq.com
         icon: anzhiyufont anzhiyu-icon-envelope
