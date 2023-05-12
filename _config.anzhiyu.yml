@@ -360,13 +360,23 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Waline # 评论插件 Valine/Waline/Twikoo/Artalk
+  use: Twikoo # 评论插件 Valine/Waline/Twikoo/Artalk
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
   count: true # Display comment count in post's top_img
   card_post_count: true # Display comment count in Home Page
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  # https://railway.app/ 部署
+  # https://dash.zeabur.com/  zeabur部署 推荐
+  envId: https://twikoo-railway.up.railway.app 
+  region:
+  visitor: true
+  option:
 
 # valine
 # https://valine.js.org
@@ -404,13 +414,7 @@ waline:
     locale:
       placeholder: 但行好事，莫问前程
 
-# Twikoo
-# https://github.com/imaegoo/twikoo
-twikoo:
-  envId:
-  region:
-  visitor: false
-  option:
+
 
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
