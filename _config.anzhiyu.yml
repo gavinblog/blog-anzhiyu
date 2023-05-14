@@ -11,7 +11,8 @@ menu:
   导航: 
     博客-Hugo: https://geekswg.top || anzhiyu-icon-link
     博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
-    AI-ChatGPT: https://chat.aichatos.top/ || anzhiyu-icon-link
+    51网络统计: https://v6.51.la/report/overview?comId=287570 || anzhiyu-icon-link
+    Github监控: https://www.githubstatus.com/ || anzhiyu-icon-link
 
   博客:
     文章: /archives/ || anzhiyu-icon-box-archive
@@ -505,7 +506,7 @@ footer:
 
   socialBar:
     enable: true
-    centerImg: /imgs/zhifeiji.gif # 必须配置这个才显示
+    centerImg: /imgs/zhifeiji.gif # 这里的逻辑是，当前设置 > 默认头像
     left:
       - title: 主页
         link: https://geekswg.js.cool
@@ -543,12 +544,12 @@ footer:
             link: https://github.com/travellings-link/travellings
       - title: 主题
         links:
+        - title: 模板仓库
+            link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
             link: https://anzhiy.cn/docs/
-          - title: 主题源码
-            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
           - title: 更新日志
-            link: /update/
+            link: https://anzhiy.cn/update/
       - title: 导航
         links:
           - title: 即刻短文
