@@ -23,7 +23,7 @@
     item:
       - EDU,软件工程专业
       - EDU,计算机软件
-      - EDU,AI如果智能
+      - EDU,AI人工智能
     img: /imgs/about-edu.png
 
   statistic:
@@ -110,6 +110,16 @@
     - name: 毕十四
       amount: 14
       datatime: 2023-04-10
-      suffix: 贝壳  
+      suffix: 贝壳
+    
+    - name: 毕十五
+      amount: 66
+      datatime: 2023-04-10
+      suffix: 贝壳
+      
+    - name: 毕十六
+      amount: 1
+      datatime: 2023-04-10
+      suffix: 小目标
 
   extra: false
