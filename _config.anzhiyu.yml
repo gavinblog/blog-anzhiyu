@@ -544,7 +544,7 @@ footer:
             link: https://github.com/travellings-link/travellings
       - title: 主题
         links:
-        - title: 模板仓库
+          - title: 模板仓库
             link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
             link: https://anzhiy.cn/docs/
