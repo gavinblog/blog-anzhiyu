@@ -2,7 +2,7 @@
   subtitle: 毕少侠也在江湖✨
   avatarImg: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp
   name: 毕十三
-  description: 是一名 游荡于互联网的网民，喜欢编程，擅长各种C-V语言的编程。
+  description: 是一名 游荡于互联网的独行侠，喜欢编程，擅长各种Ctrl[C-V]的编程。
   aboutsiteTips:
     tips: 毕少侠也在江湖
     title1: Talk is Cheap
@@ -22,8 +22,8 @@
     title: 学海无涯，回头是岸
     item:
       - EDU,软件工程专业
-      - EDU2,软件工程专业
-      - EDU3,软件工程专业
+      - EDU,计算机软件
+      - EDU,AI如果智能
     img: /imgs/about-edu.png
 
   statistic:
@@ -40,9 +40,9 @@
     selfInfoTips1: 生于
     selfInfoContentYear: 1921
     selfInfoTips2: 互联网大学
-    selfInfoContent2: 软件工程-计算机科学与技术
+    selfInfoContent2: 👨‍🎓软件工程-计算机科学与技术
     selfInfoTips3: 现在职业
-    selfInfoContent3: CodeFarmer👨‍🎓
+    selfInfoContent3:  CodeFarmer
 
   personalities:
     author_name: 提倡者
