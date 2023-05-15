@@ -39,7 +39,7 @@ menu:
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
   #  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1  
 
-  ​毕少侠1111: /about/ || icon-zhifeiji
+  ​毕少侠: /about/ || icon-zhifeiji
 
 # nav相关配置
 nav:
