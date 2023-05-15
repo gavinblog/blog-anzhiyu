@@ -804,7 +804,7 @@ aside:
   card_author:
     enable: true
     type: 2 # 1为使用头像card 2为不使用头像card
-    description: 人生得意须尽欢 # 默认为站点描述
+    description: 人生得意须尽欢，莫使金樽空对月 # 默认为站点描述
     info_background: /imgs/bg-main.webp # type为1时有效
     button:
       enable: true
