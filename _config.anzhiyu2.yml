@@ -129,7 +129,7 @@ social:
   RSS: http://geekswg.js.cool/index.xml || anzhiyu-icon-rss
   BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
   QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
-
+# 作者状态
 author_status:
   enable: true
   status: ✍️
@@ -180,19 +180,20 @@ favicon: /imgs/favicon.ico
 # Avatar (头像)
 avatar:
   img: /imgs/avatar.webp
-  effect: false
+  effect: false  # 头像一直旋转
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: false
+# 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
+index_img: /imgs/bg-main.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: /imgs/default-cover.webp
 
 # The banner image of archive page
-archive_img: false
+archive_img: /imgs/t.webp
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
@@ -219,9 +220,9 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: left
+  position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
-  default_cover:
+  default_cover: # 默认封面
     - /imgs/default-cover.webp
 
 # Replace Broken Images (替换无法显示的图片)
@@ -277,19 +278,19 @@ anchor: true
 # toc (目录)
 toc:
   post: true
-  page: false
+  page: true
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
-
+# 文章版权信息
 post_copyright:
   enable: true
-  decode: false
-  author_href:
-  location: 长沙
+  decode: true
+  author_href: https://geekswg.js.cool
+  location: 神州大地
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-
+#打赏信息
 # Sponsor/reward
 reward:
   enable: false
@@ -302,15 +303,15 @@ reward:
       link:
       text: alipay
 
-# Post edit
+# Post edit 文章编辑
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url: https://github.com/gavinblog/blog-anzhiyu/edit/master/source/
 
-# Related Articles
+# Related Articles 相关文章推荐
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
@@ -394,6 +395,7 @@ valine:
   tagMeta: "博主,小伙伴,访客"
   option:
 
+# waline 评论插件配置
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
@@ -435,7 +437,7 @@ chat_hide_show: false
 # https://chatra.io/
 chatra:
   enable: false
-  id:
+  id: GLzsvy6qAitQ9QoHA
 
 # tidio
 # https://www.tidio.com/
@@ -461,6 +463,7 @@ crisp:
   enable: false
   website_id:
 
+# 页脚配置
 # Footer Settings
 # --------------------------------------
 footer:
@@ -669,7 +672,7 @@ rightside-bottom: 100px
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -679,7 +682,7 @@ canvas_ribbon:
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
   enable: true
-  mobile: false
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -690,12 +693,6 @@ canvas_nest:
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: false
-
-# 开启一图流 >=1.1.11
-OneGraphFlow: true
-# 欢迎语配置
-#greetingBox:
-#  enable: true
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -714,7 +711,7 @@ fireworks:
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
   enable: true
-  mobile: false
+  mobile: true
 
 # Mouse click effects: words (鼠标点击效果: 文字)
 ClickShowText:
@@ -741,7 +738,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
+  global-font-size: 16px
   code-font-size:
   font-family:
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
@@ -759,6 +756,7 @@ hr_icon:
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
+# index_img 配置了才显示。
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
@@ -796,22 +794,21 @@ preloader:
 
 # aside (侧边栏)
 # --------------------------------------
-
+# 作者信息配置
 aside:
   enable: true
-  hide: true
+  hide: false
   button: true
   mobile: true # display on mobile
   position: left # left or right
   display:
     archive: true
     tag: true
-    category: false
+    category: true
   card_author:
     enable: true
-    type: 2 # 1为使用头像card 2为不使用头像card
-    description: 人生得意须尽欢，莫使金樽空对月 # 默认为站点描述
-    info_background: /imgs/bg-main.webp # type为1时有效
+    type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
+    description: 人生得意须尽欢，莫使金樽空对月
     button:
       enable: true
       icon: anzhiyu-icon-arrow-circle-right
@@ -820,7 +817,8 @@ aside:
   card_announcement:
     enable: true
     content: 但行好事，莫问前程
-  card_weixin:
+  #微信公众号
+  card_weixin: 
     enable: true
     face: /imgs/t.png   #图1
     backFace: /imgs/bg-waline.webp #图2
@@ -830,14 +828,14 @@ aside:
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: false
+    enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
     sort_order: # Don't modify the setting unless you know how it works
     highlightTags:
       - Hexo
@@ -912,6 +910,7 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: false
+  # 夜间模式开始结束时间
   start: 8 # 8
   end: 19 # 22
 
@@ -1008,9 +1007,9 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder:
+  placeholder: /imgs/avatar.webp
   blur: true
-  progressive: true
+  progressive: true #>=1.1.11
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -1088,16 +1087,15 @@ home_top:
   banner:
     tips: 新品主题
     title: Theme-AnZhiYu
-
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
     link: https://anzhiy.cn/docs
 
 # 朋友圈配置
 friends_vue:
-  enable: false
-  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.8/friends/index.804b9513.js
-  apiurl: # 朋友圈后端地址
-  top_background:
+  enable: true
+  vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
+  apiurl: https://friends.anzhiy.cn/ # 朋友圈后端地址
+  top_background: /imgs/bg-main.webp
 
 # 黑色模式粒子效果canvas
 universe:
@@ -1111,7 +1109,8 @@ bubble:
 console:
   enable: true
 
-# 51a统计配置
+# 51a统计配置  https://user.51.la/i/product
+# 使用方法，注册，创建应用，获取 网页统计ck，灵雀监控LingQueMonitorID。
 LA:
   enable: true
   ck: K2mM1vs6nmCWtp4K
@@ -1123,7 +1122,7 @@ diytitle:
   leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
   backTitle: ♪(^∇^*)欢迎肥来！
 
-# 留言弹幕配置
+# 留言弹幕配置  注意 仅支持Twikoo
 comment_barrage_config:
   enable: false
   # 同时最多显示弹幕数
@@ -1183,7 +1182,7 @@ post_head_ai_description:
   key: xxxx
   Referer: https://xx.xx/
 
-# 快捷键配置
+# 快捷键配置 >=1.1.10 增加功能
 shortcutKey:
   enable: true
   delay: 100 # shift按下延时多久开启
