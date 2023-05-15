@@ -642,7 +642,7 @@ theme_color:
 table_interlaced_discoloration: true
 
 # 首页双栏显示 
-article_double_row: false
+article_double_row: true
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
@@ -793,7 +793,7 @@ preloader:
 
 aside:
   enable: true
-  hide: false
+  hide: true
   button: true
   mobile: true # display on mobile
   position: left # left or right
@@ -994,7 +994,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (图片懒加载)
@@ -1027,6 +1027,29 @@ Open_Graph_meta: true
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: 1024px #1024px，信封划出的高度
+  path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
+    top_img: false
+    type: envelope
+
 # 首页顶部相关配置
 home_top:
   enable: true # 开关
@@ -1050,7 +1073,7 @@ home_top:
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: fas fa-book
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  default_descr: default_descr-default_descr
   swiper:
     enable: true
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
