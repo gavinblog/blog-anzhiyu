@@ -34,6 +34,7 @@ featuredImagePreview: "featured-img.png"
 2. 使用 HeaderEditor 插件 下载链接：[点击下载](https://microsoftedge.microsoft.com/addons/detail/header-editor/afopnekiinpekooejpchnkgfffaeceko)
    启用插件
    配置插件
+   ![配置截图](/imgs/t.png "配置截图")
    ![配置截图](newbing-header-editor.png "配置截图")
    配置参数
 ```
