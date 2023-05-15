@@ -853,9 +853,9 @@ aside:
     color: true
     sort_order: # Don't modify the setting unless you know how it works
     # 高亮显示tags标签
-    highlightTags:
-      - AI
-      - 前端
+    highlightTags: ["AI","笔记","分享"]
+    #  - AI
+    #  - 毕竟
   card_archives:
     enable: true
     type: monthly # yearly or monthly
