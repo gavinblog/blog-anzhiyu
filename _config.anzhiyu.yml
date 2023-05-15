@@ -544,12 +544,12 @@ footer:
             link: https://github.com/travellings-link/travellings
       - title: 主题
         links:
-        - title: 模板仓库
+          - title: 模板仓库
             link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
             link: https://anzhiy.cn/docs/
           - title: 更新日志
-            link: https://anzhiy.cn/update/
+            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
       - title: 导航
         links:
           - title: 即刻短文
