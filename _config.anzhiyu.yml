@@ -669,7 +669,7 @@ rightside-bottom: 100px
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -691,12 +691,18 @@ canvas_nest:
   count: 99 # the number of lines, default: 99.
   mobile: false
 
+# 开启一图流 >=1.1.11
+OneGraphFlow: true
+# 欢迎语配置
+#greetingBox:
+#  enable: true
+
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: false #  open shake (抖动特效)
+  shake: true #  open shake (抖动特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
@@ -905,7 +911,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 1
+  autoChangeMode: false
   start: 8 # 8
   end: 19 # 22
 
@@ -1078,9 +1084,11 @@ home_top:
     enable: true
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
+    swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
   banner:
     tips: 新品主题
     title: Theme-AnZhiYu
+
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
     link: https://anzhiy.cn/docs
 
@@ -1161,7 +1169,7 @@ ptool:
 
 # 欢迎语配置
 greetingBox:
-  enable: false
+  enable: true
 
 # 文章顶部ai摘要
 post_head_ai_description:
