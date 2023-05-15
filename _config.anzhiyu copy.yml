@@ -19,7 +19,6 @@ menu:
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
 
-
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
   #  朋友圈: /fcircle/ || anzhiyu-icon-artstation
@@ -101,35 +100,33 @@ nav:
           link: https://yiyan.baidu.com/
           icon: /imgs/favicon.png
 
-
+  
 # Code Blocks (代码相关)
 # --------------------------------------
-
+# 代码块设置 ， 主题
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 330 # unit: px
-code_word_wrap: false
+highlight_height_limit: 420 # unit: px  #代码折叠高度
+code_word_wrap: true #自动换行
 
-# copy settings
+# copy settings 版权信息
 # copyright: Add the copyright information after copied content (複制的内容后面加上版权信息)
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
-# social settings (社交图标设置)
-# formal:
-#   icon: link || the description || Animation
+#社交信息
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
   Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
   RSS: http://geekswg.js.cool/index.xml || anzhiyu-icon-rss
   BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
   QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
-
+# 作者状态
 author_status:
   enable: true
   status: ✍️
@@ -175,42 +172,46 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /imgs/favicon.ico
+favicon: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #/img/favicon.png
 
 # Avatar (头像)
 avatar:
-  img: /imgs/avatar.webp
-  effect: false
+  img: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+  effect: false  # 头像一直旋转
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: false
+index_img: /imgs/bg-main.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: /imgs/default-cover.webp
 
 # The banner image of archive page
-archive_img: false
+archive_img: /imgs/t.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
-tag_img:
+tag_img: /imgs/t.png
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: /imgs/t.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分类页面的 top_img)
-category_img:
+category_img: /imgs/t.png
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: /imgs/t.png
+
+
+# 开启一图流 >=1.1.11
+OneGraphFlow: false
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -219,9 +220,9 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: left
+  position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
-  default_cover:
+  default_cover: # 默认封面
     - /imgs/default-cover.webp
 
 # Replace Broken Images (替换无法显示的图片)
@@ -232,8 +233,8 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "请尝试站内搜索寻找文章"
-  background: https://bu.dusays.com/2023/05/08/645907596997d.gif
+  subtitle: "页面找不到了"
+  background: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/page-404.png
 
 post_meta:
   page: # Home Page
@@ -248,7 +249,6 @@ post_meta:
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
-    mainTone: true # true or false 文章顶部图片是否使用主色调
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字数统计
@@ -277,19 +277,19 @@ anchor: true
 # toc (目录)
 toc:
   post: true
-  page: false
+  page: true
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
-
+# 文章版权信息
 post_copyright:
   enable: true
-  decode: false
-  author_href:
-  location: 长沙
+  decode: true
+  author_href: https://geekswg.js.cool
+  location: 神州大地
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-
+#打赏信息
 # Sponsor/reward
 reward:
   enable: false
@@ -302,15 +302,15 @@ reward:
       link:
       text: alipay
 
-# Post edit
+# Post edit 文章编辑
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/gavinblog/blog-anzhiyu/edit/master/source/
+  url:  https://github.com/gavinblog/blog-anzhiyu/edit/master/source/
 
-# Related Articles
+# Related Articles 相关文章推荐
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
@@ -329,8 +329,8 @@ post_pagination: 2
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
   enable: true
-  style: flat # style: simple/flat
-  limit_day: 365 # When will it be shown
+  style: simple # style: simple/flat
+  limit_day: 180 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -356,19 +356,28 @@ addtoany:
   enable: true
   item: wechat,sina_weibo,email,copy_link,facebook,twitter
 
-# Comments System
+# Comments System 评论插件
 # --------------------------------------
-
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Waline # Twikoo/Waline
+  use: Waline # 评论插件 Valine/Waline/Twikoo/Artalk
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in post's top_img
-  card_post_count: false # Display comment count in Home Page
+  count: true # Display comment count in post's top_img
+  card_post_count: true # Display comment count in Home Page
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  # https://railway.app/ 部署
+  # https://dash.zeabur.com/  zeabur部署 推荐
+  envId: https://twikoo-railway.up.railway.app 
+  region:
+  visitor: true
+  option:
 
 # valine
 # https://valine.js.org
@@ -394,6 +403,7 @@ valine:
   tagMeta: "博主,小伙伴,访客"
   option:
 
+# waline 评论插件配置
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
@@ -405,13 +415,7 @@ waline:
     locale:
       placeholder: 但行好事，莫问前程
 
-# Twikoo
-# https://github.com/imaegoo/twikoo
-twikoo:
-  envId:
-  region:
-  visitor: false
-  option:
+
 
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
@@ -435,7 +439,7 @@ chat_hide_show: false
 # https://chatra.io/
 chatra:
   enable: false
-  id:
+  id: GLzsvy6qAitQ9QoHA
 
 # tidio
 # https://www.tidio.com/
@@ -461,6 +465,7 @@ crisp:
   enable: false
   website_id:
 
+# 页脚配置
 # Footer Settings
 # --------------------------------------
 footer:
@@ -470,7 +475,7 @@ footer:
   custom_text: copyright@geekswg 2010 ~ Now
   runtime:
     enable: true
-    launch_time: 04/01/2011 12:34:56 # 网站上线时间
+    launch_time: 04/01/2010 13:14:00 # 网站上线时间
     work_img: /imgs/zhifeiji.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 但行好事，莫问前程
@@ -589,12 +594,12 @@ microsoft_clarity:
 # --------------------------------------
 
 # Google Adsense (谷歌广告)
-google_adsense:
-  enable: false
-  auto_ads: true
-  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client:
-  enable_page_level_ads: true
+# google_adsense:
+#   enable: false
+#   auto_ads: true
+#   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+#   client:
+#   enable_page_level_ads: true
 
 # Insert ads manually (手动插入广告)
 # ad:
@@ -641,8 +646,8 @@ theme_color:
 # 表格隔行变色
 table_interlaced_discoloration: true
 
-# 首页双栏显示 
-article_double_row: false
+# 首页双栏显示
+article_double_row: true
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
@@ -657,11 +662,20 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
+# Website Background (设置网站背景)
+# can set it to color or image (可设置图片 或者 顔色)
+# The formal of image: url(http://xxxxxx.com/xxx.jpg)
+background: var(--anzhiyu-background)
+
 # Footer Background
 footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom: 100px
+
+# Enter transitions (开啓网页进入效果) 
+#网页开始效果 开启后 下面部分功能才能使用
+enter_transitions: true
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -679,7 +693,7 @@ canvas_ribbon:
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
   enable: true
-  mobile: false
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -689,26 +703,26 @@ canvas_nest:
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: false
+  mobile: true
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: false #  open shake (抖动特效)
-  mobile: false
+  shake: true #  open shake (抖动特效)
+  mobile: true
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
   enable: true
   zIndex: 9999 # -1 or 9999
-  mobile: false
+  mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
   enable: true
-  mobile: false
+  mobile: true
 
 # Mouse click effects: words (鼠标点击效果: 文字)
 ClickShowText:
@@ -719,7 +733,7 @@ ClickShowText:
     - YOU
   fontSize: 15px
   random: false
-  mobile: false
+  mobile: true
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -730,12 +744,12 @@ beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: "#F47466"
+  title-prefix-icon-color: "#F47466"  
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 17px
+  global-font-size: 16px
   code-font-size:
   font-family:
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
@@ -749,10 +763,11 @@ blog_title_font:
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
   enable: true
-  icon: \f0c4 # the unicode value of Font Awesome icon, such as '\f0c4'
+  icon: \f0f3 # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
+# enter_transitions: true 时下面才生效
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
@@ -786,11 +801,11 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: /imgs/avatar.webp # 自定义头像
+  avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp # 自定义头像
 
 # aside (侧边栏)
 # --------------------------------------
-
+# 作者信息配置
 aside:
   enable: true
   hide: false
@@ -800,12 +815,11 @@ aside:
   display:
     archive: true
     tag: true
-    category: false
+    category: true
   card_author:
     enable: true
-    type: 2 # 1为使用头像card 2为不使用头像card
-    description: 人生得意须尽欢 # 默认为站点描述
-    info_background: /imgs/bg-main.webp # type为1时有效
+    type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
+    description: 人生得意须尽欢，莫使金樽空对月
     button:
       enable: true
       icon: anzhiyu-icon-arrow-circle-right
@@ -814,7 +828,8 @@ aside:
   card_announcement:
     enable: true
     content: 但行好事，莫问前程
-  card_weixin:
+  #微信公众号
+  card_weixin: 
     enable: true
     face: /imgs/t.png   #图1
     backFace: /imgs/bg-waline.webp #图2
@@ -824,18 +839,15 @@ aside:
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: false
+    enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
     sort_order: # Don't modify the setting unless you know how it works
-    highlightTags:
-      - Hexo
-      - 前端
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -860,7 +872,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2011 12:34:56
+  publish_date: 4/1/2010 13:14:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -878,8 +890,6 @@ translate:
   enable: false
   # The text of a button
   default: 繁
-  # Right-click menu default text
-  rightMenuMsgDefault: "轉為繁體"
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -888,15 +898,12 @@ translate:
   msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
   msgToSimplifiedChinese: "简"
-  # Right-click the menu to traditional Chinese
-  rightMenuMsgToTraditionalChinese: "转为繁体"
-  # Right-click menu to simplified Chinese
-  rightMenuMsgToSimplifiedChinese: "转为简体"
 
 # Read Mode (閲读模式)
 readmode: true
 
-# dark mode
+# dark mode 夜间模式 
+# 关了，有点有小问题，目前没找到那个地方有问题，把主页欢迎关了才行，浅色主题配色才能正常显示，自己根据需求配置吧。
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
@@ -905,9 +912,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 1
-  start: 8 # 8
-  end: 19 # 22
+  autoChangeMode: false
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -935,7 +940,7 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
@@ -955,10 +960,7 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-icons:
-  ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
-  fontawesome: false #是否启用fontawesome6图标
-  fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
+iconfont: #参看 https://akilar.top/posts/d2ebecef/
 
 # other
 # --------------------------------------
@@ -983,7 +985,7 @@ aplayerInject:
 # 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: top-center
+  position: top-right
   bg_light: "#3b70fc" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
@@ -1002,23 +1004,21 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder:
+  placeholder: /imgs/t.png
   blur: true
-  progressive: true
+  progressive: true #>=1.1.11
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: true
-  startup_image_enable: true
+  enable: false
   manifest: /manifest.json
   theme_color: var(--anzhiyu-main)
-  mask_icon: /img/siteicon/apple-icon-180.png
-  apple_touch_icon: /img/siteicon/apple-icon-180.png
-  bookmark_icon: /img/siteicon/apple-icon-180.png
+  apple_touch_icon: /img/siteicon/128.png
   favicon_32_32: /img/siteicon/32.png
   favicon_16_16: /img/siteicon/16.png
+  mask_icon: /img/siteicon/128.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1026,6 +1026,29 @@ Open_Graph_meta: true
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
+
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: 1024px #1024px，信封划出的高度
+  path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
+    top_img: false
+    type: envelope
 
 # 首页顶部相关配置
 home_top:
@@ -1055,18 +1078,19 @@ home_top:
     enable: true
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
+    swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
   banner:
     tips: 新品主题
     title: Theme-AnZhiYu
-    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://anzhiy.cn/docs
+    image: /imgs/t.png
+    link: https://anzhiy.cn/posts/220c.html
 
 # 朋友圈配置
 friends_vue:
-  enable: false
-  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.8/friends/index.804b9513.js
-  apiurl: # 朋友圈后端地址
-  top_background:
+  enable: true
+  vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
+  apiurl: https://friends.anzhiy.cn/ # 朋友圈后端地址
+  top_background: /imgs/bg-main.webp
 
 # 黑色模式粒子效果canvas
 universe:
@@ -1080,7 +1104,7 @@ bubble:
 console:
   enable: true
 
-# 51a统计配置
+# 51a统计配置  https://user.51.la/i/product
 LA:
   enable: true
   ck: K2mM1vs6nmCWtp4K
@@ -1092,7 +1116,7 @@ diytitle:
   leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
   backTitle: ♪(^∇^*)欢迎肥来！
 
-# 留言弹幕配置
+# 留言弹幕配置  注意 仅支持Twikoo
 comment_barrage_config:
   enable: false
   # 同时最多显示弹幕数
@@ -1103,10 +1127,9 @@ comment_barrage_config:
   accessToken: ""
 
 # 左下角音乐配置项
-# https://github.com/metowolf/MetingJS
 nav_music:
   enable: true
-  console_widescreen_music: true # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
+  console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 8152976493
   server: netease
   all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
@@ -1119,26 +1142,23 @@ visitorMail:
 # 即刻页面配置
 essay:
   enable: true
-  title: 即刻短文
-  subTitle: 咸鱼的日常生活。
-  tips: 使用 即刻短文静态部署版 构建
-  button: 关于我
-  buttonLink: /about/
-  limit: 30
-  top_background: /imgs/t.webp
+  # 即刻页面 背景图
+  top_background: /imgs/t.png
 
+# ptool 文章底部工具
 # ptool 文章底部工具
 ptool:
   enable: true
   share_mobile: true
   share_weibo: true
   share_copyurl: true
-  categories: true # 是否显示分类
+  categories: false # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
+
 
 # 欢迎语配置
 greetingBox:
-  enable: false
+  enable: true
 
 # 文章顶部ai摘要
 post_head_ai_description:
@@ -1152,10 +1172,10 @@ post_head_ai_description:
   key: xxxx
   Referer: https://xx.xx/
 
-# 快捷键配置
+# 快捷键配置 >=1.1.10 增加功能
 shortcutKey:
   enable: true
-  delay: 100 # shift按下延时多久开启
+  delay: 300 # shift按下延时多久开启
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -1174,12 +1194,13 @@ inject:
 # 非必要请不要修改
 CDN:
   # The CDN provider of internal scripts (主题内部 js 的 cdn 配置)
-  # option: local/elemecdn/jsdelivr/unpkg/cdnjs/custom
+  # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主题只能设置为 local )
   internal_provider: elemecdn
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: elemecdn/jsdelivr/unpkg/cdnjs/custom
+  # option: local/jsdelivr/unpkg/cdnjs/custom
+  # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: elemecdn
 
   # Add version number to CDN, true or false
@@ -1232,7 +1253,6 @@ CDN:
     # aplayer_css:
     # aplayer_js:
     # meting_js:
-    # meting_api:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
@@ -1240,9 +1260,14 @@ CDN:
     # artalk_css:
     # pace_js:
     # pace_default_css:
+    # coin_js:
+    # coin_css:
     # countup_js:
     # gsap_js:
     # busuanzi:
     # rightmenu:
     # waterfall:
-    # ali_iconfont_css:
+    # categoryBar:
+    # catalog_bar:
+    # animation_css:
+    # iconfont_js:
