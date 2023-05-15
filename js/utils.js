@@ -63,7 +63,6 @@ const anzhiyu = {
     const bg = document.documentElement.getAttribute("data-theme") === "light" ? bgLight : bgDark;
     const root = document.querySelector(":root");
     root.style.setProperty("--anzhiyu-snackbar-time", duration + "ms");
-
     Snackbar.show({
       text: text,
       backgroundColor: bg,
@@ -278,7 +277,7 @@ const anzhiyu = {
       .replace('"', "")
       .replace('"', "");
     const currentTop = window.scrollY || document.documentElement.scrollTop;
-    if (currentTop > 16) {
+    if (currentTop > 26) {
       if (anzhiyu.is_Post()) {
         themeColor = getComputedStyle(document.documentElement)
           .getPropertyValue("--anzhiyu-meta-theme-post-color")
@@ -292,6 +291,26 @@ const anzhiyu = {
       if (themeColorMeta.getAttribute("content") === themeColor) return;
       this.changeThemeColor(themeColor);
     }
+  },
+  switchDarkMode: () => {
+    // Switch Between Light And Dark Mode
+    const nowMode = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    const rightMenu = document.getElementById("rightMenu");
+    if (nowMode === "light") {
+      activateDarkMode();
+      saveToLocal.set("theme", "dark", 2);
+      GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night);
+      rightMenu.querySelector(".menu-darkmode-text").textContent = "浅色模式";
+    } else {
+      activateLightMode();
+      saveToLocal.set("theme", "light", 2);
+      GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day);
+      rightMenu.querySelector(".menu-darkmode-text").textContent = "深色模式";
+    }
+    // handle some cases
+    typeof runMermaid === "function" && window.runMermaid();
+    rm && rm.hideRightMenu();
+    anzhiyu.darkModeStatus();
   },
   //是否是文章页
   is_Post: function () {
@@ -308,8 +327,8 @@ const anzhiyu = {
     var scrollTop = 0,
       bodyScrollTop = 0,
       documentScrollTop = 0;
-    if (document.body) {
-      bodyScrollTop = document.body.scrollTop;
+    if ($bodyWrap) {
+      bodyScrollTop = $bodyWrap.scrollTop;
     }
     if (document.documentElement) {
       documentScrollTop = document.documentElement.scrollTop;
@@ -317,10 +336,6 @@ const anzhiyu = {
     scrollTop = bodyScrollTop - documentScrollTop > 0 ? bodyScrollTop : documentScrollTop;
 
     if (scrollTop != 0) {
-      pageHeaderEl.classList.add("nav-fixed");
-      pageHeaderEl.classList.add("nav-visible");
-    }
-    if (pageHeaderEl.querySelector(".bili-banner")) {
       pageHeaderEl.classList.add("nav-fixed");
       pageHeaderEl.classList.add("nav-visible");
     }
@@ -405,7 +420,7 @@ const anzhiyu = {
   },
   // 初始化即刻
   initIndexEssay: function () {
-    if (!document.querySelector(".essay_bar_swiper_container")) return;
+    if (!document.getElementById("bbTimeList")) return;
     setTimeout(() => {
       let essay_bar_swiper = new Swiper(".essay_bar_swiper_container", {
         passiveListeners: true,
@@ -415,7 +430,18 @@ const anzhiyu = {
           disableOnInteraction: true,
           delay: 3000,
         },
-        mousewheel: true,
+        mousewheel: {
+          forceToAxis: true, // 如果需要限制鼠标滚轮仅影响垂直方向，请将此属性设置为 true
+          eventsTarget: ".essay_bar_swiper_container",
+          releaseOnEdges: false,
+          invert: false,
+          sensitivity: 1,
+          eventsTarged: "container",
+          options: {
+            // 添加 options 对象
+            passive: true, // 将 passive 设置为 true
+          },
+        },
       });
 
       let essay_bar_comtainer = document.getElementById("bbtalk");
@@ -428,6 +454,33 @@ const anzhiyu = {
         };
       }
     }, 100);
+  },
+  scrollByMouseWheel: function ($list, $target) {
+    const scrollHandler = function (e) {
+      $list.scrollLeft -= e.wheelDelta / 2;
+      e.preventDefault();
+    };
+    $list.addEventListener("mousewheel", scrollHandler, { passive: true });
+    if ($target) {
+      $target.classList.add("selected");
+      $list.scrollLeft = $target.offsetLeft - $list.offsetLeft - ($list.offsetWidth - $target.offsetWidth) / 2;
+    }
+  },
+  // catalog激活
+  catalogActive: function () {
+    const $list = document.getElementById("catalog-list");
+    if ($list) {
+      const $catalog = document.getElementById(decodeURIComponent(window.location.pathname));
+      anzhiyu.scrollByMouseWheel($list, $catalog);
+    }
+  },
+  // Page Tag 激活
+  tagsPageActive: function () {
+    const $list = document.getElementById("tag-page-tags");
+    if ($list) {
+      const $tagPageTags = document.getElementById(decodeURIComponent(window.location.pathname));
+      anzhiyu.scrollByMouseWheel($list, $tagPageTags);
+    }
   },
   // 修改时间显示"最近"
   diffDate: function (d, more = false) {
@@ -917,8 +970,7 @@ const anzhiyu = {
 
   //删除多余的class
   removeBodyPaceClass: function () {
-    var body = document.querySelector("body");
-    body.className = "pace-done";
+    document.body.className = "pace-done";
   },
   // 修改body的type类型以适配css
   setValueToBodyType: function () {
@@ -1097,14 +1149,12 @@ const anzhiyu = {
   // 定义 intersectionObserver 函数，并接收两个可选参数
   intersectionObserver: function (enterCallback, leaveCallback) {
     let observer;
-    let isIntersected = false; // 增加一个状态变量，用于判断是否已经观察到过目标元素
     return () => {
       if (!observer) {
         observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            if (entry.intersectionRatio > 0 && !isIntersected) {
+            if (entry.intersectionRatio > 0) {
               enterCallback?.();
-              isIntersected = true; // 设置状态变量为 true，表示已经观察到过目标元素
             } else {
               leaveCallback?.();
             }
@@ -1145,5 +1195,32 @@ const anzhiyu = {
     } else {
       console.error("Element(s) not found: 'catalog-list' and/or 'category-bar-next'.");
     }
+  },
+  // 分类条
+  categoriesBarActive: function () {
+    const urlinfo = decodeURIComponent(window.location.pathname);
+    const $categoryBar = document.getElementById("category-bar");
+    if (!$categoryBar) return;
+
+    if (urlinfo === "/") {
+      $categoryBar.querySelector("#首页").classList.add("select");
+    } else {
+      const pattern = /\/categories\/.*?\//;
+      const patbool = pattern.test(urlinfo);
+      if (!patbool) return;
+
+      const nowCategorie = urlinfo.split("/")[2];
+      $categoryBar.querySelector(`#${nowCategorie}`).classList.add("select");
+    }
+  },
+  topCategoriesBarScroll: function () {
+    const $categoryBarItems = document.getElementById("category-bar-items");
+    if (!$categoryBarItems) return;
+
+    $categoryBarItems.addEventListener("mousewheel", function (e) {
+      const v = -e.wheelDelta / 2;
+      this.scrollLeft += v;
+      e.preventDefault();
+    });
   },
 };
