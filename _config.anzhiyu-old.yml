@@ -33,13 +33,13 @@ menu:
     #小空调: /air-conditioner/ || fas fa-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
 
-  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1  
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
   #  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1  
 
-  ​毕少侠: /about/ || anzhiyu-icon-shoe-prints1
+  🏆​毕少侠: /about/ || icon-zhifeiji
 
 # nav相关配置
 nav:
@@ -108,7 +108,7 @@ highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / 
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 512 # unit: px  #代码折叠高度
+highlight_height_limit: 420 # unit: px  #代码折叠高度
 code_word_wrap: true #自动换行
 
 # copy settings 版权信息
@@ -119,9 +119,7 @@ copy:
     enable: true
     limit_count: 50
 
-# social settings (社交图标设置)
-# formal:
-#   icon: link || the description || Animation
+#社交信息
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
   Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
@@ -174,47 +172,46 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /imgs/favicon.ico
+favicon: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #/img/favicon.png
 
 # Avatar (头像)
 avatar:
-  img: /imgs/avatar.webp
+  img: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp #https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
   effect: false  # 头像一直旋转
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-# 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
-index_img: /imgs/bg-mainx.webp
+index_img: /imgs/bg-main.webp
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /imgs/default-cover.webp
 
 # The banner image of archive page
-archive_img: /imgs/t.webp
+archive_img: /imgs/t.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
-tag_img: /imgs/t.webp
+tag_img: /imgs/t.png
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: /imgs/t.webp
+tag_per_img: /imgs/t.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分类页面的 top_img)
-category_img: /imgs/t.webp
+category_img: /imgs/t.png
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: /imgs/t.webp
+category_per_img: /imgs/t.png
 
 
-# 开启一图流 >=1.1.11 没有用
-OneGraphFlow: true
+# 开启一图流 >=1.1.11
+OneGraphFlow: false
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -252,7 +249,6 @@ post_meta:
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
-    #mainTone: true # true or false 文章顶部图片是否使用主色调
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字数统计
@@ -299,10 +295,10 @@ reward:
   enable: false
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: /imgs/t1.webp
+    - img: /imgs/t.png
       link:
       text: wechat
-    - img: /imgs/t2.webp
+    - img: /imgs/t.png
       link:
       text: alipay
 
@@ -553,7 +549,7 @@ footer:
           - title: 主题文档
             link: https://anzhiy.cn/docs/
           - title: 更新日志
-            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
+            link: https://anzhiy.cn/update/
       - title: 导航
         links:
           - title: 即刻短文
@@ -598,12 +594,12 @@ microsoft_clarity:
 # --------------------------------------
 
 # Google Adsense (谷歌广告)
-google_adsense:
-  enable: false
-  auto_ads: true
-  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client:
-  enable_page_level_ads: true
+# google_adsense:
+#   enable: false
+#   auto_ads: true
+#   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+#   client:
+#   enable_page_level_ads: true
 
 # Insert ads manually (手动插入广告)
 # ad:
@@ -629,7 +625,7 @@ site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 
 theme_color:
-  enable: false
+  enable: true
   main: "#3b70fc"
   dark_main: "#0084ff"
   paginator: "#3b70fc"
@@ -666,7 +662,7 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-# Website Background (设置网站背景)	- 无用配置
+# Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 background: var(--anzhiyu-background)
@@ -677,7 +673,7 @@ footer_bg: false
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom: 100px
 
-# Enter transitions (开啓网页进入效果)  - 无用配置
+# Enter transitions (开啓网页进入效果) 
 #网页开始效果 开启后 下面部分功能才能使用
 enter_transitions: true
 
@@ -689,23 +685,22 @@ enter_transitions: true
 canvas_ribbon:
   enable: false
   size: 150
-  alpha: 0.5
-  zIndex: 9999
-  click_to_change: true
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
   mobile: false
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
   enable: true
-  zIndex: 9999
-  mobile: false
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 1 # the opacity of line (0~1), default: 0.5.
+  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: true
@@ -716,13 +711,13 @@ activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖动特效)
-  mobile: false
+  mobile: true
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
   enable: true
   zIndex: 9999 # -1 or 9999
-  mobile: false
+  mobile: true
 
 # Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
 click_heart:
@@ -738,7 +733,7 @@ ClickShowText:
     - YOU
   fontSize: 15px
   random: false
-  mobile: false
+  mobile: true
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -749,7 +744,7 @@ beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: "#F47466"
+  title-prefix-icon-color: "#F47466"  
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -768,11 +763,11 @@ blog_title_font:
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
   enable: true
-  icon: \f0c4 # the unicode value of Font Awesome icon, such as '\f0c4'
+  icon: \f0f3 # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主页subtitle)
-# index_img 配置了才显示。
+# enter_transitions: true 时下面才生效
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
@@ -806,7 +801,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: /imgs/avatar.webp # 自定义头像
+  avatar: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp # 自定义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -853,10 +848,6 @@ aside:
     limit: 40 # if set 0 will show all
     color: true
     sort_order: # Don't modify the setting unless you know how it works
-    # 高亮显示tags标签
-    highlightTags: ["AI","笔记","分享"]
-    #  - AI
-    #  - 毕竟
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -899,8 +890,6 @@ translate:
   enable: false
   # The text of a button
   default: 繁
-  # Right-click menu default text
-  rightMenuMsgDefault: "轉為繁體"
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -909,16 +898,12 @@ translate:
   msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
   msgToSimplifiedChinese: "简"
-  # Right-click the menu to traditional Chinese
-  rightMenuMsgToTraditionalChinese: "转为繁体"
-  # Right-click menu to simplified Chinese
-  rightMenuMsgToSimplifiedChinese: "转为简体"
 
 # Read Mode (閲读模式)
 readmode: true
 
 # dark mode 夜间模式 
-# light显示有点小问题，建议使用dark模式
+# 关了，有点有小问题，目前没找到那个地方有问题，把主页欢迎关了才行，浅色主题配色才能正常显示，自己根据需求配置吧。
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
@@ -928,9 +913,6 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: false
-  # 夜间模式开始结束时间
-  start: 8 # 8
-  end: 19 # 22
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -958,7 +940,7 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
@@ -978,10 +960,7 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-icons:
-  ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
-  fontawesome: false #是否启用fontawesome6图标
-  fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
+iconfont: #参看 https://akilar.top/posts/d2ebecef/
 
 # other
 # --------------------------------------
@@ -1006,7 +985,7 @@ aplayerInject:
 # 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: top-center
+  position: top-right
   bg_light: "#3b70fc" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
@@ -1017,7 +996,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: true
+  enable: false
   field: site # site/post
 
 # Lazyload (图片懒加载)
@@ -1025,23 +1004,21 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: /imgs/avatar.webp
+  placeholder: /imgs/t.png
   blur: true
-  progressive: true #>=1.1.10
+  progressive: true #>=1.1.11
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: true
-  startup_image_enable: true
+  enable: false
   manifest: /manifest.json
   theme_color: var(--anzhiyu-main)
-  mask_icon: /img/siteicon/apple-icon-180.png
-  apple_touch_icon: /img/siteicon/apple-icon-180.png
-  bookmark_icon: /img/siteicon/apple-icon-180.png
+  apple_touch_icon: /img/siteicon/128.png
   favicon_32_32: /img/siteicon/32.png
   favicon_16_16: /img/siteicon/16.png
+  mask_icon: /img/siteicon/128.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1096,7 +1073,7 @@ home_top:
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: fas fa-book
-  default_descr: default_descr-default_descr
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper:
     enable: true
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
@@ -1105,12 +1082,12 @@ home_top:
   banner:
     tips: 新品主题
     title: Theme-AnZhiYu
-    image: /imgs/default-cover.webp
-    link: https://anzhiy.cn/docs
+    image: /imgs/t.png
+    link: https://anzhiy.cn/posts/220c.html
 
 # 朋友圈配置
 friends_vue:
-  enable: false
+  enable: true
   vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
   apiurl: https://friends.anzhiy.cn/ # 朋友圈后端地址
   top_background: /imgs/bg-main.webp
@@ -1128,7 +1105,6 @@ console:
   enable: true
 
 # 51a统计配置  https://user.51.la/i/product
-# 使用方法，注册，创建应用，获取 网页统计ck，灵雀监控LingQueMonitorID。
 LA:
   enable: true
   ck: K2mM1vs6nmCWtp4K
@@ -1151,10 +1127,9 @@ comment_barrage_config:
   accessToken: ""
 
 # 左下角音乐配置项
-# https://github.com/metowolf/MetingJS
 nav_music:
   enable: true
-  console_widescreen_music: true # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
+  console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 8152976493
   server: netease
   all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
@@ -1167,21 +1142,17 @@ visitorMail:
 # 即刻页面配置
 essay:
   enable: true
-  title: 即刻短文
-  subTitle: 咸鱼的日常生活。
-  tips: 使用 即刻短文静态部署版 构建
-  button: 关于我
-  buttonLink: /about/
-  limit: 30
-  top_background: /imgs/t.webp
+  # 即刻页面 背景图
+  top_background: /imgs/t.png
 
+# ptool 文章底部工具
 # ptool 文章底部工具
 ptool:
   enable: true
   share_mobile: true
   share_weibo: true
   share_copyurl: true
-  categories: true # 是否显示分类
+  categories: false # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
 
 
@@ -1204,7 +1175,7 @@ post_head_ai_description:
 # 快捷键配置 >=1.1.10 增加功能
 shortcutKey:
   enable: true
-  delay: 100 # shift按下延时多久开启
+  delay: 300 # shift按下延时多久开启
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -1223,12 +1194,13 @@ inject:
 # 非必要请不要修改
 CDN:
   # The CDN provider of internal scripts (主题内部 js 的 cdn 配置)
-  # option: local/elemecdn/jsdelivr/unpkg/cdnjs/custom
+  # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主题只能设置为 local )
   internal_provider: elemecdn
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: elemecdn/jsdelivr/unpkg/cdnjs/custom
+  # option: local/jsdelivr/unpkg/cdnjs/custom
+  # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: elemecdn
 
   # Add version number to CDN, true or false
@@ -1281,7 +1253,6 @@ CDN:
     # aplayer_css:
     # aplayer_js:
     # meting_js:
-    # meting_api:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
@@ -1289,9 +1260,14 @@ CDN:
     # artalk_css:
     # pace_js:
     # pace_default_css:
+    # coin_js:
+    # coin_css:
     # countup_js:
     # gsap_js:
     # busuanzi:
     # rightmenu:
     # waterfall:
-    # ali_iconfont_css:
+    # categoryBar:
+    # catalog_bar:
+    # animation_css:
+    # iconfont_js:
