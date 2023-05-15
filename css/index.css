@@ -1998,7 +1998,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0f3';
+  content: '\f0c4';
   font-size: 16px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -2442,7 +2442,7 @@ figure.highlight pre .javascript .function {
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
   overflow: hidden;
-  height: 420px;
+  height: 512px;
 }
 @-moz-keyframes code-expand-key {
   0% {
@@ -4049,9 +4049,6 @@ body[data-type="music"] .s-sticker div {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-}
-body:has(#console.show) #nav-music {
-  display: none !important;
 }
 @media screen and (max-width: 1400px) {
   body #anMusic-page #anMusicSwitching,
@@ -10303,6 +10300,15 @@ blockquote {
 }
 .post-tools .post-tools-left {
   width: auto;
+}
+#post .tag_share {
+  margin-bottom: 2rem;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .relatedPosts {
   margin-top: 40px;
