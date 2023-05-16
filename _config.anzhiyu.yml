@@ -490,7 +490,7 @@ footer:
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
     - link: http://geekswg.js.cool/
-      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg
+      shields: https://img.shields.io/badge/Blog-%E6%AF%95%E5%B0%91%E4%BE%A0-yellow
       message: 主页
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
