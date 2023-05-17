@@ -237,7 +237,7 @@ error_img:
 error_404:
   enable: true
   subtitle: "页面找不到了"
-  background: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/page-404.png
+  background: /imgs/404.gif
 
 post_meta:
   page: # Home Page
