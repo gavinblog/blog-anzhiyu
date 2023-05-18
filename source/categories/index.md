@@ -2,7 +2,7 @@
 title: 非学无以广才，非志无以成学
 date: 2023-04-13 13:21:48
 
-aside: false
+aside: true
 
 # 是否显示顶部图片
 top_img: /imgs/default-cover.webp
