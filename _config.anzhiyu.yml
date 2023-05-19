@@ -32,8 +32,10 @@ menu:
     相册集: /album/ || anzhiyu-icon-images
     #小空调: /air-conditioner/ || fas fa-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
+  
+  音乐: /music/?id=8138088068&server=tencent || anzhiyu-icon-music
 
-  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  随机: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
