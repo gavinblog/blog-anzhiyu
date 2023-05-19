@@ -68,26 +68,32 @@
     game_bg: /imgs/t.png
 
   comic:
-    comic_tips: 爱好番剧
-    comic_title: 追番
+    comic_tips: 读孙子兵法
+    comic_title: 品启强人生
     comic_list:
       - name: 三体
         href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t.png
+        cover: /imgs/t1.webp
       - name: 秦时明月
         href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t.png
+        cover: /imgs/t2.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: /imgs/t1.webp
+      - name: 秦时明月
+        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: /imgs/t2.webp  
 
   like:
     like_tips: 关注偏好
     like_title: 数码科技
-    like_bg: /imgs/t.png
+    like_bg: /imgs/t.webp
     like_bottom: 手机、电脑软硬件
 
   music:
     music_tips: 高山流水遇知音,彩云追月得知己
     music_title: 此曲只应天上有，人间能得几回闻。
-    music_bg: https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg
+    music_bg: /imgs/t2.webp
     music_link: /music
 
 # 打赏列表  

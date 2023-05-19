@@ -411,7 +411,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://geek-waline.zeabur.app/ # Waline server address url
+  serverURL: https://geek-waline.zeabur.app # Waline server address url
   bg: /imgs/bg-waline.webp # waline background
   pageview: true
   option:
