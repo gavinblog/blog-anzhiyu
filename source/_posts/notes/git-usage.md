@@ -26,11 +26,12 @@ Git 是一个分布式版本控制系统，用于跟踪文件和代码的更改�
 ## 配置相关
 
 ```bash
-# 设置默认主分支名称 为main
+# 设置默认主分支名称 为main 
 git config --global init.defaultBranch main 
 
 #配置 http.sslVerify 为 false, 如下：
 git config --global http.sslVerify false
+
 
 ```
 
