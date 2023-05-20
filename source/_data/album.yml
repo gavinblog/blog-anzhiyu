@@ -1,29 +1,79 @@
-# 相册集
 
-- class_name: 世界各地夕阳与风景
-  path_name: /wordScenery
+- class_name: Album-Demo-Type1-样式1
+  path_name: /album-1
+  type: 1
   description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
-  cover: https://bu.dusays.com/2023/04/09/64329399d1175.jpg
+  cover: /imgs/t1.webp
+  
   album_list:
+    - date: 2022/05/20 01:00:00
+      content: 湘潭的一角。 - content
+      address: 湖南湘潭 - 湖南湘潭
+      from: From1 - from
+      image:
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+        - /imgs/t1.webp
+        - /imgs/bg-waline.webp
+        - /imgs/404.gif
+  
+    - date: 2023-05-10
+      content: 洛阳暴雨后的天空。- content
+      address: 河南洛阳-address
+      from: From2 - from
+      image:
+        - /imgs/t1.webp
+        - /imgs/t2.webp
+        - /imgs/bg-waline.webp
     - date: 2022/10/26 01:00:00
-      content: 湘潭的一角。
-      address: 湖南湘潭
-      from: 再吃一口就减肥
+      content: 湘潭的一角。 - content
+      address: 湖南湘潭 - 湖南湘潭
+      from: From1 - from
       image:
-        - https://bu.dusays.com/2023/04/09/64329399db122.webp
-    - date: 2022-10-24
-      content: 湖南信息学院长椅下的夕阳。
-      address: 湖南长沙
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+        - /imgs/t1.webp
+        - /imgs/bg-waline.webp
+        - /imgs/404.gif
+        - /imgs/404.gif
+        
+    - date: 2022-10-25
+      content: 洛阳暴雨后的天空。- content
+      address: 河南洛阳-address
+      from: From2 - from
       image:
-        - https://bu.dusays.com/2023/04/09/64329399db122.webp
-        - https://bu.dusays.com/2023/04/09/64329399db2e1.webp
+        - /imgs/t1.webp
+        - /imgs/t2.webp
+        - /imgs/404.gif
+    
 
-- class_name: 我的日常
-  path_name: /dailyPhoto
-  description: 这里存放的是有关我自己的一些沙雕生活与有趣的事情。
-  cover: https://bu.dusays.com/2023/04/09/64329399cea5a.webp
+- class_name: Album-Demo-Type2-样式2
+  path_name: /album-2
+  type: 2
+  description: Album-Demo-Type2 - description。
+  cover: /imgs/t2.webp
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
   album_list:
     - date: 2022-10-24
-      content: 老妹的画
+      content: Album-Demo-Type2 - content
+      address: 湖南湘潭 - 湖南湘潭
+      from: 再吃一口就减肥 - from
       image:
-        - https://bu.dusays.com/2023/04/09/643293997b92b.jpeg
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+    - date: 2022-10-24
+      content: Album-Demo-Type2 - content
+      address: 湖南湘潭 - 湖南湘潭
+      from: 再吃一口就减肥 - from
+      image:
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+        - /imgs/t2.webp
+        - /imgs/bg-waline.webp
+        - /imgs/404.gif
+        - /imgs/404.gif
+
