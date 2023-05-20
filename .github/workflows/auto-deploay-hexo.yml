@@ -41,7 +41,7 @@ jobs:
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
         npm install hexo-generator-search --save
-        npm install https://github.com/CodeFalling/hexo-asset-image --save
+        npm install hexo-asset-image --save
         npm ls --depth 0
 
     # hexo 编译生成网站
