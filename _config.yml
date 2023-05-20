@@ -85,8 +85,10 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+# 解决 github-action 会自动更新，所有文章的更新时间
+updated_option: 'date' # default mtime
 
 # Pagination
 ## Set per_page to 0 to disable pagination
