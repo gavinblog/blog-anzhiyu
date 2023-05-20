@@ -1,9 +1,9 @@
 name: 自动发布 hexo-deploay
-# 触发条件：在 push 到 hexo-blog-backup 分支后触发
+# 触发条件：在 push 到 master 分支后触发
 on:
   push:
     branches: 
-      - master
+      - master  # 可以添加多个分支
 
 env:
   TZ: Asia/Shanghai
@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: '16.x'
 
+    # 下载网站源码
     - name: Cache node modules
       # 设置包缓存目录，避免每次下载
       uses: actions/cache@v1
@@ -32,6 +33,7 @@ jobs:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
+    # 安装依赖
     - name: Install hexo dependencies
       # 下载 hexo-cli 脚手架及相关安装包
       run: |
@@ -41,15 +43,27 @@ jobs:
         npm install hexo-generator-search --save
         npm ls --depth 0
 
+    # hexo 编译生成网站
     - name: Generate files
       # 编译 markdown 文件
       run: |
         hexo clean
         hexo generate
 
+    # 自动发布到当前仓库的gh-pages分支，如需部署到其它仓库的，参考下面文档修改配置即可
+    # 更多高级用法查看文档，https://github.com/peaceiris/actions-gh-pages
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
+        # 1.如何生成 github_token，github主页,Settings / Developer settings / Personal access tokens (classic)
+        # 2.github_token 在 仓库 Settings,Actions secrets and variables,设置
         github_token: ${{ secrets.ACCESS_TOKEN }}
         publish_dir: ./public
+
+        # Deploy to external repository external_repository
+        # 发布到其他仓库的配置，注意必须使用deploy_key，获取和设置方法同上。
+        #deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        #external_repository: username/external-repository
+        #publish_branch: your-branch  # default: gh-pages
+        #publish_dir: ./public
 
