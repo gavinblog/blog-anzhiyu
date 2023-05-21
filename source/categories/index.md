@@ -15,7 +15,7 @@ top_img: /imgs/default-cover.webp
   }
 </style>
 
-<link rel="stylesheet" type="text/css" href="https://npm.elemecdn.com/js-heo@1.0.11/3dCard/no3d.css" />
+<link rel="stylesheet" type="text/css" href="https://npm.elemecdn.com/js-heo@1.0.11/3dCard/no3d.css" >
 
 <div id='libCategories'>
 <div id="lib-cards" class="container">
