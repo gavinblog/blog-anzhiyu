@@ -15,33 +15,33 @@ top_img: /imgs/default-cover.webp
   }
 </style>
 
-<link rel="stylesheet" type="text/css" href="https://npm.elemecdn.com/js-heo@1.0.11/3dCard/no3d.css">
+<link rel="stylesheet" type="text/css" href="https://npm.elemecdn.com/js-heo@1.0.11/3dCard/no3d.css" />
 
 <div id='libCategories'>
 <div id="lib-cards" class="container">
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/notes/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/notes/")' >
 <card data-image="/imgs/t1.webp">
 <h1 slot="header">笔记</h1>
 <p slot="content">日常笔记，好记性不如烂笔头</p>
 </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/share/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/share/")' >
   <card data-image="/imgs/t2.webp">
     <h1 slot="header">分享</h1>
     <p slot="content">这里分享我用过的软件，资源，和好用的插件。</p>
   </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")' >
   <card data-image="/imgs/t2.webp">
     <h1 slot="header">AI</h1>
     <p slot="content">AI人工智能都在这里。</p>
   </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")'>
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/other/")' >
   <card data-image="/imgs/t1.webp">
     <h1 slot="header">Other</h1>
     <p slot="content">杂项，就是不知什么分类的都放这里喽</p>
