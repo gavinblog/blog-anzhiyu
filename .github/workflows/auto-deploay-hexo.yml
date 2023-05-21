@@ -42,8 +42,7 @@ jobs:
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
         npm install hexo-generator-search --save
-        npm install hexo-asset-image --save
-        npm install hexo-renderer-marked --save
+
         npm install hexo-offline --save 
         npm ls --depth 0
 
