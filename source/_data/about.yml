@@ -1,5 +1,5 @@
-- class_name: 关于页
-  subtitle: 毕少侠也在江湖✨
+- class_name: About
+  subtitle: 毕少侠也在江湖 ✨ 人生若只如初见
   avatarImg: https://cdn.staticaly.com/gh/geekswg/static@main/web/avatar.webp
   name: 毕十三
   description: 是一名 游荡于互联网的独行侠，喜欢编程，擅长各种Ctrl[C-V]的编程。
@@ -8,10 +8,10 @@
     title1: Talk is Cheap
     title2: Show Me the Code 
     word:
-      - 学习Study
-      - 生活Living
-      - 程序Coding
-      - 分享Sharing
+      - 学习 - Studying
+      - 生活 - Living
+      - 程序 - Coding
+      - 分享 - Sharing
   helloAbout: Hello World!
   
   skillsTips:
@@ -45,24 +45,24 @@
     selfInfoContent3:  CodeFarmer
 
   personalities:
-    author_name: 提倡者
+    author_name: 提倡者 - 斯人定何人，游戏得自在
     personality_type: INFJ-T
     photo_url: /imgs/t.png # 个人照片
     personality_img: https://www.16personalities.com/static/images/personality-types/avatars/infj-advocate.svg
     name_url: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
   
   maxim:
-    maxim_tips: 座右铭
+    maxim_tips: 路漫漫其修远兮，吾将上下而求索
     maxim_top: 往者不可谏，
     maxim_bottom: 来者犹可追。
 
   buff:
-    buff_tips: 特长-无
+    buff_tips: 特长 - 天生我材必有用
     buff_top: 人生得意须尽欢
     buff_bottom: 我辈岂是蓬蒿人
 
   game:
-    game_tips: 爱好游戏
+    game_tips: 游戏 - 斯人定何人，游戏得自在
     game_title: 使命召19-战争地带2.0
     game_uid: "geekswg#123456"
     game_bg: /imgs/t.png
@@ -85,13 +85,13 @@
         cover: /imgs/t2.webp  
 
   like:
-    like_tips: 关注偏好
+    like_tips: 偏好 - 爱好文雅，广延诗赋，以知得失。
     like_title: 数码科技
     like_bg: /imgs/t.webp
     like_bottom: 手机、电脑软硬件
 
   music:
-    music_tips: 高山流水遇知音,彩云追月得知己
+    music_tips: 音乐 - 高山流水遇知音,彩云追月得知己
     music_title: 此曲只应天上有，人间能得几回闻。
     music_bg: /imgs/t2.webp
     music_link: /music/?id=8138088068&server=tencent
