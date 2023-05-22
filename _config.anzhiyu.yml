@@ -229,6 +229,10 @@ cover:
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover: # 默认封面
     - /imgs/default-cover.webp
+    - /imgs/t1.webp
+    - /imgs/t2.webp
+    - /imgs/zhifeiji.gif
+    - /imgs/bg-main.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -302,10 +306,10 @@ reward:
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
     - img: /imgs/t1.webp
-      link:
+      link: https://geekswg.js.cool
       text: wechat
     - img: /imgs/t2.webp
-      link:
+      link: https://geekswg.js.cool
       text: alipay
 
 # Post edit 文章编辑
