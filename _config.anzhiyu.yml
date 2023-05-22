@@ -188,7 +188,7 @@ disable_top_img: false
 
 # The banner image of home page
 # 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
-index_img: /imgs/bg-mainx.webp
+index_img: /imgs/t2.webp
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /imgs/default-cover.webp
