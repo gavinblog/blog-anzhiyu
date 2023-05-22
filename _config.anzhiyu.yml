@@ -1180,7 +1180,7 @@ essay:
   button: About
   buttonLink: /about/
   limit: 30
-  top_background: /imgs/t.webp
+  top_background: /imgs/t2.webp
 
 # ptool 文章底部工具
 ptool:
