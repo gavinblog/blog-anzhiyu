@@ -1174,10 +1174,10 @@ visitorMail:
 # 即刻页面配置
 essay:
   enable: true
-  title: 即刻短文
-  subTitle: 咸鱼的日常生活。
+  title: 浮生若梦，为欢几何？
+  subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
   tips: 使用 即刻短文静态部署版 构建
-  button: 关于我
+  button: About
   buttonLink: /about/
   limit: 30
   top_background: /imgs/t.webp
