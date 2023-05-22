@@ -636,7 +636,7 @@ site_verification:
 # 主题色配置
 theme_color:
   enable: true
-  main: "transparent!important" # #3b70fc
+  main: "#3b70fc" # #3b70fc
   dark_main: "transparent!important" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
