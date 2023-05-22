@@ -3,7 +3,12 @@ var anzhiyu_musicFirst = false;
 // 音乐播放状态
 var anzhiyu_musicPlaying = false;
 // 是否开启快捷键
-var anzhiyu_keyboard = false;
+var anzhiyu_keyboard = localStorage.getItem("keyboardToggle") ? localStorage.getItem("keyboardToggle") : false;
+var $web_container = document.getElementById("web_container");
+var $web_box = document.getElementById("web_box");
+var $bodyWrap = document.getElementById("body-wrap");
+var $main = document.querySelector("main");
+var dragStartX;
 
 var adjectives = [
   "美丽的",
@@ -138,9 +143,68 @@ var vegetablesAndFruits = [
   "火龙果",
 ];
 document.addEventListener("DOMContentLoaded", function () {
-  let blogNameWidth, menusWidth, searchWidth, $nav;
-  let mobileSidebarOpen = false;
+  function onDragStart(event) {
+    // event.preventDefault();
+    dragStartX = getEventX(event);
+    $web_box.style.transition = "all .3s";
+    addMoveEndListeners(onDragMove, onDragEnd);
+  }
 
+  function onDragMove(event) {
+    const deltaX = getEventX(event) - dragStartX;
+    if (deltaX < 0) {
+      const screenWidth = window.innerWidth;
+      const translateX = Math.min(-300, ((-1 * deltaX) / screenWidth) * 300);
+      const scale = Math.min(1, 0.86 + (deltaX / screenWidth) * (1 - 0.86));
+      $web_box.style.transform = `translate3d(-${translateX}px, 0px, 0px) scale3d(${scale}, ${scale}, 1)`;
+    }
+  }
+
+  function onDragEnd(event) {
+    const screenWidth = window.innerWidth;
+    if (getEventX(event) <= screenWidth / 1.5) {
+      completeTransition();
+    } else {
+      resetTransition();
+    }
+    removeMoveEndListeners(onDragMove, onDragEnd);
+  }
+
+  function completeTransition() {
+    $web_box.style.transition = "all 0.3s ease-out";
+    $web_box.style.transform = "none";
+    sidebarFn.close();
+    removeMoveEndListeners(onDragMove, onDragEnd);
+  }
+
+  function resetTransition() {
+    $web_box.style.transition = "";
+    $web_box.style.transform = "";
+  }
+
+  function getEventX(event) {
+    return event.type.startsWith("touch") ? event.changedTouches[0].clientX : event.clientX;
+  }
+
+  function addMoveEndListeners(moveHandler, endHandler) {
+    document.addEventListener("mousemove", moveHandler);
+    document.addEventListener("mouseup", endHandler);
+    document.addEventListener("touchmove", moveHandler, { passive: false });
+    document.addEventListener("touchend", endHandler);
+  }
+
+  function removeMoveEndListeners(moveHandler, endHandler) {
+    document.removeEventListener("mousemove", moveHandler);
+    document.removeEventListener("mouseup", endHandler);
+    document.removeEventListener("touchmove", moveHandler);
+    document.removeEventListener("touchend", endHandler);
+  }
+
+  let blogNameWidth, menusWidth, searchWidth;
+  let mobileSidebarOpen = false;
+  const $sidebarMenus = document.getElementById("sidebar-menus");
+  const $rightside = document.getElementById("rightside");
+  let $nav = document.getElementById("nav");
   const adjustMenu = init => {
     if (init) {
       blogNameWidth = document.getElementById("site-name").offsetWidth;
@@ -176,18 +240,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebarFn = {
     open: () => {
       anzhiyu.sidebarPaddingR();
-      document.body.style.overflow = "hidden";
+      anzhiyu.changeThemeColor("#607d8b");
       anzhiyu.animateIn(document.getElementById("menu-mask"), "to_show 0.5s");
-      document.getElementById("sidebar-menus").classList.add("open");
+      $sidebarMenus.classList.add("open");
+      $web_box.classList.add("open");
+      $rightside.classList.add("hide");
+      $nav.style.borderTopLeftRadius = "12px";
       mobileSidebarOpen = true;
+      document.body.style.overflow = "hidden";
+      $web_box.addEventListener("mousedown", onDragStart);
+      $web_box.addEventListener("touchstart", onDragStart, { passive: false });
+      if (window.location.pathname.startsWith("/music/")) {
+        $web_container.style.background = "rgb(255 255 255 / 20%)";
+      } else {
+        $web_container.style.background = "var(--global-bg)";
+      }
     },
     close: () => {
       const $body = document.body;
-      $body.style.overflow = "";
+      anzhiyu.initThemeColor();
       $body.style.paddingRight = "";
       anzhiyu.animateOut(document.getElementById("menu-mask"), "to_hide 0.5s");
-      document.getElementById("sidebar-menus").classList.remove("open");
+      $sidebarMenus.classList.remove("open");
+      $web_box.classList.remove("open");
+      $rightside.classList.remove("hide");
+      $nav.style.borderTopLeftRadius = "0px";
       mobileSidebarOpen = false;
+      document.body.style.overflow = "auto";
+      anzhiyu.addNavBackgroundInit();
     },
   };
 
@@ -485,14 +565,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   /**
-   * 滾動處理
+   * 滚动处理
    */
   const scrollFn = function () {
     const $rightside = document.getElementById("rightside");
     const innerHeight = window.innerHeight + 56;
     let lastScrollTop = 0;
 
-    // 當滾動條小于 56 的時候
     if (document.body.scrollHeight <= innerHeight) {
       $rightside.style.cssText = "opacity: 1; transform: translateX(-58px)";
     }
@@ -510,17 +589,91 @@ document.addEventListener("DOMContentLoaded", function () {
     const isChatBtnHide = typeof chatBtnHide === "function";
     const isChatBtnShow = typeof chatBtnShow === "function";
 
+    // 第一次滑动到底部的标识符
+    let scrollBottomFirstFlag = false;
+    // 缓存常用dom元素
+    const musicDom = document.getElementById("nav-music"),
+      footerDom = document.getElementById("footer"),
+      waterfallDom = document.getElementById("waterfall"),
+      $percentBtn = document.getElementById("percent"),
+      $navTotop = document.getElementById("nav-totop"),
+      $bodyWrap = document.getElementById("body-wrap");
+    // 页面底部Dom是否存在
+    let pageBottomDomFlag = document.getElementById("post-comment") || document.getElementById("footer");
+
+    function percentageScrollFn(currentTop) {
+      // 处理滚动百分比
+      let docHeight = $bodyWrap.clientHeight;
+      const winHeight = document.documentElement.clientHeight;
+      const contentMath =
+        docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
+      const scrollPercent = currentTop / contentMath;
+      const scrollPercentRounded = Math.round(scrollPercent * 100);
+      const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 1 : scrollPercentRounded;
+      $percentBtn.textContent = percentage;
+
+      function isInViewPortOfOneNoDis(el) {
+        if (!el) return;
+        const elDisplay = window.getComputedStyle(el).getPropertyValue("display");
+        if (elDisplay == "none") {
+          return;
+        }
+        const viewPortHeight =
+          window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        const offsetTop = el.offsetTop;
+        const scrollTop = document.documentElement.scrollTop;
+        const top = offsetTop - scrollTop;
+        return top <= viewPortHeight;
+      }
+
+      if (isInViewPortOfOneNoDis(pageBottomDomFlag) || percentage > 90) {
+        $navTotop.classList.add("long");
+        $percentBtn.textContent = "返回顶部";
+      } else {
+        $navTotop.classList.remove("long");
+        $percentBtn.textContent = percentage;
+      }
+
+      // 如果当前页面需要瀑布流，就处理瀑布流
+      if (waterfallDom) {
+        const waterfallResult = currentTop % document.documentElement.clientHeight; // 卷去一个视口
+        if (!scrollBottomFirstFlag && waterfallResult + 100 >= document.documentElement.clientHeight) {
+          console.info(waterfallResult, document.documentElement.clientHeight);
+          setTimeout(() => {
+            waterfall("#waterfall");
+          }, 500);
+        } else {
+          setTimeout(() => {
+            waterfallDom && waterfall("#waterfall");
+          }, 500);
+        }
+      }
+
+      function runLazyLoad() {
+        const runFn = window.runJustifiedGalleryNextElementSiblingLazyloadFn;
+        if (runFn) {
+          runFn();
+        }
+      }
+
+      // 如果当前为相册详情页
+      const albumDetailGalleryLoadMore = document.getElementById("album_detail_gallery_load_more");
+      if (albumDetailGalleryLoadMore && anzhiyu.isInViewPortOfOne(albumDetailGalleryLoadMore)) {
+        setTimeout(runLazyLoad, 100);
+      }
+    }
+
     const scroolTask = anzhiyu.throttle(() => {
       const currentTop = window.scrollY || document.documentElement.scrollTop;
       const isDown = scrollDirection(currentTop);
 
       const delta = Math.abs(lastScrollTop - currentTop);
-      if (currentTop > 56 && delta < 50 && delta != 0) {
+      if (currentTop > 60 && delta < 20 && delta != 0) {
         // ignore small scrolls
         return;
       }
       lastScrollTop = currentTop;
-      if (currentTop > 16) {
+      if (currentTop > 26) {
         if (isDown) {
           if ($header.classList.contains("nav-visible")) $header.classList.remove("nav-visible");
           if (isChatBtnShow && isChatShow === true) {
@@ -534,19 +687,21 @@ document.addEventListener("DOMContentLoaded", function () {
             isChatShow = true;
           }
         }
-        anzhiyu.initThemeColor();
-        $header.classList.add("nav-fixed");
+        requestAnimationFrame(() => {
+          anzhiyu.initThemeColor();
+          $header.classList.add("nav-fixed");
+        });
         if (window.getComputedStyle($rightside).getPropertyValue("opacity") === "0") {
           $rightside.style.cssText = "opacity: 0.8; transform: translateX(-58px)";
         }
       } else {
         if (currentTop <= 5) {
-          if (!$header.querySelector(".bili-banner")) {
+          requestAnimationFrame(() => {
             $header.classList.remove("nav-fixed");
             $header.classList.remove("nav-visible");
-          }
-          // 修改顶栏颜色
-          anzhiyu.initThemeColor();
+            // 修改顶栏颜色
+            anzhiyu.initThemeColor();
+          });
         }
         $rightside.style.cssText = "opacity: ''; transform: ''";
       }
@@ -554,7 +709,29 @@ document.addEventListener("DOMContentLoaded", function () {
       if (document.body.scrollHeight <= innerHeight) {
         $rightside.style.cssText = "opacity: 0.8; transform: translateX(-58px)";
       }
-    }, 200);
+
+      percentageScrollFn(currentTop);
+    }, 96);
+
+    // 进入footer隐藏音乐
+    anzhiyu
+      .intersectionObserver(
+        () => {
+          // console.log(1);
+          if (footerDom && musicDom && 768 < document.body.clientWidth) {
+            musicDom.style.bottom = "-10px";
+            musicDom.style.opacity = "0";
+          }
+          scrollBottomFirstFlag = true;
+        },
+        () => {
+          if (footerDom && musicDom && 768 < document.body.clientWidth) {
+            musicDom.style.bottom = "20px";
+            musicDom.style.opacity = "1";
+          }
+        }
+      )()
+      .observe(footerDom);
 
     window.scrollCollect = scroolTask;
     window.addEventListener("scroll", scrollCollect);
@@ -570,26 +747,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!($article && (isToc || isAnchor))) return;
 
-    let $tocLink, $cardToc, scrollPercent, autoScrollToc, isExpand;
-
+    let $tocLink, $cardToc, autoScrollToc, isExpand;
     if (isToc) {
       const $cardTocLayout = document.getElementById("card-toc");
       $cardToc = $cardTocLayout.getElementsByClassName("toc-content")[0];
       $tocLink = $cardToc.querySelectorAll(".toc-link");
-      // const $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
       isExpand = $cardToc.classList.contains("is-expand");
-
-      // scrollPercent = currentTop => {
-      //   const docHeight = $article.clientHeight;
-      //   const winHeight = document.documentElement.clientHeight;
-      //   const headerHeight = $article.offsetTop;
-      //   const contentMath =
-      //     docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
-      //   const scrollPercent = (currentTop - headerHeight) / contentMath;
-      //   const scrollPercentRounded = Math.round(scrollPercent * 100);
-      //   const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 0 : scrollPercentRounded;
-      //   $tocPercentage.textContent = percentage;
-      // };
 
       window.mobileToc = {
         open: () => {
@@ -682,13 +845,11 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // main of scroll
-    window.tocScrollFn = function () {
-      return anzhiyu.throttle(function () {
-        const currentTop = window.scrollY || document.documentElement.scrollTop;
-        // isToc && scrollPercent(currentTop);
-        findHeadPosition(currentTop);
-      }, 100)();
-    };
+    window.tocScrollFn = anzhiyu.throttle(() => {
+      const currentTop = window.scrollY || document.documentElement.scrollTop;
+      findHeadPosition(currentTop);
+    }, 96);
+
     window.addEventListener("scroll", tocScrollFn);
   };
 
@@ -712,21 +873,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       newEle.addEventListener("click", clickFn);
-    },
-    switchDarkMode: () => {
-      // Switch Between Light And Dark Mode
-      const nowMode = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
-      if (nowMode === "light") {
-        activateDarkMode();
-        saveToLocal.set("theme", "dark", 2);
-        GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night);
-      } else {
-        activateLightMode();
-        saveToLocal.set("theme", "light", 2);
-        GLOBAL_CONFIG.Snackbar !== undefined && anzhiyu.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day);
-      }
-      // handle some cases
-      typeof runMermaid === "function" && window.runMermaid();
     },
     showOrHideBtn: e => {
       // rightside 點擊設置 按鈕 展開
@@ -800,7 +946,7 @@ document.addEventListener("DOMContentLoaded", function () {
         rightSideFn.switchReadMode();
         break;
       case "darkmode":
-        rightSideFn.switchDarkMode();
+        anzhiyu.switchDarkMode();
         break;
       case "hide-aside-btn":
         rightSideFn.hideAsideBtn();
@@ -1057,7 +1203,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // 判断新增的节点中是否包含 OwO-body 类名的元素
         for (let i = 0; i < addedNodes.length; i++) {
           const node = addedNodes[i];
-          if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains("OwO-body")) {
+          if (
+            node.nodeType === Node.ELEMENT_NODE &&
+            node.classList.contains("OwO-body") &&
+            !node.classList.contains("comment-barrage")
+          ) {
             const owo_body = node;
             // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
             owo_body.addEventListener("contextmenu", e => e.preventDefault());
@@ -1110,231 +1260,129 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // 网页百分比
-  const anzhiyuScrollFn = function () {
-    // 第一次滑动到底部的标识符
-    let scrollBottomFirstFlag = false;
-    // 缓存常用dom元素
-    const musicDom = document.getElementById("nav-music"),
-      footerDom = document.getElementById("footer"),
-      waterfallDom = document.getElementById("waterfall"),
-      percentBtn = document.getElementById("percent");
-
-    // 页面底部Dom是否存在
-    let pageBottomDomFlag = document.getElementById("post-comment") || document.getElementById("footer");
-
-    function scrollFn() {
-      // 自动隐藏音乐
-      if (footerDom && musicDom && 768 < document.body.clientWidth) {
-        musicDom.style.bottom = !anzhiyu.isInViewPortOfOne(footerDom) ? "20px" : "-10px";
-        musicDom.style.opacity = !anzhiyu.isInViewPortOfOne(footerDom) ? "1" : "0";
-      }
-
-      // 处理滚动百分比
-      let scrollTop = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度
-        scrollHeight =
-          Math.max(
-            document.body.scrollHeight,
-            document.documentElement.scrollHeight,
-            document.body.offsetHeight,
-            document.documentElement.offsetHeight,
-            document.body.clientHeight,
-            document.documentElement.clientHeight
-          ) - document.documentElement.clientHeight, // 整个网页高度 减去 可视高度
-        result = Math.round((scrollTop / scrollHeight) * 100); // 计算百分比
-
-      result = Math.min(99, Math.max(1, result));
-
-      // 滚动到底部区域需要做的操作
-      if (anzhiyu.isInViewPortOfOne(pageBottomDomFlag) || 90 < result) {
-        document.getElementById("nav-totop").classList.add("long");
-        percentBtn.textContent = "返回顶部";
-        scrollBottomFirstFlag = true;
-      } else {
-        document.getElementById("nav-totop").classList.remove("long");
-        percentBtn.textContent = result;
-      }
-
-      // 如果当前页面需要瀑布流，就处理瀑布流
-      if (waterfallDom) {
-        const waterfallResult = scrollTop % document.documentElement.clientHeight; // 卷去一个视口
-        if (!scrollBottomFirstFlag && waterfallResult + 100 >= document.documentElement.clientHeight) {
-          console.info(waterfallResult, document.documentElement.clientHeight);
-          setTimeout(() => {
-            waterfall("#waterfall");
-          }, 500);
-        } else {
-          setTimeout(() => {
-            waterfallDom && waterfall("#waterfall");
-          }, 500);
-        }
-      }
-
-      function runLazyLoad() {
-        const runFn = window.runJustifiedGalleryNextElementSiblingLazyloadFn;
-        if (runFn) {
-          runFn();
-        }
-      }
-
-      // 如果当前为相册详情页
-      const albumDetailGalleryLoadMore = document.getElementById("album_detail_gallery_load_more");
-      if (albumDetailGalleryLoadMore && anzhiyu.isInViewPortOfOne(albumDetailGalleryLoadMore)) {
-        setTimeout(runLazyLoad, 100);
-      }
-    }
-
-    // 绑定滚动处理函数
-    window.anzhiyuScrollFnToDo = anzhiyu.throttle(scrollFn, 48); // 执行函数
-    window.addEventListener("scroll", anzhiyuScrollFnToDo);
-  };
-
   //封面纯色
-  const coverColor = function () {
-    var path = document.getElementById("post-top-bg")?.src;
-    // console.log(path);
+  const coverColor = () => {
     const root = document.querySelector(":root");
-    if (path !== undefined) {
-      var httpRequest = new XMLHttpRequest(); //第一步：建立所需的对象
-      httpRequest.open("GET", path + "?imageAve", true); //第二步：打开连接  将请求参数写在url中
-      httpRequest.send(); //第三步：发送请求  将请求参数写在URL中
-      /**
-       * 获取数据后的处理程序
-       */
-      httpRequest.onreadystatechange = function () {
-        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-          var json = httpRequest.responseText; //获取到json字符串，还需解析
-          try {
-            var obj = JSON.parse(json, function (key, value) {
-              return value;
-            });
+    const path = document.getElementById("post-top-bg")?.src;
 
-            var value = obj.RGB;
-            value = "#" + value.slice(2);
-
-            // 亮色转化
-            if (getContrastYIQ(value) == "light") {
-              value = LightenDarkenColor(colorHex(value), -40);
-            }
-            // 设置转化后的值
-            root.style.setProperty("--anzhiyu-bar-background", value);
-            // 修改顶栏tab bar状态栏
-            anzhiyu.initThemeColor();
-          } catch (err) {
-            // 在这里处理 JSON.parse() 抛出的错误
-            root.style.setProperty("--anzhiyu-bar-background", "var(--anzhiyu-main)");
-            // 修改顶栏tab bar状态栏
-            anzhiyu.initThemeColor();
-          }
-        }
-      };
-    } else {
-      // 没有获取到文章顶图元素，也就是不在文章页，设置bar meta样式
+    if (!path) {
       root.style.setProperty("--anzhiyu-bar-background", "var(--anzhiyu-meta-theme-color)");
+      anzhiyu.initThemeColor();
+      return;
     }
-    anzhiyu.initThemeColor();
+
+    const httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", `${path}?imageAve`, true);
+    httpRequest.send();
+
+    httpRequest.onreadystatechange = () => {
+      const isRequestCompleted = httpRequest.readyState === 4;
+      const isSuccess = isRequestCompleted && httpRequest.status === 200;
+
+      let value;
+
+      if (isSuccess) {
+        try {
+          const obj = JSON.parse(httpRequest.responseText);
+          value = "#" + obj.RGB.slice(2);
+
+          if (getContrastYIQ(value) === "light") {
+            value = LightenDarkenColor(colorHex(value), -40);
+          }
+        } catch (err) {
+          value = "var(--anzhiyu-main)";
+        }
+      } else if (isRequestCompleted) {
+        value = "var(--anzhiyu-main)";
+      }
+
+      if (value) {
+        root.style.setProperty("--anzhiyu-bar-background", value);
+        anzhiyu.initThemeColor();
+      }
+    };
   };
 
   //RGB颜色转化为16进制颜色
-  const colorHex = function (str) {
-    var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-    var that = str;
-    if (/^(rgb|RGB)/.test(that)) {
-      var aColor = that.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
-      var strHex = "#";
-      for (var i = 0; i < aColor.length; i++) {
-        var hex = Number(aColor[i]).toString(16);
-        if (hex === "0") {
-          hex += hex;
-        }
-        strHex += hex;
-      }
-      if (strHex.length !== 7) {
-        strHex = that;
-      }
-      return strHex;
-    } else if (reg.test(that)) {
-      var aNum = that.replace(/#/, "").split("");
-      if (aNum.length === 6) {
-        return that;
-      } else if (aNum.length === 3) {
-        var numHex = "#";
-        for (var i = 0; i < aNum.length; i += 1) {
-          numHex += aNum[i] + aNum[i];
-        }
-        return numHex;
-      }
-    } else {
-      return that;
+  const colorHex = str => {
+    const hexRegex = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+
+    if (/^(rgb|RGB)/.test(str)) {
+      const aColor = str.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
+      return aColor.reduce((acc, val) => {
+        const hex = Number(val).toString(16).padStart(2, "0");
+        return acc + hex;
+      }, "#");
     }
+
+    if (hexRegex.test(str)) {
+      if (str.length === 4) {
+        return Array.from(str.slice(1)).reduce((acc, val) => acc + val + val, "#");
+      }
+      return str;
+    }
+
+    return str;
   };
 
   //16进制颜色转化为RGB颜色
-  const colorRgb = function (str) {
-    var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-    var sColor = str.toLowerCase();
-    if (sColor && reg.test(sColor)) {
+  const colorRgb = str => {
+    const hexRegex = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+    let sColor = str.toLowerCase();
+
+    if (sColor && hexRegex.test(sColor)) {
       if (sColor.length === 4) {
-        var sColorNew = "#";
-        for (var i = 1; i < 4; i += 1) {
-          sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
-        }
-        sColor = sColorNew;
+        sColor = Array.from(sColor.slice(1)).reduce((acc, val) => acc + val + val, "#");
       }
-      //处理六位的颜色值
-      var sColorChange = [];
-      for (var i = 1; i < 7; i += 2) {
-        sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
-      }
-      return "rgb(" + sColorChange.join(",") + ")";
-    } else {
-      return sColor;
+
+      const sColorChange = Array.from({ length: 3 }, (_, i) => parseInt(sColor.slice(i * 2 + 1, i * 2 + 3), 16));
+
+      return `rgb(${sColorChange.join(",")})`;
     }
+
+    return sColor;
   };
 
-  //变暗变亮主方法
-  const LightenDarkenColor = function (col, amt) {
-    var usePound = false;
+  // Lighten or darken a color
+  const LightenDarkenColor = (col, amt) => {
+    const usePound = col.startsWith("#");
 
-    if (col[0] == "#") {
+    if (usePound) {
       col = col.slice(1);
-      usePound = true;
     }
 
-    var num = parseInt(col, 16);
+    let num = parseInt(col, 16);
 
-    var r = (num >> 16) + amt;
+    const processColor = (colorValue, amount) => {
+      colorValue += amount;
+      return colorValue > 255 ? 255 : colorValue < 0 ? 0 : colorValue;
+    };
 
-    if (r > 255) r = 255;
-    else if (r < 0) r = 0;
-
-    var b = ((num >> 8) & 0x00ff) + amt;
-
-    if (b > 255) b = 255;
-    else if (b < 0) b = 0;
-
-    var g = (num & 0x0000ff) + amt;
-
-    if (g > 255) g = 255;
-    else if (g < 0) g = 0;
+    const r = processColor(num >> 16, amt);
+    const b = processColor((num >> 8) & 0x00ff, amt);
+    const g = processColor(num & 0x0000ff, amt);
 
     return (usePound ? "#" : "") + String("000000" + (g | (b << 8) | (r << 16)).toString(16)).slice(-6);
   };
-  //判断是否为亮色
-  const getContrastYIQ = function (hexcolor) {
-    var colorrgb = colorRgb(hexcolor);
-    var colors = colorrgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-    var red = colors[1];
-    var green = colors[2];
-    var blue = colors[3];
-    var brightness;
-    brightness = red * 299 + green * 587 + blue * 114;
-    brightness = brightness / 255000;
-    if (brightness >= 0.5) {
-      return "light";
-    } else {
-      return "dark";
-    }
+
+  // Determine whether a color is light or dark
+  const getContrastYIQ = hexcolor => {
+    const colorRgb = color => {
+      const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+      color = color.replace(shorthandRegex, (m, r, g, b) => r + r + g + g + b + b);
+
+      const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
+      return result ? `rgb(${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)})` : null;
+    };
+
+    const colorrgb = colorRgb(hexcolor);
+    const colors = colorrgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+    const [_, red, green, blue] = colors;
+
+    const brightness = (red * 299 + green * 587 + blue * 114) / 255000;
+
+    return brightness >= 0.5 ? "light" : "dark";
   };
 
   //监听跳转页面输入框是否按下回车
@@ -1428,7 +1476,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mouseleaveHomeCard();
     coverColor();
-    anzhiyuScrollFn();
     listenToPageInputPress();
   };
 
