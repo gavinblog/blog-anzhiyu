@@ -693,7 +693,7 @@ enter_transitions: true
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.5
   zIndex: 9999
@@ -703,7 +703,7 @@ canvas_ribbon:
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
   enable: true
-  zIndex: 9999
+  zIndex: 99999
   mobile: false
 
 # canvas_nest
