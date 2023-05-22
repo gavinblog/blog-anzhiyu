@@ -1,11 +1,18 @@
 # 即刻
 
-- class_name: 即刻短文
+- class_name: 浮生若梦，为欢几何？
   essay_list:
     - content: Hello World !
       date: 2023/05/08
       link: https://geekswg.js.cool/
-    
+
+
+    - content: 人有悲欢离合，月有阴晴圆缺
+      date: 2023/05/23
+      aplayer:
+        server: tencent
+        id: 004UdjVH2eavBG
+
     - content: Hello Hexo !
       date: 2023/04/28
     
