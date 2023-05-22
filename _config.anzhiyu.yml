@@ -635,9 +635,9 @@ site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 
 theme_color:
-  enable: false
+  enable: true
   main: "#3b70fc"
-  dark_main: "#0084ff"
+  dark_main: "transparent!important"
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
