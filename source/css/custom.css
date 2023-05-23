@@ -54,7 +54,7 @@
     --anzhiyu-blue: #5ca1ff;
     --anzhiyu-blue-tint: rgba(92,161,255,0.1);
     --anzhiyu-theme-op-deep: rgba(0,132,255,0.867);
-    --global-bg: #18171d;
+    --global-bg: transparent;
     --anzhiyu-theme: transparent;
     --anzhiyu-theme-deep: #0076e5;
     --anzhiyu-theme-op: rgba(0,132,255,0.137);
