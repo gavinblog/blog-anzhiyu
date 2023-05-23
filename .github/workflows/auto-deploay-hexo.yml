@@ -37,12 +37,13 @@ jobs:
     - name: Install hexo dependencies
       # 下载 hexo-cli 脚手架及相关安装包
       # hexo-offline pwa 依赖
+      # hexo-abbrlink 
       run: |
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
         npm install hexo-generator-search --save
-
+        npm install hexo-abbrlink --save
         npm install hexo-offline --save 
         npm ls --depth 0
 
