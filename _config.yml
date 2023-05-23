@@ -17,7 +17,7 @@ timezone: ''
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://geekswg-hexo.netlify.app
 # :hash/ 短链接，posts文章无法引用相对路径的图片。
-permalink: :hash  #修改文章地址 :year/:month/:day/:title/ 或者 :hash/
+permalink: :hash/  #修改文章地址 :year/:month/:day/:title/ 或者 :hash/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
