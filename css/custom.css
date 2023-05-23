@@ -29,7 +29,7 @@
   display: box;
   display: flex;
   margin: 1rem 27px;
-  /* color: var(--anzhiyu-card-bg); */
+  color: hotpink; 
   border-radius: 3rem;
   width: 32px;
   height: 32px;
