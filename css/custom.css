@@ -1,3 +1,12 @@
+#he-plugin-simple > div.s-sticker {
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 14px !important;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 20px; */
+  /* line-height: 17em; */
+}
+
 /* 自定义 dark 模式 */
 [data-theme='dark'] {
     --global-bg: transparent;
