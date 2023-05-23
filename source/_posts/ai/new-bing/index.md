@@ -35,7 +35,7 @@ featuredImagePreview: "featured-img.png"
    启用插件
    配置插件
    ![配置截图](/imgs/t.png "配置截图")
-   ![配置截图](newbing-header-editor.png "配置截图")
+   ![配置截图](/imgs/posts/newbing-header-editor.png "配置截图")
    配置参数
 ```
 // 匹配规则
@@ -51,7 +51,7 @@ x-forwarded-for
 ## 老账户无法加入waitlist
 
 老的微软账户是不是提示
-![new bing 申请waitlist错误](newbing.png "new bing 申请waitlist错误")
+![new bing 申请waitlist错误](/imgs/posts/newbing.png "new bing 申请waitlist错误")
 
 
 1. 使用科学上网地址非国内地址，申请一个新的微软账户加入 new bing [waitlist](https://www.bing.com/new)
@@ -74,10 +74,10 @@ x-forwarded-for
 > 使用体验非常好，尤其是上下文语境做的让人非常舒服，总之是一个合格而且优秀的助手
 推荐下载 [Edge-Dev](https://www.microsoftedgeinsider.com/zh-cn/download/dev) 体验效果非常好
 
-![Edge-Dev new bing 使用预览](newbing.gif "Edge-Dev new bing 使用预览")
+![Edge-Dev new bing 使用预览](/imgs/posts/newbing.gif "Edge-Dev new bing 使用预览")
 
 > 网页中使用bing-chat
 
 https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx
 
-![web new bing 使用预览](newbing.png "web new bing 使用预览")
+![web new bing 使用预览](/imgs/posts/newbing.png "web new bing 使用预览")

@@ -52,7 +52,7 @@ SwitchHosts 是一个管理、切换多个 hosts 方案的工具。 它是一个
 操作如下图
 
 
-![配置](230318-switchhosts.png "配置")
+![配置](/imgs/posts/230318-switchhosts.png "配置")
 
 
 ```hosts
@@ -78,4 +78,4 @@ SwitchHosts 是一个管理、切换多个 hosts 方案的工具。 它是一个
 接下来就可以正常在浏览器输入 https://www.bing.com/new
 就能愉快的和new bing玩耍了。
 
-![new bing](230318164630-new-bing.png "new bing chat")
+![new bing](/imgs/posts/230318164630-new-bing.png "new bing chat")
