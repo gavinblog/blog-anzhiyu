@@ -188,7 +188,9 @@ disable_top_img: false
 
 # The banner image of home page
 # 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
-index_img: /imgs/t2.webp
+# 注意这里的值是 style="{}" {}这个值
+index_img: "background:url(/imgs/t2.webp) no-repeat center;background-size:cover;"
+#index_img: false
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /imgs/default-cover.webp
@@ -637,7 +639,7 @@ site_verification:
 theme_color:
   enable: true
   main: "#3b70fc" # #3b70fc
-  dark_main: "transparent!important" #
+  dark_main: "transparent" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
@@ -693,7 +695,7 @@ enter_transitions: true
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.5
   zIndex: 9999
@@ -1220,7 +1222,7 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
