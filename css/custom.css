@@ -4,6 +4,7 @@
   margin: 0;
   color: #2ecc71;
   font-size: 5em !important;
+  margin-top: -100px;
 }
 #page-header #site-subtitle {
   color: #5ca1ff;
