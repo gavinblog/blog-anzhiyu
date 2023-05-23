@@ -38,6 +38,17 @@
   user-select: none;
   border: 1px solid;
 }
+/* 打赏金额 */
+.reward-list-item .reward-list-item-money {
+  padding: 4px;
+  background: var(--font-color);
+  /* color: var(--card-bg); */
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
 
 /* 页脚图标 */
 #footer-wrap #footer_deal .deal_link {
