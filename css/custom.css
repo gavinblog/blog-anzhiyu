@@ -1,3 +1,15 @@
+
+/* 首页一图流，打字字体 */
+#page-header #site-title {
+  margin: 0;
+  color: #2ecc71;
+  font-size: 1.85em;
+}
+#page-header #site-subtitle {
+  color: #5ca1ff;
+  font-size: 1.15em;
+}
+/* 天气插件位置 */
 #he-plugin-simple > div.s-sticker {
   font-size: 1.4em;
   cursor: pointer;
@@ -7,6 +19,45 @@
   /* line-height: 17em; */
 }
 
+/* 自定义 light 模式 */
+[data-theme="light"] {
+  --anzhiyu-meta-theme-post-color: #fff;
+  --anzhiyu-meta-theme-color: #f7f9fe;
+  --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
+  --global-bg: transparent;
+  --anzhiyu-theme: #3b70fc;
+  --anzhiyu-theme-deep: #1856fb;
+  --anzhiyu-theme-op: rgba(66,89,239,0.137);
+  --anzhiyu-blue: #5ca1ff;
+  --anzhiyu-blue-tint: rgba(92,161,255,0.1);
+  --anzhiyu-red: #d8213c;
+  --anzhiyu-pink: #ff7c7c;
+  --anzhiyu-green: #57bd6a;
+  --anzhiyu-fontcolor: #363636;
+  --anzhiyu-background: #F7F9F0;
+  --anzhiyu-reverse: #000;
+  --anzhiyu-maskbg: rgba(255,255,255,0.6);
+  --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
+  --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+  --anzhiyu-hovertext: var(
+  --anzhiyu-theme);
+  --anzhiyu-ahoverbg: #f7f7fa;
+  --anzhiyu-lighttext: var(
+  --anzhiyu-main);
+  --anzhiyu-secondtext: rgba(60,60,67,0.6);
+  --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+  --anzhiyu-card-btn-bg: #edf0f7;
+  --anzhiyu-post-blockquote-bg: #fafcff;
+  --anzhiyu-post-tabs-bg: #f2f5f8;
+  --anzhiyu-secondbg: #f1f3f8;
+  --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
+  --anzhiyu-card-bg: transparent;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  --anzhiyu-card-border: #e3e8f7;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+}
 /* 自定义 dark 模式 */
 [data-theme='dark'] {
     --global-bg: transparent;
