@@ -3,11 +3,11 @@
 #page-header #site-title {
   margin: 0;
   color: #2ecc71;
-  font-size: 1.85em;
+  font-size: 5em !important;
 }
 #page-header #site-subtitle {
   color: #5ca1ff;
-  font-size: 1.15em;
+  font-size: 3em;
 }
 /* 天气插件位置 */
 #he-plugin-simple > div.s-sticker {
