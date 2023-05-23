@@ -20,6 +20,25 @@
   /* line-height: 17em; */
 }
 
+/* 文章版权 原创标签 */
+#post .post-copyright__original,
+#post .post-copyright__reprint {
+  /* background: var(--anzhiyu-fontcolor); */
+  color: hotpink;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid;
+}
+
 /* 页脚图标 */
 #footer-wrap #footer_deal .deal_link {
   display: -webkit-box;

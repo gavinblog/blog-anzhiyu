@@ -28,7 +28,7 @@ pretty_urls:
 
 # https://github.com/rozbo/hexo-abbrlink
 abbrlink:
-  alg: crc32      #support crc16(default) and crc32
+  alg: crc16      #support crc16(default) and crc32
   rep: hex        #support dec(default) and hex
   drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
   # Generate categories from directory-tree
