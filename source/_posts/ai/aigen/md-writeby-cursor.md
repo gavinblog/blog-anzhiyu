@@ -1,27 +1,24 @@
 ---
-title: 关于ChatGPT 
-subtitle: "这一篇关于ChatGPT的文章，由AI工具Cursor写作"
-date: 2023-03-26T18:30:40+08:00
-#author: Cursor
-#authorLink: https://www.cursor.so/
+title: 关于ChatGPT
+subtitle: 这一篇关于ChatGPT的文章，由AI工具Cursor写作
 author:
   name: Cursor
-  link: https://www.cursor.so/
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["Cursor","ChatGPT"]
-categories: ["AI"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "/images/posts/featured-image-preview.jpg"
-
+  link: 'https://www.cursor.so/'
+description: 摘要
+keywords:
+  - ''
+tags:
+  - Cursor
+  - ChatGPT
+categories:
+  - AI
+featuredImage: /images/posts/featured-image-preview.jpg
 ai:
-  - ChatGPT是一个基于GPT-2的聊天机器人，它可以与用户进行自然语言交互。ChatGPT使用了GPT-2的预训练模型，可以生成高质量的自然语言文本，从而实现了智能聊天的功能。ChatGPT可以回答用户的问题、提供建议、进行闲聊等。用户可以通过输入文本与ChatGPT进行交互，ChatGPT会根据用户的输入生成相应的回复。ChatGPT还可以进行多轮对话，从而更好地理解用户的意图和需求。
+  - >-
+    ChatGPT是一个基于GPT-2的聊天机器人，它可以与用户进行自然语言交互。ChatGPT使用了GPT-2的预训练模型，可以生成高质量的自然语言文本，从而实现了智能聊天的功能。ChatGPT可以回答用户的问题、提供建议、进行闲聊等。用户可以通过输入文本与ChatGPT进行交互，ChatGPT会根据用户的输入生成相应的回复。ChatGPT还可以进行多轮对话，从而更好地理解用户的意图和需求。
   - 由人工Geek ChatGPT生成摘要内容。
+abbrlink: 66f3
+date: 2023-03-26 10:30:40
 ---
 
 > 这一片关于ChatGPT的文章，由AI工具Cursor写作

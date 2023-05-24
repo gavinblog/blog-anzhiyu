@@ -1,32 +1,20 @@
 ---
-title:  Electron是什么？
-subtitle: "这一篇关于Electron的文章，由AI工具Cursor写作"
-date: 2023-03-26T18:30:40+08:00
-#author: Cursor
-#authorLink: https://www.cursor.so/
+title: Electron是什么？
+subtitle: 这一篇关于Electron的文章，由AI工具Cursor写作
 author:
   name: Cursor
-  link: https://www.cursor.so/
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["Cursor","Electron"]
-categories: ["AI"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "230328000644-cursor-electron.png"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
-
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+  link: 'https://www.cursor.so/'
+description: 摘要
+keywords:
+  - ''
+tags:
+  - Cursor
+  - Electron
+categories:
+  - AI
+featuredImage: 230328000644-cursor-electron.png
+abbrlink: 524f
+date: 2023-03-26 10:30:40
 ---
 
 > 这一片关于ChatGPT的文章，由AI工具Cursor写作

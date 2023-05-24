@@ -1,16 +1,17 @@
 ---
 title: Hello World
-date: 2010-13-14T00:00:00+08:00
 categories: demo
-tags: 
+tags:
   - 示例
   - demo
-
 ai:
-  - Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/)
+  - >-
+    Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check
+    [documentation](https://hexo.io/docs/)
   - 本文摘要由ChatGPT智能生成。
-
-link: https://geekswg.js.cool
+link: 'https://geekswg.js.cool'
+abbrlink: 3eeb
+date: 2011-01-13 16:00:00
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

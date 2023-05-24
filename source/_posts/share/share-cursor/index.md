@@ -1,16 +1,18 @@
 ---
-title: Share Cursor 
-subtitle: ""
-date: 2023-03-23T18:15:27+08:00
+title: Share Cursor
+subtitle: ''
 author: 毕少侠
-# weight: 0
-description: "让AI帮你写代码！，Cursor,程序员的好帮手"
-keywords: [""] #关键词
-
-tags: ["AI","Cursor","ChatGPT"]
-categories: ["share"]
-
-#featuredImage: "/images/posts/featured-image-preview.jpg"
+description: '让AI帮你写代码！，Cursor,程序员的好帮手'
+keywords:
+  - ''
+tags:
+  - AI
+  - Cursor
+  - ChatGPT
+categories:
+  - share
+abbrlink: e71d
+date: 2023-03-23 10:15:27
 ---
 ![Cursor Home](230323185021-cursor-home.png)
 > [Cursor](https://www.cursor.so/)

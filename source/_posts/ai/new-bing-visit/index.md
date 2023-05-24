@@ -1,28 +1,18 @@
 ---
 title: New Bing 国内正常访问方法
-subtitle: "副标题"
-date: 2023-03-18T16:49:11+08:00
+subtitle: 副标题
 author: geekswg
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["New Bing","AI"]
-categories: ["AI"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "230318164630-new-bing.png"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
-
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+description: 摘要
+keywords:
+  - ''
+tags:
+  - New Bing
+  - AI
+categories:
+  - AI
+featuredImage: 230318164630-new-bing.png
+abbrlink: b191
+date: 2023-03-18 08:49:11
 ---
 
 > 记录国内正常网络环境直接访问New Bing的方法。

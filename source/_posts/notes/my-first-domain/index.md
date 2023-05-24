@@ -1,23 +1,23 @@
 ---
 title: 我的第一个域名
-subtitle: "geekswg.top"
-date: 2023-04-13T17:05:47+08:00
+subtitle: geekswg.top
 author: geekswg
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["笔记","建站"]
-categories: ["notes"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "/images/posts/featured-image-preview.jpg"
-
+description: 摘要
+keywords:
+  - ''
+tags:
+  - 笔记
+  - 建站
+categories:
+  - notes
+featuredImage: /images/posts/featured-image-preview.jpg
 ai:
-  - 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/),用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01
+  - >-
+    终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/),用于个人博客使用，花费
+    $1.88美元，支付宝支付，折合人民币 ￥13.01
   - 由人工Geek ChatGPT生成摘要内容。
+abbrlink: '9269'
+date: 2023-04-13 09:05:47
 ---
 > 终于买了我的人生中第一个域名。 [geekswg.top](https://geekswg.top/)
 > 用于个人博客使用，花费 $1.88美元，支付宝支付，折合人民币 ￥13.01

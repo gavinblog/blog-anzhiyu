@@ -1,36 +1,26 @@
 ---
-title: Cursor帮我写的代码 
-subtitle: "这里记录Cursor帮我写的代码，由AI工具Cursor创作"
-date: 2023-03-26T18:30:40+08:00
-#author: Cursor
-#authorLink: https://www.cursor.so/
+title: Cursor帮我写的代码
+subtitle: 这里记录Cursor帮我写的代码，由AI工具Cursor创作
 author:
   name: Cursor
-  link: https://www.cursor.so/
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["Cursor","ChatGPT","Code"]
-categories: ["AI"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "/images/posts/featured-image-preview.jpg"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
-
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
-
+  link: 'https://www.cursor.so/'
+description: 摘要
+keywords:
+  - ''
+tags:
+  - Cursor
+  - ChatGPT
+  - Code
+categories:
+  - AI
+featuredImage: /images/posts/featured-image-preview.jpg
 ai:
-  - 记录由AI工具帮忙写的代码，越来越离不开Cusor了。> `Ctrl + K` 实现方法一个白名单网站数组，判断当前的文字是否在白名单内，如果在则放行跳转。
+  - >-
+    记录由AI工具帮忙写的代码，越来越离不开Cusor了。> `Ctrl + K`
+    实现方法一个白名单网站数组，判断当前的文字是否在白名单内，如果在则放行跳转。
   - 由人工Geek ChatGPT生成摘要内容。
+abbrlink: 43b8
+date: 2023-03-26 10:30:40
 ---
 > 记录由AI工具帮忙写的代码，越来越离不开Cusor了。
 作者: [Cursor](https://www.cursor.so/)

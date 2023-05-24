@@ -1,25 +1,20 @@
 ---
 title: New Bing 申请教程
-subtitle: "申请指北，记录申请New Bing 过程中遇到的一些问题和解决的经验"
-date: 2023-02-20T14:51:53+08:00
-author: "geekswg"
-
-description: "文章摘要"
-keywords: ["new bing","chatgpt"] #关键词
-
-tags: ["bing","ChatGPT"]
-categories: ["AI"]
-
-featuredImage: "featured-img.png"
-featuredImagePreview: "featured-img.png"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
-
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+subtitle: 申请指北，记录申请New Bing 过程中遇到的一些问题和解决的经验
+author: geekswg
+description: 文章摘要
+keywords:
+  - new bing
+  - chatgpt
+tags:
+  - bing
+  - ChatGPT
+categories:
+  - AI
+featuredImage: featured-img.png
+featuredImagePreview: featured-img.png
+abbrlink: 7c79
+date: 2023-02-20 06:51:53
 ---
 
 最近除了有很红的ChatGPT AI 聊天机器人之外，还有很多人跃跃欲试新版Bing（New Bing），因为微软将新版Bing 结合了比ChatGPT 更强大的新一代OpenAI 语言模型，不仅能询问复杂问题、提供建议与解决方法，Bing 也会查看网路搜寻结果，迅速为我们提供摘要。

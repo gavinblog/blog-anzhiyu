@@ -1,27 +1,25 @@
 ---
 title: 关于Docker
-subtitle: "这一篇关于Docker的文章，由AI工具Cursor写作"
-date: 2023-04-02T18:30:40+08:00
-#author: Cursor
-#authorLink: https://www.cursor.so/
+subtitle: 这一篇关于Docker的文章，由AI工具Cursor写作
 author:
   name: Cursor
-  link: https://www.cursor.so/
-# weight: 0
-description: "摘要"
-keywords: [""] #关键词
-
-tags: ["Cursor","Docker"]
-categories: ["AI"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "/images/posts/featured-image-preview.jpg"
-
+  link: 'https://www.cursor.so/'
+description: 摘要
+keywords:
+  - ''
+tags:
+  - Cursor
+  - Docker
+categories:
+  - AI
+featuredImage: /images/posts/featured-image-preview.jpg
 ai:
-  - 什么是 Docker？Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。Docker 的优势主要有以下几点
+  - >-
+    什么是 Docker？Docker 是一个开源的容器化平台，可以让开发者将应用程序和依赖项打包到一个可移植的容器中，然后在任何地方运行。Docker
+    的优势主要有以下几点
   - 由人工Geek ChatGPT生成摘要内容。
+abbrlink: 43c0
+date: 2023-04-02 10:30:40
 ---
 > 这一片关于Docker的文章，由AI工具Cursor写作
 作者: [Cursor](https://www.cursor.so/)
