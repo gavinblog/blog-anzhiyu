@@ -1,30 +1,30 @@
-
 /* 首页一图流，打字字体 */
 #page-header #site-title {
-  margin: 0;
-  color: #2ecc71;
-  font-size: 5em !important;
-  margin-top: -100px;
-}
-#page-header #site-subtitle {
-  color: #5ca1ff;
-  font-size: 2em;
-}
-/* 天气插件位置 */
-#he-plugin-simple > div.s-sticker {
-  font-size: 1.4em;
-  cursor: pointer;
-  padding: 14px !important;
-  /* background-color: rgb(255, 255, 255); */
-  /* border-radius: 20px; */
-  /* line-height: 17em; */
-}
+    margin: 0;
+    color: #2ecc71;
+    font-size: 5em !important;
+    margin-top: -100px;
+  }
+  #page-header #site-subtitle {
+    color: #5ca1ff;
+    font-size: 2em;
+  }
+  /* 天气插件位置 */
+  #he-plugin-simple > div.s-sticker {
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 14px !important;
+    /* background-color: rgb(255, 255, 255); */
+    /* border-radius: 20px; */
+    /* line-height: 17em; */
+  }
 
-/* 文章版权 原创标签 */
+/* 文章底部原创 */
 #post .post-copyright__original,
 #post .post-copyright__reprint {
   /* background: var(--anzhiyu-fontcolor); */
   color: hotpink;
+  border: 1px solid;
   padding: 0.2rem 1rem;
   font-size: 0.8rem;
   border-radius: 8px;
@@ -36,133 +36,50 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid;
-}
-/* 打赏金额 */
-.reward-list-item .reward-list-item-money {
-  padding: 4px;
-  background: var(--font-color);
-  /* color: var(--card-bg); */
-  font-size: 12px;
-  line-height: 1;
-  border-radius: 4px;
-  margin-right: 4px;
-  white-space: nowrap;
 }
 
-/* 页脚图标 */
-#footer-wrap #footer_deal .deal_link {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  margin: 1rem 27px;
-  color: hotpink; 
-  border-radius: 3rem;
-  width: 32px;
-  height: 32px;
-  background: var(--anzhiyu-fontcolor);
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-}
-/* 自定义 light 模式 */
+
+/* 自定义主题配色 */
 [data-theme="light"] {
-  --anzhiyu-meta-theme-post-color: #fff;
-  --anzhiyu-meta-theme-color: #f7f9fe;
-  --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
-  --global-bg: transparent;
-  --anzhiyu-theme: #3b70fc;
-  --anzhiyu-theme-deep: #1856fb;
-  --anzhiyu-theme-op: rgba(66,89,239,0.137);
-  --anzhiyu-blue: #5ca1ff;
-  --anzhiyu-blue-tint: rgba(92,161,255,0.1);
-  --anzhiyu-red: #d8213c;
-  --anzhiyu-pink: #ff7c7c;
-  --anzhiyu-green: #57bd6a;
-  --anzhiyu-fontcolor: #363636;
-  --anzhiyu-background: #F7F9F0;
-  --anzhiyu-reverse: #000;
-  --anzhiyu-maskbg: rgba(255,255,255,0.6);
-  --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
-  --anzhiyu-scrollbar: rgba(60,60,67,0.4);
-  --anzhiyu-hovertext: var(
-  --anzhiyu-theme);
-  --anzhiyu-ahoverbg: #f7f7fa;
-  --anzhiyu-lighttext: var(
-  --anzhiyu-main);
-  --anzhiyu-secondtext: rgba(60,60,67,0.6);
-  --anzhiyu-scrollbar: rgba(60,60,67,0.4);
-  --anzhiyu-card-btn-bg: #edf0f7;
-  --anzhiyu-post-blockquote-bg: #fafcff;
-  --anzhiyu-post-tabs-bg: #f2f5f8;
-  --anzhiyu-secondbg: #f1f3f8;
-  --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
-  --anzhiyu-card-bg: transparent;
-  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
-  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
-  --anzhiyu-card-border: #e3e8f7;
-  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
-  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
-}
-/* 自定义 dark 模式 */
-[data-theme='dark'] {
+    background: transparent;
     --global-bg: transparent;
-    --font-color: rgba(255,255,255,0.7);
-    --hr-border: rgba(255,255,255,0.4);
-    --hr-before-color: rgba(255,255,255,0.7);
-    --search-bg: transparent;
-    --search-input-color: rgba(255,255,255,0.7);
-    --search-result-title: rgba(255,255,255,0.9);
-    --preloader-bg: transparent;
-    --preloader-color: rgba(255,255,255,0.7);
-    --tab-border-color: #2c2c2c;
-    --tab-botton-bg: #2c2c2c;
-    --tab-botton-color: rgba(255,255,255,0.7);
-    --tab-button-hover-bg: #383838;
-    --tab-button-active-bg: transparent;
-    --card-bg: transparent;
-    --sidebar-bg: transparent;
-    --btn-hover-color: #787878;
-    --btn-color: rgba(255,255,255,0.7);
-    --btn-bg: #1f1f1f;
-    --text-bg-hover: #383838;
-    --light-grey: rgba(255,255,255,0.7);
-    --dark-grey: rgba(255,255,255,0.2);
-    --white: rgba(255,255,255,0.9);
-    --text-highlight-color: rgba(255,255,255,0.9);
-    --blockquote-color: rgba(255,255,255,0.7);
-    --blockquote-bg: #2c2c2c;
-    --reward-pop: #2c2c2c;
-    --toc-link-color: rgba(255,255,255,0.6);
-    --hl-color: rgba(255,255,255,0.7);
-    --hl-bg: #171717;
-    --hltools-bg: #1a1a1a;
-    --hltools-color: #90a4ae;
-    --hlnumber-bg: #171717;
-    --hlnumber-color: rgba(255,255,255,0.4);
-    --hlscrollbar-bg: #1f1f1f;
-    --hlexpand-bg: linear-gradient(180deg, rgba(23,23,23,0.6), rgba(23,23,23,0.9));
-    --scrollbar-color: #1f1f1f;
-    --timeline-bg: #1f1f1f;
+    --anzhiyu-meta-theme-post-color: #fff;
+    --anzhiyu-meta-theme-color: #f7f9fe;
+    --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
+    --global-bg: trnasparent;
+    --anzhiyu-theme: #5ca1ff;
+    --anzhiyu-theme-deep: #1856fb;
+    --anzhiyu-theme-op: rgba(66,89,239,0.137);
+    --anzhiyu-blue: #5ca1ff;
+    --anzhiyu-blue-tint: rgba(92,161,255,0.1);
+    --anzhiyu-red: #d8213c;
+    --anzhiyu-pink: #ff7c7c;
+    --anzhiyu-green: #57bd6a;
+    --anzhiyu-fontcolor: #363636;
+    --anzhiyu-background: #CCCDDD;
+    --anzhiyu-reverse: #000;
+    --anzhiyu-maskbg: rgba(255,255,255,0.6);
+    --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
+    --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+    --anzhiyu-hovertext: var(--anzhiyu-theme);
+    --anzhiyu-ahoverbg: #f7f7fa;
+    --anzhiyu-lighttext: var(--anzhiyu-main);
+    --anzhiyu-secondtext: rgba(60,60,67,0.6);
+    --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+    --anzhiyu-card-btn-bg: #edf0f7;
+    --anzhiyu-post-blockquote-bg: #fafcff;
+    --anzhiyu-post-tabs-bg: #f2f5f8;
+    --anzhiyu-secondbg: #f1f3f8;
+    --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
+    --anzhiyu-card-bg: transparent;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-card-border: #e3e8f7;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   }
   [data-theme="dark"] {
+    --global-bg: transparent;
     --anzhiyu-meta-theme-post-color: #1d1e22;
     --anzhiyu-meta-theme-color: #000;
     --anzhiyu-blue: #5ca1ff;
@@ -177,7 +94,7 @@
     --anzhiyu-pink: #ff7c7c;
     --anzhiyu-green: #57bd6a;
     --anzhiyu-fontcolor: #f7f7fa;
-    /* --anzhiyu-background: transparent; */
+    --anzhiyu-background: #18171d;
     --anzhiyu-reverse: #fff;
     --anzhiyu-maskbg: rgba(0,0,0,0.6);
     --anzhiyu-maskbgdeep: rgba(0,0,0,0.85);
@@ -198,4 +115,37 @@
     --anzhiyu-card-border: #42444a;
     --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
     --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  }
+
+  /* 页脚图标 */
+#footer-wrap #footer_deal .deal_link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin: 1rem 27px;
+    color: hotpink; 
+    border-radius: 3rem;
+    width: 32px;
+    height: 32px;
+    background: var(--anzhiyu-fontcolor);
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
   }
