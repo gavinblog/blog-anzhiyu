@@ -38,14 +38,14 @@
   user-select: none;
 }
 #about-page .myInfoAndSayHello {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--anzhiyu-white);
-    /* background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%); */
-    background-size: 200%;
-    animation: gradient 15s ease infinite;
-    width: 59%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--anzhiyu-white);
+  background: transparent !important;
+  background-size: 200%;
+  animation: gradient 15s ease infinite;
+  width: 59%;
 }
 .author-content-item.buff {
     height: 200px;
@@ -56,7 +56,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    /* background: linear-gradient(120deg, #ff27e8 0, #ff8000 100%); */
+    background: transparent !important;
     color: var(--anzhiyu-white);
     background-size: 200%;
     animation: gradient 15s ease infinite;
