@@ -65,6 +65,9 @@
     width: 59%;
 }
 
+div#post {
+  background: transparent;
+}
 
 /* 自定义主题配色 */
 [data-theme="light"] {
