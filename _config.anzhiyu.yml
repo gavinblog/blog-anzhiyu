@@ -43,7 +43,7 @@ menu:
 
   ​毕少侠: /about/ || anzhiyu-icon-shoe-prints1
 
-# nav相关配置
+# nav相关配置 
 nav:
   enable: true
   travelling: true
