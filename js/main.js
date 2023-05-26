@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebarFn = {
     open: () => {
       anzhiyu.sidebarPaddingR();
-      anzhiyu.changeThemeColor("#607d8b");
+      anzhiyu.changeThemeMetaColor("#607d8b");
       anzhiyu.animateIn(document.getElementById("menu-mask"), "to_show 0.5s");
       $sidebarMenus.classList.add("open");
       $web_box.classList.add("open");
@@ -473,13 +473,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const alt = i.alt ? `alt="${replaceDq(i.alt)}"` : "";
         const title = i.title ? `title="${replaceDq(i.title)}"` : "";
         const address = i.address ? i.address : "";
-        if (address) {
-          str += `<div class="fj-gallery-item"><div class="tag-address">${address}</div><img src="${i.url}" ${
-            alt + title
-          }"></div>`;
-        } else {
-          str += `<div class="fj-gallery-item"><img src="${i.url}" ${alt + title}"></div>`;
-        }
+        const galleryItem = `
+        <div class="fj-gallery-item">
+          ${address ? `<div class="tag-address">${address}</div>` : ""}
+          <img src="${i.url}" ${alt + title}>
+        </div>
+      `;
+        str += galleryItem;
       });
 
       return str;
@@ -508,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // 不懒加载
         item.innerHTML = htmlStr(arr);
       } else {
-        if (!item.classList.contains("btn_album_detail_lazyload")) {
+        if (!item.classList.contains("btn_album_detail_lazyload") || item.classList.contains("page_img_lazyload")) {
           // 滚动懒加载
           lazyloadFn(item, arr, limit);
           const clickBtnFn = () => {
@@ -519,12 +519,24 @@ document.addEventListener("DOMContentLoaded", function () {
               item.querySelectorAll(`.fj-gallery-item:nth-last-child(-n+${lastItemLength})`)
             );
             anzhiyu.loadLightbox(item.querySelectorAll("img"));
-            lastItemLength < Number(limit) && (window.runJustifiedGalleryNextElementSiblingLazyloadFn = null);
+            if (lastItemLength < Number(limit)) {
+              observer.unobserve(item.nextElementSibling);
+            }
           };
 
-          window.runJustifiedGalleryNextElementSiblingLazyloadFn = clickBtnFn;
+          // 创建IntersectionObserver实例
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              // 如果元素进入视口
+              if (entry.isIntersecting) {
+                // 执行clickBtnFn函数
+                setTimeout(clickBtnFn(), 100);
+              }
+            });
+          });
+          observer.observe(item.nextElementSibling);
         } else {
-          // 按钮懒加载
+          // 相册详情 按钮懒加载
           lazyloadFn(item, arr, limit);
           const clickBtnFn = () => {
             const lastItemLength = lazyloadFn(item, arr, limit);
@@ -647,19 +659,6 @@ document.addEventListener("DOMContentLoaded", function () {
             waterfallDom && waterfall("#waterfall");
           }, 500);
         }
-      }
-
-      function runLazyLoad() {
-        const runFn = window.runJustifiedGalleryNextElementSiblingLazyloadFn;
-        if (runFn) {
-          runFn();
-        }
-      }
-
-      // 如果当前为相册详情页
-      const albumDetailGalleryLoadMore = document.getElementById("album_detail_gallery_load_more");
-      if (albumDetailGalleryLoadMore && anzhiyu.isInViewPortOfOne(albumDetailGalleryLoadMore)) {
-        setTimeout(runLazyLoad, 100);
       }
     }
 
@@ -1269,6 +1268,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!path) {
       root.style.setProperty("--anzhiyu-bar-background", "var(--anzhiyu-meta-theme-color)");
       anzhiyu.initThemeColor();
+
+      if (GLOBAL_CONFIG.changeMainColorPost) {
+        document.documentElement.style.setProperty(
+          "--anzhiyu-main",
+          getComputedStyle(document.documentElement).getPropertyValue("--anzhiyu-theme")
+        );
+      }
+
       return;
     }
 
@@ -1291,15 +1298,18 @@ document.addEventListener("DOMContentLoaded", function () {
             value = LightenDarkenColor(colorHex(value), -40);
           }
         } catch (err) {
-          value = "var(--anzhiyu-main)";
+          value = "var(--anzhiyu-theme)";
         }
       } else if (isRequestCompleted) {
-        value = "var(--anzhiyu-main)";
+        value = "var(--anzhiyu-theme)";
       }
 
       if (value) {
         root.style.setProperty("--anzhiyu-bar-background", value);
         anzhiyu.initThemeColor();
+        if (GLOBAL_CONFIG.changeMainColorPost) {
+          document.documentElement.style.setProperty("--anzhiyu-main", value);
+        }
       }
     };
   };
