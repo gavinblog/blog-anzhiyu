@@ -1,0 +1,181 @@
+/* 首页一图流，打字字体 */
+#page-header #site-title {
+    margin: 0;
+    color: #2ecc71;
+    font-size: 5em !important;
+    margin-top: -100px;
+  }
+  #page-header #site-subtitle {
+    color: #5ca1ff;
+    font-size: 2em;
+  }
+  /* 天气插件位置 */
+  #he-plugin-simple > div.s-sticker {
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 14px !important;
+    /* background-color: rgb(255, 255, 255); */
+    /* border-radius: 20px; */
+    /* line-height: 17em; */
+  }
+
+/* 文章底部原创 */
+#post .post-copyright__original,
+#post .post-copyright__reprint {
+  /* background: var(--anzhiyu-fontcolor); */
+  color: hotpink;
+  border: 1px solid;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#about-page .myInfoAndSayHello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--anzhiyu-white);
+  background: transparent !important;
+  background-size: 200%;
+  animation: gradient 15s ease infinite;
+  width: 59%;
+}
+.author-content-item.buff {
+    height: 200px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent !important;
+    color: var(--anzhiyu-white);
+    background-size: 200%;
+    animation: gradient 15s ease infinite;
+    min-height: 200px;
+    height: fit-content;
+    width: 59%;
+}
+
+div#post {
+  background: transparent;
+}
+
+/* 自定义主题配色 */
+[data-theme="light"] {
+    background: transparent;
+    --global-bg: transparent;
+    --anzhiyu-meta-theme-post-color: #fff;
+    --anzhiyu-meta-theme-color: #f7f9fe;
+    --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
+    --global-bg: trnasparent;
+    --anzhiyu-theme: #5ca1ff;
+    --anzhiyu-theme-deep: #1856fb;
+    --anzhiyu-theme-op: rgba(66,89,239,0.137);
+    --anzhiyu-blue: #5ca1ff;
+    --anzhiyu-blue-tint: rgba(92,161,255,0.1);
+    --anzhiyu-red: #d8213c;
+    --anzhiyu-pink: #ff7c7c;
+    --anzhiyu-green: #57bd6a;
+    --anzhiyu-fontcolor: #363636;
+    --anzhiyu-background: #CCCDDD;
+    --anzhiyu-reverse: #000;
+    --anzhiyu-maskbg: rgba(255,255,255,0.6);
+    --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
+    --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+    --anzhiyu-hovertext: var(--anzhiyu-theme);
+    --anzhiyu-ahoverbg: #f7f7fa;
+    --anzhiyu-lighttext: var(--anzhiyu-main);
+    --anzhiyu-secondtext: rgba(60,60,67,0.6);
+    --anzhiyu-scrollbar: rgba(60,60,67,0.4);
+    --anzhiyu-card-btn-bg: #edf0f7;
+    --anzhiyu-post-blockquote-bg: #fafcff;
+    --anzhiyu-post-tabs-bg: #f2f5f8;
+    --anzhiyu-secondbg: #f1f3f8;
+    --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
+    --anzhiyu-card-bg: transparent;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-card-border: #e3e8f7;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  }
+  [data-theme="dark"] {
+    --global-bg: transparent;
+    --anzhiyu-meta-theme-post-color: #1d1e22;
+    --anzhiyu-meta-theme-color: #000;
+    --anzhiyu-blue: #5ca1ff;
+    --anzhiyu-blue-tint: rgba(92,161,255,0.1);
+    --anzhiyu-theme-op-deep: rgba(0,132,255,0.867);
+    --global-bg: transparent;
+    --anzhiyu-theme: transparent;
+    --anzhiyu-theme-deep: #0076e5;
+    --anzhiyu-theme-op: rgba(0,132,255,0.137);
+    --anzhiyu-blue: #0084ff;
+    --anzhiyu-red: #ff3842;
+    --anzhiyu-pink: #ff7c7c;
+    --anzhiyu-green: #57bd6a;
+    --anzhiyu-fontcolor: #f7f7fa;
+    --anzhiyu-background: #18171d;
+    --anzhiyu-reverse: #fff;
+    --anzhiyu-maskbg: rgba(0,0,0,0.6);
+    --anzhiyu-maskbgdeep: rgba(0,0,0,0.85);
+    --anzhiyu-hovertext: #0a84ff;
+    --anzhiyu-ahoverbg: #fff;
+    --anzhiyu-scrollbar: rgba(200,200,223,0.4);
+    --anzhiyu-lighttext: #f2b94b;
+    --anzhiyu-secondtext: #a1a2b8;
+    --anzhiyu-scrollbar: rgba(200,200,223,0.4);
+    --anzhiyu-card-btn-bg: #30343f;
+    --anzhiyu-post-blockquote-bg: #000;
+    --anzhiyu-post-tabs-bg: #121212;
+    --anzhiyu-secondbg: #30343f;
+    --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28,28,28,0.4);
+    --anzhiyu-card-bg: transparent;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-card-border: #42444a;
+    --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+    --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  }
+
+  /* 页脚图标 */
+#footer-wrap #footer_deal .deal_link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    margin: 1rem 27px;
+    color: hotpink; 
+    border-radius: 3rem;
+    width: 32px;
+    height: 32px;
+    background: var(--anzhiyu-fontcolor);
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
