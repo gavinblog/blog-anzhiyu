@@ -1141,9 +1141,9 @@ diytitle:
 
 # 留言弹幕配置  注意 仅支持Twikoo
 comment_barrage_config:
-  enable: false
+  enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 1
+  maxBarrage: 3
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
