@@ -36,7 +36,7 @@
         - /imgs/bg-waline.webp
         - /imgs/404.gif
         - /imgs/404.gif
-        
+
     - date: 2022-10-25
       content: 洛阳暴雨后的天空。- content
       address: 河南洛阳-address
@@ -45,7 +45,6 @@
         - /imgs/t1.webp
         - /imgs/t2.webp
         - /imgs/404.gif
-    
 
 - class_name: Album2-Demo2-Type2-样式2
   path_name: /album-2
@@ -85,7 +84,7 @@
   rowHeight: 220
   limit: 10
   lazyload: true
-  btnLazyload: false
+  btnLazyload: true
   url: false
   album_list:
     - date: 2023-05-24
