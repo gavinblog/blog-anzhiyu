@@ -2830,7 +2830,7 @@ figure.highlight pre .javascript .function {
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-height: 100vh;
   -webkit-overflow-scrolling: touch;
 }
@@ -11354,6 +11354,7 @@ li.card-archive-list-item {
   -o-transition: 0.3s ease-out;
   -ms-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  z-index: 2;
 }
 #web_box.open #menu-mask {
   display: block;
@@ -19071,7 +19072,7 @@ body[data-type="envelope"] #page #post-comment .tk-comments-container > .tk-comm
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
 }
 canvas#universe {
   display: none;
