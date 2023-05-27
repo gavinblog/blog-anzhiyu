@@ -14,7 +14,7 @@ categories:
 abbrlink: e71d
 date: 2023-03-23 10:15:27
 ---
-![Cursor Home](230323185021-cursor-home.png)
+![Cursor Home](/imgs/posts/230323185021-cursor-home.png)
 > [Cursor](https://www.cursor.so/)
 > 最重要的是这个是 开源免费，国内直接访问的AI助手小工具.  
 > 开源地址 https://github.com/getcursor/cursor
