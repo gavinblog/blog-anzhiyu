@@ -1,15 +1,15 @@
 
-- class_name: Album1-Demo1-Type1-样式1
+- class_name: Demo1-Type1-样式1
   path_name: /album-1
   type: 1
-  description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
+  description: 君不见黄河之水天上来，奔流到海不复回。🌇。
   cover: /imgs/t1.webp
   
   album_list:
     - date: 2022/05/20 01:00:00
-      content: 湘潭的一角。 - content
-      address: 湖南湘潭 - 湖南湘潭
-      from: From1 - from
+      content: 君不见高堂明镜悲白发，朝如青丝暮成雪。
+      address: 华夏 - 神州大地
+      from: XiaoMi MIUI-DEV
       image:
         - /imgs/t1.webp
         - /imgs/bg-main.webp
@@ -18,16 +18,16 @@
         - /imgs/404.gif
   
     - date: 2023-05-10
-      content: 洛阳暴雨后的天空。- content
-      address: 河南洛阳-address
-      from: From2 - from
+      content: 人生得意须尽欢，莫使金樽空对月。
+      address: 华夏 - 神州大地
+      from: RedMi MIUI14
       image:
         - /imgs/t1.webp
         - /imgs/t2.webp
         - /imgs/bg-waline.webp
     - date: 2022/10/26 01:00:00
-      content: 湘潭的一角。 - content
-      address: 湖南湘潭 - 湖南湘潭
+      content: 天生我材必有用，千金散尽还复来。
+      address: 华夏 - 神州大地
       from: From1 - from
       image:
         - /imgs/t1.webp
@@ -38,15 +38,15 @@
         - /imgs/404.gif
 
     - date: 2022-10-25
-      content: 洛阳暴雨后的天空。- content
-      address: 河南洛阳-address
-      from: From2 - from
+      content: 明月几时有，把酒问青天。
+      address: 中华 - 神州
+      from: HuaWei HarmonyOS 3
       image:
         - /imgs/t1.webp
         - /imgs/t2.webp
         - /imgs/404.gif
 
-- class_name: Album2-Demo2-Type2-样式2
+- class_name: Demo-样式2
   path_name: /album-2
   type: 2
   description: Album-Demo-Type2 - description。
@@ -58,16 +58,16 @@
   url: false
   album_list:
     - date: 2022-10-24
-      content: Album-Demo-Type2 - content
-      address: 湖南湘潭 - 湖南湘潭
-      from: 再吃一口就减肥 - from
+      content: 　不知天上宫阙，今夕是何年?
+      address: 中华 - 神州
+      from: HuaWei HarmonyOS 2
       image:
         - /imgs/t1.webp
         - /imgs/bg-main.webp
     - date: 2022-10-24
-      content: Album-Demo-Type2 - content
-      address: 湖南湘潭 - 湖南湘潭
-      from: 再吃一口就减肥 - from
+      content: 我欲乘风归去，又恐琼楼玉宇，高处不胜寒。
+      address: 中华 - 神州
+      from: HuaWei HarmonyOS 3.1
       image:
         - /imgs/t1.webp
         - /imgs/bg-main.webp
@@ -76,10 +76,10 @@
         - /imgs/404.gif
         - /imgs/404.gif
 
-- class_name: Album3-Demo3-Type2-样式2
+- class_name: Demo3-Type2-样式2
   path_name: /album-3
   type: 2
-  description: 相册3 - description。
+  description: 大江东去，浪淘尽，千古风流人物。
   cover: /imgs/t2.webp
   rowHeight: 220
   limit: 10
@@ -88,16 +88,16 @@
   url: false
   album_list:
     - date: 2023-05-24
-      content: Album-Demo-Type2 - content
+      content: 江山如画，一时多少豪杰!
       address: 中华 - 五湖四海
-      from: Mobile - from
+      from: Mobile - Android13
       image:
         - /imgs/t1.webp
         - /imgs/bg-main.webp
     - date: 2022-10-24
-      content: Album-Demo-Type2 - content
+      content: 羽扇纶巾，谈笑间，樯橹灰飞烟灭。
       address: 华夏 - 神州大地
-      from:  - HuaWei-Mobile from
+      from:  IPHONEX
       image:
         - /imgs/t1.webp
         - /imgs/bg-main.webp
