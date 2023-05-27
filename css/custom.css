@@ -8,6 +8,9 @@ select{
 button,a:hover{
 	cursor: url(/imgs/cursor/link.cur), pointer;
 }
+button,a{
+	cursor: url(/imgs/cursor/link.cur), pointer;
+}
 input{
 	cursor:url(/imgs/cursor/help.cur), text;	
 }
