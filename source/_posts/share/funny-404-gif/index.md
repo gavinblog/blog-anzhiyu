@@ -11,13 +11,15 @@ tags:
 categories:
   - share
 featuredImage: 'https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/404/404.gif'
+ai:
+  - 有趣的 404 - Not Found gif 动态图分享给大家。
+  - 由人工Geek ChatGPT生成摘要内容。
 abbrlink: 5cb
 date: 2023-05-27 12:20:00
 ---
-{{< admonition >}}
+
 有趣的404-Not Found gif 动态图。
 > 所有图片资源均来自互联网，如果侵权，请告知！
-{{< /admonition >}}
 
 ![404](https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/404/404.gif "样式-Style")
 
