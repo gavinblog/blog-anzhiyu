@@ -1,3 +1,29 @@
+/*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
+body {
+	cursor: url(/imgs/cursor/normal.cur), default;
+}
+select{
+	cursor: url(/imgs/cursor/Universal.cur), pointer;
+}
+button,a:hover{
+	cursor: url(/imgs/cursor/link.cur), pointer;
+}
+input{
+	cursor:url(/imgs/cursor/help.cur), text;	
+}
+textarea,input:focus{
+	cursor:url(/imgs/cursor/text.cur), text;	
+}
+code{
+	cursor: url(/imgs/cursor/text.cur), default;	
+}
+pre>code{
+	cursor: url(/imgs/cursor/text.cur), default;	
+}
+
+
+
+
 /* 首页一图流，打字字体 */
 #page-header #site-title {
     margin: 0;
