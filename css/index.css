@@ -2823,6 +2823,9 @@ figure.highlight pre .javascript .function {
   max-height: 100vh;
   -webkit-overflow-scrolling: touch;
 }
+[data-theme="dark"] #web_container {
+  background: none;
+}
 #web_box {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -17843,6 +17846,7 @@ body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0.625rem;
 }
 .console-card-group-reward .reward-all .reward-item img {
   width: 230px;
