@@ -1,28 +1,18 @@
 ---
 title: Funny 404 Gif
-subtitle: "有趣的404-Not Found gif 动态图。"
-date: 2023-05-27T20:20:00+08:00
+subtitle: 有趣的404-Not Found gif 动态图。
 author: geekswg
-# weight: 0
-description: "有趣的 404 - Not Found gif 动态图。"
-keywords: ["404"] #关键词
-
-tags: ["404","分享"]
-categories: ["share"]
-# 转载文章设置
-# repost:
-#   enable: true
-#   url: ""
-featuredImage: "https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/404/404.gif"
-#featuredImagePreview: "/images/posts/featured-image-preview.jpg"
-# 文章资源
-# resources:
-#   - name: featured-image  # 文章资源
-#     src: featured-image-preview.jpg  #地址
-#   - name: featured-image-preview 
-#     src: featured-image-preview.jpg
-
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+description: 有趣的 404 - Not Found gif 动态图。
+keywords:
+  - '404'
+tags:
+  - '404'
+  - 分享
+categories:
+  - share
+featuredImage: 'https://cdn.staticaly.com/gh/geekswg/static@main/blog-img/404/404.gif'
+abbrlink: 5cb
+date: 2023-05-27 12:20:00
 ---
 {{< admonition >}}
 有趣的404-Not Found gif 动态图。
