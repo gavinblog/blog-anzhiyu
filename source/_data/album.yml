@@ -1,5 +1,5 @@
 
-- class_name: Album-Demo-Type1-样式1
+- class_name: Album1-Demo1-Type1-样式1
   path_name: /album-1
   type: 1
   description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
@@ -36,7 +36,7 @@
         - /imgs/bg-waline.webp
         - /imgs/404.gif
         - /imgs/404.gif
-        
+
     - date: 2022-10-25
       content: 洛阳暴雨后的天空。- content
       address: 河南洛阳-address
@@ -45,9 +45,8 @@
         - /imgs/t1.webp
         - /imgs/t2.webp
         - /imgs/404.gif
-    
 
-- class_name: Album-Demo-Type2-样式2
+- class_name: Album2-Demo2-Type2-样式2
   path_name: /album-2
   type: 2
   description: Album-Demo-Type2 - description。
@@ -77,3 +76,32 @@
         - /imgs/404.gif
         - /imgs/404.gif
 
+- class_name: Album3-Demo3-Type2-样式2
+  path_name: /album-3
+  type: 2
+  description: 相册3 - description。
+  cover: /imgs/t2.webp
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: true
+  url: false
+  album_list:
+    - date: 2023-05-24
+      content: Album-Demo-Type2 - content
+      address: 中华 - 五湖四海
+      from: Mobile - from
+      image:
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+    - date: 2022-10-24
+      content: Album-Demo-Type2 - content
+      address: 华夏 - 神州大地
+      from:  - HuaWei-Mobile from
+      image:
+        - /imgs/t1.webp
+        - /imgs/bg-main.webp
+        - /imgs/t2.webp
+        - /imgs/bg-waline.webp
+        - /imgs/404.gif
+        - /imgs/404.gif
