@@ -99,9 +99,20 @@ pre>code{
     width: 59%;
 }
 
+#flink-banners .banner-button-group .banner-button {
+  color: var(--anzhiyu-fontcolor);
+  background: var(--anzhiyu-secondbg);
+  border: var(--style-border-always);
+  color: var(--anzhiyu-lighttext);
+  margin-right: 1rem;
+  -webkit-box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--anzhiyu-shadow-border);
+}
+
 div#post {
   background: transparent;
 }
+
 
 /* 自定义主题配色 */
 [data-theme="light"] {
