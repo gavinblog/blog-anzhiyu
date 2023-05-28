@@ -1145,7 +1145,7 @@ comment_barrage_config:
   # 同时最多显示弹幕数
   maxBarrage: 3
   # 弹幕显示间隔时间ms
-  barrageTime: 4000000
+  barrageTime: 60*1000
   # token，在控制台中获取
   accessToken: ""
 
