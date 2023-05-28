@@ -29,6 +29,7 @@ Write, edit, and chat about your code with a pful AI
 2. 快捷键 `Ctrl + L` 可以和他自然聊天，比如问题某段代码什么意思，或者问他写的代码如何运行，经过测试，他的回答都十分的智能，而且上下文理解的非常顺畅，就像和一个助理在正常聊天。
 
 ### 食用预览
+
 * `Ctrl + K` 让他帮你写代码
 ![Cursor Home](/imgs/posts/230323185021-cursor1.png)
 ![Cursor Home](/imgs/posts/230323185021-cursor2.png)
