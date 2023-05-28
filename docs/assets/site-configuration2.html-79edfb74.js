@@ -150,268 +150,128 @@ import{_ as r,M as d,p,q as m,R as n,t as s,N as i,V as e,a1 as u}from"./framewo
   `),n("span",{class:"token comment"},"# Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6)."),s(`
   `),n("span",{class:"token comment"},"# Offset also applied to label tag variables. This option can work with disabled note tag."),s(`
   `),n("span",{class:"token key atrule"},"light_bg_offset"),n("span",{class:"token punctuation"},":"),s(),n("span",{class:"token number"},"0"),s(`
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),x=n("p",null,[n("code",null,"Note"),s("标签外挂有两种用法。"),n("code",null,"icons"),s("和"),n("code",null,"light_bg_offset"),s("只对方法一生效。")],-1),z=n("p",null,[n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome")],-1),T=n("p",null,[n("code",null,"方法一")],-1),A=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s("<div class="note ),n(span",{class:token url},[s([),n(span,{class:token content},class),s(] [),n(span,{class:token variable},no-icon),s(])]),s(` [style] flat"><p>Any content (support inline tags too.io).</p>
-</div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),M=n("p",null,[n("code",null,"方法二")],-1),D=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s("<div class="note ),n(span",{class:token url},[s([),n(span,{class:token content},color),s(] [),n(span,{class:token variable},icon),s(])]),s(` [style] flat"><p>Any content (support inline tags too.io).</p>
-</div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),q=n("p",null,[n("code",null,"方法一")],-1),N=n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数"),n("th",{style:{"text-align":"left"}},"用法")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"class"),n("td",{style:{"text-align":"left"}},[s("【可选】标识，不同的标识有不同的配色"),n("br"),s("（ default / primary / success / info / warning / danger ）")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"no-icon"),n("td",{style:{"text-align":"left"}},"【可选】不显示 icon")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"style"),n("td",{style:{"text-align":"left"}},[s("【可选】可以覆盖配置中的 style"),n("br"),s("（simple/modern/flat/disabled）")])])])],-1),j=n("p",null,[n("code",null,"方法二")],-1),C=n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数"),n("th",{style:{"text-align":"left"}},"用法")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"class"),n("td",{style:{"text-align":"left"}},[s("【可选】标识，不同的标识有不同的配色"),n("br"),s("（ default / blue / pink / red / purple / orange / green ）")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"no-icon"),n("td",{style:{"text-align":"left"}},[s("【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,"),n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome"),s(", 也可以配置 no-icon )")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"style"),n("td",{style:{"text-align":"left"}},[s("【可选】可以覆盖配置中的 style"),n("br"),s("（simple/modern/flat/disabled）")])])])],-1),V=n("p",null,[n("code",null,"方法一")],-1),P=n("ol",null,[n("li",null,[n("code",null,"simple"),s("样式")])],-1),U=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note simple"><p>默认 提示块标签</p>
-</div>
-<div class="note default simple"><p>default 提示块标签</p>
-</div>
-<div class="note primary simple"><p>primary 提示块标签</p>
-</div>
-<div class="note success simple"><p>success 提示块标签</p>
-</div>
-<div class="note info simple"><p>info 提示块标签</p>
-</div>
-<div class="note warning simple"><p>warning 提示块标签</p>
-</div>
-<div class="note danger simple"><p>danger 提示块标签</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),O=n("ol",{start:"2"},[n("li",null,[n("code",null,"modern"),s("样式")])],-1),G=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note modern"><p>默认 提示块标签</p>
-</div>
-<div class="note default modern"><p>default 提示块标签</p>
-</div>
-<div class="note primary modern"><p>primary 提示块标签</p>
-</div>
-<div class="note success modern"><p>success 提示块标签</p>
-</div>
-<div class="note info modern"><p>info 提示块标签</p>
-</div>
-<div class="note warning modern"><p>warning 提示块标签</p>
-</div>
-<div class="note danger modern"><p>danger 提示块标签</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),I=n("ol",{start:"3"},[n("li",null,[n("code",null,"flat"),s("样式")])],-1),R=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note flat"><p>默认 提示块标签</p>
-</div>
-<div class="note default flat"><p>default 提示块标签</p>
-</div>
-<div class="note primary flat"><p>primary 提示块标签</p>
-</div>
-<div class="note success flat"><p>success 提示块标签</p>
-</div>
-<div class="note info flat"><p>info 提示块标签</p>
-</div>
-<div class="note warning flat"><p>warning 提示块标签</p>
-</div>
-<div class="note danger flat"><p>danger 提示块标签</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),B=n("ol",{start:"4"},[n("li",null,[n("code",null,"disabled"),s("样式")])],-1),K=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note disabled"><p>默认 提示块标签</p>
-</div>
-<div class="note default disabled"><p>default 提示块标签</p>
-</div>
-<div class="note primary disabled"><p>primary 提示块标签</p>
-</div>
-<div class="note success disabled"><p>success 提示块标签</p>
-</div>
-<div class="note info disabled"><p>info 提示块标签</p>
-</div>
-<div class="note warning disabled"><p>warning 提示块标签</p>
-</div>
-<div class="note danger disabled"><p>danger 提示块标签</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),S=n("ol",{start:"5"},[n("li",null,[n("code",null,"no-icon"),s("样式")])],-1),W=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note no-icon flat"><p>默认 提示块标签</p>
-</div>
-<div class="note default no-icon flat"><p>default 提示块标签</p>
-</div>
-<div class="note primary no-icon flat"><p>primary 提示块标签</p>
-</div>
-<div class="note success no-icon flat"><p>success 提示块标签</p>
-</div>
-<div class="note info no-icon flat"><p>info 提示块标签</p>
-</div>
-<div class="note warning no-icon flat"><p>warning 提示块标签</p>
-</div>
-<div class="note danger no-icon flat"><p>danger 提示块标签</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Y=n("p",null,[n("code",null,"方法二")],-1),F=n("p",null,[s("图标支持 "),n("code",null,"fontawesome"),s(" 和 "),n("code",null,"主题内置的阿里图标"),s("，使用方法为加上对应的类名，"),n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome"),s("，默认未开启 fontawesome")],-1),H=n("ol",null,[n("li",null,[n("p",null,[s("simple 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note anzhiyufont anzhiyu-icon-rocket simple"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue anzhiyufont anzhiyu-icon-bullhorn simple"><p>2022 年快到了….</p>
-</div>
-<div class="note pink anzhiyufont anzhiyu-icon-instagram simple"><p>小心开车 安全至上</p>
-</div>
-<div class="note red anzhiyufont anzhiyu-icon-fan simple"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange anzhiyufont anzhiyu-icon-dengpao simple"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple anzhiyufont anzhiyu-icon-sanmingzhi simple"><p>剪刀石头布</p>
-</div>
-<div class="note green anzhiyufont anzhiyu-icon-ic_train simple"><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note icon-padding simple"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>2022 年快到了….</p>
-</div>
-<div class="note pink icon-padding simple"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
-</div>
-<div class="note red icon-fan simple"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple icon-padding simple"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
-</div>
-<div class="note green icon-padding simple"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("modern 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note anzhiyufont anzhiyu-icon-rocket modern"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue anzhiyufont anzhiyu-icon-bullhorn modern"><p>2022 年快到了….</p>
-</div>
-<div class="note pink anzhiyufont anzhiyu-icon-instagram modern"><p>小心开车 安全至上</p>
-</div>
-<div class="note red anzhiyufont anzhiyu-icon-fan modern"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange anzhiyufont anzhiyu-icon-dengpao modern"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple anzhiyufont anzhiyu-icon-sanmingzhi modern"><p>剪刀石头布</p>
-</div>
-<div class="note green anzhiyufont anzhiyu-icon-ic_train modern"><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note icon-padding modern"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue icon-padding modern"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
-</div>
-<div class="note pink icon-padding modern"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
-</div>
-<div class="note red icon-fan modern"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange icon-padding modern"><i class="note-icon fas fa-battery-half"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple icon-padding modern"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
-</div>
-<div class="note green icon-padding modern"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("flat 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note anzhiyufont anzhiyu-icon-rocket flat"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue anzhiyufont anzhiyu-icon-bullhorn flat"><p>2022 年快到了….</p>
-</div>
-<div class="note pink anzhiyufont anzhiyu-icon-instagram flat"><p>小心开车 安全至上</p>
-</div>
-<div class="note red anzhiyufont anzhiyu-icon-fan flat"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange anzhiyufont anzhiyu-icon-dengpao flat"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple anzhiyufont anzhiyu-icon-sanmingzhi flat"><p>剪刀石头布</p>
-</div>
-<div class="note green anzhiyufont anzhiyu-icon-ic_train flat"><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note icon-padding flat"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
-</div>
-<div class="note pink icon-padding flat"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
-</div>
-<div class="note red icon-fan flat"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange icon-padding flat"><i class="note-icon fas fa-battery-half"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple icon-padding flat"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
-</div>
-<div class="note green icon-padding flat"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("disabled 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note anzhiyufont anzhiyu-icon-rocket disabled"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue anzhiyufont anzhiyu-icon-bullhorn disabled"><p>2022 年快到了….</p>
-</div>
-<div class="note pink anzhiyufont anzhiyu-icon-instagram disabled"><p>小心开车 安全至上</p>
-</div>
-<div class="note red anzhiyufont anzhiyu-icon-fan disabled"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange anzhiyufont anzhiyu-icon-dengpao disabled"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple anzhiyufont anzhiyu-icon-sanmingzhi disabled"><p>剪刀石头布</p>
-</div>
-<div class="note green anzhiyufont anzhiyu-icon-ic_train disabled"><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note icon-padding disabled"><i class="note-icon fab fa-cc-visa"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue icon-padding disabled"><i class="note-icon fas fa-bullhorn"></i><p>2021 年快到了….</p>
-</div>
-<div class="note pink icon-padding disabled"><i class="note-icon fas fa-car-crash"></i><p>小心开车 安全至上</p>
-</div>
-<div class="note red icon-fan disabled"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange icon-padding disabled"><i class="note-icon fas fa-battery-half"></i><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple icon-padding disabled"><i class="note-icon far fa-hand-scissors"></i><p>剪刀石头布</p>
-</div>
-<div class="note green icon-padding disabled"><i class="note-icon fab fa-internet-explorer"></i><p>前端最讨厌的浏览器</p>
-</div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,"no-icon 样式"),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="note no-icon flat"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note blue no-icon flat"><p>2021 年快到了….</p>
-</div>
-<div class="note pink no-icon flat"><p>小心开车 安全至上</p>
-</div>
-<div class="note red no-icon flat"><p>这是三片呢？还是四片？</p>
-</div>
-<div class="note orange no-icon flat"><p>你是刷 Visa 还是 UnionPay</p>
-</div>
-<div class="note purple no-icon flat"><p>剪刀石头布</p>
-</div>
-<div class="note green no-icon flat"><p>前端最讨厌的浏览器</p>
-</div>
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),x=n("p",null,[n("code",null,"Note"),s("标签外挂有两种用法。"),n("code",null,"icons"),s("和"),n("code",null,"light_bg_offset"),s("只对方法一生效。")],-1),z=n("p",null,[n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome")],-1),T=n("p",null,[n("code",null,"方法一")],-1),A=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s("{% note "),n("span",{class:"token url"},[s("["),n("span",{class:"token content"},"class"),s("] ["),n("span",{class:"token variable"},"no-icon"),s("]")]),s(` [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),M=n("p",null,[n("code",null,"方法二")],-1),D=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s("{% note "),n("span",{class:"token url"},[s("["),n("span",{class:"token content"},"color"),s("] ["),n("span",{class:"token variable"},"icon"),s("]")]),s(` [style] %}
+Any content (support inline tags too.io).
+{% endnote %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),q=n("p",null,[n("code",null,"方法一")],-1),N=n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数"),n("th",{style:{"text-align":"left"}},"用法")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"class"),n("td",{style:{"text-align":"left"}},[s("【可选】标识，不同的标识有不同的配色"),n("br"),s("（ default / primary / success / info / warning / danger ）")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"no-icon"),n("td",{style:{"text-align":"left"}},"【可选】不显示 icon")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"style"),n("td",{style:{"text-align":"left"}},[s("【可选】可以覆盖配置中的 style"),n("br"),s("（simple/modern/flat/disabled）")])])])],-1),j=n("p",null,[n("code",null,"方法二")],-1),C=n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数"),n("th",{style:{"text-align":"left"}},"用法")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"class"),n("td",{style:{"text-align":"left"}},[s("【可选】标识，不同的标识有不同的配色"),n("br"),s("（ default / blue / pink / red / purple / orange / green ）")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"no-icon"),n("td",{style:{"text-align":"left"}},[s("【可选】可配置自定义 icon (支持 fontawesome 图标和主题内置的阿里图标,"),n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome"),s(", 也可以配置 no-icon )")])]),n("tr",null,[n("td",{style:{"text-align":"left"}},"style"),n("td",{style:{"text-align":"left"}},[s("【可选】可以覆盖配置中的 style"),n("br"),s("（simple/modern/flat/disabled）")])])])],-1),V=n("p",null,[n("code",null,"方法一")],-1),P=n("ol",null,[n("li",null,[n("code",null,"simple"),s("样式")])],-1),U=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note simple %}默认 提示块标签{% endnote %}
+{% note default simple %}default 提示块标签{% endnote %}
+{% note primary simple %}primary 提示块标签{% endnote %}
+{% note success simple %}success 提示块标签{% endnote %}
+{% note info simple %}info 提示块标签{% endnote %}
+{% note warning simple %}warning 提示块标签{% endnote %}
+{% note danger simple %}danger 提示块标签{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),O=n("ol",{start:"2"},[n("li",null,[n("code",null,"modern"),s("样式")])],-1),G=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note modern %}默认 提示块标签{% endnote %}
+{% note default modern %}default 提示块标签{% endnote %}
+{% note primary modern %}primary 提示块标签{% endnote %}
+{% note success modern %}success 提示块标签{% endnote %}
+{% note info modern %}info 提示块标签{% endnote %}
+{% note warning modern %}warning 提示块标签{% endnote %}
+{% note danger modern %}danger 提示块标签{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),I=n("ol",{start:"3"},[n("li",null,[n("code",null,"flat"),s("样式")])],-1),R=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note flat %}默认 提示块标签{% endnote %}
+{% note default flat %}default 提示块标签{% endnote %}
+{% note primary flat %}primary 提示块标签{% endnote %}
+{% note success flat %}success 提示块标签{% endnote %}
+{% note info flat %}info 提示块标签{% endnote %}
+{% note warning flat %}warning 提示块标签{% endnote %}
+{% note danger flat %}danger 提示块标签{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),B=n("ol",{start:"4"},[n("li",null,[n("code",null,"disabled"),s("样式")])],-1),K=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note disabled %}默认 提示块标签{% endnote %}
+{% note default disabled %}default 提示块标签{% endnote %}
+{% note primary disabled %}primary 提示块标签{% endnote %}
+{% note success disabled %}success 提示块标签{% endnote %}
+{% note info disabled %}info 提示块标签{% endnote %}
+{% note warning disabled %}warning 提示块标签{% endnote %}
+{% note danger disabled %}danger 提示块标签{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),S=n("ol",{start:"5"},[n("li",null,[n("code",null,"no-icon"),s("样式")])],-1),W=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note no-icon %}默认 提示块标签{% endnote %}
+{% note default no-icon %}default 提示块标签{% endnote %}
+{% note primary no-icon %}primary 提示块标签{% endnote %}
+{% note success no-icon %}success 提示块标签{% endnote %}
+{% note info no-icon %}info 提示块标签{% endnote %}
+{% note warning no-icon %}warning 提示块标签{% endnote %}
+{% note danger no-icon %}danger 提示块标签{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Y=n("p",null,[n("code",null,"方法二")],-1),F=n("p",null,[s("图标支持 "),n("code",null,"fontawesome"),s(" 和 "),n("code",null,"主题内置的阿里图标"),s("，使用方法为加上对应的类名，"),n("code",null,"fontawesome"),s("图标需开启主题配置文件中"),n("code",null,"icons.fontawesome"),s("，默认未开启 fontawesome")],-1),H=n("ol",null,[n("li",null,[n("p",null,[s("simple 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'anzhiyufont anzhiyu-icon-rocket' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}2022 年快到了....{% endnote %}
+{% note pink 'anzhiyufont anzhiyu-icon-instagram' simple %}小心开车 安全至上{% endnote %}
+{% note red 'anzhiyufont anzhiyu-icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'anzhiyufont anzhiyu-icon-dengpao' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' simple %}剪刀石头布{% endnote %}
+{% note green 'anzhiyufont anzhiyu-icon-ic_train' simple %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'fab fa-cc-visa' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'fas fa-bullhorn' simple %}2022 年快到了....{% endnote %}
+{% note pink 'fas fa-car-crash' simple %}小心开车 安全至上{% endnote %}
+{% note red 'icon-fan' simple%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'fas fa-battery-half' simple %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'far fa-hand-scissors' simple %}剪刀石头布{% endnote %}
+{% note green 'fab fa-internet-explorer' simple %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("modern 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'anzhiyufont anzhiyu-icon-rocket' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' modern %}2022 年快到了....{% endnote %}
+{% note pink 'anzhiyufont anzhiyu-icon-instagram' modern %}小心开车 安全至上{% endnote %}
+{% note red 'anzhiyufont anzhiyu-icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'anzhiyufont anzhiyu-icon-dengpao' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' modern %}剪刀石头布{% endnote %}
+{% note green 'anzhiyufont anzhiyu-icon-ic_train' modern %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'fab fa-cc-visa' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'fas fa-bullhorn' modern %}2021 年快到了....{% endnote %}
+{% note pink 'fas fa-car-crash' modern %}小心开车 安全至上{% endnote %}
+{% note red 'icon-fan' modern%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'fas fa-battery-half' modern %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'far fa-hand-scissors' modern %}剪刀石头布{% endnote %}
+{% note green 'fab fa-internet-explorer' modern %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("flat 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'anzhiyufont anzhiyu-icon-rocket' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' flat %}2022 年快到了....{% endnote %}
+{% note pink 'anzhiyufont anzhiyu-icon-instagram' flat %}小心开车 安全至上{% endnote %}
+{% note red 'anzhiyufont anzhiyu-icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'anzhiyufont anzhiyu-icon-dengpao' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' flat %}剪刀石头布{% endnote %}
+{% note green 'anzhiyufont anzhiyu-icon-ic_train' flat %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'fab fa-cc-visa' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'fas fa-bullhorn' flat %}2021 年快到了....{% endnote %}
+{% note pink 'fas fa-car-crash' flat %}小心开车 安全至上{% endnote %}
+{% note red 'icon-fan' flat%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'fas fa-battery-half' flat %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'far fa-hand-scissors' flat %}剪刀石头布{% endnote %}
+{% note green 'fab fa-internet-explorer' flat %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,[s("disabled 样式 "),n("code",null,"主题内置阿里图标")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'anzhiyufont anzhiyu-icon-rocket' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' disabled %}2022 年快到了....{% endnote %}
+{% note pink 'anzhiyufont anzhiyu-icon-instagram' disabled %}小心开车 安全至上{% endnote %}
+{% note red 'anzhiyufont anzhiyu-icon-fan' disabled%}这是三片呢？还是四片？{% endnote %}
+{% note orange 'anzhiyufont anzhiyu-icon-dengpao' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'anzhiyufont anzhiyu-icon-sanmingzhi' disabled %}剪刀石头布{% endnote %}
+{% note green 'anzhiyufont anzhiyu-icon-ic_train' disabled %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])]),n("p",null,[n("code",null,"fontawesome 图标"),s("，开启主题配置文件中的"),n("code",null,"icons.fontawesome"),s("为"),n("code",null,"true"),s("后可见")]),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note 'fab fa-cc-visa' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue 'fas fa-bullhorn' disabled %}2021 年快到了....{% endnote %}
+{% note pink 'fas fa-car-crash' disabled %}小心开车 安全至上{% endnote %}
+{% note red 'icon-fan' disabled %}这是三片呢？还是四片？{% endnote %}
+{% note orange 'fas fa-battery-half' disabled %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple 'far fa-hand-scissors' disabled %}剪刀石头布{% endnote %}
+{% note green 'fab fa-internet-explorer' disabled %}前端最讨厌的浏览器{% endnote %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,"no-icon 样式"),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% note no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note blue no-icon %}2021 年快到了....{% endnote %}
+{% note pink no-icon %}小心开车 安全至上{% endnote %}
+{% note red no-icon %}这是三片呢？还是四片？{% endnote %}
+{% note orange no-icon %}你是刷 Visa 还是 UnionPay{% endnote %}
+{% note purple no-icon %}剪刀石头布{% endnote %}
+{% note green no-icon %}前端最讨厌的浏览器{% endnote %}
 `)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])])],-1),E=n("h3",{id:"gallery-相册图库",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#gallery-相册图库","aria-hidden":"true"},"#"),s(" Gallery 相册图库")],-1),J=n("p",null,"一个图库集合。",-1),Z=n("p",null,"gallerygroup 相册图库",-1),L=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[n("span",{class:"token tag"},[n("span",{class:"token tag"},[n("span",{class:"token punctuation"},"<"),s("div")]),s(),n("span",{class:"token attr-name"},"class"),n("span",{class:"token attr-value"},[n("span",{class:"token punctuation attr-equals"},"="),n("span",{class:"token punctuation"},'"'),s("gallery-group-main"),n("span",{class:"token punctuation"},'"')]),n("span",{class:"token punctuation"},">")]),s(`
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='/img-url' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">name</div>
-  <p>description</p>
-  <a href='/link'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='/img-url' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">name</div>
-  <p>description</p>
-  <a href='/link'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='/img-url' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">name</div>
-  <p>description</p>
-  <a href='/link'></a>
-  </figcaption>
-  </figure>
-  
+{% galleryGroup name description link img-url %}
+{% galleryGroup name description link img-url %}
+{% galleryGroup name description link img-url %}
 `),n("span",{class:"token tag"},[n("span",{class:"token tag"},[n("span",{class:"token punctuation"},"</"),s("div")]),n("span",{class:"token punctuation"},">")]),s(`
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Q=n("ul",null,[n("li",null,[n("p",null,"gallerygroup 相册图库"),n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数名"),n("th",{style:{"text-align":"left"}},"释义")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"name"),n("td",{style:{"text-align":"left"}},"图库名字")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"description"),n("td",{style:{"text-align":"left"}},"图库描述")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"link"),n("td",{style:{"text-align":"left"}},"链接到对应相册的地址")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"img-url"),n("td",{style:{"text-align":"left"}},"图库封面")])])])]),n("li",null,[n("p",null,[s("gallery 相册 区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。"),n("strong",null,"建议在粘贴时故意使用长短、大小、横竖不一的图片"),s("，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）")])])],-1),X=n("div",{class:"hint-container info"},[n("p",{class:"hint-container-title"},"相关信息"),n("p",null,"思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。")],-1),$=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="gallery">
-  <div class="fj-gallery page_img_lazyload  data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[]</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Q=n("ul",null,[n("li",null,[n("p",null,"gallerygroup 相册图库"),n("table",null,[n("thead",null,[n("tr",null,[n("th",{style:{"text-align":"left"}},"参数名"),n("th",{style:{"text-align":"left"}},"释义")])]),n("tbody",null,[n("tr",null,[n("td",{style:{"text-align":"left"}},"name"),n("td",{style:{"text-align":"left"}},"图库名字")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"description"),n("td",{style:{"text-align":"left"}},"图库描述")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"link"),n("td",{style:{"text-align":"left"}},"链接到对应相册的地址")]),n("tr",null,[n("td",{style:{"text-align":"left"}},"img-url"),n("td",{style:{"text-align":"left"}},"图库封面")])])])]),n("li",null,[n("p",null,[s("gallery 相册 区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。"),n("strong",null,"建议在粘贴时故意使用长短、大小、横竖不一的图片"),s("，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）")])])],-1),X=n("div",{class:"hint-container info"},[n("p",{class:"hint-container-title"},"相关信息"),n("p",null,"思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。")],-1),$=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% gallery %}
+markdown 图片格式
+{% endgallery %}
 
-<div class="gallery">
-  <div class="fj-gallery page_img_lazyload lazyload btn_album_detail_lazyload data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[]</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+{% gallery true,220,10 %}
+markdown 图片格式
+{% endgallery %}
 
-<div class="gallery">
-  <div class="fj-gallery page_img_lazyload lazyload btn_album_detail_lazyload data" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">[]</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),nn=n("table",null,[n("thead",null,[n("tr",null,[n("th",null,"参数名"),n("th",null,"释义")])]),n("tbody",null,[n("tr",null,[n("td",null,"lazyload"),n("td",null,[s("【可选】点击按钮加载更多图片，填写 true/false。默认为 "),n("code",null,"false"),s("。")])]),n("tr",null,[n("td",null,"rowHeight"),n("td",null,[s("【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 "),n("code",null,"220"),s("。")])]),n("tr",null,[n("td",null,"limit"),n("td",null,[s("【可选】每次加载多少张照片。默认为 "),n("code",null,"10"),s("。")])])])],-1),sn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="gallery">
-  <div class="fj-gallery page_img_lazyload  url" data-rowHeight="[rowHeight]" data-limit="[limit]">
-    <span class="gallery-data">[link]</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+{% gallery true,,10 %}
+markdown 图片格式
+{% endgallery %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),nn=n("table",null,[n("thead",null,[n("tr",null,[n("th",null,"参数名"),n("th",null,"释义")])]),n("tbody",null,[n("tr",null,[n("td",null,"lazyload"),n("td",null,[s("【可选】点击按钮加载更多图片，填写 true/false。默认为 "),n("code",null,"false"),s("。")])]),n("tr",null,[n("td",null,"rowHeight"),n("td",null,[s("【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 "),n("code",null,"220"),s("。")])]),n("tr",null,[n("td",null,"limit"),n("td",null,[s("【可选】每次加载多少张照片。默认为 "),n("code",null,"10"),s("。")])])])],-1),sn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% endgallery %}
 `)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),en=n("table",null,[n("thead",null,[n("tr",null,[n("th",null,"参数名"),n("th",null,"释义")])]),n("tbody",null,[n("tr",null,[n("td",null,"url"),n("td",null,"【必须】 识别词")]),n("tr",null,[n("td",null,"link"),n("td",null,"【必须】远程的 json 链接")]),n("tr",null,[n("td",null,"lazyload"),n("td",null,[s("【可选】点击按钮加载更多图片，填写 true/false。默认为 "),n("code",null,"false"),s("。")])]),n("tr",null,[n("td",null,"rowHeight"),n("td",null,[s("【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为 "),n("code",null,"220"),s("。")])]),n("tr",null,[n("td",null,"limit"),n("td",null,[s("【可选】每次加载多少张照片。默认为 "),n("code",null,"10"),s("。")])])])],-1),an=n("blockquote",null,[n("p",null,"远程链接 Json 的例子")],-1),ln=n("p",null,[s("有三个参数，"),n("code",null,"url"),s("是必须存在的，"),n("code",null,"alt"),s(" 和 "),n("code",null,"title"),s(" 可有，也可没有。")],-1),tn=n("div",{class:"language-json line-numbers-mode","data-ext":"json"},[n("pre",{class:"language-json"},[n("code",null,[n("span",{class:"token punctuation"},"["),s(`
   `),n("span",{class:"token punctuation"},"{"),s(`
     `),n("span",{class:"token property"},'"url"'),n("span",{class:"token operator"},":"),s(),n("span",{class:"token string"},'"https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/IMG_0556.jpg"'),n("span",{class:"token punctuation"},","),s(`
@@ -431,91 +291,143 @@ import{_ as r,M as d,p,q as m,R as n,t as s,N as i,V as e,a1 as u}from"./framewo
     `),n("span",{class:"token property"},'"alt"'),n("span",{class:"token operator"},":"),s(),n("span",{class:"token string"},'""'),s(`
   `),n("span",{class:"token punctuation"},"}"),s(`
 `),n("span",{class:"token punctuation"},"]"),s(`
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),on=n("blockquote",null,[n("p",null,"示例")],-1),cn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="gallery">
-  <div class="fj-gallery page_img_lazyload  url" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">https://xxxx.com/sss.json</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),on=n("blockquote",null,[n("p",null,"示例")],-1),cn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% gallery url,https://xxxx.com/sss.json %}
+{% endgallery %}
 
-<div class="gallery">
-  <div class="fj-gallery page_img_lazyload lazyload btn_album_detail_lazyload url" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">https://xxxx.com/sss.json</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+{% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+{% endgallery %}
 
-<div class="gallery">
-  <div class="fj-gallery page_img_lazyload lazyload btn_album_detail_lazyload url" data-rowHeight="220" data-limit="10">
-    <span class="gallery-data">https://xxxx.com/sss.json</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
+{% gallery url,https://xxxx.com/sss.json,true,,10 %}
+{% endgallery %}
 `)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),dn=n("ol",null,[n("li",null,[n("p",null,"gallerygroup 相册图库"),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[n("span",{class:"token tag"},[n("span",{class:"token tag"},[n("span",{class:"token punctuation"},"<"),s("div")]),s(),n("span",{class:"token attr-name"},"class"),n("span",{class:"token attr-value"},[n("span",{class:"token punctuation attr-equals"},"="),n("span",{class:"token punctuation"},'"'),s("gallery-group-main"),n("span",{class:"token punctuation"},'"')]),n("span",{class:"token punctuation"},">")]),s(`
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://cdn.cbd.int/akilar-candyassets@1.0.36/image/1.jpg' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">MC</div>
-  <p>在Rikkaの六花服务器里留下的足迹</p>
-  <a href='/gallery/MC/'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://cdn.cbd.int/akilar-candyassets@1.0.36/image/20200907110508327.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">Gundam</div>
-  <p>哦咧哇gundam哒！</p>
-  <a href='/gallery/Gundam/'></a>
-  </figcaption>
-  </figure>
-  
-
-  <figure class="gallery-group">
-  <img class="gallery-group-img no-lightbox" src='https://cdn.cbd.int/akilar-candyassets@1.0.36/image/20200907113116651.png' alt="Group Image Gallery">
-  <figcaption>
-  <div class="gallery-group-name">I-am-Akilar</div>
-  <p>某种意义上也算自拍吧</p>
-  <a href='/gallery/I-am-Akilar/'></a>
-  </figcaption>
-  </figure>
-  
+{% galleryGroup MC 在Rikkaの六花服务器里留下的足迹 '/gallery/MC/' https://cdn.cbd.int/akilar-candyassets@1.0.36/image/1.jpg %}
+{% galleryGroup Gundam 哦咧哇gundam哒！ '/gallery/Gundam/' https://cdn.cbd.int/akilar-candyassets@1.0.36/image/20200907110508327.png %}
+{% galleryGroup I-am-Akilar 某种意义上也算自拍吧 '/gallery/I-am-Akilar/' https://cdn.cbd.int/akilar-candyassets@1.0.36/image/20200907113116651.png %}
 `),n("span",{class:"token tag"},[n("span",{class:"token tag"},[n("span",{class:"token punctuation"},"</"),s("div")]),n("span",{class:"token punctuation"},">")]),s(`
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,"gallery 相册"),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`<div class="gallery">
-  <div class="fj-gallery page_img_lazyload lazyload btn_album_detail_lazyload data" data-rowHeight="220" data-limit="2">
-    <span class="gallery-data">[{"url":"https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg","alt":""}]</span>
-  </div><button class="gallery-load-more" style="opacity:0">
-  <span>加载更多</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
-  </button></div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])])],-1),un={class:"hint-container info"},rn=n("p",{class:"hint-container-title"},"相关信息",-1),pn=n("p",null,[s("对于很多同学提问的"),n("code",null,"gallerygroup"),s("和"),n("code",null,"gallery"),s("相册页的链接问题。这里说下我个人的使用习惯。 一般使用相册图库的话，可以在导航栏加一个 gallery 的 page("),n("strong",null,[s("使用指令"),n("code",null,"hexo new page gallery"),s("添加")]),s(")，里面放相册图库作为封面。然后在"),n("code",null,"[Blogroot]/source/gallery/"),s("下面建立相应的文件夹，例如若按照这里的示例，若欲使用"),n("code",null,"/gallery/MC/"),s("路径访问 MC 相册，则需要新建"),n("code",null,"[Blogroot]/source/gallery/MC/index.md"),s("，并在里面填入"),n("code",null,"gallery"),s("相册内容。")],-1),mn={href:"https://anzhiy.cn/posts/220c.html",target:"_blank",rel:"noopener noreferrer"},bn=n("h3",{id:"tag-hide",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#tag-hide","aria-hidden":"true"},"#"),s(" tag-hide")],-1),kn=n("div",{class:"hint-container warning"},[n("p",{class:"hint-container-title"},"警告"),n("p",null,"请注意，tag-hide 内的标签外挂 content 内都不建议有 h1 - h6 等标题。因为 Toc 会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致 Toc 的滚动出现异常。")],-1),vn=n("p",null,"如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。",-1),gn=n("p",null,[n("code",null,"inline"),s(" 在文本里面添加按钮隐藏内容，只限文字")],-1),hn=n("p",null,[s("( content 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),yn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`<span class="hide-inline"><button type="button" class="hide-button" style="background-color: bg;color: color">display
-  </button><span class="hide-content">content</span></span>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"})])],-1),fn=n("ul",null,[n("li",null,[n("p",null,"content: 文本内容")]),n("li",null,[n("p",null,"display: 按钮显示的文字(可选)")]),n("li",null,[n("p",null,"bg: 按钮的背景颜色(可选)")]),n("li",null,[n("p",null,"color: 按钮文字的颜色(可选)")])],-1),_n=n("blockquote",null,[n("p",null,"示例代码")],-1),wn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`哪个英文字母最酷？ <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看答案
-  </button><span class="hide-content">因为西装裤(C装酷)</span></span>
-门里站着一个人? <span class="hide-inline"><button type="button" class="hide-button" style="">Click
-  </button><span class="hide-content">闪</span></span>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),xn=n("p",null,[n("code",null,"block"),s(" 独立的 block 隐藏内容，可以隐藏很多内容，包括图片，代码块等等 ( content 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),zn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`<div class="hide-block"><button type="button" class="hide-button" style="background-color: bg;color: color">display
-    </button><div class="hide-content"><p>content</p>
-</div></div>
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])]),n("li",null,[n("p",null,"gallery 相册"),n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,`{% gallery true,,2 %}
+![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
+![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)
+![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)
+![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)
+![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+{% endgallery %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])])])],-1),un={class:"hint-container info"},rn=n("p",{class:"hint-container-title"},"相关信息",-1),pn=n("p",null,[s("对于很多同学提问的"),n("code",null,"gallerygroup"),s("和"),n("code",null,"gallery"),s("相册页的链接问题。这里说下我个人的使用习惯。 一般使用相册图库的话，可以在导航栏加一个 gallery 的 page("),n("strong",null,[s("使用指令"),n("code",null,"hexo new page gallery"),s("添加")]),s(")，里面放相册图库作为封面。然后在"),n("code",null,"[Blogroot]/source/gallery/"),s("下面建立相应的文件夹，例如若按照这里的示例，若欲使用"),n("code",null,"/gallery/MC/"),s("路径访问 MC 相册，则需要新建"),n("code",null,"[Blogroot]/source/gallery/MC/index.md"),s("，并在里面填入"),n("code",null,"gallery"),s("相册内容。")],-1),mn={href:"https://anzhiy.cn/posts/220c.html",target:"_blank",rel:"noopener noreferrer"},bn=n("h3",{id:"tag-hide",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#tag-hide","aria-hidden":"true"},"#"),s(" tag-hide")],-1),kn=n("div",{class:"hint-container warning"},[n("p",{class:"hint-container-title"},"警告"),n("p",null,"请注意，tag-hide 内的标签外挂 content 内都不建议有 h1 - h6 等标题。因为 Toc 会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致 Toc 的滚动出现异常。")],-1),vn=n("p",null,"如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。",-1),gn=n("p",null,[n("code",null,"inline"),s(" 在文本里面添加按钮隐藏内容，只限文字")],-1),hn=n("p",null,[s("( content 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),yn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`{% hideInline content,display,bg,color %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"})])],-1),fn=n("ul",null,[n("li",null,[n("p",null,"content: 文本内容")]),n("li",null,[n("p",null,"display: 按钮显示的文字(可选)")]),n("li",null,[n("p",null,"bg: 按钮的背景颜色(可选)")]),n("li",null,[n("p",null,"color: 按钮文字的颜色(可选)")])],-1),_n=n("blockquote",null,[n("p",null,"示例代码")],-1),wn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}
+门里站着一个人? {% hideInline 闪 %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),xn=n("p",null,[n("code",null,"block"),s(" 独立的 block 隐藏内容，可以隐藏很多内容，包括图片，代码块等等 ( content 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),zn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`{% hideBlock display,bg,color %}
+content
+{% endhideBlock %}
 `)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Tn=n("ul",null,[n("li",null,"content: 文本内容"),n("li",null,"display: 按钮显示的文字(可选)"),n("li",null,"bg: 按钮的背景颜色(可选)"),n("li",null,"color: 按钮文字的颜色(可选)")],-1),An=n("blockquote",null,[n("p",null,"示例代码")],-1),Mn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`查看答案
-<div class="hide-block"><button type="button" class="hide-button" style="">查看答案
-    </button><div class="hide-content"><p>傻子，怎么可能有答案</p>
-</div></div>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Dn=n("p",null,"如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。",-1),qn=n("p",null,[s("( display 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),Nn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`<details class="toggle" style="border: 1px solid bg"><summary class="toggle-button" style="background-color: bg;color: color">display</summary><div class="toggle-content"><p>content</p>
-</div></details>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),jn=n("p",null,"示例代码",-1),Cn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`<details class="toggle" ><summary class="toggle-button" style="">Butterfly安装方法</summary><div class="toggle-content"><p>在你的博客根目录里</p>
-<p>git clone -b master <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> themes&#x2F;Butterfly</p>
-<p>如果想要安装比较新的dev分支，可以</p>
-<p>git clone -b dev <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> themes&#x2F;Butterfly</p>
-</div></details>
-`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Vn=n("h3",{id:"分栏-tabs",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#分栏-tabs","aria-hidden":"true"},"#"),s(" 分栏 Tabs")],-1),Pn=n("p",null,"使用方法",-1),Un=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`<div class="tabs" id="unique-name"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),On=n("ol",null,[n("li",null,[s("Unique name : "),n("ul",null,[n("li",null,"选项卡块标签的唯一名称，不带逗号。"),n("li",null,"将在#id 中用作每个标签及其索引号的前缀。"),n("li",null,"如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。"),n("li",null,"仅当前帖子/页面的 URL 必须是唯一的！")])]),n("li",null,[s("[index]: "),n("ul",null,[n("li",null,"活动选项卡的索引号。"),n("li",null,"如果未指定，将选择第一个标签（1）。"),n("li",null,"如果 index 为-1，则不会选择任何选项卡。"),n("li",null,"可选参数。")])]),n("li",null,[s("[Tab caption]: "),n("ul",null,[n("li",null,"当前选项卡的标题。"),n("li",null,"如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。"),n("li",null,"如果未指定标题，但指定了图标，则标题将为空。"),n("li",null,"可选参数。")])]),n("li",null,"[@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如'Tab caption @icon' 和 'Tab caption@icon'. - 可选参数。")],-1),Gn=n("blockquote",null,[n("p",null,"Demo 1 - 预设选择第一个【默认】")],-1),In=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`<div class="tabs" id="test1"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Rn=n("blockquote",null,[n("p",null,"Demo 2 - 预设选择 tabs")],-1),Bn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`<div class="tabs" id="test2"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Kn=n("blockquote",null,[n("p",null,"Demo 3 - 没有预设值")],-1),Sn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`<div class="tabs" id="test3"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>
-`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Wn=n("blockquote",null,[n("p",null,"Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名")],-1),Yn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`<div class="tabs" id="test4"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>
+{% hideBlock 查看答案 %}
+傻子，怎么可能有答案
+{% endhideBlock %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Dn=n("p",null,"如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。",-1),qn=n("p",null,[s("( display 不能包含英文逗号，可用"),n("code",null,"&sbquo;"),s(")")],-1),Nn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`{% hideToggle display,bg,color %}
+content
+{% endhideToggle %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),jn=n("p",null,"示例代码",-1),Cn=n("div",{class:"language-MARKDOWN line-numbers-mode","data-ext":"MARKDOWN"},[n("pre",{class:"language-MARKDOWN"},[n("code",null,`{% hideToggle Butterfly安装方法 %}
+在你的博客根目录里
+
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+
+如果想要安装比较新的dev分支，可以
+
+git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+
+{% endhideToggle %}
+`)]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Vn=n("h3",{id:"分栏-tabs",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#分栏-tabs","aria-hidden":"true"},"#"),s(" 分栏 Tabs")],-1),Pn=n("p",null,"使用方法",-1),Un=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`{% tabs Unique name, [index] %}
+
+`),n("span",{class:"token comment"},"<!-- tab [Tab caption] [@icon] -->"),s(`
+
+Any content (support inline tags too).
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+{% endtabs %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),On=n("ol",null,[n("li",null,[s("Unique name : "),n("ul",null,[n("li",null,"选项卡块标签的唯一名称，不带逗号。"),n("li",null,"将在#id 中用作每个标签及其索引号的前缀。"),n("li",null,"如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。"),n("li",null,"仅当前帖子/页面的 URL 必须是唯一的！")])]),n("li",null,[s("[index]: "),n("ul",null,[n("li",null,"活动选项卡的索引号。"),n("li",null,"如果未指定，将选择第一个标签（1）。"),n("li",null,"如果 index 为-1，则不会选择任何选项卡。"),n("li",null,"可选参数。")])]),n("li",null,[s("[Tab caption]: "),n("ul",null,[n("li",null,"当前选项卡的标题。"),n("li",null,"如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。"),n("li",null,"如果未指定标题，但指定了图标，则标题将为空。"),n("li",null,"可选参数。")])]),n("li",null,"[@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如'Tab caption @icon' 和 'Tab caption@icon'. - 可选参数。")],-1),Gn=n("blockquote",null,[n("p",null,"Demo 1 - 预设选择第一个【默认】")],-1),In=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`{% tabs test1 %}
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 1."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 2."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 3."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+{% endtabs %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Rn=n("blockquote",null,[n("p",null,"Demo 2 - 预设选择 tabs")],-1),Bn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`{% tabs test2, 3 %}
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 1."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 2."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 3."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+{% endtabs %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Kn=n("blockquote",null,[n("p",null,"Demo 3 - 没有预设值")],-1),Sn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`{% tabs test3, -1 %}
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 1."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 2."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"This is Tab 3."),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+{% endtabs %}
+`)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),Wn=n("blockquote",null,[n("p",null,"Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名")],-1),Yn=n("div",{class:"language-markdown line-numbers-mode","data-ext":"md"},[n("pre",{class:"language-markdown"},[n("code",null,[s(`{% tabs test4 %}
+
+`),n("span",{class:"token comment"},"<!-- tab 第一个Tab -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"tab 名字为第一个 Tab"),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab @fab fa-apple-pay -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"只有图标 没有 Tab 名字"),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+`),n("span",{class:"token comment"},"<!-- tab 炸弹@fas fa-bomb -->"),s(`
+
+`),n("span",{class:"token bold"},[n("span",{class:"token punctuation"},"**"),n("span",{class:"token content"},"名字+icon"),n("span",{class:"token punctuation"},"**")]),s(`
+
+`),n("span",{class:"token comment"},"<!-- endtab -->"),s(`
+
+{% endtabs %}
 `)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1);function Fn(Hn,En){const c=d("ExternalLinkIcon"),o=d("Tabs");return p(),m("div",null,[n("div",k,[v,n("p",null,[s("本教程更新于 2023 年 5 月 22 日，教程的内容针对最新的 anzhiyu 主题(如果你是旧版本，教程会有出入，请留意) 🐟 安知鱼 已经更新到 "),n("a",g,[s("1.2.1"),i(c)])])]),h,n("p",null,[s("访问 busuanzi 的"),n("a",y,[s("官方网站"),i(c)]),s("查看更多的介绍。")]),f,i(o,{id:"378",data:[{title:"通用配置"},{title:"语法格式"},{title:"配置参数"},{title:"示例源码"}],"tab-id":"note"},{tab0:e(({title:a,value:l,isActive:t})=>[_,w,x,z]),tab1:e(({title:a,value:l,isActive:t})=>[T,A,M,D]),tab2:e(({title:a,value:l,isActive:t})=>[q,N,j,C]),tab3:e(({title:a,value:l,isActive:t})=>[V,P,U,O,G,I,R,B,K,S,W,Y,F,H]),_:1}),E,J,i(o,{id:"583",data:[{title:"标签语法"},{title:"参数配置"},{title:"本地"},{title:"远程"},{title:"示例源码"}],"tab-id":"gallery"},{tab0:e(({title:a,value:l,isActive:t})=>[Z,L]),tab1:e(({title:a,value:l,isActive:t})=>[Q,X]),tab2:e(({title:a,value:l,isActive:t})=>[$,nn]),tab3:e(({title:a,value:l,isActive:t})=>[sn,en,an,ln,tn,on,cn]),tab4:e(({title:a,value:l,isActive:t})=>[dn,n("div",un,[rn,pn,n("p",null,[s("注意 ⚠️：本站相册集为单独优化，可参考"),n("a",mn,[s("配置相册页面"),i(c)]),s("。")])])]),_:1}),bn,kn,vn,i(o,{id:"804",data:[{title:"inline"},{title:"block"},{title:"hideToggle"}],"tab-id":"tag-hide"},{tab0:e(({title:a,value:l,isActive:t})=>[gn,hn,yn,fn,_n,wn]),tab1:e(({title:a,value:l,isActive:t})=>[xn,zn,Tn,An,Mn]),tab2:e(({title:a,value:l,isActive:t})=>[Dn,qn,Nn,jn,Cn]),_:1}),Vn,Pn,i(o,{id:"896",data:[{title:"标签语法"},{title:"配置参数"},{title:"示例源码"}],active:2,"tab-id":"Tabs"},{tab0:e(({title:a,value:l,isActive:t})=>[Un]),tab1:e(({title:a,value:l,isActive:t})=>[On]),tab2:e(({title:a,value:l,isActive:t})=>[Gn,In,Rn,Bn,Kn,Sn,Wn,Yn]),_:1})])}const Zn=r(b,[["render",Fn],["__file","site-configuration2.html.vue"]]);export{Zn as default};
