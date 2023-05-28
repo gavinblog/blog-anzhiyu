@@ -98,6 +98,15 @@ pre>code{
     height: fit-content;
     width: 59%;
 }
+/* 热评 */
+.comment-barrage-item .barrageHead .barrageTitle {
+  color: hotpink;
+  margin-right: 8px;
+  background: var(--anzhiyu-fontcolor);
+  line-height: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
 
 #flink-banners .banner-button-group .banner-button {
   color: var(--anzhiyu-fontcolor);
