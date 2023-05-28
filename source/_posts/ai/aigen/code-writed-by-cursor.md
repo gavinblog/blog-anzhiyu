@@ -28,9 +28,53 @@ date: 2023-03-26 10:30:40
 
 ## 白名单功能
 
-### 指令
+### 指令1
 
-> `Ctrl + K` 实现方法一个白名单网站数组，判断当前的文字是否在白名单内，如果在则放行跳转。
+> `Ctrl + K` ：重写a标签的点击事件，实现跳转链接如果在白名单内则放行跳转，如果不在则提示风险。
+
+输出结果如下：
+
+```js
+// JavaScript code to rewrite the click event of an "a" tag
+// If the link is in the whitelist, allow the navigation
+// If not, display a warning message
+
+// Whitelist of allowed URLs
+const whitelist = [
+  "https://www.example1.com",
+  "https://www.example2.com",
+  "https://www.example3.com",
+];
+
+// Function to handle the click event
+function handleClick(event) {
+  const targetUrl = event.target.href;
+
+  // Check if the URL is in the whitelist
+  if (whitelist.includes(targetUrl)) {
+    // Allow the navigation
+    return true;
+  } else {
+    // Prevent the navigation and display a warning message
+    event.preventDefault();
+    alert("Warning: The link you clicked is not in the whitelist and may be risky.");
+    return false;
+  }
+}
+
+// Attach the event listener to all "a" tags
+const links = document.getElementsByTagName("a");
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", handleClick);
+}
+
+```
+
+> 写的挺好，满足要求，稍微修改下自己就能用了
+
+### 指令 2
+
+> `Ctrl + K` 实现方法一个白名单网站数组，判断当前的网址是否在白名单内，如果在则放行跳转。
 
 ```js
 let whitelist = ['example.com', 'google.com', 'facebook.com'];
