@@ -30,10 +30,12 @@ menu:
     留言板: /comments/ || anzhiyu-icon-envelope
     闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     相册集: /album/ || anzhiyu-icon-images
-    #小空调: /air-conditioner/ || fas fa-fan
+    小空调: /air-condition/ || anzhiyu-icon-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
+  
+  音乐: /music/?id=8138088068&server=tencent || anzhiyu-icon-music
 
-  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  随机: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
@@ -41,7 +43,7 @@ menu:
 
   ​毕少侠: /about/ || anzhiyu-icon-shoe-prints1
 
-# nav相关配置
+# nav相关配置 
 nav:
   enable: true
   travelling: true
@@ -186,13 +188,15 @@ disable_top_img: false
 
 # The banner image of home page
 # 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
-index_img: /imgs/bg-main.webp
+# 注意这里的值是 style="{}" {}这个值
+#index_img: "background:url(/imgs/t2.webp) no-repeat center;background-size:cover;"
+index_img: /imgs/t2.webp
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /imgs/default-cover.webp
 
 # The banner image of archive page
-archive_img: /imgs/t.webp
+archive_img: false
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子标籤页面的 top_img)
@@ -212,10 +216,6 @@ category_img: /imgs/t.webp
 #  - category name: xxxxx
 category_per_img: /imgs/t.webp
 
-
-# 开启一图流 >=1.1.11 没有用
-OneGraphFlow: false
-
 cover:
   # display the cover or not (是否显示文章封面)
   index_enable: true
@@ -227,6 +227,10 @@ cover:
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover: # 默认封面
     - /imgs/default-cover.webp
+    - /imgs/t1.webp
+    - /imgs/t2.webp
+    - /imgs/zhifeiji.gif
+    - /imgs/bg-main.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -236,8 +240,8 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "页面找不到了"
-  background: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/page-404.png
+  subtitle: "请尝试站内搜索寻找文章"
+  background: /imgs/404.gif
 
 post_meta:
   page: # Home Page
@@ -252,7 +256,7 @@ post_meta:
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
-    #mainTone: true # true or false 文章顶部图片是否使用主色调
+    mainTone: true # true or false 文章顶部图片是否使用主色调
 
 # wordcount (字数统计)
 # see https://butterfly.js.org/posts/ceeb73f/#字数统计
@@ -300,10 +304,10 @@ reward:
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
     - img: /imgs/t1.webp
-      link:
+      link: https://geekswg.js.cool
       text: wechat
     - img: /imgs/t2.webp
-      link:
+      link: https://geekswg.js.cool
       text: alipay
 
 # Post edit 文章编辑
@@ -365,7 +369,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Waline # 评论插件 Valine/Waline/Twikoo/Artalk
+  use: Twikoo # 评论插件 Valine/Waline/Twikoo/Artalk
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -378,7 +382,7 @@ comments:
 twikoo:
   # https://railway.app/ 部署
   # https://dash.zeabur.com/  zeabur部署 推荐
-  envId: https://twikoo-railway.up.railway.app 
+  envId: https://twikoo.geekswg.top # https://twikoo-railway.up.railway.app 
   region:
   visitor: true
   option:
@@ -411,7 +415,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://geek-waline.zeabur.app/ # Waline server address url
+  serverURL: https://geek-waline.zeabur.app # Waline server address url
   bg: /imgs/bg-waline.webp # waline background
   pageview: true
   option:
@@ -490,12 +494,12 @@ footer:
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
     - link: http://geekswg.js.cool/
-      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg
+      shields: https://img.shields.io/badge/Blog-%E6%AF%95%E5%B0%91%E4%BE%A0-yellow
       message: 主页
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
       message: 博客框架为Hexo_v5.4.0 #徽标提示语
-    - link: https://anzhiy.cn/
+    - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git
       shields: https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg
       message: 本站使用AnZhiYu主题
     # - link: https://www.dogecloud.com/
@@ -627,11 +631,12 @@ site_verification:
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
-
+# 主题色配置
 theme_color:
-  enable: true
-  main: "#3b70fc"
-  dark_main: "#0084ff"
+  enable: false
+  cover_change: false
+  main: "#3b70fc" # #3b70fc
+  dark_main: "transparent" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
@@ -666,11 +671,6 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-# Website Background (设置网站背景)	- 无用配置
-# can set it to color or image (可设置图片 或者 顔色)
-# The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: var(--anzhiyu-background)
-
 # Footer Background
 footer_bg: false
 
@@ -687,24 +687,24 @@ enter_transitions: true
 # canvas_ribbon (静止彩带背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
-  alpha: 0.6
-  zIndex: -1
+  alpha: 0.5
+  zIndex: 9999
   click_to_change: true
   mobile: false
 
 # Fluttering Ribbon (动态彩带)
 canvas_fluttering_ribbon:
   enable: true
-  mobile: true
+  mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  opacity: 1 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: true
@@ -779,7 +779,7 @@ subtitle:
   # Effect Speed Options (打字效果速度参数)
   startDelay: 300 # time before typing starts in milliseconds
   typeSpeed: 150 # type speed in milliseconds
-  backSpeed: 50 # backspacing speed in milliseconds
+  backSpeed: 30 # backspacing speed in milliseconds
   # loop (循环打字)
   loop: true
   # source 调用第三方服务
@@ -890,7 +890,7 @@ newest_comments:
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
 
-# Bottom right button (右下角按钮)
+# Bottom right button (右下角按钮) 菜单
 # --------------------------------------
 
 # Conversion between Traditional and Simplified Chinese (简繁转换)
@@ -1141,9 +1141,9 @@ diytitle:
 
 # 留言弹幕配置  注意 仅支持Twikoo
 comment_barrage_config:
-  enable: false
+  enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 1
+  maxBarrage: 3
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
@@ -1153,10 +1153,11 @@ comment_barrage_config:
 # https://github.com/metowolf/MetingJS
 nav_music:
   enable: true
-  console_widescreen_music: true # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
-  id: 8152976493
-  server: netease
-  all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
+  console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
+  id: 8138088068
+  # music platform: netease, tencent, kugou, xiami, baidu
+  server: tencent  
+  all_playlist: https://y.qq.com/n/ryqq/playlist/8138088068
 
 # 评论匿名邮箱
 visitorMail:
@@ -1166,13 +1167,13 @@ visitorMail:
 # 即刻页面配置
 essay:
   enable: true
-  title: 即刻短文
-  subTitle: 咸鱼的日常生活。
+  title: 浮生若梦，为欢几何？
+  subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
   tips: 使用 即刻短文静态部署版 构建
-  button: 关于我
+  button: About
   buttonLink: /about/
   limit: 30
-  top_background: /imgs/t.webp
+  top_background: /imgs/t2.webp
 
 # ptool 文章底部工具
 ptool:
@@ -1212,7 +1213,7 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
