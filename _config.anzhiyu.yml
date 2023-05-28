@@ -1147,7 +1147,7 @@ comment_barrage_config:
   # 弹幕显示间隔时间ms
   barrageTime: 60*1000
   # token，在控制台中获取
-  accessToken: ""
+  accessToken: "a237426c5e1099af41370c4b0afe0a3e"
 
 # 左下角音乐配置项
 # https://github.com/metowolf/MetingJS
