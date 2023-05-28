@@ -535,7 +535,7 @@ footer:
     centerImg: /imgs/zhifeiji.gif # 这里的逻辑是，当前设置 > 默认头像
     left:
       - title: 主页
-        link: https://geekswg.js.cool
+        link: https://home.geekswg.top
         icon: anzhiyufont anzhiyu-icon-paper-plane
       - title: email
         link: mailto:geekswg@qq.com
