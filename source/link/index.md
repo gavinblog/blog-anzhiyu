@@ -62,7 +62,8 @@ type: link # 友链页面
 
 <style>.tk-comments>.tk-submit{opacity:0;height:0;transition:opacity .5s,height .5s;overflow:hidden}</style>
 
-<script>var twikooSubmit = document.getElementsByClassName("tk-submit")[0];
+<script>
+    var twikooSubmit = document.getElementsByClassName("tk-submit")[0];
     if(twikooSubmit) {
       twikooSubmit.style.opacity = "0";
     }
@@ -89,4 +90,5 @@ type: link # 友链页面
             twikooSubmit.style.height = "0";
             twikooSubmit.style.overflow = "hidden";
         }
-    }</script>
+    }
+</script>
