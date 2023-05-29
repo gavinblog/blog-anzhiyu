@@ -39,12 +39,13 @@ jobs:
       # hexo-offline pwa 依赖
       # hexo-abbrlink 
       run: |
+        npm install gulp --save
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
         npm install hexo-generator-search --save
         npm install hexo-abbrlink --save
-        npm install hexo-offline --save 
+        npm install hexo-offline --save
         npm ls --depth 0
 
     # hexo 编译生成网站
@@ -53,6 +54,7 @@ jobs:
       run: |
         hexo clean
         hexo generate
+        gulp
 
     # 自动发布到当前仓库的gh-pages分支，如需部署到其它仓库的，参考下面文档修改配置即可
     # 更多高级用法查看文档，https://github.com/peaceiris/actions-gh-pages
