@@ -32,13 +32,6 @@ type: link # 友链页面
 <!-- endtab -->
 {% endtabs %}
 
-
-作者: Jerry
-連結: https://butterfly.js.org/posts/4aa8abbe/#Tabs
-來源: Butterfly
-著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。
-
-
 ## 友情链接申请
 
 * 我的名称: `毕少侠`
