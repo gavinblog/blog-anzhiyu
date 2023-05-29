@@ -39,8 +39,7 @@ jobs:
       # hexo-offline pwa 依赖
       # hexo-abbrlink 
       run: |
-        npm install -g gulp
-        npm link gulp
+        npm install gulp --save
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
