@@ -226,11 +226,29 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover: # 默认封面
-    - /imgs/default-cover.webp
-    - /imgs/t1.webp
-    - /imgs/t2.webp
-    - /imgs/zhifeiji.gif
-    - /imgs/bg-main.webp
+    #- /imgs/default-cover.webp
+    #- /imgs/t1.webp
+    #- /imgs/t2.webp
+    #- /imgs/zhifeiji.gif
+    #- /imgs/bg-main.webp
+    - /imgs/qsmy/qsmy-1.webp
+    - /imgs/qsmy/qsmy-2.webp
+    - /imgs/qsmy/qsmy-3.webp
+    - /imgs/qsmy/qsmy-4.webp
+    - /imgs/qsmy/qsmy-5.webp
+    - /imgs/qsmy/qsmy-6.webp
+    - /imgs/qsmy/qsmy-7.webp
+    - /imgs/qsmy/qsmy-8.webp
+    - /imgs/qsmy/qsmy-9.webp
+    - /imgs/qsmy/qsmy-10.webp
+    - /imgs/qsmy/qsmy-11.webp
+    - /imgs/qsmy/qsmy-12.webp
+    - /imgs/qsmy/qsmy-13.webp
+    - /imgs/qsmy/qsmy-14.webp
+    - /imgs/qsmy/qsmy-15.webp
+    - /imgs/qsmy/qsmy-16.webp
+    - /imgs/qsmy/qsmy-17.webp
+    - /imgs/qsmy/qsmy-18.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -517,7 +535,7 @@ footer:
     centerImg: /imgs/zhifeiji.gif # 这里的逻辑是，当前设置 > 默认头像
     left:
       - title: 主页
-        link: https://geekswg.js.cool
+        link: https://home.geekswg.top
         icon: anzhiyufont anzhiyu-icon-paper-plane
       - title: email
         link: mailto:geekswg@qq.com
