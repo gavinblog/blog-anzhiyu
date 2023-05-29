@@ -7,6 +7,37 @@ type: link # 友链页面
 
 ## 我的友链
 
+{% tabs test4 %}
+<!-- tab Hugo博客 -->
+```yml
+- nickname: 毕少侠
+  avatar: https://geekswg.js.cool/images/avatar.jpg
+  url: https://geekswg.js.cool
+  description: 毕少侠也在江湖。
+```
+<!-- endtab -->
+
+<!-- tab Hexo博客 @fab fa-apple-pay -->
+```yml
+    - name: 毕少侠-Hexo-Anzhiyu
+      link: https://hexo.geekswg.top/
+      avatar: https://hexo.geekswg.top/imgs/avatar.webp
+      descr: 毕少侠也在江湖。
+      siteshot: 
+```
+<!-- endtab -->
+
+<!-- tab Demo@fas fa-bomb -->
+**名字+icon**
+<!-- endtab -->
+{% endtabs %}
+
+
+作者: Jerry
+連結: https://butterfly.js.org/posts/4aa8abbe/#Tabs
+來源: Butterfly
+著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。
+
 
 ## 友情链接申请
 
@@ -17,7 +48,24 @@ type: link # 友链页面
 
 请勾选你符合的条件：
 
-<div id="friendlink_checkboxs" style="padding:0 0 0 1.6rem"><p><label class="checkbox"><input type="checkbox" id="checkbox1" onclick="checkForm()">我已添加 <b>安知鱼</b> 博客的友情链接</label></p><p><label class="checkbox"><input type="checkbox" id="checkbox2" onclick="checkForm()">我的链接主体为 <b>个人</b>，网站类型为<b>博客</b></label></p><p><label class="checkbox"><input type="checkbox" id="checkbox3" onclick="checkForm()">我的网站现在可以在中国大陆区域正常访问</label></p><p><label class="checkbox"><input type="checkbox" id="checkbox4" onclick="checkForm()">网站内容符合中国大陆法律法规</label></p><p><label class="checkbox"><input type="checkbox" id="checkbox5" onclick="checkForm()">我的网站可以在1分钟内加载完成首屏</label></p></div>
+<div id="friendlink_checkboxs" style="padding:0 0 0 1.6rem">
+
+<p><label class="checkbox">
+<input type="checkbox" id="checkbox1" onclick="checkForm()">我已添加 <b>本站</b> 博客的友情链接</label></p>
+
+<p><label class="checkbox">
+<input type="checkbox" id="checkbox2" onclick="checkForm()">我的链接主体为 <b>个人</b>，网站类型为<b>博客</b></label></p>
+
+<p><label class="checkbox">
+<input type="checkbox" id="checkbox3" onclick="checkForm()">我的网站现在可以在中国大陆区域正常访问</label></p>
+
+<p><label class="checkbox">
+<input type="checkbox" id="checkbox4" onclick="checkForm()">网站内容符合中国大陆法律法规</label></p>
+
+<p><label class="checkbox">
+<input type="checkbox" id="checkbox5" onclick="checkForm()">我的网站可以在1分钟内加载完成首屏</label></p>
+
+</div>
 
 <style>.tk-comments>.tk-submit{opacity:0;height:0;transition:opacity .5s,height .5s;overflow:hidden}</style>
 
