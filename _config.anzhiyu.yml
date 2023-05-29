@@ -1,6 +1,6 @@
 menu:
 
-  主页: http://geekswg.top/ || anzhiyu-icon-link
+  主页: https://home.geekswg.top/ || anzhiyu-icon-link
 
   AI:
     自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
@@ -657,6 +657,9 @@ table_interlaced_discoloration: true
 
 # 首页双栏显示
 article_double_row: true
+# 双栏文章
+butterfly_article_double_row:
+  enable: true
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
