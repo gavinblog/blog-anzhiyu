@@ -17,7 +17,7 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Hexo博客 @fab fa-apple-pay -->
+<!-- tab Hexo博客 @anzhiyu-icon-paper-plane -->
 ```yml
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
@@ -27,7 +27,7 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Demo@fas fa-bomb -->
+<!-- tab Demo@anzhiyu-icon-paper-plane -->
 **名字+icon**
 <!-- endtab -->
 {% endtabs %}
