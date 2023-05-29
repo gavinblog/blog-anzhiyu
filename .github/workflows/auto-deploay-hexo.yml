@@ -40,6 +40,9 @@ jobs:
       # hexo-abbrlink 
       run: |
         npm install gulp --save
+        npm install gulp-htmlclean gulp-htmlmin gulp-clean-css gulp-uglify gulp-imagemin --save
+        npm install gulp --save
+        
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
@@ -51,6 +54,7 @@ jobs:
     # hexo 编译生成网站
     - name: Generate files
       # 编译 markdown 文件
+      # hexo clean && hexo g && gulp
       run: |
         hexo clean
         hexo generate
