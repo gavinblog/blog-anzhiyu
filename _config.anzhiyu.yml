@@ -291,8 +291,8 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
-  length: 500 # if you set method to 2 or 3, the length need to config
+  method: 2
+  length: 128 # if you set method to 2 or 3, the length need to config
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -861,13 +861,13 @@ aside:
     backFace: /imgs/bg-waline.webp #图2
   card_recent_post:
     enable: true
-    limit: 5 # if set 0 will show all
+    limit: 6 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    expand: true # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
@@ -1106,17 +1106,17 @@ home_top:
       path: /categories/notes/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
-      icon: fas fa-dove
+      icon: anzhiyu-icon-link
     - name: 分享
       path: /categories/share/
       shadow: var(--anzhiyu-shadow-red)
       class: red
-      icon: fas fa-burn
+      icon: anzhiyu-icon-shapes
     - name: AI
       path: /categories/ai/
       shadow: var(--anzhiyu-shadow-green)
       class: green
-      icon: fas fa-book
+      icon: anzhiyu-icon-shapes
   default_descr: default_descr-default_descr
   swiper:
     enable: true
