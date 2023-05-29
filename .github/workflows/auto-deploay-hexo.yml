@@ -38,6 +38,7 @@ jobs:
       # 下载 hexo-cli 脚手架及相关安装包
       # hexo-offline pwa 依赖
       # hexo-abbrlink 
+      run: |
         npm install -g hexo-cli
         npm install --no-fund
         npm install hexo-renderer-pug hexo-renderer-stylus --save
@@ -49,7 +50,6 @@ jobs:
     # hexo 编译生成网站
     - name: Generate files
       # 编译 markdown 文件
-      # hexo clean && hexo g && gulp
       run: |
         hexo clean
         hexo generate
@@ -78,5 +78,4 @@ jobs:
         #full_commit_message: ${{ github.event.head_commit.message }}
         tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
         tag_message: 'Deployment ${{ github.ref_name }}'
-
 
