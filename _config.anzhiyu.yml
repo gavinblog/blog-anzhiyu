@@ -27,7 +27,7 @@ menu:
   #  留言板: /comments/ || anzhiyu-icon-envelope
 
   我的:
-    About: /about/ || anzhiyu-icon-paper-plane
+    #About: /about/ || anzhiyu-icon-paper-plane
     友人帐: /link/ || anzhiyu-icon-link
     留言板: /comments/ || anzhiyu-icon-envelope
     群言堂: /essay/ || anzhiyu-icon-lightbulb
