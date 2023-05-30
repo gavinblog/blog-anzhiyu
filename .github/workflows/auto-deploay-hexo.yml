@@ -38,6 +38,7 @@ jobs:
       # 下载 hexo-cli 脚手架及相关安装包
       # hexo-offline pwa 依赖
       # hexo-abbrlink 
+      # hexo-blog-encrypt 文章加密插件
       run: |
         npm install -g hexo-cli
         npm install --no-fund
@@ -45,6 +46,7 @@ jobs:
         npm install hexo-generator-search --save
         npm install hexo-abbrlink --save
         npm install hexo-offline --save
+        npm install --save hexo-blog-encrypt
         npm ls --depth 0
 
     # hexo 编译生成网站
