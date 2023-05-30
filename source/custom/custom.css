@@ -122,9 +122,8 @@ div#post {
   background: transparent;
 }
 
-.recent-post-item:hover .recent-post-info .article-title {
-  /* color: var(--anzhiyu-theme); */
-  color: var(--anzhiyu-theme-deep);
+#recent-posts .recent-post-item:hover .recent-post-info .article-title {
+  color: var(--anzhiyu-theme);
 }
 
 
