@@ -19,6 +19,7 @@ menu:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
+    文档: /docss/ || anzhiyu-icon-book
 
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
@@ -26,10 +27,10 @@ menu:
   #  留言板: /comments/ || anzhiyu-icon-envelope
 
   我的:
-    关于本人: /about/ || anzhiyu-icon-paper-plane
+    About: /about/ || anzhiyu-icon-paper-plane
     友人帐: /link/ || anzhiyu-icon-link
     留言板: /comments/ || anzhiyu-icon-envelope
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    群言堂: /essay/ || anzhiyu-icon-lightbulb
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-condition/ || anzhiyu-icon-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
