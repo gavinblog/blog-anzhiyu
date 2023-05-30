@@ -36,6 +36,11 @@
       avatar: /imgs/default-cover.webp
       descr: 生活明朗，万物可爱
       siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      descr: Future is now 🍭🍭🍭
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
 
 
 - class_name: 推荐博客
@@ -348,43 +353,4 @@
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖。
       siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。 
-    - name: 毕少侠-Hexo
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖By hexo-theme-anzhiyu
-      siteshot: 毕少侠Hexo站，由 Hexo驱动， [hexo-theme-anzhiyu] 主题。
+    
