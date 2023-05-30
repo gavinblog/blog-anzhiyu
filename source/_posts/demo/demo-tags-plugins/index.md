@@ -4,12 +4,12 @@ categories: demo
 tags:
   - 示例
   - demo
-  - 主题
+  - hexo
   - 标签外挂
 ai:
   - Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
   - 本文摘要由Geek-人工-ChatGPT智能生成。
-date: 2023-05-30 03:04:05
+date: 2023-05-30 13:04:05
 
 password: 1234
 theme: xray
