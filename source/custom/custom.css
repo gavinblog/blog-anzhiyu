@@ -122,6 +122,11 @@ div#post {
   background: transparent;
 }
 
+.recent-post-item:hover .recent-post-info .article-title {
+  /* color: var(--anzhiyu-theme); */
+  color: var(--anzhiyu-theme-deep);
+}
+
 
 /* 自定义主题配色 */
 [data-theme="light"] {
