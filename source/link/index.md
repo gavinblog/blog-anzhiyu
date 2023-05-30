@@ -27,7 +27,7 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Demo@anzhiyu-icon-paper-plane -->
+<!-- tab Demo@fas fa-bomb -->
 **名字+icon**
 <!-- endtab -->
 {% endtabs %}
