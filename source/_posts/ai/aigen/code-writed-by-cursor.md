@@ -5,6 +5,13 @@ author:
   name: Cursor
   link: 'https://www.cursor.so/'
 description: 摘要
+
+copyright: true
+copyright_author:	Cusor
+copyright_author_href: https://www.cursor.so/ 
+copyright_url: https://www.cursor.so/
+copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
+
 keywords:
   - ''
 tags:
