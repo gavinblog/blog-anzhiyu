@@ -19,7 +19,7 @@ menu:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
-    文档: /docss/ || anzhiyu-icon-book
+    文档: /docs/ || anzhiyu-icon-book
 
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
@@ -225,7 +225,7 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover: # 默认封面
     #- /imgs/default-cover.webp
