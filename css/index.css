@@ -230,10 +230,17 @@ template {
   line-height: 16px;
   height: 16px;
 }
-.anzhiyufont,
+.fontawesomeIcon,
 hr:before,
 #article-container a.headerlink::before,
 .note:not(.no-icon)::before {
+  display: inline-block;
+  font-weight: 600;
+  font-family: 'Font Awesome 6 Free';
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.anzhiyufont {
   font-family: "anzhiyufont";
   font-size: 16px;
   font-style: normal;
