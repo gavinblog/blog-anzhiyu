@@ -11,8 +11,8 @@ ai:
   - 本文摘要由Geek-人工-ChatGPT智能生成。
 date: 2023-05-30 13:04:05
 
-password: 1234
-theme: xray
+#password: 1234
+#theme: xray
 
 
 ---
@@ -41,6 +41,8 @@ theme: xray
 
 **This is Tab 2.**
 
+样式 : `simple` `modern` `flat` `disabled` `no-icon`
+
 <!-- endtab -->
 
 <!-- tab 预览@fa-solid fa-book -->
@@ -68,6 +70,46 @@ theme: xray
 <!-- endtab -->
 
 {% endtabs %}
+
+## Gallery 相册图库
+
+## hideToggle
+
+{% hideToggle Butterfly安装方法 %}
+在你的博客根目录里
+
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+
+如果想要安装比较新的dev分支，可以
+
+git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+
+{% endhideToggle %}
+
+## 分栏 Tabs
+
+{% tabs test2, 3 %}
+
+<!-- tab t1@far fa-paper-plane fa-fw fa-sm -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 ## 加密插件安装
 
