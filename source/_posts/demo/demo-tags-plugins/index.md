@@ -7,12 +7,14 @@ tags:
   - hexo
   - 标签外挂
 ai:
-  - Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
-  - Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意[本文摘要由Geek-人工-ChatGPT智能生成。]
+  - >-
+    Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
+    AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
+  - >-
+    Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
+    AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意[本文摘要由Geek-人工-ChatGPT智能生成。]
+abbrlink: '3071'
 date: 2023-05-30 13:04:05
-
-#password: 1234
-#theme: xray
 ---
 
 > 标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
@@ -85,7 +87,7 @@ date: 2023-05-30 13:04:05
 <!-- endtab -->
 {% endtabs %}
 
-## hideToggle
+## HideToggle
 
 {% tabs tab-hideToggle,3 %}
 
@@ -163,11 +165,10 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 <!-- endtab -->
 {% endtabs %}
 
----
+===
 
 ## demo
 
-```html
 {% tabs tab-note %}
 
 <!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
@@ -183,7 +184,6 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 <!-- tab 预览@fa-solid fa-book -->
 <!-- endtab -->
 {% endtabs %}
-```
 
 ## 加密插件安装
 
@@ -204,7 +204,6 @@ message: 您好, 这里需要密码.
 theme: xray
 wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
-
 ```
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).

@@ -9,15 +9,14 @@ tags:
 ai:
   - hexo-blog-encrypt demo测试
   - 本文摘要由ChatGPT智能生成。
-date: 2023-05-30 03:04:05
-
 password: 1234
-abstract: 有东西被加密了, 请输入密码查看.
-message: 您好, 这里需要密码.密码提示：1234
+abstract: '有东西被加密了, 请输入密码查看.'
+message: '您好, 这里需要密码.密码提示：1234'
 theme: xray
-wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.密码提示：1234
-wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
-
+wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.密码提示：1234'
+wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
+abbrlink: '9667'
+date: 2023-05-30 03:04:05
 ---
 
 ## 加密插件安装
