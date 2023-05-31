@@ -8,13 +8,11 @@ tags:
   - 标签外挂
 ai:
   - Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
-  - 本文摘要由Geek-人工-ChatGPT智能生成。
+  - Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意[本文摘要由Geek-人工-ChatGPT智能生成。]
 date: 2023-05-30 13:04:05
 
 #password: 1234
 #theme: xray
-
-
 ---
 
 > 标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于 AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
@@ -48,7 +46,6 @@ date: 2023-05-30 13:04:05
 <!-- tab 预览@fa-solid fa-book -->
 
 > `simple`样式
-
 {% note simple %}默认 提示块标签{% endnote %}
 {% note default simple %}default 提示块标签{% endnote %}
 {% note primary simple %}primary 提示块标签{% endnote %}
@@ -58,7 +55,6 @@ date: 2023-05-30 13:04:05
 {% note danger simple %}danger 提示块标签{% endnote %}
 
 > `modern`样式
-
 {% note modern %}默认 提示块标签{% endnote %}
 {% note default modern %}default 提示块标签{% endnote %}
 {% note primary modern %}primary 提示块标签{% endnote %}
@@ -73,43 +69,121 @@ date: 2023-05-30 13:04:05
 
 ## Gallery 相册图库
 
+{% tabs tab-Gallery %}
+
+<!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
+```html
+{% note simple %}默认 提示块标签{% endnote %}
+```
+<!-- endtab -->
+
+<!-- tab 参数@fa-solid fa-book -->
+样式 : `simple` `modern` `flat` `disabled` `no-icon`
+<!-- endtab -->
+
+<!-- tab 预览@fa-solid fa-book -->
+<!-- endtab -->
+{% endtabs %}
+
 ## hideToggle
 
+{% tabs tab-hideToggle,3 %}
+
+<!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
+```
 {% hideToggle Butterfly安装方法 %}
 在你的博客根目录里
-
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
-
 如果想要安装比较新的dev分支，可以
-
 git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
-
 {% endhideToggle %}
+```
+<!-- endtab -->
+
+<!-- tab 参数@fa-solid fa-book -->
+样式 : `simple` `modern` `flat` `disabled` `no-icon`
+<!-- endtab -->
+
+<!-- tab 预览@fa-solid fa-book -->
+{% hideToggle Butterfly安装方法 %}
+在你的博客根目录里
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+如果想要安装比较新的dev分支，可以
+git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+{% endhideToggle %}
+<!-- endtab -->
+{% endtabs %}
+
+***
 
 ## 分栏 Tabs
 
+{% tabs tab-Tabs,3 %}
+
+<!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
+```html
 {% tabs test2, 3 %}
 
-<!-- tab t1@far fa-paper-plane fa-fw fa-sm -->
-
+<!-- tab t1@far fa-paper-plane -->
 **This is Tab 1.**
-
 <!-- endtab -->
 
 <!-- tab -->
-
 **This is Tab 2.**
-
 <!-- endtab -->
 
 <!-- tab -->
-
 **This is Tab 3.**
-
 <!-- endtab -->
 
 {% endtabs %}
+```
+<!-- endtab -->
 
+<!-- tab 参数@fa-solid fa-book -->
+样式 : `simple` `modern` `flat` `disabled` `no-icon`
+<!-- endtab -->
+
+<!-- tab 预览@fa-solid fa-book -->
+{% tabs test2, 3 %}
+
+<!-- tab t1@far fa-paper-plane fa-fw fa-sm -->
+**This is Tab 1.**
+<!-- endtab -->
+
+<!-- tab -->
+**This is Tab 2.**
+<!-- endtab -->
+
+<!-- tab -->
+**This is Tab 3.**
+<!-- endtab -->
+
+{% endtabs %}
+<!-- endtab -->
+{% endtabs %}
+
+---
+
+## demo
+
+```html
+{% tabs tab-note %}
+
+<!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
+```html
+{% note simple %}默认 提示块标签{% endnote %}
+```
+<!-- endtab -->
+
+<!-- tab 参数@fa-solid fa-book -->
+样式 : `simple` `modern` `flat` `disabled` `no-icon`
+<!-- endtab -->
+
+<!-- tab 预览@fa-solid fa-book -->
+<!-- endtab -->
+{% endtabs %}
+```
 
 ## 加密插件安装
 
