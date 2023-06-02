@@ -401,7 +401,8 @@ comments:
 # https://github.com/imaegoo/twikoo
 twikoo:
   # https://railway.app/ 部署
-  # https://dash.zeabur.com/  zeabur部署 推荐
+  # https://dash.zeabur.com/  zeabur部署 推荐国内可直接访问，不过现在已限额
+  # https://vercel.com/dashboard 推荐vercel,国内需要绑定自己的域名才能正常访问。
   envId: https://twikoo.geekswg.top # https://twikoo-railway.up.railway.app 
   region:
   visitor: true
@@ -570,6 +571,14 @@ footer:
             link: https://www.foreverblog.cn/
           - title: 开往
             link: https://github.com/travellings-link/travellings
+      - title: 导航
+        links:
+          - title: 个人主页
+            link: https://home.geekswg.top
+          - title: ChatGPT
+            link: https://chatgpt.geekswg.top
+          - title: 站点监测
+            link: https://status.geekswg.top
       - title: 主题
         links:
           - title: 模板仓库
@@ -578,14 +587,14 @@ footer:
             link: https://anzhiy.cn/docs/
           - title: 更新日志
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
-      - title: 导航
-        links:
-          - title: 即刻短文
-            link: /essay/
-          - title: 友链文章
-            link: /fcircle/
-          - title: 留言板
-            link: /comments/
+      #- title: 导航
+      #  links:
+      #    - title: 即刻短文
+      #      link: /essay/
+      #    - title: 友链文章
+      #      link: /fcircle/
+      #    - title: 留言板
+      #      link: /comments/
       #- title: 协议  #协议学要自己写页面，我直接注释了
       #  links:
       #    - title: 隐私协议
