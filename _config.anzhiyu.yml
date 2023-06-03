@@ -19,7 +19,7 @@ menu:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
-    文档: /docs/ || anzhiyu-icon-book
+    文档: /anzhiyu-docs/ || anzhiyu-icon-book
 
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
@@ -584,7 +584,7 @@ footer:
           - title: 模板仓库
             link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
-            link: https://anzhiy.cn/docs/
+            link: https://hexo.geekswg.top/anzhiyu-docs/
           - title: 更新日志
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
       #- title: 导航
