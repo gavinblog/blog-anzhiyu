@@ -1059,7 +1059,7 @@ function stopMaskScroll() {
         rm.hideRightMenu();
         // e.preventDefault();
       },
-      false
+      { passive: true }
     );
   }
   if (document.getElementById("rightMenu")) {
@@ -1071,7 +1071,7 @@ function stopMaskScroll() {
         rm.hideRightMenu();
         // e.preventDefault();
       },
-      false
+      { passive: true }
     );
   }
 }
@@ -1264,7 +1264,7 @@ function addRightMenuClickEvent() {
   });
 
   document.getElementById("menu-newwindowimg").addEventListener("click", function () {
-    window.open(domImgSrc, , "_blank");
+    window.open(domImgSrc, "_blank");
     rm.hideRightMenu();
   });
 
