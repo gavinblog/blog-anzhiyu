@@ -63,7 +63,9 @@ jobs:
       with:
         # 1.如何生成 github_token，github主页,Settings / Developer settings / Personal access tokens (classic)
         # 2.github_token 在 仓库 Settings,Actions secrets and variables,设置
-        github_token: ${{ secrets.ACCESS_TOKEN }}
+        # github_token: ${{ secrets.ACCESS_TOKEN }} 无需自定义 
+        # GITHUB_TOKEN secret to authenticate in your workflow. So, you can start to deploy immediately without any configuration.
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
 
         # Deploy to external repository external_repository
