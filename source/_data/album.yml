@@ -3,7 +3,7 @@
   path_name: /album-1
   type: 1
   description: 君不见黄河之水天上来，奔流到海不复回。🌇。
-  cover: /imgs/t1.webp
+  cover: /imgs/default/tm.png
   
   album_list:
     - date: 2022/05/20 01:00:00
@@ -50,7 +50,7 @@
   path_name: /album-2
   type: 2
   description: Album-Demo-Type2 - description。
-  cover: /imgs/t2.webp
+  cover: /imgs/default/tm2.png
   rowHeight: 220
   limit: 10
   lazyload: true
@@ -80,7 +80,7 @@
   path_name: /album-3
   type: 2
   description: 大江东去，浪淘尽，千古风流人物。
-  cover: /imgs/t2.webp
+  cover: /imgs/default/cover3.png
   rowHeight: 220
   limit: 10
   lazyload: true
@@ -110,7 +110,7 @@
   path_name: /album-4
   type: 2
   description: 如果提出的问题本来就有问题，那答案又有什么意义呢。
-  cover: /imgs/t2.webp
+  cover: /imgs/default/tm.png
   rowHeight: 220
   limit: 10
   lazyload: true

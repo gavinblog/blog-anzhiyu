@@ -1159,7 +1159,7 @@ friends_vue:
   # 朋友圈后端地址 https://friends.anzhiy.cn/
   apiurl: https://friends.geekswg.top/
   #  /imgs/bg-main.webp
-  top_background: /imgs/default-cover2.png
+  top_background: /imgs/default/cover2.png
 
 # 黑色模式粒子效果canvas
 universe:

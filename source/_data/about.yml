@@ -29,13 +29,13 @@
   statistic:
     link: /archives
     text: 春诵夏弦
-    cover: /imgs/t.png
+    cover: /imgs/default/tm.png
 
   map:
     title: 男儿马上志四海，不是寻常客子心
     StrengthenTitle: 中华，神州大地
     background: /imgs/t.png
-    backgroundDark: /imgs/t.png
+    backgroundDark: /imgs/default/tm2.png
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 1921
@@ -65,7 +65,7 @@
     game_tips: 游戏 - 斯人定何人，游戏得自在
     game_title: 使命召19-战争地带2.0
     game_uid: "geekswg#123456"
-    game_bg: /imgs/t.png
+    game_bg: /imgs/default/cover.webp
 
   comic:
     comic_tips: 读孙子兵法
@@ -79,21 +79,21 @@
         cover: /imgs/t2.webp
       - name: 三体
         href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t1.webp
+        cover: /imgs/default/cover.webp
       - name: 秦时明月
         href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t2.webp  
+        cover: /imgs/default/tm.png  
 
   like:
     like_tips: 偏好 - 爱好文雅，广延诗赋，以知得失。
     like_title: "\n曾经沧海难为水，除却巫山不是云。\n\n 取次花丛懒回顾，半缘修道半缘君。"
-    like_bg: /imgs/bg-main.webp
+    like_bg: /imgs/default/cover1.png
     like_bottom: 焚香、对弈、品茗、听雨、赏雪、候月、酌酒、莳花、寻幽、抚琴
 
   music:
     music_tips: 音乐 - 高山流水遇知音,彩云追月得知己
     music_title: 此曲只应天上有，人间能得几回闻。
-    music_bg: /imgs/t2.webp
+    music_bg: /imgs/default/cover2.png
     music_link: /music/?id=8138088068&server=tencent
 
 # 打赏列表  
