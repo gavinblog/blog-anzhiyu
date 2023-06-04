@@ -868,7 +868,7 @@ aside:
   #微信公众号
   card_weixin: 
     enable: true
-    face: /imgs/default/tm1.png   #图1
+    face: /imgs/default/cover3.png   #图1
     backFace: /imgs/default/tm2.png #图2
   card_recent_post:
     enable: true
