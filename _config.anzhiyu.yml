@@ -1326,7 +1326,7 @@ CDN:
     # aplayer_css:
     # aplayer_js:
     # meting_js:
-    # meting_api:
+    meting_api: https://meting.qjqq.cn/
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
