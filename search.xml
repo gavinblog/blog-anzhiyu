@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Hexo常用命令</title>
+      <link href="/posts/3e38.html"/>
+      <url>/posts/3e38.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><p>Hexo是一款基于Node.js的静态博客生成器，它可以帮助我们快速搭建自己的博客网站。本文将介绍一些常用的Hexo命令，帮助你更好地使用Hexo。</p><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 hexo脚手架</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化站点</span></span><br><span class="line">hexo init my_blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清楚 clean 生成 generate 运行 server</span></span><br><span class="line">hexo cl | hexo g | hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment">## new post 指定目录和标题</span></span><br><span class="line">hexo new post -p notes/hexo-basic-usage/index <span class="string">&quot;Hexo常用命令&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>首先需要安装Node.js和npm,然后通过npm安装Hexo:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="创建博客网站"><a href="#创建博客网站" class="headerlink" title="创建博客网站"></a>创建博客网站</h2><p>使用Hexo创建博客网站非常简单，只需要执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init my_blog</span><br></pre></td></tr></table></figure><p>其中，my_blog是你想要创建的博客主题名称。执行完该命令后，Hexo会自动下载主题包并进行安装。</p><h2 id="写作文章"><a href="#写作文章" class="headerlink" title="写作文章"></a>写作文章</h2><p>在Hexo中，可以使用Markdown语法编写文章。首先，在博客根目录下创建一个 _posts 文件夹，然后在该文件夹下创建一个新文件，例如article.md,内容如下：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 标题</span></span><br><span class="line">正文内容</span><br></pre></td></tr></table></figure><p>然后执行以下命令即可生成文章：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d _posts/article.md &gt; article.html</span><br><span class="line"></span><br><span class="line"><span class="comment">## new post 指定目录和标题</span></span><br><span class="line">hexo new post -p notes/hexo-basic-usage/index <span class="string">&quot;Hexo常用命令&quot;</span></span><br></pre></td></tr></table></figure><p>其中，g表示生成整个页面，-d参数指定了生成的文章路径为_posts&#x2F;article.md。生成完成后，会在当前目录下生成一个名为article.html的文件。</p><h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>在完成文章编写后，可以使用以下命令将文章发布到本地：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server --quiet <span class="comment"># 静默模式发布文章</span></span><br><span class="line">hexo server <span class="comment"># 启动默认的发布模式，会弹出浏览器窗口显示发布结果</span></span><br></pre></td></tr></table></figure><p>其中，server命令用于启动Hexo服务器，–quiet参数表示静默模式发布文章，不会弹出任何提示信息；而启动默认的发布模式则会弹出浏览器窗口显示发布结果。</p><h2 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><p>除了以上提到的常用命令外，Hexo还有很多其他实用的命令。例如：</p><ul><li>hexo clean:清除博客生成的所有缓存文件；</li><li>hexo generate:重新生成所有页面；</li><li>hexo deploy:将博客部署到远程服务器上。</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo是一款非常强大的静态博客生成器，通过掌握其常用命令，可以轻松地搭建自己的博客网站。希望本文能够帮助你更好地使用Hexo。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> demo </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>史上最牛Hello World</title>
+      <link href="/posts/7ce5.html"/>
+      <url>/posts/7ce5.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这是我见过的最 niubility 的 最神奇的 Hello World!</p></blockquote><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><script>eval(z='p="<"+"pre>"/* ,.oq#+     ,._, */;for(y in n="zw24l6k\4e3t4jnt4qj24xh2 x/* =<,m#F^    A W###q. */42kty24wrt413n243n\9h243pdxt41csb yz/* #K       q##H######Am */43iyb6k43pk7243nm\r24".split(4)){/* dP      cpq#q##########b, */for(a in t=pars\eInt(n[y],36)+/*         p##@###YG=[#######y */(e=x=r=[]))for\(r=!r,i=0;t[a/*         d#qg `*PWo##q#######D */]>i;i+=.05)wi\th(Math)x-= /*        aem1k.com Q###KWR#### W[ */.05,0<cos(o=\new Date/1e3/*      .Q#########Md#.###OP  A@ , */-x/PI)&&(e[~\~(32*sin(o)*/* ,    (W#####Xx######.P^     T % */sin(.5+y/7))\+60] =-~ r);/* #y    `^TqW####P###BP           */for(x=0;122>\x;)p+="   *#"/* b.        OQ####x#K           */[e[x++]+e[x++\]]||(S=("eval"/* l         `X#####D  ,       */+"(z=\'"+z.spl\it(B = "\\\\")./*           G####B" #       */join(B+B).split\(Q="\'").join(B+Q/*          VQBP`        */)+Q+")//m1k")[x/2\+61*y-1]).fontcolor/*         TP         */(/\\w/.test(S)&&"#\03B");document.body.innerHTML=p+=B+"\\n"}setTimeout(z)')//</script><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="built_in">eval</span>(z=<span class="string">&#x27;p=&quot;&lt;&quot;+&quot;pre&gt;&quot;/* ,.oq#+     ,._, */;for(y in n=&quot;zw24l6k\</span></span><br><span class="line"><span class="string">4e3t4jnt4qj24xh2 x/* =&lt;,m#F^    A W###q. */42kty24wrt413n243n\</span></span><br><span class="line"><span class="string">9h243pdxt41csb yz/* #K       q##H######Am */43iyb6k43pk7243nm\</span></span><br><span class="line"><span class="string">r24&quot;.split(4))&#123;/* dP      cpq#q##########b, */for(a in t=pars\</span></span><br><span class="line"><span class="string">eInt(n[y],36)+/*         p##@###YG=[#######y */(e=x=r=[]))for\</span></span><br><span class="line"><span class="string">(r=!r,i=0;t[a/*         d#qg `*PWo##q#######D */]&gt;i;i+=.05)wi\</span></span><br><span class="line"><span class="string">th(Math)x-= /*        aem1k.com Q###KWR#### W[ */.05,0&lt;cos(o=\</span></span><br><span class="line"><span class="string">new Date/1e3/*      .Q#########Md#.###OP  A@ , */-x/PI)&amp;&amp;(e[~\</span></span><br><span class="line"><span class="string">~(32*sin(o)*/* ,    (W#####Xx######.P^     T % */sin(.5+y/7))\</span></span><br><span class="line"><span class="string">+60] =-~ r);/* #y    `^TqW####P###BP           */for(x=0;122&gt;\</span></span><br><span class="line"><span class="string">x;)p+=&quot;   *#&quot;/* b.        OQ####x#K           */[e[x++]+e[x++\</span></span><br><span class="line"><span class="string">]]||(S=(&quot;eval&quot;/* l         `X#####D  ,       */+&quot;(z=\&#x27;&quot;+z.spl\</span></span><br><span class="line"><span class="string">it(B = &quot;\\\\&quot;)./*           G####B&quot; #       */join(B+B).split\</span></span><br><span class="line"><span class="string">(Q=&quot;\&#x27;&quot;).join(B+Q/*          VQBP`        */)+Q+&quot;)//m1k&quot;)[x/2\</span></span><br><span class="line"><span class="string">+61*y-1]).fontcolor/*         TP         */(/\\w/.test(S)&amp;&amp;&quot;#\</span></span><br><span class="line"><span class="string">03B&quot;);document.body.innerHTML=p+=B+&quot;\\n&quot;&#125;setTimeout(z)&#x27;</span>)<span class="comment">//</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> share </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+            <tag> js </tag>
+            
+            <tag> hello world </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo-theme-Anzhiyu标签外挂Demo</title>
       <link href="/posts/3071.html"/>
       <url>/posts/3071.html</url>
