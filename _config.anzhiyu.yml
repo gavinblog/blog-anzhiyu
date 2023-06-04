@@ -869,7 +869,7 @@ aside:
   card_weixin: 
     enable: true
     face: /imgs/default/cover3.png   #图1
-    backFace: /imgs/default/tm2.png #图2
+    backFace: /imgs/default/cover2.png #图2
   card_recent_post:
     enable: true
     limit: 6 # if set 0 will show all
