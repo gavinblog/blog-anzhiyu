@@ -1326,7 +1326,7 @@ CDN:
     # aplayer_css:
     # aplayer_js:
     # meting_js:
-    meting_api: https://meting.qjqq.cn/
+    meting_api: https://meting.qjqq.cn/?type=playlist&id=8138088068&server=tencent
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:

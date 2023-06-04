@@ -1,11 +1,14 @@
 ---
 title: 史上最牛Hello World
-date: 2023-06-04 09:58:43
-
 categories: share
-tags: ["分享","js","hello world"]
+tags:
+  - 分享
+  - js
+  - hello world
 ai:
   - 这是我见过的最 niubility 的 最神奇的 Hello World!
+abbrlink: 7ce5
+date: 2023-06-04 09:58:43
 ---
 
 > 这是我见过的最 niubility 的 最神奇的 Hello World!
