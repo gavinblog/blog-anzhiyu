@@ -1104,7 +1104,7 @@ envelope_comment:
     -    经书揭不开
     -   纸笔自己安排
     -  明年不请我自来
-  bottom: 有朋自远方来，不亦乐乎！ #仅支持单行文本
+  bottom: "有朋自远方来，不亦乐乎" #仅支持单行文本
   height: 1024px #1024px，信封划出的高度
   path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
