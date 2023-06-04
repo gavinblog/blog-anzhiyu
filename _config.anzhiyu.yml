@@ -1093,11 +1093,18 @@ envelope_comment:
     beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
     afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
   message: #信笺正文，多行文本，写法如下
-    - 有什么想问的？
-    - 有什么想说的？
-    - 有什么想吐槽的？
-    - 哪怕是有什么想吃的，都可以告诉我哦~
-  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+    #- 有什么想问的？
+    #- 有什么想说的？
+    #- 有什么想吐槽的？
+    #- 哪怕是有什么想吃的，都可以告诉我哦~
+    -        呆
+    -       秀才
+    -      吃长斋
+    -     胡须满腮
+    -    经书揭不开
+    -   纸笔自己安排
+    -  明年不请我自来
+  bottom: 有朋自远方来，不亦乐乎！ #仅支持单行文本
   height: 1024px #1024px，信封划出的高度
   path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
@@ -1118,28 +1125,29 @@ home_top:
       path: /categories/notes/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
-      icon: anzhiyu-icon-link
+      icon: fa-solid fa-book-open-reader
     - name: 分享
       path: /categories/share/
       shadow: var(--anzhiyu-shadow-red)
       class: red
-      icon: anzhiyu-icon-shapes
+      icon: fa-solid fa-share-nodes
     - name: AI
       path: /categories/ai/
       shadow: var(--anzhiyu-shadow-green)
       class: green
-      icon: anzhiyu-icon-shapes
+      icon: fa-solid fa-robot
+
   default_descr: default_descr-default_descr
   swiper:
-    enable: true
+    enable: false
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
     swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
   banner:
-    tips: 新品主题
-    title: Theme-AnZhiYu
+    tips: 春花秋月何时了，往事知多少。
+    title: 问君能有几多愁，恰似一江春水向东流。
     image: /imgs/default-cover.webp
-    link: https://anzhiy.cn/docs
+    link: https://home.geekswg.top
 
 # 朋友圈配置
 friends_vue:
