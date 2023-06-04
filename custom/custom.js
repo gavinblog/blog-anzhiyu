@@ -18,4 +18,4 @@ const Blog = {
 // https://api.injahow.cn/meting/ 
 // https://meting.qjqq.cn/
 // https://meting.anzhiy.cn/?server=netease&type=playlist&id=8152976493&auth=undefined&r=0.367
-var meting_api='https://meting.anzhiy.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+//var meting_api='https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
