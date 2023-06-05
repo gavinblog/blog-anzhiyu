@@ -666,7 +666,7 @@ theme_color:
   enable: true
   cover_change: true
   #"#3b70fc" # #3b70fc
-  main: hot-pink
+  main: "#b04dff"
   dark_main: "transparent" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
