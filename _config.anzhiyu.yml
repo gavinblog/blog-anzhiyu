@@ -1148,7 +1148,6 @@ home_top:
   banner:
     tips: 春花秋月何时了，往事知多少。
     title: 问君能有几多愁，恰似一江春水向东流。
-    #/imgs/default-cover.webp
     image: /imgs/default/cover4.webp
     link: https://home.geekswg.top
 
@@ -1156,7 +1155,7 @@ home_top:
 friends_vue:
   enable: true
   # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js   /custom/friends-vue.js
-  vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
+  vue_js: /custom/friends-vue.js
   # https://geekswg-hexo-friends.vercel.app/ 部署方式 github+sqlite
   # 朋友圈后端地址 https://friends.anzhiy.cn/ https://friends.geekswg.top/
   apiurl: https://friends.geekswg.top/
