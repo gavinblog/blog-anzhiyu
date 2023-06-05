@@ -1156,12 +1156,12 @@ home_top:
 friends_vue:
   enable: true
   # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js   /custom/friends-vue.js
-  vue_js: /custom/friends-vue.js
+  vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
   # https://geekswg-hexo-friends.vercel.app/ 部署方式 github+sqlite
   # 朋友圈后端地址 https://friends.anzhiy.cn/ https://friends.geekswg.top/
   apiurl: https://friends.geekswg.top/
   #  /imgs/bg-main.webp
-  top_background: /imgs/default-cover.webp
+  top_background: /imgs/default/cover2.png
 
 # 黑色模式粒子效果canvas
 universe:
