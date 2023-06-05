@@ -5999,7 +5999,7 @@ h1.page-title + .tag-cloud-list {
   flex-direction: column;
 }
 #aside-content > .card-widget.card-info {
-  background: #fff url("https://bu.dusays.com/2023/04/23/6444b2b59a295.webp") top -24% center no-repeat;
+  background: #fff url("/imgs/default/transparent.png") top -24% center no-repeat;
   position: relative;
 }
 #aside-content > .card-widget.card-info .author-info__name {

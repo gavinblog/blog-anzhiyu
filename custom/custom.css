@@ -122,10 +122,10 @@ div#post {
   background: transparent;
 }
 
-#recent-posts .recent-post-item:hover .recent-post-info .article-title {
-  color: var(--anzhiyu-theme);
+#aside-content > .card-widget.card-info {
+  background: transparent;
+  position: relative;
 }
-
 
 /* 自定义主题配色 */
 [data-theme="light"] {
@@ -144,7 +144,7 @@ div#post {
     --anzhiyu-pink: #ff7c7c;
     --anzhiyu-green: #57bd6a;
     --anzhiyu-fontcolor: #363636;
-    --anzhiyu-background: #CCCDDD;
+    --anzhiyu-background: #99CCCC;
     --anzhiyu-reverse: #000;
     --anzhiyu-maskbg: rgba(255,255,255,0.6);
     --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
