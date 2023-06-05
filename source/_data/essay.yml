@@ -1,6 +1,12 @@
 # 即刻
-
-- class_name: 浮生若梦，为欢几何？
+- title: 浮生若梦，为欢几何？
+  subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
+  tips: 随时随地，分享生活
+  buttonText: 关于我
+  buttonLink: /about/
+  limit: 30
+  home_essay: true
+  top_background: "/imgs/default/cover.webp"
   essay_list:
 
     - content: 五湖四海倾盆覆，颠倒人间万里路

@@ -1213,16 +1213,16 @@ visitorMail:
   enable: true
   mail: visitor@anzhiy.cn
 
-# 即刻页面配置
-essay:
-  enable: true
-  title: 浮生若梦，为欢几何？
-  subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
-  tips: 使用 即刻短文静态部署版 构建
-  button: About
-  buttonLink: /about/
-  limit: 30
-  top_background: /imgs/default/cover3.png
+# 即刻页面配置 1.3.0后删除
+# essay:
+#   enable: true
+#   title: 浮生若梦，为欢几何？
+#   subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
+#   tips: 使用 即刻短文静态部署版 构建
+#   button: About
+#   buttonLink: /about/
+#   limit: 30
+#   top_background: /imgs/default/cover3.png
 
 # ptool 文章底部工具
 ptool:
