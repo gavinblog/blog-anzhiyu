@@ -8,32 +8,32 @@
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-stellar
       link: https://gavinblog.github.io/stellar/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-ClouFlare
       link: https://geekswg.pages.dev/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-Netlify
       link: https://geekswg.netlify.app/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      siteshot: /imgs/default-cover.webp
       
     
 - class_name: Frame
@@ -80,152 +80,62 @@
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-stellar
       link: https://gavinblog.github.io/stellar/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-ClouFlare
       link: https://geekswg.pages.dev/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-Netlify
       link: https://geekswg.netlify.app/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-stellar
       link: https://gavinblog.github.io/stellar/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-ClouFlare
       link: https://geekswg.pages.dev/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo-Netlify
       link: https://geekswg.netlify.app/
       avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
-    - name: 毕少侠-Hugo
-      link: https://geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-    - name: 毕少侠-Hugo-stellar
-      link: https://gavinblog.github.io/stellar/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
-    - name: 毕少侠-Hugo-ClouFlare
-      link: https://geekswg.pages.dev/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
-    - name: 毕少侠-Hugo-Netlify
-      link: https://geekswg.netlify.app/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
-    - name: 毕少侠-Hugo
-      link: https://geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-    - name: 毕少侠-Hugo-stellar
-      link: https://gavinblog.github.io/stellar/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
-    - name: 毕少侠-Hugo-ClouFlare
-      link: https://geekswg.pages.dev/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
-    - name: 毕少侠-Hugo-Netlify
-      link: https://geekswg.netlify.app/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot:  
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。  
-    - name: 毕少侠-Hugo
-      link: https://geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。  
-    - name: 毕少侠-Hugo-stellar
-      link: https://gavinblog.github.io/stellar/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。Githug-Pages托管
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，stellar主题。   
-    - name: 毕少侠-Hugo-ClouFlare
-      link: https://geekswg.pages.dev/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。CloudFlare-Pages托管  
-    - name: 毕少侠-Hugo-Netlify
-      link: https://geekswg.netlify.app/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Netlify托管
+      siteshot: /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
