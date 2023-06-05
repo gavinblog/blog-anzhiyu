@@ -663,9 +663,10 @@ site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 # 主题色配置
 theme_color:
-  enable: false
-  cover_change: false
-  main: "#3b70fc" # #3b70fc
+  enable: true
+  cover_change: true
+  #"#3b70fc" # #3b70fc
+  main: hot-pink
   dark_main: "transparent" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
