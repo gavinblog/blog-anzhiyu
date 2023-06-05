@@ -1331,7 +1331,9 @@ CDN:
     # aplayer_js:
     # meting_js:
     #自定义metingjs-api
-    meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
+    # https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r
+    # https://api-meting.geekswg.top/api vercel部署
+    meting_api: 'https://api-meting.geekswg.top/api?server=:server&type=:type&id=:id&auth=:auth&r=:r'
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
