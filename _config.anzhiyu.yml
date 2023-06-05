@@ -858,6 +858,7 @@ aside:
     enable: true
     type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
     description: 人生得意须尽欢，莫使金樽空对月
+    info_background: /imgs/default/transparent.png
     button:
       enable: true
       icon: anzhiyu-icon-arrow-circle-right
