@@ -129,13 +129,16 @@ div#post {
 
 /* 自定义主题配色 */
 [data-theme="light"] {
-    background: transparent;
+
+  --anzhiyu-background: linear-gradient(145deg, hotpink 0%,transparent 100%);
+  /*  
+  background: transparent;
     --global-bg: transparent;
     --anzhiyu-meta-theme-post-color: #fff;
     --anzhiyu-meta-theme-color: #f7f9fe;
     --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
     --global-bg: trnasparent;
-    /* --anzhiyu-theme: #5ca1ff; */
+      
     --anzhiyu-theme-deep: #1856fb;
     --anzhiyu-theme-op: rgba(66,89,239,0.137);
     --anzhiyu-blue: #5ca1ff;
@@ -165,6 +168,7 @@ div#post {
     --anzhiyu-card-border: #e3e8f7;
     --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
     --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+    */
   }
   [data-theme="dark"] {
     --global-bg: transparent;
