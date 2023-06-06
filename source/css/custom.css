@@ -1,13 +1,47 @@
+/*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
+body {
+	cursor: url(/imgs/cursor/normal.cur), default;
+}
+select{
+	cursor: url(/imgs/cursor/Universal.cur), pointer;
+}
+button,a:hover{
+	cursor: url(/imgs/cursor/link.cur), pointer;
+}
+a {
+	cursor: url(/imgs/cursor/link.cur), pointer !important;
+}
+button,a{
+	cursor: url(/imgs/cursor/link.cur), pointer;
+}
+input{
+	cursor:url(/imgs/cursor/help.cur), text;	
+}
+textarea,input:focus{
+	cursor:url(/imgs/cursor/text.cur), text;	
+}
+code{
+	cursor: url(/imgs/cursor/text.cur), default;	
+}
+pre>code{
+	cursor: url(/imgs/cursor/text.cur), default;	
+}
+
+
+
+
 /* 首页一图流，打字字体 */
 #page-header #site-title {
     margin: 0;
     color: #2ecc71;
     font-size: 5em !important;
+    font-family: '楷体';
     margin-top: -100px;
   }
   #page-header #site-subtitle {
     color: #5ca1ff;
     font-size: 2em;
+    font-family: '楷体';
   }
   /* 天气插件位置 */
   #he-plugin-simple > div.s-sticker {
@@ -64,9 +98,33 @@
     height: fit-content;
     width: 59%;
 }
+/* 热评 */
+.comment-barrage-item .barrageHead .barrageTitle {
+  color: hotpink;
+  margin-right: 8px;
+  background: var(--anzhiyu-fontcolor);
+  line-height: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#flink-banners .banner-button-group .banner-button {
+  color: var(--anzhiyu-fontcolor);
+  background: var(--anzhiyu-secondbg);
+  border: var(--style-border-always);
+  color: var(--anzhiyu-lighttext);
+  margin-right: 1rem;
+  -webkit-box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--anzhiyu-shadow-border);
+}
 
 div#post {
   background: transparent;
+}
+
+#aside-content > .card-widget.card-info {
+  background: transparent;
+  position: relative;
 }
 
 /* 自定义主题配色 */
@@ -77,7 +135,7 @@ div#post {
     --anzhiyu-meta-theme-color: #f7f9fe;
     --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
     --global-bg: trnasparent;
-    --anzhiyu-theme: #5ca1ff;
+    /* --anzhiyu-theme: #5ca1ff; */
     --anzhiyu-theme-deep: #1856fb;
     --anzhiyu-theme-op: rgba(66,89,239,0.137);
     --anzhiyu-blue: #5ca1ff;
@@ -86,7 +144,7 @@ div#post {
     --anzhiyu-pink: #ff7c7c;
     --anzhiyu-green: #57bd6a;
     --anzhiyu-fontcolor: #363636;
-    --anzhiyu-background: #CCCDDD;
+    --anzhiyu-background: #99CCCC;
     --anzhiyu-reverse: #000;
     --anzhiyu-maskbg: rgba(255,255,255,0.6);
     --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
@@ -116,7 +174,7 @@ div#post {
     --anzhiyu-blue-tint: rgba(92,161,255,0.1);
     --anzhiyu-theme-op-deep: rgba(0,132,255,0.867);
     --global-bg: transparent;
-    --anzhiyu-theme: transparent;
+    --anzhiyu-theme: #5ca1ff;
     --anzhiyu-theme-deep: #0076e5;
     --anzhiyu-theme-op: rgba(0,132,255,0.137);
     --anzhiyu-blue: #0084ff;

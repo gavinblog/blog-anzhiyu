@@ -31,7 +31,7 @@ menu:
     友人帐: /link/ || anzhiyu-icon-link
     朋友圈: /fcircle/ || anzhiyu-icon-artstation
     留言板: /comments/ || anzhiyu-icon-envelope
-    群言堂: /essay/ || anzhiyu-icon-lightbulb
+    说说: /essay/ || anzhiyu-icon-lightbulb
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-condition/ || anzhiyu-icon-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
@@ -1148,20 +1148,19 @@ home_top:
   banner:
     tips: 春花秋月何时了，往事知多少。
     title: 问君能有几多愁，恰似一江春水向东流。
-    #/imgs/default-cover.webp
-    image: /imgs/default/cover.webp 
+    image: /imgs/default/cover4.webp
     link: https://home.geekswg.top
 
 # 朋友圈配置
 friends_vue:
   enable: true
-  # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
+  # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js   /custom/friends-vue.js
   vue_js: /custom/friends-vue.js
   # https://geekswg-hexo-friends.vercel.app/ 部署方式 github+sqlite
-  # 朋友圈后端地址 https://friends.anzhiy.cn/
+  # 朋友圈后端地址 https://friends.anzhiy.cn/ https://friends.geekswg.top/
   apiurl: https://friends.geekswg.top/
   #  /imgs/bg-main.webp
-  top_background: /imgs/default/cover2.png
+  top_background: /imgs/default/cover4.webp
 
 # 黑色模式粒子效果canvas
 universe:
@@ -1192,9 +1191,9 @@ diytitle:
 comment_barrage_config:
   enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 3
+  maxBarrage: 1
   # 弹幕显示间隔时间ms
-  barrageTime: 60*1000
+  barrageTime: 5*1000
   # token，在控制台中获取
   accessToken: "a237426c5e1099af41370c4b0afe0a3e"
 
@@ -1211,7 +1210,7 @@ nav_music:
 # 评论匿名邮箱
 visitorMail:
   enable: true
-  mail: visitor@anzhiy.cn
+  mail: geekswg@foxmail.com
 
 # 即刻页面配置 1.3.0后删除
 # essay:
