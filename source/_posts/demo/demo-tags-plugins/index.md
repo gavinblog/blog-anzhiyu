@@ -1,14 +1,14 @@
 ---
-title: Hexo-theme-Anzhiyu标签外挂Demo
+title: Hexo-theme-Anzhiyu Tag-Plugins Demo
 categories: demo
 tags:
   - 示例
   - demo
-  - hexo
-  - 标签外挂
+  - Hexo
+  - Tag-Plugins
 ai:
   - >-
-    Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
+    Hexo-theme-Anzhiyu标签外挂Demo，Tag-Plugins 是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
     AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
   - >-
     Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
