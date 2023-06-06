@@ -522,7 +522,7 @@ footer:
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
       message: 博客框架为Hexo_v5.4.0 #徽标提示语
     - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git
-      shields: https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg
+      shields: https://img.shields.io/badge/Hexo--Theme-Anzhiyu-green
       message: 本站使用AnZhiYu主题
     # - link: https://www.dogecloud.com/
     #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
@@ -585,7 +585,7 @@ footer:
           - title: 模板仓库
             link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
-            link: https://hexo.geekswg.top/anzhiyu-docs/
+            link: https://gavinblog.github.io/anzhiyu-docs/
           - title: 更新日志
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
       #- title: 导航

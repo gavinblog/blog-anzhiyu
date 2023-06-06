@@ -19,9 +19,9 @@
 * `use this template` 到自己仓库。
 * 根据自己需求修改主题分支，main-稳定，dev-新功能提前体验，bug多
 * 修改主题主要配置文件，设置GitHub Page,选择gh-pages分支。
-* 配置自动部署中github_token。
+* ~~配置自动部署中github_token。~~
 * 提交到mater分支自动部署博客。
 
 ## 进阶使用
 
-* 请参考文档： [主题文档](https://anzhiy.cn/docs/)
+* 请参考文档： [主题文档](https://hexo.geekswg.top/anzhiyu-docs/)
