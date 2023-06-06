@@ -839,7 +839,8 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: /imgs/avatar.webp # 自定义头像
+  # /imgs/avatar.webp # 自定义头像 /imgs/loading/loading.gif
+  avatar: /imgs/loading/loading-8.gif
 
 # aside (侧边栏)
 # --------------------------------------
@@ -1060,7 +1061,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: /imgs/avatar.webp
+  placeholder: /imgs/loading/loading.gif
   blur: true
   progressive: true #>=1.1.10
 
