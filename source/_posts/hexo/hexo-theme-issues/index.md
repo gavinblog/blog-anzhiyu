@@ -1,3 +1,73 @@
+---
+title: Hexo主题及Anzhiyu常见问题处理
+categories: Hexo
+tags:
+  - Hexo
+  - Hexo-Theme-Anzhiyu
+ai:
+  - 记录使用Hexo主题中遇到的常见问题，以及解决方法。【本文摘要由人工-ChatGPT生成】
+  - 记录使用Hexo-theme-Anzhiyu中遇到的问题及解决方法。【本文摘要由人工-ChatGPT生成】
+abbrlink: 3a28
+date: 2023-06-06 16:07:18
+---
+
+<!-- more -->
+
+## 前言
+
+记录使用Hexo-theme-Anzhiyu中遇到的问题及解决方法。
+> 遇到问题请先查阅 [Anzhiyu主题文档](https://gavinblog.github.io/anzhiyu-docs/),这里是最快的解决方法，其次搜索``
+本站基于 [Hexo-theme-Anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu) 主题，未改动主题源码，只增加了自定义css和js。
+本博客完全开源仓库地址：[https://github.com/gavinblog/blog-anzhiyu](https://github.com/gavinblog/blog-anzhiyu)
+
+## 音乐馆无法正常播放
+
+### 原因
+
+由于`MetingJs`自带官方api无法正常访问.
+
+### 解决
+
+更换API接口,搜索可用接口或者自建api接口。
+在配置文件中`_config.anzhiyu.yml`,修改`meting_api`自定义meting_api
+
+```yml
+    #自定义 meting_api
+    # https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r
+    meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
+```
+
+## 文章加密功能实现
+
+### 插件安装
+
+> 安装命令
+
+```bash
+npm install --save hexo-blog-encrypt
+```
+
+### 使用方法
+
+> 在文章中的Front matter配置方法
+
+```yml
+password: 1234
+theme: xray
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+```
+
+## Github-Action自动部署
+
+> 该action实现功能，提交源码到github自动部署生成hexo静态博客到gh-pages分支。
+> 可根据自己需求改造aciton，步骤通用
+
+### 实现源码
+
+```yml
 # 部署名称随意
 name: 自动发布-auto-deploay-hexo
 # 触发条件：在 push 到 master 分支后触发
@@ -85,3 +155,8 @@ jobs:
         tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
         tag_message: 'Deployment ${{ github.ref_name }}'
 
+```
+
+## 持续更新中~~~
+
+> 遇到常见问题记录更新中。
