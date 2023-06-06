@@ -114,7 +114,7 @@
     
     
     <entry>
-      <title>Hexo-theme-Anzhiyu标签外挂Demo</title>
+      <title>Hexo-theme-Anzhiyu Tag-Plugins Demo</title>
       <link href="/posts/3071.html"/>
       <url>/posts/3071.html</url>
       
@@ -134,9 +134,9 @@
             
             <tag> demo </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
-            <tag> 标签外挂 </tag>
+            <tag> Tag-Plugins </tag>
             
         </tags>
       
