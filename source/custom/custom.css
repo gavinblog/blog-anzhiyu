@@ -129,9 +129,7 @@ div#post {
 
 /* 自定义主题配色 */
 [data-theme="light"] {
-
-  --anzhiyu-background: linear-gradient(145deg, hotpink 0%,transparent 100%);
-  /*  
+ 
   background: transparent;
     --global-bg: transparent;
     --anzhiyu-meta-theme-post-color: #fff;
@@ -147,7 +145,7 @@ div#post {
     --anzhiyu-pink: #ff7c7c;
     --anzhiyu-green: #57bd6a;
     --anzhiyu-fontcolor: #363636;
-    --anzhiyu-background: linear-gradient(180deg, rgba(255, 75, 31, 0.65) 0%,#1fddff 100%);
+    --anzhiyu-background: linear-gradient(180deg, rgba(225, 75, 31, 0.65) 60%,#1fddff 60%);
     --anzhiyu-reverse: #000;
     --anzhiyu-maskbg: rgba(255,255,255,0.6);
     --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
@@ -168,7 +166,7 @@ div#post {
     --anzhiyu-card-border: #e3e8f7;
     --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
     --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
-    */
+    
   }
   [data-theme="dark"] {
     --global-bg: transparent;
