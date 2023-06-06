@@ -4,6 +4,11 @@
   flink_style: flexcard
   #hundredSuffix: "!w120"
   link_list:
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+      descr: 生活明朗，万物可爱
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
