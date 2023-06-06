@@ -8,7 +8,7 @@ type: link # 友链页面
 ## 我的友链
 
 {% tabs test4 %}
-<!-- tab Hugo博客 -->
+<!-- tab Hugo博客@fa-solid fa-yin-yang fa-spin -->
 ```yml
 - nickname: 毕少侠
   avatar: https://geekswg.js.cool/images/avatar.jpg
@@ -17,7 +17,7 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Hexo博客 @anzhiyu-icon-paper-plane -->
+<!-- tab Hexo博客 @fa-solid fa-blog -->
 ```yml
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
@@ -27,8 +27,8 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Demo@fas fa-bomb -->
-**名字+icon**
+<!-- tab Demo@fa-brands fa-github -->
+**名字@icon**
 <!-- endtab -->
 {% endtabs %}
 
@@ -39,7 +39,7 @@ type: link # 友链页面
 * 描述: `毕少侠也在江湖`
 * 头像: `https://hexo.geekswg.top/imgs/avatar.webp`
 
-请勾选你符合的条件：
+请**勾选**你符合的条件：
 
 <div id="friendlink_checkboxs" style="padding:0 0 0 1.6rem">
 
