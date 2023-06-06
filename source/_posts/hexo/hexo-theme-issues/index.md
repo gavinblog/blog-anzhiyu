@@ -37,6 +37,15 @@ date: 2023-06-06 16:07:18
     meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
 ```
 
+> 通用解决方法,适用于所有html中引入的，官方文档有说明自定义 meting_api。
+
+```js
+<script>
+  // 自定义 meting_api
+  var meting_api='https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+</script>
+```
+
 ## 文章加密功能实现
 
 ### 插件安装
