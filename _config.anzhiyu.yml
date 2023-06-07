@@ -490,14 +490,14 @@ footer:
   owner:
     enable: true
     since: 2011
-  custom_text: copyright@geekswg 2010 ~ Now
+  custom_text: CopyRight @ geekswg 2010 ~ Now
   runtime:
     enable: true
-    launch_time: 04/01/2010 13:14:00 # 网站上线时间
-    work_img: /imgs/zhifeiji.gif
+    launch_time: 01/02/2006 03:04:05 # 网站上线时间 go2006-01-02 03:04:05
+    work_img: /imgs/default/pinwheel-64.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 但行好事，莫问前程
-    offduty_img: /imgs/zhifeiji.gif
+    offduty_img: /imgs/default/yingyan.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
     offduty_description: 天高任鸟飞，海阔凭鱼跃
   # 徽标部分配置项 https://shields.io/
@@ -524,7 +524,7 @@ footer:
 
   socialBar:
     enable: true
-    centerImg: /imgs/zhifeiji.gif # 这里的逻辑是，当前设置 > 默认头像
+    centerImg: /imgs/default/pinwheel-64.gif # 这里的逻辑是，当前设置 > 默认头像
     left:
       - title: 主页
         link: https://home.geekswg.top
