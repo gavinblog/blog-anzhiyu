@@ -26,3 +26,5 @@
 ## 进阶使用
 
 * 请参考文档： [主题文档](https://hexo.geekswg.top/anzhiyu-docs/)
+
+![IP签名](https://tool.lu/netcard/ "IP信息")
