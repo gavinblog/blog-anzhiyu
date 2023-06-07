@@ -34,10 +34,10 @@ type: link # 友链页面
 
 ## 友情链接申请
 
-* 我的名称: `毕少侠`
-* 网站地址: `https://hexo.geekswg.top/`
-* 描述: `毕少侠也在江湖`
-* 头像: `https://hexo.geekswg.top/imgs/avatar.webp`
+* 博客名称: `毕少侠`
+* 博客地址: `https://hexo.geekswg.top/`
+* 博客描述: `毕少侠也在江湖`
+* 博客头像: `https://hexo.geekswg.top/imgs/avatar.webp`
 
 请**勾选**你符合的条件：
 
