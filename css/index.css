@@ -2254,14 +2254,14 @@ blockquote > :last-child {
   }
 }
 :root {
-  --hl-color: #eff;
-  --hl-bg: #212121;
-  --hltools-bg: #1c1c1c;
-  --hltools-color: rgba(238,255,255,0.8);
-  --hlnumber-bg: #212121;
-  --hlnumber-color: rgba(238,255,255,0.5);
-  --hlscrollbar-bg: #353535;
-  --hlexpand-bg: linear-gradient(180deg, rgba(33,33,33,0.6), rgba(33,33,33,0.9));
+  --hl-color: #8f93a2;
+  --hl-bg: #0f111a;
+  --hltools-bg: #0b0d14;
+  --hltools-color: #8f93a2;
+  --hlnumber-bg: #0f111a;
+  --hlnumber-color: rgba(143,147,162,0.5);
+  --hlscrollbar-bg: #1e2234;
+  --hlexpand-bg: linear-gradient(180deg, rgba(15,17,26,0.6), rgba(15,17,26,0.9));
 }
 figure.highlight table {
   scrollbar-color: var(--hlscrollbar-bg) transparent;
@@ -2279,7 +2279,7 @@ figure.highlight pre .meta {
   color: #c792ea;
 }
 figure.highlight pre .comment {
-  color: #969896;
+  color: rgba(101,115,126,0.8);
 }
 figure.highlight pre .variable,
 figure.highlight pre .attribute,
@@ -2342,7 +2342,7 @@ figure.highlight pre .javascript .function {
   color: #c792ea;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(97,97,97,0.314);
+  background-color: rgba(113,124,180,0.314);
 }
 #article-container figure.highlight table {
   display: block;
@@ -2514,48 +2514,6 @@ figure.highlight pre .javascript .function {
 #article-container .gist table td {
   border: none;
 }
-#article-container figure.highlight {
-  margin: 0 0 24px;
-  border-radius: 7px;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
-  -webkit-transform: translateZ(0);
-}
-#article-container figure.highlight .highlight-tools:after {
-  position: absolute;
-  left: 14px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #fc625d;
-  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-  content: ' ';
-}
-#article-container figure.highlight .highlight-tools .expand {
-  right: 0;
-}
-#article-container figure.highlight .highlight-tools .expand.closed {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transform: rotate(90deg) !important;
-  -moz-transform: rotate(90deg) !important;
-  -o-transform: rotate(90deg) !important;
-  -ms-transform: rotate(90deg) !important;
-  transform: rotate(90deg) !important;
-}
-#article-container figure.highlight .highlight-tools .expand ~ .copy-notice {
-  right: 3.45em;
-}
-#article-container figure.highlight .highlight-tools .expand ~ .copy-button {
-  right: 2.1em;
-}
-#article-container figure.highlight .highlight-tools .code-lang {
-  left: 75px;
-}
 #article-container .code-expand-btn {
   position: absolute;
   bottom: 1px;
@@ -2589,7 +2547,7 @@ figure.highlight pre .javascript .function {
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
   overflow: hidden;
-  height: 512px;
+  height: 256px;
 }
 @-moz-keyframes code-expand-key {
   0% {
@@ -21797,7 +21755,7 @@ body[data-type="room"] #page .page-title {
   height: 100%;
   box-shadow: 0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw 0.125vw 1vw rgba(81, 137, 251, 0.5),
     0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5), -0.125vw -0.125vw 1vw rgba(81, 137, 251, 0.5);
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/6351038493d46.gif");
+  background-image: url("https://img02.anheyu.com/adminuploads/1/2022/10/20/6351038493d46.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -22410,7 +22368,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-l__front {
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/63510384967db.jpg");
+  background-image: url("https://img02.anheyu.com/adminuploads/1/2022/10/20/63510384967db.jpg");
   background-color: #d51e24;
   border: 1vw solid #d51e24;
 }
@@ -22431,7 +22389,7 @@ body[data-type="room"] #page .page-title {
 }
 
 .cuadro-r__front {
-  background-image: url("https://img02.anzhiy.cn/adminuploads/1/2022/10/20/6351038496f25.jpg");
+  background-image: url("https://img02.anheyu.com/adminuploads/1/2022/10/20/6351038496f25.jpg");
   background-color: #0f1110;
   border: 0.5vw solid #0f1110;
 }
