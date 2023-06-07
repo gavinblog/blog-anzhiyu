@@ -14,6 +14,8 @@
       aplayer:
         server: tencent
         id: 0029zGu12WGLsE
+      image:
+        - /imgs/default/cover.webp
 
     - content: 五湖四海倾盆覆，颠倒人间万里路
       date: 2023/05/27 11:22:33

@@ -30,6 +30,10 @@ date: 2023-06-06 16:07:18
 
 更换API接口,搜索可用接口或者自建api接口。
 在配置文件中`_config.anzhiyu.yml`,修改`meting_api`自定义meting_api
+
+* 自建API: `https://api-meting.geekswg.top/api`,来自[开源仓库](https://github.com/geekswg/vercel-meting-api/)。
+* 其他API: `https://api.injahow.cn/meting/`
+
 > Anzhiyu主题使用下面的方法即可：
 
 ```yml
