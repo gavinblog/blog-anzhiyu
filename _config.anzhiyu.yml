@@ -2,24 +2,26 @@ menu:
 
   主页: https://home.geekswg.top/ || anzhiyu-icon-link
 
-  AI:
-    自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
-    Stable Diffusion Online: https://stablediffusionweb.com/ || anzhiyu-icon-link
-    文心一言: https://yiyan.baidu.com/ || anzhiyu-icon-link
-    文心一格: https://yige.baidu.com/ || anzhiyu-icon-link
-    WPS-AI: https://ai.wps.cn/ || anzhiyu-icon-link
+  # AI:
+  #   自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
+  #   Stable Diffusion Online: https://stablediffusionweb.com/ || anzhiyu-icon-link
+  #   文心一言: https://yiyan.baidu.com/ || anzhiyu-icon-link
+  #   文心一格: https://yige.baidu.com/ || anzhiyu-icon-link
+  #   WPS-AI: https://ai.wps.cn/ || anzhiyu-icon-link
     
-  导航: 
-    博客-Hugo: https://geekswg.top || anzhiyu-icon-link
-    博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
-    51网页统计: https://v6.51.la/report/overview?comId=287570 || anzhiyu-icon-link
-    Github监控: https://www.githubstatus.com/ || anzhiyu-icon-link
+  # 导航: 
+  #   博客-Hugo: https://geekswg.top || anzhiyu-icon-link
+  #   博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
+  #   51网页统计: https://v6.51.la/report/overview?comId=287570 || anzhiyu-icon-link
+  #   Github监控: https://www.githubstatus.com/ || anzhiyu-icon-link
 
   博客:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
     文档: /anzhiyu-docs/ || anzhiyu-icon-book
+    博客-Hugo: https://geekswg.top || anzhiyu-icon-link
+    博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
 
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
@@ -54,21 +56,20 @@ nav:
   menu:
     - title: 网页
       item:
-        - name: 博客
-          link: https://geekswg.top/
-          icon: /imgs/favicon.png #  /img/favicon.png
-        - name: ChatGPT
-          link: https://chat.aichatos.top/
-          icon: 
-          
-    - title: 博客
+        - name: 博客-Hugo
+          link: https://geekswg.js.cool/
+          icon: /imgs/avatar.webp #  /img/favicon.png
+        - name: 博客-Hexo
+          link: http://hexo.geekswg.top/
+          icon: /imgs/avatar.webp
+    - title: 常用网址
       item:
-        - name: 博客
-          link: https://geekswg.top/
-          icon: /imgs/favicon.png #  /img/favicon.png
-        - name: 自建ChatGPT
-          link: http://chatgpt.geekswg.top/
-          icon: 
+        - name: 在线工具
+          link: https://tool.lu/
+          icon: /imgs/avatar.webp
+        - name: 免费图床
+          link: https://picx.xpoet.cn/
+          icon: /imgs/avatar.webp     
     - title: AI大模型
       item:
         - name: ChatGPT
@@ -93,27 +94,14 @@ nav:
           link: https://xinghuo.xfyun.cn/
           icon: 
     
-    - title: 常用网址
-      item:
-        - name: 在线工具
-          link: https://tool.lu/
-          icon: /imgs/favicon.png
-        - name: 免费图床
-          link: https://picx.xpoet.cn/
-          icon: /imgs/favicon.png
-        - name: 文心一言
-          link: https://yiyan.baidu.com/
-          icon: /imgs/favicon.png
-
-  
 # Code Blocks (代码相关)
 # --------------------------------------
 # 代码块设置 ， 主题
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 512 # unit: px  #代码折叠高度
+highlight_height_limit: 256 # unit: px  #代码折叠高度
 code_word_wrap: true #自动换行
 
 # copy settings 版权信息
@@ -122,7 +110,7 @@ copy:
   enable: true
   copyright:
     enable: true
-    limit_count: 50
+    limit_count: 128
 
 # social settings (社交图标设置)
 # formal:
@@ -1156,7 +1144,7 @@ home_top:
 friends_vue:
   enable: true
   # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js   /custom/friends-vue-1.0.0.js
-  vue_js: /custom/friends-vue-1.0.0.js
+  vue_js: /custom/friends-vue-1.1.2.js
   # https://geekswg-hexo-friends.vercel.app/ 部署方式 github+sqlite
   # 朋友圈后端地址 https://friends.anzhiy.cn/ https://friends.geekswg.top/
   apiurl: https://friends.geekswg.top/

@@ -48,6 +48,7 @@ date: 2023-05-30 13:04:05
 <!-- tab 预览@fa-solid fa-book -->
 
 > `simple`样式
+
 {% note simple %}默认 提示块标签{% endnote %}
 {% note default simple %}default 提示块标签{% endnote %}
 {% note primary simple %}primary 提示块标签{% endnote %}
@@ -92,7 +93,7 @@ date: 2023-05-30 13:04:05
 {% tabs tab-hideToggle,3 %}
 
 <!-- tab 代码@far fa-paper-plane fa-fw fa-sm -->
-```
+```bash
 {% hideToggle Butterfly安装方法 %}
 在你的博客根目录里
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
@@ -115,8 +116,6 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 {% endhideToggle %}
 <!-- endtab -->
 {% endtabs %}
-
-***
 
 ## 分栏 Tabs
 
@@ -165,8 +164,6 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 <!-- endtab -->
 {% endtabs %}
 
-===
-
 ## demo
 
 {% tabs tab-note %}
@@ -213,7 +210,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 ### Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+hexo new "My New Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
@@ -221,7 +218,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ### Run server
 
 ``` bash
-$ hexo server
+hexo server
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -229,7 +226,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 ### Generate static files
 
 ``` bash
-$ hexo generate
+hexo generate
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -237,7 +234,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ### Deploy to remote sites
 
 ``` bash
-$ hexo deploy
+hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
