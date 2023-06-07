@@ -97,11 +97,11 @@ nav:
 # Code Blocks (代码相关)
 # --------------------------------------
 # 代码块设置 ， 主题
-highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 256 # unit: px  #代码折叠高度
+highlight_height_limit: 512 # unit: px  #代码折叠高度
 code_word_wrap: true #自动换行
 
 # copy settings 版权信息

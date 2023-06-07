@@ -130,6 +130,24 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
+# Extensions
+# plugins:
+#   hexo-generator-feed
+# #Feed Atom
+# npm install --save hexo-generator-feed
+# feed:
+#   enable: true
+#   type: atom
+#   path: atom.xml
+#   limit: 20
+#   hub:
+#   content:
+#   content_limit: 128
+#   content_limit_delim: ' '
+#   order_by: -date
+#   icon: /imgs/avatar.webp
+#   autodiscovery: true
+#   template:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
