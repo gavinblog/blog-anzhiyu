@@ -9,11 +9,19 @@
   top_background: "/imgs/default/cover4.webp"
   essay_list:
 
+    - content: 乘风破浪会有时，直挂云帆济沧海
+      date: 2023/06/07 09:22:33
+      aplayer:
+        server: tencent
+        id: 0029zGu12WGLsE
+
     - content: 五湖四海倾盆覆，颠倒人间万里路
       date: 2023/05/27 11:22:33
       aplayer:
         server: tencent
         id: 002Jl7Xu4MDO1M
+      image:
+        - /imgs/default/cover.webp
 
     - content: 人有悲欢离合，月有阴晴圆缺
       date: 2023/05/23
