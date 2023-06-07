@@ -16,11 +16,12 @@
 
 ## 快速开始
 
-* `use this template` 到自己仓库。
+* `use this template` 到自己仓库，删除`source/_posts/`下所有文章。
 * 根据自己需求修改主题分支，main-稳定，dev-新功能提前体验，bug多
-* 修改主题主要配置文件，设置GitHub Page,选择gh-pages分支。
+* 修改主题主要配置文件`_config.anzhyu.yml`。
 * ~~配置自动部署中github_token。~~
-* 提交到mater分支自动部署博客。
+* 提交到mater分支自动部署博客到gh-pages。
+* 设置GitHub Page,选择gh-pages分支。
 
 ## 进阶使用
 
