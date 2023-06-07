@@ -26,7 +26,7 @@ type: "about"
     </thead>
     <tbody>
     <tr>
-        <td colspan="2"><b>网络信息</b></td>
+        <td colspan="2" style="text-align:center" ><b>网络信息</b></td>
     </tr>
     <tr>
         <td>IP地址</td>
@@ -60,7 +60,7 @@ type: "about"
         <td colspan="2"><b>设备信息</b></td>
     </tr>
     <tr>
-        <td>设备</td>
+        <td style="text-align:center">设备</td>
         <td><div id="userAgentDevice"></div></td>
     </tr>
     </tbody>
