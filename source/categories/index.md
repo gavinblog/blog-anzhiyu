@@ -57,3 +57,6 @@ top_img: /imgs/default-cover.webp
 
 <script src='https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js' data-pjax></script>
 <script type="text/javascript" src="https://cdn1.tianli0.top/npm/js-heo@1.0.11/3dCard/no3d.js" data-pjax></script>
+
+
+<div id="tags-chart" data-length="10" style="height: 300px; padding: 10px;"></div>
