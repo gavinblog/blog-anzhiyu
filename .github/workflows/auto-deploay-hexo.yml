@@ -51,6 +51,7 @@ jobs:
           npm install hexo-abbrlink --save
           npm install hexo-offline --save
           npm install --save hexo-blog-encrypt
+          npm i cheerio --save
           npm ls --depth 0
 
       # hexo 编译生成网站

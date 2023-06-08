@@ -23,4 +23,3 @@ categories-chart 的 data-parent="true" 属性表示 有子分类 时以旭日�
 <!-- 文章分类统计图 -->
 <div id="categories-chart" data-parent="true" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
 
-<script src="/custom/charts.js"></script>
