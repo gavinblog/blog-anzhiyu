@@ -101,6 +101,10 @@ type: "about"
 })();
 </script>
 
+## 51统计
+
+<iframe src="https://v6.51.la/s/HNT3C1toROOp3Qi" style="width:100%;height:1024px;" title="51统计"></iframe>
+
 ## 其他
 
 > 水调歌头,苏轼

@@ -52,13 +52,21 @@ type: link # 友链页面
 <p><label class="checkbox">
 <input type="checkbox" id="checkbox3" onclick="checkForm()">我的网站现在可以在中国大陆区域正常访问</label></p>
 
-<p><label class="checkbox">
-<input type="checkbox" id="checkbox4" onclick="checkForm()">网站内容符合中国大陆法律法规</label></p>
+<p>
+  <label class="checkbox">
+    <input type="checkbox" id="checkbox4" onclick="checkForm()">网站内容符合中国大陆法律法规
+  </label>
+</p>
 
-<p><label class="checkbox">
-<input type="checkbox" id="checkbox5" onclick="checkForm()">我的网站可以在1分钟内加载完成首屏</label></p>
+<p>
+  <label class="checkbox">
+    <input type="checkbox" id="checkbox5" onclick="checkForm()">我的网站可以在1分钟内加载完成首屏
+  </label>
+</p>
 
 </div>
+
+> `注意`:确认以上条件均满足勾选后即出现评论框，留下贵站信息
 
 <style>.tk-comments>.tk-submit{opacity:0;height:0;transition:opacity .5s,height .5s;overflow:hidden}</style>
 
@@ -81,7 +89,7 @@ type: link # 友链页面
             var input = document.getElementsByClassName('el-textarea__inner')[0];
             let evt = document.createEvent('HTMLEvents');
             evt.initEvent('input', true, true);
-            input.value = '昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n';
+            input.value = '```yml\n- name:\n  link:\n  avatar:\n  descr:\n  siteshot:\n```';
             input.dispatchEvent(evt);
             input.focus();
             input.setSelectionRange(-1, -1);
