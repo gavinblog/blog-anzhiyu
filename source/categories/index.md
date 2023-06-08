@@ -11,6 +11,8 @@ top_img: /imgs/default-cover.webp
 
 <div id="posts-chart" data-start="2021-01" style="height: 300px; padding: 10px;"></div>
 
+<div id="categories-chart" data-parent="true" style="height: 300px; padding: 10px;"></div>
+
 <style>
   #libCategories .card-wrap:hover .card-info:after {
     width: 300%;
