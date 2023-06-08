@@ -15,6 +15,11 @@ type: "about"
 <div style="width:100%;text-align:center;">
     <img src="https://tool.lu/netcard/">
 </div>
+
+
+<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/K2mM1vs6nmCWtp4K/quote.js?theme=#1690FF,#333333,#999999,#333333,#FFFFFF,#1690FF,18&col=true&f=18&badge=icon_0&icon=center"></script>
+
+
 <!-- 在表格中添加 id 以便于通过 JavaScript 获取元素 -->
 <table>
     <thead>
@@ -100,10 +105,6 @@ type: "about"
     await getIpInfo();
 })();
 </script>
-
-## 51统计
-
-<iframe src="https://v6.51.la/s/HNT3C1toROOp3Qi" style="width:100%;height:1024px;" title="51统计"></iframe>
 
 ## 其他
 

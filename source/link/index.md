@@ -89,7 +89,7 @@ type: link # 友链页面
             var input = document.getElementsByClassName('el-textarea__inner')[0];
             let evt = document.createEvent('HTMLEvents');
             evt.initEvent('input', true, true);
-            input.value = '```yml\n- name:\n  link:\n  avatar:\n  descr:\n  siteshot:\n```';
+            input.value = '```yml\n- name: \n  link: \n  avatar: \n  descr: \n  siteshot: \n```';
             input.dispatchEvent(evt);
             input.focus();
             input.setSelectionRange(-1, -1);
@@ -97,6 +97,8 @@ type: link # 友链页面
             twikooSubmit.style.opacity = "0";
             twikooSubmit.style.height = "0";
             twikooSubmit.style.overflow = "hidden";
+            var input = document.getElementsByClassName('el-textarea__inner')[0];
+            input.value = '';
         }
     }
 </script>
