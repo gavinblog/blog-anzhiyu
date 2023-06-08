@@ -180,6 +180,19 @@ jobs:
 
 ```
 
+## 转载文章配置
+
+> 在文章的头部Front-matter中配置以下信息
+
+```yml
+# 文章版权 Front-matter配置
+#copyright: true
+#copyright_author: Cusor
+#copyright_author_href: https://www.cursor.so/ 
+#copyright_url: https://www.cursor.so/
+#copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
+```
+
 ## 持续更新中~~~
 
 > 遇到常见问题记录更新中。
