@@ -7,8 +7,6 @@ aside: false
 top_img: false
 ---
 
-<script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
-
 <!--
 https://blog.eurkon.com/post/1213ef82.html?highlight=%E7%BB%9F%E8%AE%A1
 当然也可以在其他页面引入文章统计图，如果出现图表显示不全的现象可以修改 div 的 height 属性。。
