@@ -85,6 +85,11 @@
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
       siteshot: /imgs/default-cover.webp
+    - name: Eurkon
+      link: https://blog.eurkon.com
+      avatar: https://blog.eurkon.com/images/user/avatar.jpg
+      descr: 及时当勉励，岁月不待人。
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
@@ -270,14 +275,5 @@
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
       siteshot:  /imgs/default-cover.webp  
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot: /imgs/default-cover.webp
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot:  /imgs/default-cover.webp  
+ 
 
