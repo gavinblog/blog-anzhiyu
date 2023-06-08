@@ -4,7 +4,7 @@ categories: demo
 tags:
   - 示例
   - demo
-  - hexo
+  - Hexo
   - encrypt
 ai:
   - hexo-blog-encrypt demo测试
