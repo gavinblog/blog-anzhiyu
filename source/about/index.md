@@ -16,9 +16,9 @@ type: "about"
     <img src="https://tool.lu/netcard/">
 </div>
 
+<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/K2mM1vs6nmCWtp4K/quote.js?theme=#1690FF,#333333,#999999,#333333,transparent,#1690FF,18&col=true&f=18&badge=icon_0&icon=center"></script>
 
-<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/K2mM1vs6nmCWtp4K/quote.js?theme=#1690FF,#333333,#999999,#333333,,#1690FF,18&col=true&f=18&badge=icon_0&icon=center"></script>
-
+<br/><br/>
 
 <!-- 在表格中添加 id 以便于通过 JavaScript 获取元素 -->
 <table>

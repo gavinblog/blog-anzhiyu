@@ -1,21 +1,17 @@
 ---
-title: Hexo-theme-Anzhiyu Tag-Plugins Demo
-categories: demo
+title: Hexo-Theme-Anzhiyu常用Demo
 tags:
   - 示例
   - demo
   - Hexo
-  - Tag-Plugins
+  - Hexo-Theme-Anzhiyu
 ai:
-  - >-
-    Hexo-theme-Anzhiyu标签外挂Demo，Tag-Plugins 是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
-    AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意
-  - >-
-    Hexo-theme-Anzhiyu标签外挂Demo，标签外挂是 Hexo 独有的功能，并不是标准的 Markdown 格式。 以下的写法，只适用于
-    AnZhiYu 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意[本文摘要由Geek-人工-ChatGPT智能生成。]
-abbrlink: '3071'
-date: 2023-05-30 13:04:05
+  - Hexo-Theme-Anzhiyu主题中常用Demo和一些笔记，【人工生成】
+
+date: 2023-06-08 19:04:05
 ---
+
+## 主题图标
 
 [anzhiyu-icon](https://www.iconfont.cn/collections/detail?cid=44481)
 
