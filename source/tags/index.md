@@ -8,3 +8,5 @@ top_img: false
 orderby: random
 order: -1
 ---
+
+<div id="tags-chart" data-length="10" style="height: 300px; padding: 10px;"></div>
