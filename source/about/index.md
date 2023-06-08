@@ -10,14 +10,11 @@ type: "about"
 ---
 
 
-
-
 ## 访客信息
 
-<center>
-![IP签名](https://tool.lu/netcard/ "访客IP")
-</center>
-
+<div style="width:100%;text-align:center;">
+    <img src="https://tool.lu/netcard/">
+</div>
 <!-- 在表格中添加 id 以便于通过 JavaScript 获取元素 -->
 <table>
     <thead>
