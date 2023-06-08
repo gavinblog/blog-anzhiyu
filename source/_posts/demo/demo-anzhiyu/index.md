@@ -1,10 +1,12 @@
 ---
 title: Hexo-Theme-Anzhiyu常用Demo
-tags:
+categories: demo
+ags:
   - 示例
   - demo
   - Hexo
   - Hexo-Theme-Anzhiyu
+cat  
 ai:
   - Hexo-Theme-Anzhiyu主题中常用Demo和一些笔记，【人工生成】
 

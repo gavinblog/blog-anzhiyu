@@ -19,6 +19,7 @@ menu:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
+    统计: /charts/ || fa-solid fa-chart-pie fa-spin
     文档: /anzhiyu-docs/ || anzhiyu-icon-book
     博客-Hugo: https://geekswg.top || anzhiyu-icon-link
     博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
