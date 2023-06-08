@@ -3926,6 +3926,9 @@ body[data-type="link"] #page .page-title {
   font-size: 14px;
   margin-right: 4px;
 }
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a span {
+  pointer-events: none;
+}
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #b04dff;
 }
@@ -12678,7 +12681,7 @@ psw {
   -o-transition: all 0.28s ease;
 }
 psw:hover {
-  color: #444;
+  color: var(--anzhiyu-font);
   background: none;
 }
 kbd {
@@ -14072,9 +14075,6 @@ p.p.gray {
 }
 [data-theme='dark'] #footer {
   background-color: var(--anzhiyu-card-bg);
-}
-[data-theme='dark'] #article-container code {
-  background: #0061bc;
 }
 [data-theme='dark'] #article-container pre > code {
   background: #171717;
@@ -23510,6 +23510,7 @@ div#runtime {
   height: 20px;
   max-width: 150px;
   border-radius: 4px;
+  pointer-events: none;
 }
 #workboard img.boardsign {
   width: 100%;
