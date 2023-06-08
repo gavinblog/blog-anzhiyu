@@ -1,6 +1,7 @@
 ---
 title: 文章统计
 date: 2023-04-13 13:27:12
+type: page
 ---
 <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
