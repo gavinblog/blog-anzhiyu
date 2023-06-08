@@ -94,11 +94,13 @@ type: link # 友链页面
             input.focus();
             input.setSelectionRange(-1, -1);
         } else {
+            var input = document.getElementsByClassName('el-textarea__inner')[0];
+            evt.initEvent('input', true, true);
+            input.value = '';
+            input.dispatchEvent(evt);
             twikooSubmit.style.opacity = "0";
             twikooSubmit.style.height = "0";
             twikooSubmit.style.overflow = "hidden";
-            var input = document.getElementsByClassName('el-textarea__inner')[0];
-            input.value = '';
         }
     }
 </script>
