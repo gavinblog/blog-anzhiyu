@@ -12,10 +12,9 @@ abbrlink: '3e38'
 date: 2023-06-04 10:05:09
 ---
 
-# Hexo 常用命令
+Hexo 常用命令
 
 Hexo是一款基于Node.js的静态博客生成器，它可以帮助我们快速搭建自己的博客网站。本文将介绍一些常用的Hexo命令，帮助你更好地使用Hexo。
-
 
 ## demo
 
@@ -35,7 +34,6 @@ hexo new post -p notes/hexo-basic-usage/index "Hexo常用命令"
 # 安装与卸载
 npm install hexo-blog-encrypt --save
 npm uninstall hexo-blog-encrypt --save
-
 ```
 
 ## 安装Hexo
