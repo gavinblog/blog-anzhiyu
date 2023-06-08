@@ -95,6 +95,7 @@ type: link # 友链页面
             input.setSelectionRange(-1, -1);
         } else {
             var input = document.getElementsByClassName('el-textarea__inner')[0];
+            let evt = document.createEvent('HTMLEvents');
             evt.initEvent('input', true, true);
             input.value = '';
             input.dispatchEvent(evt);
