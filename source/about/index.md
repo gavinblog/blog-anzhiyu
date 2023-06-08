@@ -14,7 +14,9 @@ type: "about"
 
 ## 访客信息
 
+<center>
 ![IP签名](https://tool.lu/netcard/ "访客IP")
+</center>
 
 <!-- 在表格中添加 id 以便于通过 JavaScript 获取元素 -->
 <table>
@@ -26,7 +28,7 @@ type: "about"
     </thead>
     <tbody>
     <tr>
-        <td colspan="2" style="text-align:center" ><b>网络信息</b></td>
+        <td colspan="2" ><b>网络信息</b></td>
     </tr>
     <tr>
         <td>IP地址</td>
@@ -57,7 +59,7 @@ type: "about"
         <td><div id="userAgentISP"></div></td>
     </tr>
     <tr>
-        <td colspan="2"><b>设备信息</b></td>
+        <td colspan="2" ><b>设备信息</b></td>
     </tr>
     <tr>
         <td style="text-align:center">设备</td>

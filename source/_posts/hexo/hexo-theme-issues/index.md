@@ -42,6 +42,12 @@ date: 2023-06-06 16:07:18
     meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
 ```
 
+**注意**：改完后一定要重新`编译`生成静态页面,命令如下。
+
+```bash
+hexo cl | hexo g | hexo s
+```
+
 > 其他通用解决方法,适用于所有html中引入的，官方文档有说明自定义 [meting_api](https://github.com/metowolf/MetingJS#readme)。
 
 ```js
