@@ -1,10 +1,12 @@
 ---
 title: 文章统计
-date: 2023-04-13 13:27:12
-type: page
+date: 2023-05-20 22:06:17
+comments: true
+aside: false
+top_img: false
 ---
-<script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
+<script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
 <!--
 https://blog.eurkon.com/post/1213ef82.html?highlight=%E7%BB%9F%E8%AE%A1
