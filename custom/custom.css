@@ -40,6 +40,18 @@ pre>code {
 
 
 
+.topGroup .todayCard .todayCard-cover {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat !important;
+  background-size: auto !important;
+  z-index: -1;
+  transition: 0.3s;
+  background-color: transparent !important;
+}
 
 /* 首页一图流，打字字体 */
 #page-header #site-title {
