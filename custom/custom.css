@@ -42,6 +42,9 @@ pre>code {
 #aside-content .card-widget#card-wechat {
   background: transparent !important;
 }
+#aside-content #flip-wrapper #flip-content .face {
+  background-size: cover !important;
+}
 
 .topGroup .todayCard .todayCard-cover {
   position: absolute;
