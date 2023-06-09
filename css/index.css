@@ -2916,6 +2916,7 @@ figure.highlight pre .javascript .function {
 .article-sort-item-info .article-meta-wrap .article-sort-item-tags a span {
   font-size: 12px;
   margin-right: 1px;
+  pointer-events: none;
 }
 .article-sort-item-info .article-meta-wrap .article-sort-item-time {
   font-size: 12px;
@@ -17315,9 +17316,7 @@ details .content > *:nth-child(1) {
 .comment-barrage-item p img:not(.tk-owo-emotion) {
   display: none;
 }
-.comment-barrage-item blockquote {
-  display: none;
-}
+
 .comment-barrage-item .barrageHead {
   height: 30px;
   padding: 0;
@@ -17371,6 +17370,9 @@ details .content > *:nth-child(1) {
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+.comment-barrage-item .barrageContent blockquote p {
+  margin: 0;
 }
 .comment-barrage-item .barrageContent h1,
 .comment-barrage-item .barrageContent h2,
