@@ -46,7 +46,7 @@ pre>code {
   background-size: cover !important;
 }
 #flip-wrapper {
-  width: 100%;
+  width: 100% !important;
 }
 
 .topGroup .todayCard .todayCard-cover {
