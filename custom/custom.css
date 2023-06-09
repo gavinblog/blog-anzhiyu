@@ -45,6 +45,9 @@ pre>code {
 #aside-content #flip-wrapper #flip-content .face {
   background-size: cover !important;
 }
+#flip-wrapper {
+  width: 100%;
+}
 
 .topGroup .todayCard .todayCard-cover {
   position: absolute;
