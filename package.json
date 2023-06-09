@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "add": "^2.0.6",
+    "cheerio": "^1.0.0-rc.12",
     "gulp": "^4.0.2",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",

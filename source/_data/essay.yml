@@ -16,7 +16,9 @@
         id: 000kfFVO09uRDB
       image:
         - https://tool.lu/netcard/
+
     
+
     - content: 乘风破浪会有时，直挂云帆济沧海
       date: 2023/06/07 09:22:33
       aplayer:
@@ -67,3 +69,9 @@
       aplayer:
         server: tencent
         id: 001yIhZy198tMN
+    
+    - content: 歌曲推荐
+      date: 2022/09/25
+      aplayer:
+        server: tencent
+        id: 003XxY5O2E0kay

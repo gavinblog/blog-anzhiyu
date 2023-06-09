@@ -6,10 +6,9 @@ ags:
   - demo
   - Hexo
   - Hexo-Theme-Anzhiyu
-cat  
 ai:
   - Hexo-Theme-Anzhiyu主题中常用Demo和一些笔记，【人工生成】
-
+abbrlink: 56b8
 date: 2023-06-08 19:04:05
 ---
 
