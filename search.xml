@@ -90,7 +90,7 @@
       
       <categories>
           
-          <category> notes </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -158,6 +158,8 @@
             <tag> demo </tag>
             
             <tag> Hexo </tag>
+            
+            <tag> Hexo-Theme-Anzhiyu </tag>
             
             <tag> Tag-Plugins </tag>
             
@@ -519,6 +521,8 @@
       
       
         <tags>
+            
+            <tag> 笔记 </tag>
             
             <tag> notes </tag>
             
