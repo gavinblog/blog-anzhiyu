@@ -38,7 +38,10 @@ pre>code {
   cursor: url(/imgs/cursor/text.cur), default;
 }
 
-
+/* 微信卡片背景透明 */
+#aside-content .card-widget#card-wechat {
+  background: transparent !important;
+}
 
 .topGroup .todayCard .todayCard-cover {
   position: absolute;

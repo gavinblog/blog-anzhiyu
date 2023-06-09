@@ -7,6 +7,7 @@ keywords:
   - ''
 tags:
   - notes
+  - 笔记
 categories:
   - notes
 featuredImage: /images/posts/featured-image.jpg
