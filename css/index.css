@@ -355,6 +355,7 @@ hr:before,
   animation: scroll-down-effect 1.5s infinite;
 }
 .anzhiyu-spin {
+  display: inline-block;
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
