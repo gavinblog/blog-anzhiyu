@@ -600,11 +600,13 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+# https://tongji.baidu.com/main/setting/10000222384/home/site/getjs?siteId=19268804
+baidu_analytics: c78e148e63a5f161b51f3c05d3be3acb
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+# https://analytics.google.com/analytics/web/#/a273233182p383309901/admin/streams/table/
+google_analytics: G-MXDTZ2L2TY
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -616,7 +618,8 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity:
+# https://clarity.microsoft.com/projects
+microsoft_clarity: hhn2or4dz5
 
 # Advertisement
 # --------------------------------------
