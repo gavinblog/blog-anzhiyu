@@ -55,8 +55,14 @@ nav:
   travelling: true
   clock: true  # 左上角天气挂件开关
   menu:
-    - title: 网页
+    - title: 站点
       item:
+        - name: 个人主页
+          link: https://home.geekswg.top/
+          icon: /imgs/avatar.webp #  /img/favicon.png
+        - name: 个人导航
+          link: https://nav.geekswg.top/
+          icon: /imgs/avatar.webp #  /img/favicon.png
         - name: 博客-Hugo
           link: https://geekswg.js.cool/
           icon: /imgs/avatar.webp #  /img/favicon.png
@@ -68,32 +74,32 @@ nav:
         - name: 在线工具
           link: https://tool.lu/
           icon: /imgs/avatar.webp
-        - name: 免费图床
-          link: https://picx.xpoet.cn/
-          icon: /imgs/avatar.webp     
+        - name: 免费图床-Picx
+          link: https://gavinblog.github.io/picx/#/upload
+          icon: /imgs/avatar.webp
     - title: AI大模型
       item:
         - name: ChatGPT
           link: https://chat.openai.com/
-          icon: 
+          icon: /imgs/avatar.webp
         - name: AutoChatGPT
           link: https://github.com/7flash/AutoChatGPT
-          icon: 
+          icon: /imgs/avatar.webp
         - name: Bing-图像创建者
           link: https://bing.com/create
-          icon: 
+          icon: /imgs/avatar.webp
         - name: Stable Diffusion Online
           link: https://stablediffusionweb.com/
-          icon: 
+          icon: /imgs/avatar.webp
         - name: 文心一言
           link: https://yiyan.baidu.com/
-          icon: 
+          icon: /imgs/avatar.webp
         - name: 文心一格
           link: https://yige.baidu.com/
-          icon: 
+          icon: /imgs/avatar.webp
         - name: 讯飞星火
           link: https://xinghuo.xfyun.cn/
-          icon: 
+          icon: /imgs/avatar.webp
     
 # Code Blocks (代码相关)
 # --------------------------------------

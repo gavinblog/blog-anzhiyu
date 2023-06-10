@@ -66,7 +66,7 @@ type: link # 友链页面
 
 </div>
 
-> `注意`:确认以上条件均满足勾选后即出现评论框，留下贵站信息
+> `注意`:确认以上条件均满足勾选后即出现评论框，留下贵站信息！
 
 <style>.tk-comments>.tk-submit{opacity:0;height:0;transition:opacity .5s,height .5s;overflow:hidden}</style>
 
@@ -89,7 +89,7 @@ type: link # 友链页面
             var input = document.getElementsByClassName('el-textarea__inner')[0];
             let evt = document.createEvent('HTMLEvents');
             evt.initEvent('input', true, true);
-            input.value = '```yml\n- name: \n  link: \n  avatar: \n  descr: \n  siteshot: \n```';
+            input.value = '> 我已所有满足条件，已添加**本站友联**，申请友联信息如下：\n```yml\n- name: \n  link: \n  avatar: \n  descr: \n  siteshot: \n```';
             input.dispatchEvent(evt);
             input.focus();
             input.setSelectionRange(-1, -1);

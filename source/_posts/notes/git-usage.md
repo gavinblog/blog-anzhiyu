@@ -3,8 +3,7 @@ title: Git常用命令
 subtitle: 记录经常使用到git命令，以便查用
 author: geekswg
 description: 记录经常使用到git命令，以便查用
-keywords:
-  - ''
+keywords: [geekswg,毕少侠,hexo]
 tags:
   - git
   - 笔记

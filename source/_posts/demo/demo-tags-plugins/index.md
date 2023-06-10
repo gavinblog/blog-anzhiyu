@@ -4,6 +4,7 @@ categories: demo
 tags:
   - 示例
   - demo
+  - Hexo-Theme-Anzhiyu
   - Hexo
   - Tag-Plugins
 ai:
