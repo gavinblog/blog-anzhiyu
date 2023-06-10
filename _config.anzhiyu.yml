@@ -496,15 +496,15 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2011
-  custom_text: CopyRight @ geekswg 2010 ~ Now
+    since: 2006
+  custom_text: CopyRight @ geekswg 2006 ~ Now
   runtime:
     enable: true
-    launch_time: 01/02/2006 03:04:05 # 网站上线时间 go2006-01-02 03:04:05
+    launch_time: 01/02/2006 15:04:05 # 网站上线时间 go2006-01-02 03:04:05
     work_img: /imgs/gif/cat.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 但行好事，莫问前程
-    offduty_img: https://tool.lu/netcard/ # /imgs/gif/yinyang.gif
+    offduty_img:  /imgs/gif/tree.gif # https://tool.lu/netcard/ /imgs/gif/yinyang.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
     offduty_description: 天高任鸟飞，海阔凭鱼跃
   # 徽标部分配置项 https://shields.io/
@@ -646,7 +646,7 @@ google_adsense:
 
 # Verification (站长验证)
 # --------------------------------------
-
+# 
 site_verification:
   - name: google-site-verification
     content: xxx
@@ -740,7 +740,7 @@ canvas_nest:
   opacity: 1 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: true
+  mobile: false
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -770,7 +770,7 @@ ClickShowText:
     - YOU
   fontSize: 15px
   random: false
-  mobile: false
+  mobile: true
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -871,7 +871,7 @@ aside:
   card_weixin: 
     enable: true
     face: https://tool.lu/netcard/   #图1
-    backFace: /imgs/default/cover3.png #图2
+    backFace: /imgs/default/cover3.webp #图2
   card_recent_post:
     enable: true
     limit: 6 # if set 0 will show all
@@ -890,7 +890,7 @@ aside:
     # 高亮显示tags标签
     highlightTags: ["AI","笔记","分享"]
     #  - AI
-    #  - 毕竟
+    #  - 笔记
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -915,7 +915,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2010 13:14:00
+  publish_date: 01/02/2006 15:04:05
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -962,7 +962,7 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: false
-  # 夜间模式开始结束时间
+  # 模式开始结束时间
   start: 8 # 8
   end: 19 # 22
 
