@@ -3,8 +3,8 @@ title: 分享VSCode插件
 subtitle: Share Vscode Plugins Here
 author: geekswg
 description: 摘要
-keywords:
-  - ''
+keywords: [geekswg,毕少侠,分享]
+
 tags:
   - 分享
   - vscode

@@ -7,7 +7,8 @@ author:
 description: 摘要
 keywords:
   - ''
-tags:
+tags: 
+  - AI
   - Cursor
   - Electron
 categories:

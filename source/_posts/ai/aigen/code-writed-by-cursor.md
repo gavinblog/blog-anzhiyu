@@ -15,6 +15,7 @@ copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
 keywords:
   - ''
 tags:
+  - AI
   - Cursor
   - ChatGPT
   - Code

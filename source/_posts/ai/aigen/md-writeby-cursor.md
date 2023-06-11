@@ -7,9 +7,9 @@ author:
 description: 摘要
 keywords:
   - ''
-tags:
-  - Cursor
-  - ChatGPT
+tags: [Cursor,ChatGPT,AI]
+  # - Cursor
+  # - ChatGPT
 categories:
   - AI
 featuredImage: /images/posts/featured-image-preview.jpg

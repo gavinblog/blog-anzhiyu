@@ -1,7 +1,8 @@
 ---
 title: Hexo-Theme-Anzhiyu主题标签插件
-categories: demo
+categories: repost
 tags:
+  - 转载
   - 示例
   - demo
   - Hexo

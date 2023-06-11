@@ -12,11 +12,11 @@ copyright_url: https://www.cursor.so/
 copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
 
 description: 摘要
-keywords:
-  - ''
-tags:
-  - Cursor
-  - Docker
+keywords: [geekswg,毕少侠,AI]
+
+tags: [Cursor,Docker,AI]
+  # - Cursor
+  # - Docker
 categories:
   - AI
 featuredImage: /images/posts/featured-image-preview.jpg
