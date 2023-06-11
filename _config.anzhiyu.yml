@@ -513,6 +513,9 @@ footer:
     - link: http://geekswg.js.cool/
       shields: https://img.shields.io/badge/Blog-%E6%AF%95%E5%B0%91%E4%BE%A0-yellow
       message: 主页
+    - link: https://github.com/gavinblog/blog-anzhiyu
+      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+      message: 本站项目由Github托管
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
       message: 博客框架为Hexo_v5.4.0 #徽标提示语
@@ -522,9 +525,6 @@ footer:
     # - link: https://www.dogecloud.com/
     #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
     #   message: 本站使用多吉云为静态资源提供CDN加速
-    - link: https://github.com/gavinblog/blog-anzhiyu
-      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      message: 本站项目由Github托管
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
