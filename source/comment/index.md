@@ -14,7 +14,7 @@ comments: true
     right: -500px;
     display: inline-block;
     width: fit-content;
-    z-index: 99
+    z-index: 99999
 }
 .barrage_box {
     display: flex;
@@ -89,7 +89,7 @@ window.onload = () => {
             envId: 'https://twikoo.geekswg.top/', // 环境 ID
             // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
             pageSize: 50, // 获取多少条，默认：10，最大：100
-            includeReply: false // 是否包括最新回复，默认：false
+            includeReply: true // 是否包括最新回复，默认：false
         }).then((data) => {
             data.forEach(i => {
                 if (i.avatar == undefined) i.avatar = 'https://cravatar.cn/avatar/d615d5793929e8c7d70eab5f00f7f5f1?d=mp'
