@@ -80,7 +80,7 @@ let Num = 0;
 // ]
 window.onload = () => {
     // 手机端显示效果不好，所以直接不让其显示
-    if (1&&document.body.clientWidth > 768) {
+    if (1&&document.body.clientWidth > 100) {
         // 加载动画，将 /img/loading.svg 换成你的加载图片即可
         document.getElementById('loading').innerHTML = '<a href="/img/loading.svg" data-fancybox="gallery" data-caption="弹幕加载中..." data-thumb="/img/loading.svg"><img src="/img/loading.svg" data-lazy-src="/img/loading.svg" alt="弹幕加载中..." data-ll-status="loaded" class="entered loaded"></a><div class="img-alt is-center">弹幕加载中...</div>';
         let barrageTime = ''
@@ -93,6 +93,7 @@ window.onload = () => {
         }).then((data) => {
             data.forEach(i => {
                 if (i.avatar == undefined) i.avatar = 'https://cravatar.cn/avatar/d615d5793929e8c7d70eab5f00f7f5f1?d=mp'
+                 console.info('获取留言===>' + i.nick + '\n' + i.comment + '\n' + i.url);
                 ls.push({
                     img: i.avatar, //图片 
                     info: i.nick + '：' + formatDanmaku(i.comment), //文字 
