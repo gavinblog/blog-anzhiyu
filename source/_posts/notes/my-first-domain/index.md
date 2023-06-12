@@ -35,31 +35,35 @@ date: 2023-04-13 09:05:47
 
 ## 域名使用
 
-使用[CloudFlare-DNS域名解析](https://dash.cloudflare.com/b942112d61495edf9c0b0c4d790c4448/add-site)
-添加网站，安装指引一步步操作即可。
-登录 Namesilo，添加dns记录，绑定成功后，即可使用。
+使用[CloudFlare-DNS域名解析](https://dash.cloudflare.com/)
+
+1. 登录[CloudFlare控制台](https://dash.cloudflare.com/), 点击`网站`，添加网站，按照指引一步步操作即可。
+2. 登录 Namesilo，添加dns记录，绑定成功后，即可使用。
 
 ### 子域名管理
 
 Namesilo供应商可支持50个子域名。
 使用CloudFlare管理子域名。
-在CloudFlare的控制主页，`网站` 选择自己已经绑定的域名，点击 `DNS` ,然后 `添加记录`。
+在CloudFlare的控制台主页，`网站` 选择自己已经绑定的域名，点击 `DNS` ,然后 `添加记录`。
 常用的两种类型：
+
 * A     : 用于绑定IP的。
 * CNAME : 用于绑定名称的。不过，名称可以是任意大写字母或空格字符的完整子串
-绑定步骤主要两个步骤
+
+> 绑定步骤主要两个步骤
 1. 在CloudFlare DNS中添加CNAME类型记录（这个最常用）
-2. 在你需要自定义域名的地方，输入第一给步骤中你生成的子域名，然后按照提示一步步绑定即可成功
+2. 在你需要自定义域名的地方，输入第一步骤中你生成的子域名，然后按照提示一步步绑定即可成功
 3. 成功后需要几分钟更新DNS记录，大概十分钟后，即可正常访问你的子域名了。
 
 如我的子域名：
-[hexo.geekswg.top](https://hexo.geekswg.top/) 
+[hexo.geekswg.top](https://hexo.geekswg.top/)
 [blog.geekswg.top](https://blog.geekswg.top/)
 
 ## CloudFlare加速
 
 CloudFlare控制台的pages页面操作简单
-传送地址： https://dash.cloudflare.com/b942112d61495edf9c0b0c4d790c4448/pages
+传送地址： https://dash.cloudflare.com/ 选择`Workers和Pages`服务。
+`创建应用程序`，`Pages`
 
 ## Netlify加速
 
