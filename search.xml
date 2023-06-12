@@ -32,7 +32,7 @@
       
       <categories>
           
-          <category> demo </category>
+          <category> repost </category>
           
       </categories>
       
@@ -46,6 +46,8 @@
             <tag> Hexo </tag>
             
             <tag> Hexo-Theme-Anzhiyu </tag>
+            
+            <tag> 转载 </tag>
             
         </tags>
       
@@ -298,6 +300,8 @@
       
         <tags>
             
+            <tag> AI </tag>
+            
             <tag> Cursor </tag>
             
             <tag> Docker </tag>
@@ -324,6 +328,8 @@
       
       
         <tags>
+            
+            <tag> AI </tag>
             
             <tag> Cursor </tag>
             
@@ -354,6 +360,8 @@
       
         <tags>
             
+            <tag> AI </tag>
+            
             <tag> Cursor </tag>
             
             <tag> ChatGPT </tag>
@@ -380,6 +388,8 @@
       
       
         <tags>
+            
+            <tag> AI </tag>
             
             <tag> Cursor </tag>
             
@@ -408,11 +418,11 @@
       
         <tags>
             
+            <tag> AI </tag>
+            
             <tag> Cursor </tag>
             
             <tag> ChatGPT </tag>
-            
-            <tag> AI </tag>
             
         </tags>
       
@@ -437,9 +447,9 @@
       
         <tags>
             
-            <tag> New Bing </tag>
-            
             <tag> AI </tag>
+            
+            <tag> New Bing </tag>
             
         </tags>
       
