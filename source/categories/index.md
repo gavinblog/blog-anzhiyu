@@ -9,9 +9,11 @@ top_img: /imgs/default-cover.webp
 
 ---
 
-<div id="posts-chart" data-start="2021-01" style="height: 300px; padding: 10px;"></div>
+## 分类统计
 
 <div id="categories-chart" data-parent="true" style="height: 300px; padding: 10px;"></div>
+
+***
 
 <style>
   #libCategories .card-wrap:hover .card-info:after {
@@ -41,14 +43,14 @@ top_img: /imgs/default-cover.webp
 <a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/ai/")' >
   <card data-image="/imgs/t2.webp">
     <h1 slot="header">AI</h1>
-    <p slot="content">AI人工智能都在这里。</p>
+    <p slot="content">AI人工智能相关都在这里。</p>
   </card>
 </a>
 
-<a href='javascript:void(0);' onClick='pjax.loadUrl("/categories/other/")' >
+<a href='javascript:void(0);' onClick='pjax.loadUrl("/archives/")' >
   <card data-image="/imgs/t1.webp">
-    <h1 slot="header">Other</h1>
-    <p slot="content">其他一些乱七八糟的杂项</p>
+    <h1 slot="header">All</h1>
+    <p slot="content">所有文章</p>
   </card>
 </a>
 
@@ -58,5 +60,6 @@ top_img: /imgs/default-cover.webp
 <script src='https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js' data-pjax></script>
 <script type="text/javascript" src="https://cdn1.tianli0.top/npm/js-heo@1.0.11/3dCard/no3d.js" data-pjax></script>
 
+<div id="posts-chart" data-start="2006-01" style="height: 300px; padding: 10px;"></div>
 
 <div id="tags-chart" data-length="10" style="height: 300px; padding: 10px;"></div>
