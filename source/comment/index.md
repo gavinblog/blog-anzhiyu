@@ -58,7 +58,7 @@ comments: true
 <div id="loading"></div>
 
 <script>
-let ls = []
+let ls = [];
 let Num = 0;
 
 // 以下注释为twikoo api的返回格式
@@ -93,7 +93,7 @@ window.onload = () => {
         }).then((data) => {
             data.forEach(i => {
                 if (i.avatar == undefined) i.avatar = 'https://cravatar.cn/avatar/d615d5793929e8c7d70eab5f00f7f5f1?d=mp'
-                 console.info('获取留言===>' + i.nick + '\n' + i.comment + '\n' + i.url);
+                console.info('获取留言===>' + i.nick + '\n' + i.comment + '\n' + i.url);
                 ls.push({
                     img: i.avatar, //图片 
                     info: i.nick + '：' + formatDanmaku(i.comment), //文字 
