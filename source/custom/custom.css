@@ -38,6 +38,53 @@ pre>code {
   cursor: url(/imgs/cursor/text.cur), default;
 }
 
+
+
+/*  ------------------ 留言板评论弹幕 ------------------ */
+.barrage {
+  position: fixed;
+  right: -500px;
+  display: inline-block;
+  width: fit-content;
+  z-index: 99
+}
+.barrage_box {
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  padding-right: 8px;
+  height: 40px;
+  border-radius: 25px;
+}
+.barrage_box .portrait {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.barrage_box .portrait img {
+  width: 100%;
+  height: 100%;
+}
+.barrage_box div.p a {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 25rem;
+  margin-right: 2px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+.barrage_box div.p a:hover {
+  text-decoration: underline;
+}
+/*  ------------------ 留言板评论弹幕 ------------------ */
+
 /* 微信卡片背景透明 */
 #aside-content .card-widget#card-wechat {
   background: transparent !important;

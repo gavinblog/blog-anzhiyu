@@ -16,7 +16,7 @@ top_img: false
     right: -500px;
     display: inline-block;
     width: fit-content;
-    z-index: 99
+    z-index: 9999
 }
 .barrage_box {
     display: flex;
@@ -60,11 +60,12 @@ top_img: false
 <div id="loading"></div>
 
 <script>
-
-let lastUrl = document.referrer || 'xx';
-//alert(document.referrer=='');
-if (document.referrer!='' && lastUrl.indexOf('/guestbook')< 0 ){
-    location.reload();
+//location.reload();
+let lastUrl = window.location.href || 'xx';
+//alert('lastUrl ='+ lastUrl);
+if ( lastUrl.indexOf('/guestbook')< 0 ){
+    //alert('reload')
+    setTimeout(function(){location.reload();},100);
 }
 
 let ls = [];
@@ -90,8 +91,8 @@ window.addEventListener('load', (event) => {
                     info: i.nick + '：' + formatDanmaku(i.comment), //文字 
                     href: i.url+'#'+i.id, //链接 
                     close: true, //显示关闭按钮 
-                    speed: 20, //延迟,单位秒,默认6 
-                    // bottom: 70, //距离底部高度,单位px,默认随机 
+                    speed: 16, //延迟,单位秒,默认6 
+                    //bottom: 70, //距离底部高度,单位px,默认随机 
                     color: '#fff', //颜色,默认白色 
                     old_ie_color: '#000000', //ie低版兼容色,不能与网页背景相同,默认黑色 
                 })
