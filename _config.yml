@@ -131,16 +131,17 @@ ignore:
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 # Extensions
-# plugins:
-  hexo-generator-feed
-#Feed Atom
+plugins:
+  - hexo-generator-feed
 # npm install --save hexo-generator-feed
 feed:
   enable: true
   type: rss
   path: rss.xml
-  limit: 20
-
+  limit: 12
+  #content_limit: 1024
+  order_by: -date
+  icon: /imgs/avatar.webp
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
