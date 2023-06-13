@@ -247,6 +247,12 @@ hr:before,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.anzhiyufont::before {
+  font-family: "anzhiyufont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .cardHover,
 .error404 #error-wrap .error-content,
 #recent-posts > .recent-post-item,
@@ -14423,6 +14429,12 @@ p.p.gray {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
 }
+#twikoo .tk-tag-green {
+  background-color: var(--anzhiyu-main);
+  border: none;
+  border-radius: 4px;
+  color: var(--anzhiyu-white);
+}
 #twikoo .tk-action-icon {
   color: var(--anzhiyu-main);
   cursor: pointer;
@@ -15154,7 +15166,7 @@ body[data-type="about"] #web_bg {
   height: 40px;
   width: 140px;
   border-radius: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--anzhiyu-card-bg);
   color: var(--font-color);
   display: flex;
