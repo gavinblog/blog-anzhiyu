@@ -43,6 +43,7 @@ jobs:
         # hexo-offline pwa 依赖
         # hexo-abbrlink 文章短链接
         # hexo-blog-encrypt 文章加密插件
+        # rss/atom 订阅
         run: |
           npm install -g hexo-cli
           npm install --no-fund
@@ -52,6 +53,7 @@ jobs:
           npm install hexo-offline --save
           npm install --save hexo-blog-encrypt
           npm i cheerio --save
+          npm install --save hexo-generator-feed
           npm ls --depth 0
 
       # hexo 编译生成网站
