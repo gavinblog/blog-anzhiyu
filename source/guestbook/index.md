@@ -60,6 +60,13 @@ top_img: false
 <div id="loading"></div>
 
 <script>
+
+let lastUrl = document.referrer || 'xx';
+//alert(document.referrer=='');
+if (document.referrer!='' && lastUrl.indexOf('/guestbook')< 0 ){
+    location.reload();
+}
+
 let ls = [];
 let Num = 0;
 window.addEventListener('load', (event) => {
