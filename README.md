@@ -1,12 +1,16 @@
 # blog-anzhiyu
 
 > 预览地址： [https://hexo.geekswg.top/](https://hexo.geekswg.top/)
-
 > hexo-theme-anzhiyu 主题的 模板仓库.
 > **Warning** 本仓库是 模板仓库，方便大家快速开始使用 .hexo-thwme-anzhiyu,主题，适合新手，快速入门，搭建。
 > 基于dev分支，可自行更换分支，快速便捷。
 
-说明：
+![visitor](https://visitor-badge.laobi.icu/badge?page_id=gavinblog)
+![JavaScript](https://img.shields.io/badge/-Hexo-oringe?style=flat-square&logo=hexo)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![JavaScript](https://img.shields.io/badge/-JavaScript-oringe?style=flat-square&logo=javascript)
+***
 
 * 本仓库采用 子模块方式 安装主题，分支dev 。
 * 仓库，未改动任何主题代码，只做配置文件的修改。
@@ -28,3 +32,5 @@
 * 请参考文档： [主题文档](https://hexo.geekswg.top/anzhiyu-docs/)
 
 ![IP签名](https://tool.lu/netcard/ "IP信息")
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=gavinblog)](https://github.com/anuraghazra/github-readme-stats)
