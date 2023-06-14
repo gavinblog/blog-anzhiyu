@@ -71,18 +71,21 @@
     comic_tips: 读孙子兵法
     comic_title: 品启强人生
     comic_list:
+      - name: 迪迦奥特曼
+        href: https://www.bilibili.com/bangumi/play/ss38385?spm_id_from=333.337.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/d432ca132f5b8e8d72257704817f270595f92148.png@330w_442h.webp #/imgs/default/cover.webp
       - name: 三体
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t1.webp
-      - name: 秦时明月
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/t2.webp
-      - name: 三体
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/default/cover.webp
-      - name: 秦时明月
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: /imgs/default/tm.png  
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/9870f898b8a39bbb8048f34317f8d78a02cc1770.png@330w_442h.webp #/imgs/t1.webp
+      - name: 名侦探柯南
+        href: https://www.bilibili.com/bangumi/play/ep321808?from_spmid=666.4.feed.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/38e2a273f528fd01c34f1fc4df0f69c64487efad.png@330w_442h.webp #/imgs/t2.webp
+      - name: 迪迦奥特曼
+        href: https://www.bilibili.com/bangumi/play/ss38385?spm_id_from=333.337.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/cd7d919cacc1f14146b9f61076111ec94f394f3a.png@330w_442h.webp
+      - name: 迪迦奥特曼
+        href: https://www.bilibili.com/bangumi/play/ss38384?spm_id_from=333.337.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/cd7d919cacc1f14146b9f61076111ec94f394f3a.png@330w_442h.webp # /imgs/default/tm.png  
 
   like:
     like_tips: 偏好 - 爱好文雅，广延诗赋，以知得失。
