@@ -8,6 +8,17 @@ type: link # 友链页面
 ## 我的友链
 
 {% tabs test4 %}
+
+<!-- tab Hexo博客 @fa-solid fa-blog -->
+```yml
+- name: 毕少侠-Hexo-Anzhiyu
+  link: https://hexo.geekswg.top/
+  avatar: https://hexo.geekswg.top/imgs/avatar.webp
+  descr: 毕少侠也在江湖。
+  siteshot: 
+```
+<!-- endtab -->
+
 <!-- tab Hugo博客@fa-solid fa-yin-yang fa-spin -->
 ```yml
 - nickname: 毕少侠
@@ -17,19 +28,10 @@ type: link # 友链页面
 ```
 <!-- endtab -->
 
-<!-- tab Hexo博客 @fa-solid fa-blog -->
-```yml
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: https://hexo.geekswg.top/imgs/avatar.webp
-      descr: 毕少侠也在江湖。
-      siteshot: 
-```
-<!-- endtab -->
-
 <!-- tab Demo@fa-brands fa-github -->
 **名字@icon**
 <!-- endtab -->
+
 {% endtabs %}
 
 ## 友情链接申请
