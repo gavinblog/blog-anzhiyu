@@ -63,9 +63,9 @@
 
   game:
     game_tips: 游戏 - 斯人定何人，游戏得自在
-    game_title: 使命召19-战争地带2.0
+    game_title: 使命召唤19-战争地带2.0(COD19-WarZone2.0)
     game_uid: "geekswg#123456"
-    game_bg: /imgs/default/cover.webp
+    game_bg: https://jsd.cdn.zzko.cn/gh/geekswg/static@main/blog-img/cod19/wz2.jpeg
 
   comic:
     comic_tips: 读孙子兵法
@@ -74,18 +74,22 @@
       - name: 三体
         href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
         cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
-      - name: 名侦探柯南
-        href: https://www.bilibili.com/bangumi/play/ep321808?from_spmid=666.4.feed.0
-        cover: https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2887308410.webp #/imgs/t2.webp
-      - name: 雷欧奥特曼
-        href: https://www.bilibili.com/bangumi/play/ep397241?from_spmid=666.4.feed.3
-        cover: https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2554347188.webp #/imgs/t1.webp
-      - name: 名侦探柯南
-        href: https://www.bilibili.com/bangumi/play/ep321808?from_spmid=666.4.feed.0
-        cover: https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2887308410.webp #/imgs/t2.webp
-      - name: 迪迦奥特曼
-        href: https://www.bilibili.com/bangumi/play/ss38385?spm_id_from=333.337.0.0
-        cover: https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2533388717.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
+      - name: 三体
+        href: https://www.bilibili.com/bangumi/play/ss26257?spm_id_from=333.337.0.0
+        cover: https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2885057891.webp #/imgs/t1.webp
+      
 
   like:
     like_tips: 偏好 - 爱好文雅，广延诗赋，以知得失。
