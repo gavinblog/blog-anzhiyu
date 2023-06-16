@@ -18,10 +18,14 @@ description:
 ## 实现代码
 
 直接在需要显示的全屏弹幕页面的`md文件`中直接添加如下代码
-
+只需要修改openBarrage(your-twikoo-server-url)地址。
+js全部本地化保存到`source/custom/barrage/`下
+> 本博客完全开源：[仓库源码地址](https://github.com/gavinblog/blog-anzhiyu)
 ```md
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/yaseng/jquery.barrager.js/dist/js/jquery.barrager.min.js"></script>
+<script src="/custom/barrage/jquery_3.6.0_jquery.min.js"></script>
+<script src="/custom/barrage/jquery.barrager-1.1.min.js"></script>
+<script src="/custom/barrage/barrage-twikoo.js"></script>
+
 <style>
 /* 评论弹幕 */
 .barrage {
@@ -70,6 +74,11 @@ description:
 
 > 欢迎留言
 
+<div class="btn-center">
+{% btn 'javascript:openBarrage();',"开启弹幕",anzhiyufont anzhiyu-icon-circle-arrow-right,outline green larger %}
+{% btn 'javascript:closeBarrage();',关闭弹幕,anzhiyufont anzhiyu-icon-circle-arrow-right,outline red larger %}
+</div>
+
 <div id="loading"></div>
 
 <script>
@@ -81,55 +90,10 @@ if ( lastUrl.indexOf('/guestbook')< 0 ){
     setTimeout(function(){location.reload();},100);
 }
 
-let ls = [];
-let Num = 0;
 window.addEventListener('load', (event) => {
-  //alert('window.onload');
-    // 手机端显示效果不好，所以直接不让其显示
-    if (1 && document.body.clientWidth > 100) {
-        // 加载动画，将 /img/loading.svg 换成你的加载图片即可
-        document.getElementById('loading').innerHTML = '<a href="/img/loading.svg" data-fancybox="gallery" data-caption="弹幕加载中..." data-thumb="/img/loading.svg"><img src="/img/loading.svg" data-lazy-src="/img/loading.svg" alt="弹幕加载中..." data-ll-status="loaded" class="entered loaded"></a><div class="img-alt is-center">弹幕加载中...</div>';
-        let barrageTime = ''
-        // 使用twikoo 自带api请求全站数据
-        twikoo.getRecentComments({
-            envId: 'https://twikoo.geekswg.top/', // 环境 ID
-            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
-            pageSize: 64, // 获取多少条，默认：10，最大：100
-            includeReply: true // 是否包括最新回复，默认：false
-        }).then((data) => {
-            data.forEach(i => {
-                if (i.avatar == undefined) i.avatar = 'https://cravatar.cn/avatar/d615d5793929e8c7d70eab5f00f7f5f1?d=mp'
-                ls.push({
-                    img: i.avatar, //图片 
-                    info: i.nick + '：' + formatDanmaku(i.comment), //文字 
-                    href: i.url+'#'+i.id, //链接 
-                    close: true, //显示关闭按钮 
-                    speed: 16, //延迟,单位秒,默认6 
-                    //bottom: 70, //距离底部高度,单位px,默认随机 
-                    color: '#fff', //颜色,默认白色 
-                    old_ie_color: '#000000', //ie低版兼容色,不能与网页背景相同,默认黑色 
-                })
-            });
-            setTimeout(() => { document.getElementById('loading').innerHTML = ''; }, 2000);
-            setInterval(() => {
-                if (Num >= ls.length) Num = 0
-                $('body').barrager(ls[Num]);
-                Num++;
-            }, 1000); // 弹幕间隔时长
-        }).catch(function (err) { console.error(err); });
-    } else {
-        document.getElementById('loading').innerHTML = '<div class="note danger flat"><p>已关闭弹幕功能，请在电脑上查看。</p></div>' // 如果是手机则提醒
-    }
+    // twikooEnVid twikoo服务地址获取所有弹幕
+    openBarrage('https://twikoo.geekswg.top/');
 });
-// 格式化评论
-function formatDanmaku(str) {
-    str = str.replace(/<\/*br>|[\s\uFEFF\xA0]+/g, '');
-    str = str.replace(/<img.*?>/g, '[图片]');
-    str = str.replace(/<a.*?>.*?<\/a>/g, '[链接]');
-    str = str.replace(/<pre.*?>.*?<\/pre>/g, '[代码块]');
-    str = str.replace(/<.*?>/g, '');
-    return str
-}
 </script>
 
 ```
@@ -138,7 +102,10 @@ function formatDanmaku(str) {
 
 [我的留言板-全屏弹幕](/guestbook/)
 
-> 目前已知问题，无法关闭弹幕，别的页面也会一直显示全屏滚动的弹幕。
+> 已经完善,添加开启和关闭弹幕功能按钮。
+
+> ~~目前已知问题，无法关闭弹幕，别的页面也会一直显示全屏滚动的弹幕。~~
+
 
 本文参考：
 * [弹幕升级版——全屏弹幕](https://blog.leonus.cn/2022/barrage.html)
