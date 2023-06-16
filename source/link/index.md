@@ -49,22 +49,15 @@ type: link # 友链页面
 <input type="checkbox" id="checkbox1" onclick="checkForm()">我已添加 <b>本站</b> 博客的友情链接</label></p>
 
 <p><label class="checkbox">
-<input type="checkbox" id="checkbox2" onclick="checkForm()">我的链接主体为 <b>个人</b>，网站类型为<b>博客</b></label></p>
+<input type="checkbox" id="checkbox2" onclick="checkForm()">
+我的链接主体为 <b>个人</b>，网站类型为<b>博客,</b>
+网站内容符合中国大陆法律法规。
+</label></p>
 
 <p><label class="checkbox">
-<input type="checkbox" id="checkbox3" onclick="checkForm()">我的网站现在可以在中国大陆区域正常访问</label></p>
-
-<p>
-  <label class="checkbox">
-    <input type="checkbox" id="checkbox4" onclick="checkForm()">网站内容符合中国大陆法律法规
-  </label>
-</p>
-
-<p>
-  <label class="checkbox">
-    <input type="checkbox" id="checkbox5" onclick="checkForm()">我的网站可以在1分钟内加载完成首屏
-  </label>
-</p>
+<input type="checkbox" id="checkbox3" onclick="checkForm()">
+我的网站现在可以在<b>中国大陆</b>区域正常访问，网站可以在<b>1分钟</b>内加载完成首屏。
+</label></p>
 
 </div>
 
@@ -81,10 +74,9 @@ type: link # 友链页面
         var checkbox1 = document.getElementById("checkbox1");
         var checkbox2 = document.getElementById("checkbox2");
         var checkbox3 = document.getElementById("checkbox3");
-        var checkbox4 = document.getElementById("checkbox4");
-        var checkbox5 = document.getElementById("checkbox5");
+
         var twikooSubmit = document.getElementsByClassName("tk-submit")[0];
-        if (checkbox1.checked && checkbox2.checked && checkbox3.checked && checkbox4.checked && checkbox5.checked) {
+        if (checkbox1.checked && checkbox2.checked && checkbox3.checked ) {
             twikooSubmit.style.opacity = "1";
             twikooSubmit.style.height = "auto";
             twikooSubmit.style.overflow = "auto";
