@@ -866,7 +866,7 @@ aside:
       link: /about/
   card_announcement:
     enable: true
-    content: 但行好事，莫问前程
+    content: <div id="welcome-info"></div>
   #微信公众号
   card_weixin: 
     enable: true
@@ -1265,9 +1265,14 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/custom/custom.css" media="defer" onload="this.media='all'">
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+
+    - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
+    - <script src="/custom/comm/jquery_3.6.0.min.js"></script>
   bottom:
     # 自定义js
     - <script src="/custom/custom.js"></script>
+
+    - <script src="/custom/welcome/welcome.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
