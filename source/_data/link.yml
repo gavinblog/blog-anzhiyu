@@ -81,14 +81,6 @@
   class_desc: 那些人，那些事
   flink_style: anzhiyu
   link_list:
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
     - name: 张洪Heo
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
@@ -103,6 +95,12 @@
       link: https://raxcl.cn
       avatar: https://raxcl.cn/img/avatar.jpg
       descr: 剑未佩妥，出门已是江湖。
+    - name: 慕斯
+      link: https://blog.dd.ac.cn/
+      avatar: https://img02.dd.ac.cn//article/zll.png
+      descr: 风在迷茫中吹来夏天，少年借微光成长
+      siteshot: https://img02.dd.ac.cn//article/siteshot.png
+
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
@@ -267,26 +265,13 @@
       link: https://hexo.geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot:  /imgs/default-cover.webp  
+      siteshot:  /imgs/default-cover.webp
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
       siteshot: /imgs/default-cover.webp
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot:  /imgs/default-cover.webp  
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot: /imgs/default-cover.webp
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot:  /imgs/default-cover.webp  
+
+
  
 
