@@ -1,18 +1,40 @@
 //get请求
-//api 申请地址：https://lbs.qq.com/dev/console/application/
+//api 申请地址：https://lbs.qq.com/dev/console/
+let tecent_location_api = 'https://apis.map.qq.com/ws/location/v1/ip';
+let req_json_data = {
+    key: 'VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ',
+    output: 'jsonp',
+};
+
+function jsonp(url,key,fn){
+    var str  = 'jsonp_' + parseInt((Math.random()*1000)+1000);
+    window[str] = function(data){
+        fn(data)
+    }
+    var script = document.createElement("script");
+    script.src = url + key + "&callback=" + str;
+    document.body.appendChild(script);
+}
+
+jsonp(tecent_location_api,"?key=VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ",function(data){
+    ipLocation = data;
+    alert(111);
+    console.info(data);
+});
+
+document.getElementById("welcome-info").innerHTML = '<div style="text-align:center;" data-fancybox="gallery" data-caption="加载中..." data-thumb="/img/loading.svg"><img src="/imgs/gif/yinyang.gif" data-lazy-src="/img/loading.svg" alt="加载中..." data-ll-status="loaded" class="entered loaded"></div><div class="img-alt is-center">加载中...</div>'
+
 $.ajax({
     type: 'get',
-    url: 'https://apis.map.qq.com/ws/location/v1/ip',
-    data: {
-
-        key: 'VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ',
-        output: 'jsonp',
-    },
+    url: tecent_location_api,
+    data: req_json_data,
     dataType: 'jsonp',
     success: function (res) {
+        console.log('ajax=',res);
         ipLocation = res;
     }
 })
+
 function getDistance(e1, n1, e2, n2) {
     const R = 6371
     const { sin, cos, asin, PI, hypot } = Math
@@ -243,15 +265,15 @@ function showWelcome() {
             当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！
             <br>您的IP地址为：<b><span>${ip}</span></b><br>${timeChange} <br>`;
     } catch (err) {
-         console.log("Pjax无法获取元素")
+        console.log("Pjax无法获取元素")
     }
 }
 
 
-function showWelcomeWithCatch(){
-    try{
+function showWelcomeWithCatch() {
+    try {
         showWelcome();
-    }catch(e){
+    } catch (e) {
         document.getElementById("welcome-info").innerHTML = `<p style="font-family: 楷体;">但行好事，莫问前程！</p`;
         console.error(e);
     }
