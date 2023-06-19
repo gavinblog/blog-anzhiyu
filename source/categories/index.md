@@ -19,7 +19,7 @@ top_img: /imgs/default-cover.webp
  {% galleryGroup Hexo Hexo学习、教程、魔改 '/categories/Hexo/' /imgs/avatar.webp %}
  {% galleryGroup 笔记 记录一些常用的想法和学习过程 '/categories/notes/' /imgs/default-cover.webp %}
  {% galleryGroup AI AI,人工智能数据大模型相关内容 '/categories/ai/' /imgs/default-cover.webp %}
- {% galleryGroup 文章 所有文章 '/posts/' /imgs/avatar.webp %}
+ {% galleryGroup 文章 所有文章 '/archives/' /imgs/avatar.webp %}
 </div>
 
 ***
