@@ -1,28 +1,33 @@
 //get请求
-//api 申请地址：https://lbs.qq.com/dev/console/
-let tecent_location_api = 'https://apis.map.qq.com/ws/location/v1/ip';
 let req_json_data = {
     key: 'VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ',
     output: 'jsonp',
 };
+//经纬度 117.283, 31.8612
+let location_longitude = 117.283;
+let location_latitude = 31.8612;
 
-function jsonp(url,key,fn){
-    var str  = 'jsonp_' + parseInt((Math.random()*1000)+1000);
-    window[str] = function(data){
-        fn(data)
-    }
-    var script = document.createElement("script");
-    script.src = url + key + "&callback=" + str;
-    document.body.appendChild(script);
-}
+//api 申请地址：https://lbs.qq.com/dev/console/ ，控制台，应用管理，创建应用，添加key，WebserviceAPI
+let tecent_location_api = 'https://apis.map.qq.com/ws/location/v1/ip';
 
-jsonp(tecent_location_api,"?key=VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ",function(data){
-    ipLocation = data;
-    alert(111);
-    console.info(data);
-});
 
-document.getElementById("welcome-info").innerHTML = '<div style="text-align:center;" data-fancybox="gallery" data-caption="加载中..." data-thumb="/img/loading.svg"><img src="/imgs/gif/yinyang.gif" data-lazy-src="/img/loading.svg" alt="加载中..." data-ll-status="loaded" class="entered loaded"></div><div class="img-alt is-center">加载中...</div>'
+// function jsonp(url,key,fn){
+//     var str  = 'jsonp_' + parseInt((Math.random()*1000)+1000);
+//     window[str] = function(data){
+//         fn(data)
+//     }
+//     var script = document.createElement("script");
+//     script.src = url + key + "&callback=" + str;
+//     document.body.appendChild(script);
+// }
+
+// jsonp(tecent_location_api,"?key=VOABZ-ICNET-SMUXV-LRCIB-QEFMZ-HHBDJ",function(data){
+//     ipLocation = data;
+//     alert(111);
+//     console.info(data);
+// });
+
+document.getElementById("welcome-info").innerHTML = '<div style="text-align:center;" ><img src="/imgs/gif/yinyang.gif" data-lazy-src="/img/loading.svg" alt="加载中..." data-ll-status="loaded" class="entered loaded"></div><div class="img-alt is-center">加载中...</div>'
 
 $.ajax({
     type: 'get',
@@ -53,7 +58,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    let dist = getDistance(117.283, 31.8612, ipLocation.result.location.lng, ipLocation.result.location.lat); //这里记得换成自己的经纬度
+    let dist = getDistance(location_longitude, location_latitude, ipLocation.result.location.lng, ipLocation.result.location.lat); //这里记得换成自己的经纬度
     let pos = ipLocation.result.ad_info.nation;
     let ip;
     let posdesc;

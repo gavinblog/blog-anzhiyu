@@ -41,7 +41,7 @@ menu:
   
   音乐: /music/?id=8138088068&server=tencent || anzhiyu-icon-music
 
-  随机: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  🔗: /sites/all-sites || anzhiyu-icon-shoe-prints1
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb

@@ -15,6 +15,15 @@ top_img: /imgs/default-cover.webp
 
 ***
 
+<div class="gallery-group-main">
+ {% galleryGroup Hexo Hexo学习、教程、魔改 '/categories/Hexo/' /imgs/avatar.webp %}
+ {% galleryGroup 笔记 记录一些常用的想法和学习过程 '/categories/notes/' /imgs/default-cover.webp %}
+ {% galleryGroup AI AI,人工智能数据大模型相关内容 '/categories/ai/' /imgs/default-cover.webp %}
+ {% galleryGroup 文章 所有文章 '/posts/' /imgs/avatar.webp %}
+</div>
+
+***
+
 <style>
   #libCategories .card-wrap:hover .card-info:after {
     width: 300%;
@@ -60,6 +69,3 @@ top_img: /imgs/default-cover.webp
 <script src='https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js' data-pjax></script>
 <script type="text/javascript" src="https://cdn1.tianli0.top/npm/js-heo@1.0.11/3dCard/no3d.js" data-pjax></script>
 
-<div id="posts-chart" data-start="2006-01" style="height: 300px; padding: 10px;"></div>
-
-<div id="tags-chart" data-length="10" style="height: 300px; padding: 10px;"></div>
