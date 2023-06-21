@@ -263,12 +263,15 @@ function showWelcome() {
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
-            `欢迎来自 <b><span style="color: var(--kouseki-ip-color);font-size: var(--kouseki-gl-size)">${pos}</span></b> 的小友💖<br>
+            `<div title="您的IP地址为：${ip}">
+            ${timeChange} 欢迎来自 <b><span style="color: var(--kouseki-ip-color);font-size: var(--kouseki-gl-size)">${pos}</span></b> 的小友💖
+            当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！
+            <hr />
             <p style="font-size:14px;font-family: 楷体;">
                 <span style="color:red;">『</span> ${posdesc}<span style="color:red;fo;">』</span>
             </p>
-            当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！
-            <br>您的IP地址为：<b><span>${ip}</span></b><br>${timeChange} <br>`;
+            <div>
+            `;
     } catch (err) {
         console.log("Pjax无法获取元素")
     }
