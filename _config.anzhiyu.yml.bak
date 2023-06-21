@@ -2,24 +2,27 @@ menu:
 
   主页: https://home.geekswg.top/ || anzhiyu-icon-link
 
-  AI:
-    自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
-    Stable Diffusion Online: https://stablediffusionweb.com/ || anzhiyu-icon-link
-    文心一言: https://yiyan.baidu.com/ || anzhiyu-icon-link
-    文心一格: https://yige.baidu.com/ || anzhiyu-icon-link
-    WPS-AI: https://ai.wps.cn/ || anzhiyu-icon-link
+  # AI:
+  #   自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
+  #   Stable Diffusion Online: https://stablediffusionweb.com/ || anzhiyu-icon-link
+  #   文心一言: https://yiyan.baidu.com/ || anzhiyu-icon-link
+  #   文心一格: https://yige.baidu.com/ || anzhiyu-icon-link
+  #   WPS-AI: https://ai.wps.cn/ || anzhiyu-icon-link
     
-  导航: 
-    博客-Hugo: https://geekswg.top || anzhiyu-icon-link
-    博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
-    51网页统计: https://v6.51.la/report/overview?comId=287570 || anzhiyu-icon-link
-    Github监控: https://www.githubstatus.com/ || anzhiyu-icon-link
+  # 导航: 
+  #   博客-Hugo: https://geekswg.top || anzhiyu-icon-link
+  #   博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
+  #   51网页统计: https://v6.51.la/report/overview?comId=287570 || anzhiyu-icon-link
+  #   Github监控: https://www.githubstatus.com/ || anzhiyu-icon-link
 
   博客:
     文章: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
+    统计: /charts/ || fa-solid fa-chart-pie fa-spin
     文档: /anzhiyu-docs/ || anzhiyu-icon-book
+    博客-Hugo: https://geekswg.top || anzhiyu-icon-link
+    博客-Hexo: https://hexo.geekswg.top || anzhiyu-icon-link
 
   #友链:
   #  友人帐: /link/ || anzhiyu-icon-link
@@ -30,15 +33,15 @@ menu:
     #About: /about/ || anzhiyu-icon-paper-plane
     友人帐: /link/ || anzhiyu-icon-link
     朋友圈: /fcircle/ || anzhiyu-icon-artstation
-    留言板: /comments/ || anzhiyu-icon-envelope
-    群言堂: /essay/ || anzhiyu-icon-lightbulb
+    留言板: /guestbook/ || anzhiyu-icon-envelope
+    说说: /essay/ || anzhiyu-icon-lightbulb
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-condition/ || anzhiyu-icon-fan
     #追番页: /bangumis/ || anzhiyu-icon-bilibili
   
   音乐: /music/?id=8138088068&server=tencent || anzhiyu-icon-music
 
-  随机: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  🔗: /sites/all-sites || anzhiyu-icon-shoe-prints1
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
@@ -52,64 +55,56 @@ nav:
   travelling: true
   clock: true  # 左上角天气挂件开关
   menu:
-    - title: 网页
+    - title: 站点
       item:
-        - name: 博客
-          link: https://geekswg.top/
-          icon: /imgs/favicon.png #  /img/favicon.png
-        - name: ChatGPT
-          link: https://chat.aichatos.top/
-          icon: 
-          
-    - title: 博客
-      item:
-        - name: 博客
-          link: https://geekswg.top/
-          icon: /imgs/favicon.png #  /img/favicon.png
-        - name: 自建ChatGPT
-          link: http://chatgpt.geekswg.top/
-          icon: 
-    - title: AI大模型
-      item:
-        - name: ChatGPT
-          link: https://chat.openai.com/
-          icon: 
-        - name: AutoChatGPT
-          link: https://github.com/7flash/AutoChatGPT
-          icon: 
-        - name: Bing-图像创建者
-          link: https://bing.com/create
-          icon: 
-        - name: Stable Diffusion Online
-          link: https://stablediffusionweb.com/
-          icon: 
-        - name: 文心一言
-          link: https://yiyan.baidu.com/
-          icon: 
-        - name: 文心一格
-          link: https://yige.baidu.com/
-          icon: 
-        - name: 讯飞星火
-          link: https://xinghuo.xfyun.cn/
-          icon: 
-    
+        - name: 个人主页
+          link: https://home.geekswg.top/
+          icon: /imgs/avatar.webp #  /img/favicon.png
+        - name: 个人导航
+          link: https://nav.geekswg.top/
+          icon: /imgs/avatar.webp #  /img/favicon.png
+        - name: 博客-Hugo
+          link: https://geekswg.js.cool/
+          icon: /imgs/avatar.webp #  /img/favicon.png
+        - name: 博客-Hexo
+          link: http://hexo.geekswg.top/
+          icon: /imgs/avatar.webp
     - title: 常用网址
       item:
         - name: 在线工具
           link: https://tool.lu/
-          icon: /imgs/favicon.png
-        - name: 免费图床
-          link: https://picx.xpoet.cn/
-          icon: /imgs/favicon.png
+          icon: /imgs/avatar.webp
+        - name: 免费图床-Picx
+          link: https://gavinblog.github.io/picx/#/upload
+          icon: /imgs/avatar.webp
+    - title: AI大模型
+      item:
+        - name: ChatGPT
+          link: https://chat.openai.com/
+          icon: /imgs/avatar.webp
+        - name: AutoChatGPT
+          link: https://github.com/7flash/AutoChatGPT
+          icon: /imgs/avatar.webp
+        - name: Bing-图像创建者
+          link: https://bing.com/create
+          icon: /imgs/avatar.webp
+        - name: Stable Diffusion Online
+          link: https://stablediffusionweb.com/
+          icon: /imgs/avatar.webp
         - name: 文心一言
           link: https://yiyan.baidu.com/
-          icon: /imgs/favicon.png
-
-  
+          icon: /imgs/avatar.webp
+        - name: 文心一格
+          link: https://yige.baidu.com/
+          icon: /imgs/avatar.webp
+        - name: 讯飞星火
+          link: https://xinghuo.xfyun.cn/
+          icon: /imgs/avatar.webp
+    
 # Code Blocks (代码相关)
 # --------------------------------------
 # 代码块设置 ， 主题
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -122,7 +117,7 @@ copy:
   enable: true
   copyright:
     enable: true
-    limit_count: 50
+    limit_count: 128
 
 # social settings (社交图标设置)
 # formal:
@@ -130,7 +125,7 @@ copy:
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
   Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
-  RSS: http://geekswg.js.cool/index.xml || anzhiyu-icon-rss
+  RSS: rss.xml || anzhiyu-icon-rss
   BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
   QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
 # 作者状态
@@ -501,15 +496,15 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2011
-  custom_text: copyright@geekswg 2010 ~ Now
+    since: 2006
+  custom_text: CopyRight @ geekswg 2006 ~ Now
   runtime:
     enable: true
-    launch_time: 04/01/2010 13:14:00 # 网站上线时间
-    work_img: /imgs/zhifeiji.gif
+    launch_time: 01/02/2006 15:04:05 # 网站上线时间 go2006-01-02 03:04:05
+    work_img: /imgs/gif/cat.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 但行好事，莫问前程
-    offduty_img: /imgs/zhifeiji.gif
+    offduty_img:  /imgs/gif/tree.gif # https://tool.lu/netcard/ /imgs/gif/yinyang.gif
     #https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
     offduty_description: 天高任鸟飞，海阔凭鱼跃
   # 徽标部分配置项 https://shields.io/
@@ -518,25 +513,26 @@ footer:
     - link: http://geekswg.js.cool/
       shields: https://img.shields.io/badge/Blog-%E6%AF%95%E5%B0%91%E4%BE%A0-yellow
       message: 主页
+    - link: https://github.com/gavinblog/blog-anzhiyu
+      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+      message: 本站项目由Github托管
     - link: https://hexo.io/ #徽标指向网站链接
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
       message: 博客框架为Hexo_v5.4.0 #徽标提示语
     - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git
-      shields: https://pan.anzhiy.cn/d/anzhiyu/svg/Theme-AnZhiYu-2E67D3.svg
+      shields: https://img.shields.io/badge/Hexo--Theme-Anzhiyu-green
       message: 本站使用AnZhiYu主题
     # - link: https://www.dogecloud.com/
     #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
     #   message: 本站使用多吉云为静态资源提供CDN加速
-    - link: https://github.com/gavinblog/blog-anzhiyu
-      shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      message: 本站项目由Github托管
     - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
 
   socialBar:
     enable: true
-    centerImg: /imgs/zhifeiji.gif # 这里的逻辑是，当前设置 > 默认头像
+    # /imgs/gif/cat.gif /imgs/gif/pinwheel-64.gif
+    centerImg: /imgs/gif/ghost.gif # 这里的逻辑是，当前设置 > 默认头像
     left:
       - title: 主页
         link: https://home.geekswg.top
@@ -585,7 +581,7 @@ footer:
           - title: 模板仓库
             link: https://github.com/gavinblog/blog-anzhiyu
           - title: 主题文档
-            link: https://hexo.geekswg.top/anzhiyu-docs/
+            link: https://gavinblog.github.io/anzhiyu-docs/
           - title: 更新日志
             link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu/releases
       #- title: 导航
@@ -610,11 +606,13 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+# https://tongji.baidu.com/main/setting/10000222384/home/site/getjs?siteId=19268804
+baidu_analytics: c78e148e63a5f161b51f3c05d3be3acb
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+# https://analytics.google.com/analytics/web/#/a273233182p383309901/admin/streams/table/
+google_analytics: G-MXDTZ2L2TY
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -626,7 +624,8 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity:
+# https://clarity.microsoft.com/projects
+microsoft_clarity: hhn2or4dz5
 
 # Advertisement
 # --------------------------------------
@@ -647,7 +646,7 @@ google_adsense:
 
 # Verification (站长验证)
 # --------------------------------------
-
+# 
 site_verification:
   - name: google-site-verification
     content: xxx
@@ -663,9 +662,10 @@ site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 # 主题色配置
 theme_color:
-  enable: false
-  cover_change: false
-  main: "#3b70fc" # #3b70fc
+  enable: true
+  cover_change: true
+  #"#3b70fc" # #3b70fc
+  main: "#b04dff"
   dark_main: "transparent" #
   paginator: "#3b70fc"
   #   button_hover: "#FF7242"
@@ -740,7 +740,7 @@ canvas_nest:
   opacity: 1 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: true
+  mobile: false
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -770,7 +770,7 @@ ClickShowText:
     - YOU
   fontSize: 15px
   random: false
-  mobile: false
+  mobile: true
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -821,7 +821,7 @@ subtitle:
   # source: 2  调用一句网（简体） http://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source , 再显示 sub 的内容
-  source: 3
+  source: false
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
     - 莫笑少年江湖梦，谁不少年梦江湖。曾经年少立志三千里，如今踌躇百步无寸功。
@@ -838,7 +838,8 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: /imgs/avatar.webp # 自定义头像
+  # /imgs/avatar.webp # 自定义头像 /imgs/loading/loading.gif
+  avatar: /imgs/loading/loading-8.gif
 
 # aside (侧边栏)
 # --------------------------------------
@@ -857,6 +858,7 @@ aside:
     enable: true
     type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
     description: 人生得意须尽欢，莫使金樽空对月
+    info_background: /imgs/default/transparent.png
     button:
       enable: true
       icon: anzhiyu-icon-arrow-circle-right
@@ -864,12 +866,12 @@ aside:
       link: /about/
   card_announcement:
     enable: true
-    content: 但行好事，莫问前程
+    content: <div id="welcome-info"></div>
   #微信公众号
   card_weixin: 
     enable: true
-    face: /imgs/t.png   #图1
-    backFace: /imgs/bg-waline.webp #图2
+    face: https://tool.lu/netcard/   #图1
+    backFace: /imgs/default/cover3.webp #图2
   card_recent_post:
     enable: true
     limit: 6 # if set 0 will show all
@@ -888,7 +890,7 @@ aside:
     # 高亮显示tags标签
     highlightTags: ["AI","笔记","分享"]
     #  - AI
-    #  - 毕竟
+    #  - 笔记
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -913,7 +915,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2010 13:14:00
+  publish_date: 01/02/2006 15:04:05
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -960,7 +962,7 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: false
-  # 夜间模式开始结束时间
+  # 模式开始结束时间
   start: 8 # 8
   end: 19 # 22
 
@@ -1058,7 +1060,7 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: /imgs/avatar.webp
+  placeholder: /imgs/loading/loading.gif
   blur: true
   progressive: true #>=1.1.10
 
@@ -1093,11 +1095,18 @@ envelope_comment:
     beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
     afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
   message: #信笺正文，多行文本，写法如下
-    - 有什么想问的？
-    - 有什么想说的？
-    - 有什么想吐槽的？
-    - 哪怕是有什么想吃的，都可以告诉我哦~
-  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+    #- 有什么想问的？
+    #- 有什么想说的？
+    #- 有什么想吐槽的？
+    #- 哪怕是有什么想吃的，都可以告诉我哦~
+    -        呆
+    -       秀才
+    -      吃长斋
+    -     胡须满腮
+    -    经书揭不开
+    -   纸笔自己安排
+    -  明年不请我自来
+  bottom: "有朋自远方来，不亦乐乎" #仅支持单行文本
   height: 1024px #1024px，信封划出的高度
   path: comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
@@ -1118,35 +1127,42 @@ home_top:
       path: /categories/notes/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
-      icon: anzhiyu-icon-link
+      icon: fa-solid fa-book-open-reader
     - name: 分享
       path: /categories/share/
       shadow: var(--anzhiyu-shadow-red)
       class: red
-      icon: anzhiyu-icon-shapes
+      icon: fa-solid fa-share-nodes
     - name: AI
       path: /categories/ai/
       shadow: var(--anzhiyu-shadow-green)
       class: green
-      icon: anzhiyu-icon-shapes
+      icon: fa-solid fa-robot
+
   default_descr: default_descr-default_descr
+  
   swiper:
-    enable: true
+    enable: false
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
     swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
+  # 首页轮播 与 swiper 二选一
   banner:
-    tips: 新品主题
-    title: Theme-AnZhiYu
-    image: /imgs/default-cover.webp
-    link: https://anzhiy.cn/docs
+    tips: 春花秋月何时了，往事知多少。
+    title: 问君能有几多愁，恰似一江春水向东流。
+    image: https://tool.lu/netcard/ # /imgs/default/cover4.webp
+    link: https://home.geekswg.top
 
 # 朋友圈配置
 friends_vue:
   enable: true
-  vue_js: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js
-  apiurl:  # 朋友圈后端地址 https://friends.anzhiy.cn/
-  top_background: /imgs/bg-main.webp
+  # https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/js/friends_vue/index.js   /custom/friends-vue-1.0.0.js
+  vue_js: /custom/friends-vue-1.1.2.js
+  # https://geekswg-hexo-friends.vercel.app/ 部署方式 github+sqlite
+  # 朋友圈后端地址 https://friends.anzhiy.cn/ https://friends.geekswg.top/
+  apiurl: https://friends.geekswg.top/
+  #  /imgs/bg-main.webp
+  top_background: /imgs/default/cover4.webp
 
 # 黑色模式粒子效果canvas
 universe:
@@ -1177,9 +1193,9 @@ diytitle:
 comment_barrage_config:
   enable: true
   # 同时最多显示弹幕数
-  maxBarrage: 3
+  maxBarrage: 1
   # 弹幕显示间隔时间ms
-  barrageTime: 60*1000
+  barrageTime: 5*1000
   # token，在控制台中获取
   accessToken: "a237426c5e1099af41370c4b0afe0a3e"
 
@@ -1196,18 +1212,18 @@ nav_music:
 # 评论匿名邮箱
 visitorMail:
   enable: true
-  mail: visitor@anzhiy.cn
+  mail: geekswg@foxmail.com
 
-# 即刻页面配置
-essay:
-  enable: true
-  title: 浮生若梦，为欢几何？
-  subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
-  tips: 使用 即刻短文静态部署版 构建
-  button: About
-  buttonLink: /about/
-  limit: 30
-  top_background: /imgs/t2.webp
+# 即刻页面配置 1.3.0后删除
+# essay:
+#   enable: true
+#   title: 浮生若梦，为欢几何？
+#   subTitle: 弃我去者，昨日之日不可留；乱我心者，今日之日多烦忧
+#   tips: 使用 即刻短文静态部署版 构建
+#   button: About
+#   buttonLink: /about/
+#   limit: 30
+#   top_background: /imgs/default/cover3.png
 
 # ptool 文章底部工具
 ptool:
@@ -1248,9 +1264,15 @@ inject:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/custom/custom.css" media="defer" onload="this.media='all'">
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+
+    - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
+    - <script src="/custom/comm/jquery_3.6.0.min.js"></script>
   bottom:
     # 自定义js
     - <script src="/custom/custom.js"></script>
+
+    - <script src="/custom/welcome/welcome.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1315,7 +1337,10 @@ CDN:
     # aplayer_css:
     # aplayer_js:
     # meting_js:
-    # meting_api:
+    #自定义metingjs-api
+    # https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r
+    # https://api-meting.geekswg.top/api vercel部署
+    meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
