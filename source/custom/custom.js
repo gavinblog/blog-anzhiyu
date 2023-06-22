@@ -1,15 +1,35 @@
-window.onload = function() {
-    Blog.autoSetCopyRight();
+function addLoadEvent(func){   // 多个window.onload共用的封装函数
+    var oldonload=window.onload; 
+    if(typeof window.onload!='function'){ 
+        window.onload=func; 
+    }else{  // 是一个函数的话，把函数都加在onload之下
+        window.onload=function(){ 
+            oldonload(); 
+            func(); 
+        } 
+    } 
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    Blog.hellworld();
+    Blog.setControlIcon();
+});
+
 
 const Blog = {
 
-    autoSetCopyRight: function(){
-        console.info("--- autoSetCopyRight ---");
+    hellworld: function(){
+        console.info("--- Blog.hellowrold() ---");
+    },
+
+    setControlIcon: function(){
+        //需要 配置文件 fontawesome: true #是否启用fontawesome6图标
+        let consoleHtml = document.getElementById('center-console').innerHTML;
+        //alert('center-console => ' + consoleHtml);
+        document.getElementById('center-console').innerHTML = '<i class="fa-brands fa-windows fa-beat-fade"></i>';
     }
-
-
-
 
 }
 

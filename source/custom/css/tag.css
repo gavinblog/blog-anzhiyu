@@ -13,7 +13,7 @@
   }
   @font-face {
     font-family: 'Poem';
-    src: url("https://unpkg.zhimg.com/akilar-candyassets/fonts/Poem.ttf");
+    src: url("/custom/css/楷体_GB2312.ttf");
     font-display: swap;
   }
   .poem p {
