@@ -80,3 +80,113 @@ window.addEventListener('load', (event) => {
     openBarrage('https://twikoo.geekswg.top/');
 });
 </script>
+
+
+{% poem 水调歌头,苏轼 %}
+丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。
+明月几时有？把酒问青天。
+不知天上宫阙，今夕是何年？
+我欲乘风归去，又恐琼楼玉宇，高处不胜寒。
+起舞弄清影，何似在人间？
+
+转朱阁，低绮户，照无眠。
+不应有恨，何事长向别时圆？
+人有悲欢离合，月有阴晴圆缺，此事古难全。
+但愿人长久，千里共婵娟。
+{% endpoem %}
+
+
+<!-- =================================诗词================================= -->
+<style>
+/*诗*/
+.poem-wrap {
+    position: relative;
+    width: 730px;
+    max-width: 80%;
+    border: 2px solid #797979;
+    border-top: none;
+    text-align: center;
+    margin: 80px auto;
+}
+ 
+.poem-wrap h {
+    font-size: 40px;
+    font-style:oblique;
+    position: relative;
+    margin-top: -40px;
+    display: inline-block;
+    letter-spacing: 4px;
+    color: #797979
+}
+ 
+.poem-wrap p {
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+    color: #797979;
+}
+ 
+.poem-wrap p#poem {
+    font-size: 22px;
+    margin: 15px auto;
+}
+ 
+.poem-wrap p#info {
+    font-size: 15px;
+    margin: 15px auto;
+}
+ 
+.poem-border {
+    position: absolute;
+    height: 2px;
+    width: 27%;
+    background-color: #797979;
+}
+ 
+.poem-right {
+    right: 0;
+}
+ 
+.poem-left {
+    left: 0;
+}
+ 
+@media (max-width: 685px) {
+    .poem-border {
+        width: 18%;
+    }
+}
+ 
+@media (max-width: 500px) {
+    .poem-wrap {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        border-top: 2px solid #797979;
+    }
+ 
+    .poem-wrap h {
+        margin: 20px 6px;
+    }
+ 
+    .poem-border {
+        display: none;
+    }
+}
+</style>
+<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h>今日诗词</h>
+    <p id="poem">挑选中...</p>
+    <p id="info">
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      poem.innerHTML = result.data.content
+      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      document.getElementById("poem").value(poem);
+      document.getElementById("info").value(info);  
+  });
+  </script>
+</div>
+<!-- =================================诗词================================= -->

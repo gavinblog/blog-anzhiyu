@@ -1263,7 +1263,9 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/custom/css/tag.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/custom/custom.css" media="defer" onload="this.media='all'">
+
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
 
     - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
