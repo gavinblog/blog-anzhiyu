@@ -18,6 +18,7 @@
         server: tencent
         id: 000YkWcp1hJLdZ
       image:
+        - /imgs/bg-main.webp
         - https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images
         - https://api.btstu.cn/sjbz/api.php?lx=suiji&format=images
         - https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images
