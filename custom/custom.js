@@ -10,12 +10,12 @@ function addLoadEvent(func){   // 多个window.onload共用的封装函数
     } 
 }
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
     Blog.hellworld();
-    Blog.setControlIcon();
+    setInterval(Blog.setControlIcon,5*1000);
 });
+
 
 
 const Blog = {
@@ -25,13 +25,20 @@ const Blog = {
     },
 
     setControlIcon: function(){
+        console.info(new Date() + ': setControlIcon');
         //需要 配置文件 fontawesome: true #是否启用fontawesome6图标
-        let consoleHtml = document.getElementById('center-console').innerHTML;
+        let consoleHtml = document.getElementById('center-console').innerHTML || '';
         //alert('center-console => ' + consoleHtml);
-        document.getElementById('center-console').innerHTML = '<i class="fa-brands fa-windows fa-beat-fade"></i>';
+        if (consoleHtml.indexOf('fa-windows')<0){
+            console.info("--- Blog.setControlIcon() ---");
+            document.getElementById('center-console').innerHTML = '<i class="fa-brands fa-windows fa-beat-fade"></i>';
+        }
+        
     }
 
 }
+
+document.addEventListener('pjax:complete', Blog.setControlIcon);
 
 
 // 自定义 metingjs-api
