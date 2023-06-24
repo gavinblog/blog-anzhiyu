@@ -1,6 +1,6 @@
 
 - class_name: Demo1-Type1-样式1
-  path_name: /album-1
+  path_name: /album/album-1
   type: 1
   description: 君不见黄河之水天上来，奔流到海不复回。🌇。
   cover: /imgs/default/tm.png
@@ -47,7 +47,7 @@
         - /imgs/404.gif
 
 - class_name: Demo-样式2
-  path_name: /album-2
+  path_name: /album/album-2
   type: 2
   description: Album-Demo-Type2 - description。
   cover: /imgs/default/tm2.png
@@ -77,7 +77,7 @@
         - /imgs/404.gif
 
 - class_name: Demo3-Type2-样式2
-  path_name: /album-3
+  path_name: /album/album-3
   type: 2
   description: 大江东去，浪淘尽，千古风流人物。
   cover: /imgs/default/cover3.png
@@ -107,7 +107,7 @@
         - /imgs/404.gif
 
 - class_name: 秦时明月-Type2-样式2
-  path_name: /album-4
+  path_name: /album/album-4
   type: 2
   description: 如果提出的问题本来就有问题，那答案又有什么意义呢。
   cover: /imgs/default/tm.png
@@ -143,3 +143,50 @@
         - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-21.webp
         - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-22.webp
         - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-23.webp
+
+- class_name: Demo5-Type1-样式1
+  path_name: /album/album-5
+  type: 1
+  description: 人生得意须尽欢
+  cover: /imgs/default/tm.png
+  
+  album_list:
+    - date: 2022/05/20 01:00:00
+      content: 君不见高堂明镜悲白发，朝如青丝暮成雪。
+      address: 华夏 - 神州大地
+      from: XiaoMi MIUI-DEV
+      image:
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-8.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-9.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-10.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-11.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-12.webp
+  
+    - date: 2023-05-10
+      content: 人生得意须尽欢，莫使金樽空对月。
+      address: 华夏 - 神州大地
+      from: RedMi MIUI14
+      image:
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-20.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-21.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-22.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-23.webp
+    - date: 2022/10/26 01:00:00
+      content: 天生我材必有用，千金散尽还复来。
+      address: 华夏 - 神州大地
+      from: From1 - from
+      image:
+        - /imgs/t1.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-17.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-18.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-19.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-20.webp
+
+    - date: 2022-10-25
+      content: 明月几时有，把酒问青天。
+      address: 中华 - 神州
+      from: HuaWei HarmonyOS 3
+      image:
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-3.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-4.webp
+        - https://cdn.staticaly.com/gh/geekswg/static@main/imgs/qsmy/qsmy-5.webp
