@@ -433,7 +433,7 @@ valine:
 # https://waline.js.org/  https://waline.geekswg.top
 waline:
   serverURL: https://waline.geekswg.top # https://geek-waline.zeabur.app # Waline server address url
-  bg: /imgs/zhifeiji.webp # waline background
+  bg: /imgs/zhifeiji.gif # waline background
   pageview: true
   option:
     meta: ["nick", "mail", "link"]
