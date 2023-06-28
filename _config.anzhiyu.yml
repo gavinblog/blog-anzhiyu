@@ -1,6 +1,6 @@
 menu:
 
-  主页: https://home.geekswg.top/ || anzhiyu-icon-link
+  🏠: https://home.geekswg.top/ || anzhiyu-icon-link
 
   # AI:
   #   自建ChatGPT: http://chatgpt.geekswg.top/ || anzhiyu-icon-link
@@ -41,13 +41,13 @@ menu:
   
   音乐: /music/?id=8138088068&server=tencent || anzhiyu-icon-music
 
-  🔗: /sites/all-sites || anzhiyu-icon-shoe-prints1
+  🌐: /sites/all-sites || anzhiyu-icon-shoe-prints1
   #关于:
   #  关于本人: /about/ || anzhiyu-icon-paper-plane
   #  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
   #  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1  
 
-  ​毕少侠: /about/ || anzhiyu-icon-shoe-prints1
+  🧑‍💻: /about/ || anzhiyu-icon-shoe-prints1
 
 # nav相关配置 
 nav:
