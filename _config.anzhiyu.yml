@@ -385,7 +385,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Twikoo # 评论插件 Valine/Waline/Twikoo/Artalk
+  use: Twikoo,Waline # 评论插件 Valine/Waline/Twikoo/Artalk
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -430,10 +430,10 @@ valine:
 
 # waline 评论插件配置
 # waline - A simple comment system with backend support fork from Valine
-# https://waline.js.org/
+# https://waline.js.org/  https://waline.geekswg.top
 waline:
-  serverURL: https://geek-waline.zeabur.app # Waline server address url
-  bg: /imgs/bg-waline.webp # waline background
+  serverURL: https://waline.geekswg.top # https://geek-waline.zeabur.app # Waline server address url
+  bg: /imgs/zhifeiji.webp # waline background
   pageview: true
   option:
     meta: ["nick", "mail", "link"]
