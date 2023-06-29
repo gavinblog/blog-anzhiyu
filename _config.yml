@@ -189,12 +189,12 @@ bangumi: # 追番设置
 # Security
 encrypt: # hexo-blog-encrypt
   abstract: 有东西被加密了, 请输入密码查看.
-  message: 您好, 这里需要密码[提示：demo].
+  message: 您好, 这里需要密码.
   # 加密指定tag 只要文章包含了该tag都会被加密，
   #如果特定一篇不需要加密可以在文章头部front-matter中添加[password: '']
   tags:
     - {name: encrypt, password: 1234}
-    - {name: demo, password: demo}
+    - {name: tagName, password: pwd}
   # default blink shrink flip up surge wave xray
   theme: shrink
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
