@@ -5023,21 +5023,26 @@ span.categoryes-punctuation .icon-biaoqian {
   background-color: #ff5e5c;
   color: #fff;
 }
-body[data-type="tags"] #page {
+body[data-type="tags"] #page,
+body[data-type="categories"] #page {
   border-radius: 12px;
 }
 @media screen and (max-width: 768px) {
-  body[data-type="tags"] #page #tag {
+  body[data-type="tags"] #page #tag,
+  body[data-type="categories"] #page #tag {
     padding: 0px 15px 20px;
   }
-  body[data-type="tags"] #page .page-title {
+  body[data-type="tags"] #page .page-title,
+  body[data-type="categories"] #page .page-title {
     margin: 8px 0 0px;
   }
 }
-body[data-type="tags"] #body-wrap .layout {
+body[data-type="tags"] #body-wrap .layout,
+body[data-type="categories"] #body-wrap .layout {
   padding: 20px 15px;
 }
-body[data-type="tags"] #tag #tag-page-tags {
+body[data-type="tags"] #tag #tag-page-tags,
+body[data-type="categories"] #tag #tag-page-tags {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
@@ -5045,12 +5050,14 @@ body[data-type="tags"] #tag #tag-page-tags {
   -webkit-justify-content: center;
   justify-content: center;
 }
-body[data-type="tags"] #tag #tag-page-tags a {
+body[data-type="tags"] #tag #tag-page-tags a,
+body[data-type="categories"] #tag #tag-page-tags a {
   font-size: 1.4rem;
   margin: 0.3rem 0.65rem;
 }
 @media screen and (max-width: 768px) {
-  body[data-type="tags"] #tag #tag-page-tags a {
+  body[data-type="tags"] #tag #tag-page-tags a,
+  body[data-type="categories"] #tag #tag-page-tags a {
     font-size: 1.8rem;
     margin: 0.6rem 0.8rem;
   }
