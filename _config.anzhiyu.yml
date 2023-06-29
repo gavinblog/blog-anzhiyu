@@ -1238,6 +1238,32 @@ ptool:
 # 欢迎语配置
 greetingBox:
   enable: true
+  default: Hello World
+  list:
+    - greeting: 🌉晚安,好梦😴
+      startTime: 0
+      endTime: 5
+    - greeting: 🌅早上好鸭, 祝你一天好心情！
+      startTime: 6
+      endTime: 9
+    - greeting: 🧑‍💻上午好, 状态很好，鼓励一下～
+      startTime: 10
+      endTime: 10
+    - greeting: 🕚11点多啦, 在坚持一下就吃饭啦～
+      startTime: 11
+      endTime: 11
+    - greeting: ☀️午安, 宝贝该午休了🥱
+      startTime: 12
+      endTime: 14
+    - greeting: 💻充实的一天辛苦啦！
+      startTime: 14
+      endTime: 18
+    - greeting: 🛸下班啦, 奖励一顿丰盛的大餐吧🍔。
+      startTime: 19
+      endTime: 19
+    - greeting: 🌃晚上好, 在属于自己的时间好好放松😌~
+      startTime: 20
+      endTime: 24
 
 # 文章顶部ai摘要
 post_head_ai_description:
