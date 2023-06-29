@@ -8,9 +8,8 @@
 
 > **Warning** 本仓库是 模板仓库，方便大家快速开始使用
 
-预览地址： [https://hexo.geekswg.top/](https://hexo.geekswg.top/) 
-hexo-theme-anzhiyu 主题的 模板仓库.  
-hexo-thwme-anzhiyu,主题，适合新手，快速入门，搭建。
+预览地址： [https://hexo.geekswg.top/](https://hexo.geekswg.top/)
+基于[hexo-theme-anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu) 主题的 模板仓库. 适合新手，快速入门，搭建。
 
 基于dev分支，可自行更换分支，快速便捷。
 
