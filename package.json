@@ -18,6 +18,7 @@
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-bilibili-bangumi-anzhiyu": "^1.8.2",
+    "hexo-blog-encrypt": "^3.1.9",
     "hexo-butterfly-envelope": "^1.0.15",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
