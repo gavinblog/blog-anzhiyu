@@ -56,12 +56,23 @@ jobs:
           npm install --save hexo-generator-feed
           npm ls --depth 0
 
+          #gulp
+          npm install --global gulp-cli #全局安装gulp指令集
+          npm install gulp --save #安装gulp插件
+          npm install gulp-htmlclean --save-dev
+          npm install gulp-html-minifier-terser --save-dev
+          # 用gulp-html-minifier-terser可以压缩HTML中的ES6语法
+          npm install gulp-clean-css --save-dev
+          npm install gulp-terser --save-dev
+
+
       # hexo 编译生成网站
       - name: Generate files
         # 编译 markdown 文件
         run: |
           hexo clean
           hexo generate
+          gulp
 
       # 自动发布到当前仓库的gh-pages分支，如需部署到其它仓库的，参考下面文档修改配置即可
       # 更多高级用法查看文档，https://github.com/peaceiris/actions-gh-pages
