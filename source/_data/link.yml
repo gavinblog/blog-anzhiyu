@@ -38,6 +38,12 @@
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
       siteshot:  /imgs/default-cover.webp
+    
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      descr: Future is now 🍭🍭🍭
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
     - name: Tianli
       link: https://tianli-blog.club
       avatar: https://img1.tianli0.top/logo.png
@@ -91,6 +97,11 @@
       avatar: https://blog.eurkon.com/images/user/avatar.jpg
       descr: 及时当勉励，岁月不待人。
       siteshot:  /imgs/default-cover.webp
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      descr: Future is now 🍭🍭🍭
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
     - name: raxcl
       link: https://raxcl.cn
       avatar: https://raxcl.cn/img/avatar.jpg

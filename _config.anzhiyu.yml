@@ -1298,11 +1298,15 @@ inject:
 
     - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
     - <script src="/custom/comm/jquery_3.6.0.min.js"></script>
+
   bottom:
     # 自定义js
     - <script src="/custom/custom.js"></script>
-
     - <script src="/custom/welcome/welcome.js"></script>
+
+    - <span id="fps"></span> # 帧率检测
+    - <link rel="stylesheet" href="/custom/fps/fps.css" media="defer" onload="this.media='all'">
+    - <script src="/custom/fps/fps.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
