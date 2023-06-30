@@ -12724,6 +12724,231 @@ kbd {
   height: 1.1em;
   vertical-align: text-bottom;
 }
+.introduction-card {
+  position: relative;
+}
+.introduction-card-bottom {
+  background-color: transparent;
+  color: inherit;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.introduction-card:active .introduction-card-bottom {
+  background-color: var(--anzhiyu-main);
+  color: #fff;
+}
+.introduction-card:active .introduction-card-bottom .left .info .subTitle {
+  color: #fff !important;
+}
+.introduction-card:active .introduction-card-bottom {
+  -webkit-animation: resetAnimation 3s 1s forwards;
+  -moz-animation: resetAnimation 3s 1s forwards;
+  -o-animation: resetAnimation 3s 1s forwards;
+  -ms-animation: resetAnimation 3s 1s forwards;
+  animation: resetAnimation 3s 1s forwards;
+}
+.introduction-card {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 15px;
+  -webkit-box-shadow: var(--anzhiyu-shadow-blackdeep);
+  box-shadow: var(--anzhiyu-shadow-blackdeep);
+  height: 520px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .introduction-card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduction-card {
+    width: 100%;
+  }
+}
+.introduction-card:active {
+  -webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -o-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+}
+.introduction-card .introduction-card-top {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.introduction-card .introduction-card-top .int-card-info {
+  position: absolute;
+  padding: 20px;
+}
+.introduction-card .introduction-card-top .int-card-info .int-tip {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--anzhiyu-white);
+}
+.introduction-card .introduction-card-top .int-card-info .int-cardTitle {
+  font-size: 36px;
+  color: var(--anzhiyu-white);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.introduction-card .introduction-card-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px !important;
+  margin: 0 !important;
+}
+.introduction-card .introduction-card-bottom {
+  height: 20%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+.introduction-card .introduction-card-bottom .left {
+  width: 70%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.introduction-card .introduction-card-bottom .left .info {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.introduction-card .introduction-card-bottom .left .info .title {
+  font-weight: 600;
+  line-height: 26px;
+}
+.introduction-card .introduction-card-bottom .left .info .subTitle {
+  line-height: 14px;
+  font-size: 14px;
+  color: var(--anzhiyu-gray);
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.introduction-card .introduction-card-bottom .left img {
+  width: 2.875rem;
+  height: 2.875rem;
+  margin: 0 20px !important;
+  border-radius: 12px !important;
+}
+.introduction-card .introduction-card-bottom .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.introduction-card .introduction-card-bottom .right a {
+  width: 100%;
+  text-align: center;
+  background: #efeef2;
+  color: var(--anzhiyu-main) !important;
+  border-radius: 50px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 20px;
+}
+.introduction-card .introduction-card-bottom .right a:hover {
+  background: var(--anzhiyu-main);
+  color: var(--anzhiyu-white) !important;
+}
+@-moz-keyframes resetAnimation {
+  0% {
+    background-color: var(--anzhiyu-main);
+    color: #fff;
+  }
+  100% {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+@-webkit-keyframes resetAnimation {
+  0% {
+    background-color: var(--anzhiyu-main);
+    color: #fff;
+  }
+  100% {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+@-o-keyframes resetAnimation {
+  0% {
+    background-color: var(--anzhiyu-main);
+    color: #fff;
+  }
+  100% {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+@keyframes resetAnimation {
+  0% {
+    background-color: var(--anzhiyu-main);
+    color: #fff;
+  }
+  100% {
+    background-color: transparent;
+    color: inherit;
+  }
+}
 .hl-label {
   padding: 2px 4px;
   border-radius: 3px;
@@ -14865,6 +15090,9 @@ body[data-type="about"] #web_bg {
   bottom: -40%;
   transform: rotate(30deg);
   transition: 2s ease-in-out;
+}
+.card-background-icon i {
+  font-size: 12rem;
 }
 .author-content-item.game-yuanshen {
   background-size: cover;
