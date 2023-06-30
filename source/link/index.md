@@ -51,7 +51,7 @@ type: link # 友链页面
 <p><label class="checkbox">
 <input type="checkbox" id="checkbox2" onclick="checkForm()">
 我的链接主体为 <b>个人</b>，网站类型为<b>博客,</b>
-网站内容符合中国大陆法律法规。
+网站内容符合<b>中国大陆法律法规</b>。
 </label></p>
 
 <p><label class="checkbox">

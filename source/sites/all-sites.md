@@ -41,6 +41,12 @@ top_img: /imgs/default-cover.webp
   class_desc: 值得推荐的网站
   flink_style: anzhiyu
   link_list:
+
+    - name: ImagesTool
+      link: https://imagestool.com/zh_CN/index.html
+      avatar: /imgs/avatar.webp
+      descr: 图片处理
+
     - name: Youtube
       link: https://www.youtube.com/
       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
