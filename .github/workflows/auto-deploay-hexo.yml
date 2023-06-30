@@ -59,11 +59,15 @@ jobs:
           #gulp
           npm install --global gulp-cli #全局安装gulp指令集
           npm install gulp --save #安装gulp插件
+          # 用gulp-html-minifier-terser可以压缩HTML中的ES6语法
           npm install gulp-htmlclean --save-dev
           npm install gulp-html-minifier-terser --save-dev
-          # 用gulp-html-minifier-terser可以压缩HTML中的ES6语法
+          # 压缩css
           npm install gulp-clean-css --save-dev
+          # 压缩js
           npm install gulp-terser --save-dev
+          # 压缩字体
+          npm install gulp-fontmin --save-dev
 
 
       # hexo 编译生成网站
