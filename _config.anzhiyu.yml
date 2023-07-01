@@ -1309,6 +1309,11 @@ inject:
     - <link rel="stylesheet" href="/custom/fps/fps.css" media="defer" onload="this.media='all'">
     - <script src="/custom/fps/fps.js"></script>
 
+    # 公祭日和节日弹框
+    - <script defer type="text/javascript" src="/custom/dayalert/sweetalert2.all.js"></script> # 节日弹窗依赖
+    - <script defer src="/custom/dayalert/lunar.js"></script> # 农历计算
+    - <script defer src="/custom/dayalert/day.js"></script> # 节日弹窗
+
 
 # CDN
 # Don't modify the following settings unless you know how they work
