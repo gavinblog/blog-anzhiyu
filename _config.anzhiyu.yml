@@ -674,7 +674,7 @@ theme_color:
   text_selection: "#2128bd"
   link_color: "var(--anzhiyu-fontcolor)"
   meta_color: "var(--anzhiyu-fontcolor)"
-  #   hr_color: "#A4D8FA"
+  hr_color: "#4259ef23"
   code_foreground: "#fff"
   code_background: "var(--anzhiyu-code-stress)"
   toc_color: "#3b70fc"
@@ -868,7 +868,7 @@ aside:
       link: /about/
   card_announcement:
     enable: true
-    content: <div id="welcome-info"></div>
+    content: '<div id="welcome-info"></div>'
   #微信公众号
   card_weixin: 
     enable: true
@@ -1282,7 +1282,12 @@ post_head_ai_description:
 # 快捷键配置 >=1.1.10 增加功能
 shortcutKey:
   enable: true
-  delay: 100 # shift按下延时多久开启
+  delay: 100 # 所有键位延时触发而不是立即触发（包括shift，以解决和浏览器键位冲突问题）
+  shiftDelay: 200 # shift按下延时多久开启
+
+# 无障碍优化（在首页按下「shift + ?」以查看效果）
+accesskey:
+  enable: true
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -1299,6 +1304,7 @@ inject:
     - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
     - <script src="/custom/comm/jquery_3.6.0.min.js"></script>
 
+    
   bottom:
     # 自定义js
     - <script src="/custom/custom.js"></script>
@@ -1313,6 +1319,12 @@ inject:
     - <script defer type="text/javascript" src="/custom/dayalert/sweetalert2.all.js"></script> # 节日弹窗依赖
     - <script defer src="/custom/dayalert/lunar.js"></script> # 农历计算
     - <script defer src="/custom/dayalert/day.js"></script> # 节日弹窗
+
+    # - <link rel="stylesheet" href="/custom/history/swiper-bundle.min-9.4.1.css">
+    # - <link rel="stylesheet" href="/custom/history/baiduhistory_main.css">
+    # - <script src="/custom/history/swiper-bundle.min-9.4.1.js"></script>
+    # - <script src="/custom/history/baiduhistory_main.js"></script>
+    
 
 
 # CDN
@@ -1395,3 +1407,4 @@ CDN:
     # rightmenu:
     # waterfall:
     # ali_iconfont_css:
+    # accesskey_js:
