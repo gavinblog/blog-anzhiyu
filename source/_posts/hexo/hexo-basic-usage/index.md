@@ -1,6 +1,6 @@
 ---
 title: Hexo常用命令
-categories: Hexo
+categories: hexo
 tags:
   - Hexo
   - demo

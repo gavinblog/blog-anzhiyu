@@ -1,6 +1,6 @@
 ---
 title: Hexo添加RSS订阅
-categories: Hexo
+categories: hexo
 tags:
   - Hexo
   - demo

@@ -1,6 +1,6 @@
 ---
 title: Hexo-留言板全屏弹幕滚动-Twikoo
-categories: Hexo
+categories: hexo
 tags:
   - Hexo
   - Twikoo

@@ -1,6 +1,6 @@
 ---
 title: Hexo主题及Anzhiyu常见问题处理
-categories: Hexo
+categories: hexo
 tags:
   - Hexo
   - Hexo-Theme-Anzhiyu
