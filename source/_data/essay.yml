@@ -8,6 +8,15 @@
   home_essay: true
   top_background: "/imgs/default/cover4.webp"
   essay_list:
+      - content: 永日不可暮，炎蒸毒我肠。安得万里风，飘飖吹我裳。-杜甫《夏夜叹》
+      date: 2023/07/04 22:23:01
+      image:
+        - https://www.todaybing.com/api/today/cn
+        
+      - content: 大鹏一日同风起，扶摇直上九万里。
+      date: 2023/07/02 18:12:10
+      image:
+        - http://imgapi.xl0408.top/index.php
 
     - content: '黄梅雨
 清代 ： 秦廷璧
