@@ -954,6 +954,10 @@ translate:
 # Read Mode (閲读模式)
 readmode: true
 
+
+# 中控台
+centerConsole: true
+
 # dark mode 夜间模式 
 # light显示有点小问题，建议使用dark模式
 darkmode:
