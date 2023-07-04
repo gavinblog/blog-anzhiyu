@@ -4,6 +4,7 @@
   type: 1
   description: 君不见黄河之水天上来，奔流到海不复回。🌇。
   cover: /imgs/default/tm.png
+  top_background: /imgs/default/tm.png
   
   album_list:
     - date: 2022/05/20 01:00:00
@@ -49,6 +50,7 @@
   type: 2
   description: Album-Demo-Type2 - description。
   cover: /imgs/default/tm2.png
+  top_background: /imgs/default/tm.png
   rowHeight: 220
   limit: 10
   lazyload: true
@@ -79,6 +81,7 @@
   type: 2
   description: 大江东去，浪淘尽，千古风流人物。
   cover: /imgs/default/cover3.png
+  top_background: /imgs/bg-main.webp
   rowHeight: 220
   limit: 10
   lazyload: true
