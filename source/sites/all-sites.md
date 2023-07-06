@@ -35,7 +35,13 @@ top_img: /imgs/default-cover.webp
       link: https://nav.geekswg.top/
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的网址导航，由Hugo驱动。
-      siteshot:  /imgs/default-cover.webp  
+      siteshot:  /imgs/default-cover.webp
+    - name: 51统计
+      link: https://v6.51.la/report/visit_detail?comId=287570
+      avatar: /imgs/avatar.webp
+      descr: 免费、易用、专业的网站数据统计与营销分析平台实时监测，精准洞察，专注用户行为分析，助力业务增长
+      siteshot:  /imgs/default-cover.webp 
+
 
 - class_name: 网站
   class_desc: 值得推荐的网站
@@ -77,6 +83,18 @@ top_img: /imgs/default-cover.webp
 ## Timeline
 
 {% timeline 毕少侠,green %}
+
+<!-- timeline 2023-07-04 -->
+[我的装备](https://hexo.geekswg.top/pages/equipment.html)
+<!-- endtimeline -->
+
+<!-- timeline 2023-06-06 -->
+[留言板-全屏弹幕](https://hexo.geekswg.top/guestbook/)
+<!-- endtimeline -->
+
+<!-- timeline 2023-05-28 -->
+[文章统计](https://hexo.geekswg.top/charts/)
+<!-- endtimeline -->
 
 <!-- timeline 2022-01-02 -->
 [Hexo-Blog](http://hexo.geekswg.top/)
