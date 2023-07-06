@@ -7,24 +7,414 @@ tags:
   - demo
   - Hexo
   - Hexo-Theme-Anzhiyu
-ai:
-  - >-
-    这篇文章介绍了安知鱼主题标签Tag
-    Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字。此外，安知鱼还提供了一些Tag
-    Plugins相关的服务，如搜索和热门标签推荐等。
-  - >-
-    这篇文章介绍了安知鱼主题标签Tag
-    Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字，可以用于文章内快速书写相应格式的html
-  - 这篇文章介绍了安知鱼主题标签，在hexo主题AnZhiYu中可以使用Tag Plugins快速完成对应的标签生成书写。
-copyright_author: 安知鱼-Anzhiyu
 abbrlink: c6e7
 date: 2023-06-08 17:16:45
-description:
+
+description:这篇文章介绍了安知鱼主题标签Tag Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字。此外，安知鱼还提供了一些Tag Plugins相关的服务，如搜索和热门标签推荐等。
+copyright: true
+copyright_author: 安知鱼
+copyright_author_href: https://blog.anheyu.com/
+copyright_url: https://blog.anheyu.com/posts/d50a.html
+ai: 
+  - "这篇文章介绍了安知鱼主题标签Tag Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字。此外，安知鱼还提供了一些Tag Plugins相关的服务，如搜索和热门标签推荐等。"
+  - 这篇文章介绍了安知鱼主题标签Tag Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字，可以用于文章内快速书写相应格式的html
+  - 这篇文章介绍了安知鱼主题标签，在hexo主题AnZhiYu中可以使用Tag Plugins快速完成对应的标签生成书写。
 ---
 
 {% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}
 `AnZhiYu主题`中大部分标签移植于[店长](https://akilar.top/)的[hexo-butterfly-tag-plugins-plus](https://www.npmjs.com/package/hexo-butterfly-tag-plugins-plus)，转载请注明来自[安知鱼](https://blog.anheyu.com/posts/d50a.html)
 {% endnote %}
+
+## 段落文本 p
+
+{% tabs p,3 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% p 样式参数(参数以空格划分), 文本内容 %}
+```
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 字体: logo, code
+2. 颜色: {% span red, red %},{% span yellow, yellow %},{% span green, green %},{% span cyan, cyan %},{% span blue, blue %},{% span gray, gray %}
+3. 大小: small, h4, h3, h2, h1, large, huge, ultra
+4. 对齐方向: left, center, right
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
+  <!-- endtab -->
+  <!-- tab 示例源码 -->
+
+```markdown
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
+```
+
+<!-- endtab -->
+
+{% endtabs%}
+
+## 行内文本 span
+
+{% tabs span,3 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% span 样式参数(参数以空格划分), 文本内容 %}
+```
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. 字体: logo, code
+2. 颜色: {% span red, red %},{% span yellow, yellow %},{% span green, green %},{% span cyan, cyan %},{% span blue, blue %},{% span gray, gray %}
+3. 大小: small, h4, h3, h2, h1, large, huge, ultra
+4. 对齐方向: left, center, right
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
+  <!-- endtab -->
+  <!-- tab 示例源码 -->
+
+```markdown
+- 彩色文字
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+- 超大号文字
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
+```
+
+<!-- endtab -->
+
+{% endtabs%}
+
+## 行内文本样式 text
+
+{% tabs text,2 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% u 文本内容 %}
+{% emp 文本内容 %}
+{% wavy 文本内容 %}
+{% del 文本内容 %}
+{% kbd 文本内容 %}
+{% psw 文本内容 %}
+```
+
+<!-- endtab -->
+<!-- tab 样式预览 -->
+
+1. 带 {% u 下划线 %} 的文本
+2. 带 {% emp 着重号 %} 的文本
+3. 带 {% wavy 波浪线 %} 的文本
+4. 带 {% del 删除线 %} 的文本
+5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
+6. 密码样式的文本：{% psw 这里没有验证码 %}
+   <!-- endtab -->
+   <!-- tab 示例源码 -->
+
+```markdown
+1. 带 {% u 下划线 %} 的文本
+2. 带 {% emp 着重号 %} 的文本
+3. 带 {% wavy 波浪线 %} 的文本
+4. 带 {% del 删除线 %} 的文本
+5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
+6. 密码样式的文本：{% psw 这里没有验证码 %}
+```
+
+<!-- endtab -->
+
+{% endtabs%}
+
+## 分栏 tab
+
+{% note blue 'anzhiyufont anzhiyu-icon-bullhorn' simple %}
+分栏支持内置阿里图标，如果开启了 `fontawesome`可以使用 fontawesome 的图标，否则只能使用默内置阿里图标
+{% endnote %}
+
+{% tabs folding,3 %}
+
+<!-- tab 标签语法 -->
+
+```markdown
+{% tabs Unique name, [index] %}
+
+<!-- tab [Tab caption] [@icon] -->
+
+Any content (support inline tags too).
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+<!-- endtab -->
+<!-- tab 配置参数 -->
+
+1. Unique name :
+   - 选项卡块标签的唯一名称，不带逗号。
+   - 将在#id 中用作每个标签及其索引号的前缀。
+   - 如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。
+   - 仅当前帖子/页面的 URL 必须是唯一的！
+2. [index]:
+   - 活动选项卡的索引号。
+   - 如果未指定，将选择第一个标签（1）。
+   - 如果 index 为-1，则不会选择任何选项卡。
+   - 可选参数。
+3. [Tab caption]:
+   - 当前选项卡的标题。
+   - 如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。
+   - 如果未指定标题，但指定了图标，则标题将为空。
+   - 可选参数。
+4. [@icon]: - FontAwesome 图标名称（全名，看起来像“ fas fa-font”） - 可以指定带空格或不带空格； - 例如'Tab caption @icon' 和 'Tab caption@icon'. - 可选参数。
+   <!-- endtab -->
+   <!-- tab 样式预览 -->
+
+{% note primary %}
+Demo 1 - 预设选择第一个【默认】
+{% endnote %}
+
+{% tabs test1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+
+{% note primary %}
+Demo 2 - 预设选择 tabs
+{% endnote %}
+
+{% tabs test2, 3 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+
+{% note primary %}
+Demo 3 - 没有预设值
+{% endnote %}
+
+{% tabs test3, -1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+
+{% note primary %}
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+{% endnote %}
+
+{% tabs test4 %}
+
+<!-- tab 第一个Tab -->
+
+**tab 名字为第一个 Tab**
+
+<!-- endtab -->
+
+<!-- tab @anzhiyufont anzhiyu-icon-oranges -->
+
+**只有图标 没有 Tab 名字**
+
+<!-- endtab -->
+
+<!-- tab 炸弹@anzhiyufont anzhiyu-icon-oranges -->
+
+**名字+icon**
+
+<!-- endtab -->
+
+{% endtabs %}
+
+<!-- endtab -->
+<!-- tab 示例源码 -->
+
+{% note primary %}
+Demo 1 - 预设选择第一个【默认】
+{% endnote %}
+
+```markdown
+{% tabs test1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+{% note primary %}
+Demo 2 - 预设选择 tabs
+{% endnote %}
+
+```markdown
+{% tabs test2, 3 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+{% note primary %}
+Demo 3 - 没有预设值
+{% endnote %}
+
+```markdown
+{% tabs test3, -1 %}
+
+<!-- tab -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+{% note primary %}
+Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+{% endnote %}
+
+```markdown
+{% tabs test4 %}
+
+<!-- tab 第一个Tab -->
+
+**tab 名字为第一个 Tab**
+
+<!-- endtab -->
+
+<!-- tab @fab fa-apple-pay -->
+
+**只有图标 没有 Tab 名字**
+
+<!-- endtab -->
+
+<!-- tab 炸弹@fas fa-bomb -->
+
+**名字+icon**
+
+<!-- endtab -->
+
+{% endtabs %}
+```
+
+<!-- endtab -->
+
+{% endtabs%}
 
 ## 按钮 btns
 
@@ -2046,130 +2436,6 @@ Any content (support inline tags too.io).
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
-```
-
-<!-- endtab -->
-
-{% endtabs%}
-
-## 段落文本 p
-
-{% tabs p,3 %}
-
-<!-- tab 标签语法 -->
-
-```markdown
-{% p 样式参数(参数以空格划分), 文本内容 %}
-```
-
-<!-- endtab -->
-<!-- tab 配置参数 -->
-
-1. 字体: logo, code
-2. 颜色: {% span red, red %},{% span yellow, yellow %},{% span green, green %},{% span cyan, cyan %},{% span blue, blue %},{% span gray, gray %}
-3. 大小: small, h4, h3, h2, h1, large, huge, ultra
-4. 对齐方向: left, center, right
-   <!-- endtab -->
-   <!-- tab 样式预览 -->
-
-- 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
-- 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% p center logo large, Volantis %}
-  {% p center small, A Wonderful Theme for Hexo %}
-  <!-- endtab -->
-  <!-- tab 示例源码 -->
-
-```markdown
-- 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
-- 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% p center logo large, Volantis %}
-  {% p center small, A Wonderful Theme for Hexo %}
-```
-
-<!-- endtab -->
-
-{% endtabs%}
-
-## 行内文本 span
-
-{% tabs span,3 %}
-
-<!-- tab 标签语法 -->
-
-```markdown
-{% span 样式参数(参数以空格划分), 文本内容 %}
-```
-
-<!-- endtab -->
-<!-- tab 配置参数 -->
-
-1. 字体: logo, code
-2. 颜色: {% span red, red %},{% span yellow, yellow %},{% span green, green %},{% span cyan, cyan %},{% span blue, blue %},{% span gray, gray %}
-3. 大小: small, h4, h3, h2, h1, large, huge, ultra
-4. 对齐方向: left, center, right
-   <!-- endtab -->
-   <!-- tab 样式预览 -->
-
-- 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
-- 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% span center logo large, Volantis %}
-  {% span center small, A Wonderful Theme for Hexo %}
-  <!-- endtab -->
-  <!-- tab 示例源码 -->
-
-```markdown
-- 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
-- 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% span center logo large, Volantis %}
-  {% span center small, A Wonderful Theme for Hexo %}
-```
-
-<!-- endtab -->
-
-{% endtabs%}
-
-## 行内文本样式 text
-
-{% tabs text,2 %}
-
-<!-- tab 标签语法 -->
-
-```markdown
-{% u 文本内容 %}
-{% emp 文本内容 %}
-{% wavy 文本内容 %}
-{% del 文本内容 %}
-{% kbd 文本内容 %}
-{% psw 文本内容 %}
-```
-
-<!-- endtab -->
-<!-- tab 样式预览 -->
-
-1. 带 {% u 下划线 %} 的文本
-2. 带 {% emp 着重号 %} 的文本
-3. 带 {% wavy 波浪线 %} 的文本
-4. 带 {% del 删除线 %} 的文本
-5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
-6. 密码样式的文本：{% psw 这里没有验证码 %}
-   <!-- endtab -->
-   <!-- tab 示例源码 -->
-
-```markdown
-1. 带 {% u 下划线 %} 的文本
-2. 带 {% emp 着重号 %} 的文本
-3. 带 {% wavy 波浪线 %} 的文本
-4. 带 {% del 删除线 %} 的文本
-5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
-6. 密码样式的文本：{% psw 这里没有验证码 %}
 ```
 
 <!-- endtab -->
