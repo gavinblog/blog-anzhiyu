@@ -9,7 +9,7 @@ tags:
   - Hexo-Theme-Anzhiyu
 abbrlink: c6e7
 date: 2023-06-08 17:16:45
-description:这篇文章介绍了安知鱼主题标签Tag Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字。此外，安知鱼还提供了一些Tag Plugins相关的服务，如搜索和热门标签推荐等。
+description: 这篇文章介绍了安知鱼主题标签Tag Plugins，是一个能够帮助提升文章权重和博主认知度的标签，可用于博文、日记和笔记等多种形式的内容。通过使用Ta标签，可以快速定位感兴趣的话题和关键字。此外，安知鱼还提供了一些Tag Plugins相关的服务，如搜索和热门标签推荐等。
 copyright: true
 copyright_author: 安知鱼
 copyright_author_href: https://blog.anheyu.com/
