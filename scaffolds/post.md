@@ -22,4 +22,7 @@ ai:
 #copyright_author_href: https://www.cursor.so/ 
 #copyright_url: https://www.cursor.so/
 #copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
+
+# 首页轮播图配置: swiper_index, 数字越小越靠前
+# 首页卡片配置: top_group_index, 数字越小越靠前
 ---

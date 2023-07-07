@@ -1150,10 +1150,12 @@ home_top:
   default_descr: default_descr-default_descr
   
   swiper:
-    enable: false
-    swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
-    swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
-    swiper_init: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper_init.js # swiper初始化方法
+    enable: true
+    #https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
+    swiper_css: /custom/swiper/swiper-bundle-9.4.1.min.css
+    #https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
+    swiper_js: /custom/swiper/swiper-bundle-9.4.1.min.js
+    swiper_init: /custom/swiper/swiper_init.js # swiper初始化方法
   # 首页轮播 与 swiper 二选一
   banner:
     tips: 春花秋月何时了，往事知多少。
@@ -1306,7 +1308,7 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <script src="/custom/console/console.js"></script>
 
-    - <link rel="stylesheet" href="/custom/css/tag.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/custom/css/tag-plugins.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/custom/custom.css" media="defer" onload="this.media='all'">
 
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
@@ -1318,6 +1320,7 @@ inject:
   bottom:
     # 自定义js
     - <script src="/custom/custom.js"></script>
+
     - <script src="/custom/welcome/welcome.js"></script>
 
     # FPS显示

@@ -77,6 +77,14 @@ jobs:
           hexo clean
           hexo generate
           gulp
+      
+      #  修复文章最后更新时间
+      - name: Git Configuration  ## git配置信息，避免所有的文件发布日期都改变了
+        run: |
+          git config --global core.quotePath false
+          git config --global core.autocrlf false
+          git config --global core.safecrlf true
+          git config --global core.ignorecase false  
 
       # 自动发布到当前仓库的gh-pages分支，如需部署到其它仓库的，参考下面文档修改配置即可
       # 更多高级用法查看文档，https://github.com/peaceiris/actions-gh-pages

@@ -10,6 +10,10 @@ ai:
     Hexo是一款基于Node.js的静态博客生成器，它可以帮助我们快速搭建自己的博客网站。本文将介绍一些常用的Hexo命令，帮助你更好地使用Hexo。本文摘要由ChatGPT智能生成。
 abbrlink: '3e38'
 date: 2023-06-04 10:05:09
+# 首页轮播图配置: swiper_index, 数字越小越靠前
+# 首页卡片配置: top_group_index, 数字越小越靠前
+swiper_index: 3
+top_group_index: 3
 ---
 
 Hexo 常用命令

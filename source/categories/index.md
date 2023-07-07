@@ -5,8 +5,7 @@ date: 2023-04-13 13:21:48
 aside: true
 
 # 是否显示顶部图片
-top_img: /imgs/default-cover.webp
-
+top_img: "/imgs/default-cover.webp"
 ---
 
 ## 分类统计
