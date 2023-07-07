@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
+updated: {{ date }}
 # 文章描述
 description: 
 categories: demo
@@ -9,8 +10,7 @@ tags:
   - demo
 keywords: [geekswg,毕少侠,hexo]
 ai:
-  - hexo-blog-encrypt demo测试
-  - 本文摘要由ChatGPT智能生成。
+  - {{ title }}
 #password: 1234
 #theme: xray
 #abstract: '有东西被加密了, 请输入密码查看.'
