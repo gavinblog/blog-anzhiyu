@@ -114,7 +114,7 @@ time_format: HH:mm:ss
 # https://hexo.io/zh-cn/docs/configuration.html#%E6%97%A5%E6%9C%9F-x2F-%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F
 # 解决 github-action 会自动更新，所有文章的更新时间 date: 
 # 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变
-updated_option: 'date' # default mtime
+updated_option: mtime # default mtime
 
 # Pagination
 ## Set per_page to 0 to disable pagination
