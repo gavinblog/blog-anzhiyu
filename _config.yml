@@ -148,12 +148,13 @@ feed:
 # sitemap
 # npm install hexo-generator-sitemap --save #谷歌
 # npm install hexo-generator-baidu-sitemap --save #百度
-- hexo-generator-baidu-sitemap
-- hexo-generator-sitemap
+sitemap:
+  path: [sitemap.xml,sitemap.txt]
+  rel: false
+  tags: true
+  categories: true
 baidusitemap:
   path: baidusitemap.xml
-sitemap:
-  path: sitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
