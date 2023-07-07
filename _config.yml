@@ -151,9 +151,9 @@ feed:
 - hexo-generator-baidu-sitemap
 - hexo-generator-sitemap
 baidusitemap:
-    path: baidusitemap.xml
+  path: baidusitemap.xml
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
