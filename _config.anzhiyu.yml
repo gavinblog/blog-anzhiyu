@@ -125,7 +125,7 @@ copy:
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
   Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
-  RSS: rss.xml || anzhiyu-icon-rss
+  RSS: atom.xml || anzhiyu-icon-rss
   BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
   QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
 # 作者状态
