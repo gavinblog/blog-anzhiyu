@@ -7,6 +7,10 @@ aside: false
 top_img: false
 ---
 
+<img src="https://ghchart.rshah.org/409ba5/geekswg" alt="geekswg's Blue Github Chart" />
+
+[![geekswg](https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg "geekswg's Github")](https://github.com/geekswg)
+
 <!--
 https://blog.eurkon.com/post/1213ef82.html?highlight=%E7%BB%9F%E8%AE%A1
 当然也可以在其他页面引入文章统计图，如果出现图表显示不全的现象可以修改 div 的 height 属性。。
