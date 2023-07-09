@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
     Blog.hellworld();
     //setInterval(Blog.setControlIcon,5*1000);
-});
 
+    Blog.welcomeAlrt();
+    
+});
 
 
 const Blog = {
@@ -34,6 +36,46 @@ const Blog = {
             document.getElementById('center-console').innerHTML = '<i class="fa-brands fa-windows fa-beat-fade"></i>';
         }
         
+    },
+    welcomeAlrt: function(){
+        this.swalAler();
+        // try {
+        //     setTimeout(() => {
+        //         console.info('--- autoPlayMusic1 ---');
+        //         anzhiyu.musicToggle();
+        //         console.info('--- autoPlayMusic2 ---');
+        //     }, 1000);
+        //     setTimeout(() => {
+        //         console.info('--- autoPlayMusic1 ---');
+        //         anzhiyu.musicToggle();
+        //         console.info('--- autoPlayMusic2 ---');
+        //     }, 2000);
+        // } catch (error) {
+        //     console.error(error);
+        // }
+    },
+    swalAler: function(msg,successOp,failOp){
+        Swal.fire({
+            title: "",
+            //text: "<span style='color:red;'>欢迎光临</span>",
+            html: "<span style='color:red;'>欢迎光临</span>",
+            type: "info",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "进入博客",
+            cancelButtonText: "进入主页",
+            allowOutsideClick: false,
+            background:  "linear-gradient(145deg, #0396FF, transparent)",
+            //background:  "linear-gradient(to right, #0396FF, transparent)",   //"transparent",
+        }).then((isConfirm) =>{
+            if (isConfirm.value) {
+                anzhiyu.musicToggle();
+                //Swal.fire("删除成功", "成功", "success");
+            }else{
+                //Swal.fire("取消操作", "点击了取消", "error");
+                location.href = 'https://home.geekswg.top';
+            }
+        });
     }
 
 }

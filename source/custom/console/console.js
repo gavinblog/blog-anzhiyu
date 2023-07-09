@@ -74,6 +74,6 @@ function createtime2() {
 createtime2();
 
 // 重写console方法
-console.log = function () { };
-console.error = function () { };
-console.warn = function () { };
+// console.log = function () { };
+// console.error = function () { };
+// console.warn = function () { };
