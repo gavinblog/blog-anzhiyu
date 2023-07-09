@@ -68,6 +68,10 @@ jobs:
           npm install gulp-terser --save-dev
           # 压缩字体
           npm install gulp-fontmin --save-dev
+          
+          # sitemap
+          npm install hexo-generator-sitemap --save #谷歌
+          npm install hexo-generator-baidu-sitemap --save #百度
 
 
       # hexo 编译生成网站
