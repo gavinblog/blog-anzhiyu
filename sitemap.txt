@@ -2,10 +2,10 @@ https://geekswg-hexo.netlify.app/manifest.json
 https://geekswg-hexo.netlify.app/json/music.json
 https://geekswg-hexo.netlify.app/imgs/qsmy/README.html
 https://geekswg-hexo.netlify.app/custom/history/json/12.json
-https://geekswg-hexo.netlify.app/custom/history/json/08.json
+https://geekswg-hexo.netlify.app/custom/history/json/11.json
 https://geekswg-hexo.netlify.app/custom/history/json/09.json
 https://geekswg-hexo.netlify.app/custom/history/json/10.json
-https://geekswg-hexo.netlify.app/custom/history/json/11.json
+https://geekswg-hexo.netlify.app/custom/history/json/08.json
 https://geekswg-hexo.netlify.app/custom/history/json/05.json
 https://geekswg-hexo.netlify.app/custom/history/json/06.json
 https://geekswg-hexo.netlify.app/custom/history/json/07.json
