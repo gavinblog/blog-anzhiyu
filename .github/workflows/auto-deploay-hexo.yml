@@ -73,6 +73,11 @@ jobs:
           npm install hexo-generator-sitemap --save #谷歌
           npm install hexo-generator-baidu-sitemap --save #百度
 
+          # 电子时钟
+          npm install hexo-butterfly-clock-anzhiyu --save
+          # 历史上的今天
+          npm i hexo-history-calendar --save
+
 
       # hexo 编译生成网站
       - name: Generate files
