@@ -29,7 +29,12 @@ type: "about"
 
 ## My Github
 
-[![geekswg](https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg "geekswg's Github")](https://github.com/geekswg)
+<!-- [![geekswg](https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg "geekswg's Github")](https://github.com/geekswg) -->
+
+<div style="width:100%;text-align:center;">
+<a href="https://github.com/geekswg">
+<img src="https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg">
+</a></div>
 
 ## 访客信息
 

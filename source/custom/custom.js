@@ -38,7 +38,11 @@ const Blog = {
         
     },
     welcomeAlrt: function(){
-        this.swalAler();
+        if(sessionStorage.getItem("firstEnter") != 1){
+            sessionStorage.setItem("firstEnter",1);
+            this.swalAler();
+        }
+        
         // try {
         //     setTimeout(() => {
         //         console.info('--- autoPlayMusic1 ---');

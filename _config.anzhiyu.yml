@@ -315,18 +315,19 @@ post_copyright:
   location: 神州大地
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 #打赏信息
 # Sponsor/reward
 reward:
-  enable: false
-  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
+  enable: true
+  coinAudio: /imgs/reward/aowu.m4a
   QR_code:
-    - img: /imgs/t1.webp
-      link: https://geekswg.js.cool
-      text: wechat
-    - img: /imgs/t2.webp
+    - img: /imgs/reward/alipay.webp
       link: https://geekswg.js.cool
       text: alipay
+    - img: /imgs/reward/wechat.webp
+      link: https://geekswg.js.cool
+      text: wechat
 
 # Post edit 文章编辑
 # Easily browse and edit blog source code online.
@@ -792,7 +793,7 @@ beautify:
 font:
   global-font-size: 16px
   code-font-size:
-  font-family:
+  font-family: consolas
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
@@ -857,7 +858,7 @@ aside:
   display:
     archive: true
     tag: true
-    category: true
+    category: false
   card_author:
     enable: true
     type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
@@ -888,7 +889,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
-    limit: 40 # if set 0 will show all
+    limit: 32 # if set 0 will show all
     color: true
     sort_order: # Don't modify the setting unless you know how it works
     # 高亮显示tags标签
@@ -978,9 +979,10 @@ darkmode:
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat 不要重複
 rightside_item_order:
-  enable: false
-  hide: # readmode,translate,darkmode,hideAside
-  show: # toc,chat,comment
+  enable: true
+  hide: toc,hideAside,readmode,chat #readmode,translate,darkmode,hideAside # readmode,translate,darkmode,hideAside
+  show: comment,darkmode,toc # toc,chat,comment
+# 右下角菜单
 
 # Lightbox (图片大图查看模式)
 # --------------------------------------
@@ -988,7 +990,7 @@ rightside_item_order:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
@@ -1243,7 +1245,7 @@ ptool:
   share_mobile: true
   share_weibo: true
   share_copyurl: true
-  categories: true # 是否显示分类
+  categories: false # 是否显示分类
   mode: # 运营模式与责任，不配置不显示
 
 
