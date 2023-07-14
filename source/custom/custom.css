@@ -193,6 +193,7 @@ pre>code {
   border-radius: 4px;
 }
 
+/* 申请友链 */
 #flink-banners .banner-button-group .banner-button {
   color: var(--anzhiyu-fontcolor);
   background: var(--anzhiyu-secondbg);
