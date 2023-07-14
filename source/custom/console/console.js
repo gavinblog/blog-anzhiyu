@@ -6,7 +6,7 @@ function createtime1() {
     var dnum = Math.floor(days);
 
     var ascll = [
-        `欢迎来到毕少侠🥝の小家!`,
+        `欢迎来到 毕少侠 の小家!`,
         `Future is now 🍭🍭🍭`,
         `    
         
@@ -51,7 +51,7 @@ function createtime2() {
             "color:white; background-color:#10bcc0",
             "",
             "",
-            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
+            'background:url("https://hexo.geekswg.top/imgs/default-cover.webp") no-repeat;font-size:450%'
         )
     );
 
