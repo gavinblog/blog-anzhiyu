@@ -44,12 +44,13 @@
       avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
-    - name: 程序员小航
-      link: https://liuzhihang.com/
-      avatar: https://liuzhihang.com/upload/logo.png
-      descr: 前端开发工程师、后端开发工程师、全干工程师
+    
+    - name: 小孙同学
+      link: https://blog.sunguoqi.com
+      avatar: https://blog.sunguoqi.com/upload/avatar.png
+      descr: 路虽远行则将至，事虽难做则必成！
       siteshot:  /imgs/default-cover.webp
-
+    
     - name: Tianli
       link: https://tianli-blog.club
       avatar: https://img1.tianli0.top/logo.png
@@ -127,6 +128,11 @@
       link: https://smileszh.cn
       avatar: https://bu.dusays.com/2023/06/10/648499e1299d0.jpg
       descr: 平安喜乐，万事胜意
+    - name: 程序员小航
+      link: https://liuzhihang.com/
+      avatar: https://liuzhihang.com/upload/logo.png
+      descr: 前端开发工程师、后端开发工程师、全干工程师
+      siteshot:  /imgs/default-cover.webp
 
     - name: 毕少侠-Hexo-Anzhiyu
       link: https://hexo.geekswg.top/
@@ -328,16 +334,7 @@
       avatar: /imgs/avatar.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
       siteshot: /imgs/default-cover.webp
-    - name: 毕少侠-Hexo-Anzhiyu
-      link: https://hexo.geekswg.top/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
-      siteshot:  /imgs/default-cover.webp
-    - name: 毕少侠-Hugo
-      link: https://geekswg.js.cool/
-      avatar: /imgs/avatar.webp
-      descr: 毕少侠也在江湖，毕少侠的主站，由Hugo驱动，Fiixt主题。Githug-Pages托管
-      siteshot: /imgs/default-cover.webp
+
     
 
 
