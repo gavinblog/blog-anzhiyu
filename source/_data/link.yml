@@ -44,6 +44,12 @@
       avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+    - name: 程序员小航
+      link: https://liuzhihang.com/
+      avatar: https://liuzhihang.com/upload/logo.png
+      descr: 前端开发工程师、后端开发工程师、全干工程师
+      siteshot:  /imgs/default-cover.webp
+
     - name: Tianli
       link: https://tianli-blog.club
       avatar: https://img1.tianli0.top/logo.png
@@ -83,6 +89,7 @@
       avatar: https://raxcl.cn/img/avatar.jpg
       descr: 剑未佩妥，出门已是江湖。
       siteshot:  /imgs/default-cover.webp
+
 - class_name: Friends
   class_desc: 那些人，那些事
   flink_style: anzhiyu
