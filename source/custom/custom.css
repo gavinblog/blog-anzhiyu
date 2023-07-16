@@ -41,7 +41,7 @@ pre>code {
 
 
 /*  ------------------ 留言板评论弹幕 ------------------ */
-/* .barrage {
+.barrage {
   position: fixed;
   right: -500px;
   display: inline-block;
@@ -82,7 +82,7 @@ pre>code {
 }
 .barrage_box div.p a:hover {
   text-decoration: underline;
-} */
+} 
 /*  ------------------ 留言板评论弹幕 ------------------ */
 
 /* 微信卡片背景透明 */
