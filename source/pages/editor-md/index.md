@@ -25,8 +25,8 @@ aside: false
 <p class="autoHDiv">
 
   <!-- https://geeks-fork.github.io/editor.md/examples/full.html -->
-  <!-- http://editor.md.ipandao.com/examples/full.html -->
-  <iframe id="iFrame" name="iframe1" class="flexiframe" src="http://editor.md.ipandao.com/examples/full.html" style="width:100%;" marginwidth="0" frameborder="no" scrolling="no" allowTransparency="true"></iframe>
+  <!-- https://pandao.github.io/editor.md/examples/full.html -->
+  <iframe id="iFrame" name="iframe1" class="flexiframe" src="https://pandao.github.io/editor.md/examples/full.html" style="width:100%;" marginwidth="0" frameborder="no" scrolling="no" allowTransparency="true"></iframe>
 
 </p>
 
