@@ -980,8 +980,8 @@ darkmode:
 # Don't repeat 不要重複
 rightside_item_order:
   enable: true
-  hide: toc,hideAside,readmode,chat #readmode,translate,darkmode,hideAside # readmode,translate,darkmode,hideAside
-  show: comment,darkmode,toc # toc,chat,comment
+  hide: toc,darkmode,hideAside,readmode,chat #readmode,translate,darkmode,hideAside # readmode,translate,darkmode,hideAside
+  show: comment,toc # toc,chat,comment
 # 右下角菜单
 
 # Lightbox (图片大图查看模式)

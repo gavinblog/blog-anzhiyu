@@ -27,8 +27,10 @@ let tecent_location_api = 'https://apis.map.qq.com/ws/location/v1/ip';
 //     console.info(data);
 // });
 
-document.getElementById("welcome-info").innerHTML = '<div style="text-align:center;" ><img src="/imgs/gif/yinyang.gif" data-lazy-src="/img/loading.svg" alt="加载中..." data-ll-status="loaded" class="entered loaded"></div><div class="img-alt is-center">加载中...</div>'
-
+welcomeEle = document.getElementById("welcome-info");
+if(welcomeEle){
+    welcomeEle.innerHTML = '<div style="text-align:center;" ><img src="/imgs/gif/yinyang.gif" data-lazy-src="/img/loading.svg" alt="加载中..." data-ll-status="loaded" class="entered loaded"></div><div class="img-alt is-center">加载中...</div>'
+}
 $.ajax({
     type: 'get',
     url: tecent_location_api,
@@ -280,7 +282,9 @@ function showWelcome() {
 
 function showWelcomeWithCatch() {
     try {
-        showWelcome();
+        if(welcomeEle){ // 如果存在
+            showWelcome();
+        }
     } catch (e) {
         document.getElementById("welcome-info").innerHTML = `<p style="font-family: 楷体;">但行好事，莫问前程！</p`;
         console.error(e);

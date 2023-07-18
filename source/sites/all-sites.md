@@ -84,8 +84,12 @@ top_img: /imgs/default-cover.webp
 
 {% timeline 毕少侠,green %}
 
+<!-- timeline 2023-07-18 -->
+[MD在线编辑器](/pages/editor-md/)
+<!-- endtimeline -->
+
 <!-- timeline 2023-07-04 -->
-[我的装备](https://hexo.geekswg.top/pages/equipment.html)
+[我的装备](/pages/equipment.html)
 <!-- endtimeline -->
 
 <!-- timeline 2023-06-06 -->
