@@ -1,31 +1,29 @@
-
 ---
-
 title: Markdown在线编辑器
 date: 2023-07-18 16:33:24
 type: page
 aside: false
 ---
 
- <style type="text/css">
+<style type="text/css">
   .autoHDiv {
-position: relative;
-padding-bottom: 56.25%;
-height: 0;
-overflow: hidden;
-}
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
 .autoHDiv iframe,
 .autoHDiv object,
 .autoHDiv embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>
 <p class="autoHDiv">
-  <iframe id="iFrame" name="iframe1" class="flexiframe" src="/html/editormd/examples/full.html" style="width:100%;" marginwidth="0" frameborder="no" scrolling="no" allowTransparency="true"></iframe>
+  <iframe id="iFrame" name="iframe1" class="flexiframe" src="https://geeks-fork.github.io/editor.md//examples/full.html" style="width:100%;" marginwidth="0" frameborder="no" scrolling="no" allowTransparency="true"></iframe>
 </p>
 
 <!--
