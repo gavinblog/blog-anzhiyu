@@ -653,12 +653,15 @@ google_adsense:
 # --------------------------------------
 # 
 site_verification:
+  # https://www.bing.com/webmasters/?siteUrl=https%3A%2F%2Fhexo.geekswg.top
   - name: google-site-verification
-    content: xxx
-  - name: baidu-site-verification
-    content: code-xxx
+    content: zdB7aP6RvrvD3vHDMiBCw88fHYFi6pWHVgy4OruU6ZI
+ # https://ziyuan.baidu.com/site/siteverify?id=1377991315#/
+ - name: baidu-site-verification
+    content: codeva-h6TRQ4og6W
+  # https://www.bing.com/webmasters/?siteUrl=https://hexo.geekswg.top&state=verifySite
   - name: msvalidate.01
-    content: xxx
+    content: A1131C8FE475E0378A8D237741CD7850
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
