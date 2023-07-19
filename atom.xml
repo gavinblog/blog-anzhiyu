@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>毕少侠</title>
-  <icon>https://geekswg-hexo.netlify.app/imgs/avatar.webp</icon>
+  <icon>https://hexo.geekswg.top/imgs/avatar.webp</icon>
   <subtitle>毕少侠也在江湖-geekswg</subtitle>
-  <link href="https://geekswg-hexo.netlify.app/atom.xml" rel="self"/>
+  <link href="https://hexo.geekswg.top/atom.xml" rel="self"/>
   
-  <link href="https://geekswg-hexo.netlify.app/"/>
+  <link href="https://hexo.geekswg.top/"/>
   <updated>2023-06-30T13:36:59.000Z</updated>
-  <id>https://geekswg-hexo.netlify.app/</id>
+  <id>https://hexo.geekswg.top/</id>
   
   <author>
     <name>毕少侠</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo博客使用gulp插件压缩网站资源</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/103c.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/103c.html</id>
+    <link href="https://hexo.geekswg.top/posts/103c.html"/>
+    <id>https://hexo.geekswg.top/posts/103c.html</id>
     <published>2023-06-30T13:36:59.000Z</published>
     <updated>2023-06-30T13:36:59.000Z</updated>
     
@@ -33,19 +33,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="教程" scheme="https://geekswg-hexo.netlify.app/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://hexo.geekswg.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>博客网站添加FPS显示</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/9efb.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/9efb.html</id>
+    <link href="https://hexo.geekswg.top/posts/9efb.html"/>
+    <id>https://hexo.geekswg.top/posts/9efb.html</id>
     <published>2023-06-30T13:33:22.000Z</published>
     <updated>2023-06-30T13:33:22.000Z</updated>
     
@@ -59,19 +59,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="教程" scheme="https://geekswg-hexo.netlify.app/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://hexo.geekswg.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-留言板全屏弹幕滚动-Twikoo</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/973c.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/973c.html</id>
+    <link href="https://hexo.geekswg.top/posts/973c.html"/>
+    <id>https://hexo.geekswg.top/posts/973c.html</id>
     <published>2023-06-13T03:51:44.000Z</published>
     <updated>2023-06-13T03:51:44.000Z</updated>
     
@@ -85,19 +85,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="Twikoo" scheme="https://geekswg-hexo.netlify.app/tags/Twikoo/"/>
+    <category term="Twikoo" scheme="https://hexo.geekswg.top/tags/Twikoo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo添加RSS订阅</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/526.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/526.html</id>
+    <link href="https://hexo.geekswg.top/posts/526.html"/>
+    <id>https://hexo.geekswg.top/posts/526.html</id>
     <published>2023-06-13T03:36:14.000Z</published>
     <updated>2023-06-13T03:36:14.000Z</updated>
     
@@ -111,19 +111,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-Theme-Anzhiyu常用Demo</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/56b8.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/56b8.html</id>
+    <link href="https://hexo.geekswg.top/posts/56b8.html"/>
+    <id>https://hexo.geekswg.top/posts/56b8.html</id>
     <published>2023-06-08T11:04:05.000Z</published>
     <updated>2023-06-08T11:04:05.000Z</updated>
     
@@ -137,15 +137,15 @@
     
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/categories/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/categories/demo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo-Theme-Anzhiyu主题标签插件</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/c6e7.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/c6e7.html</id>
+    <link href="https://hexo.geekswg.top/posts/c6e7.html"/>
+    <id>https://hexo.geekswg.top/posts/c6e7.html</id>
     <published>2023-06-08T09:16:45.000Z</published>
     <updated>2023-06-08T09:16:45.000Z</updated>
     
@@ -156,25 +156,25 @@
     
     
     
-    <category term="repost" scheme="https://geekswg-hexo.netlify.app/categories/repost/"/>
+    <category term="repost" scheme="https://hexo.geekswg.top/categories/repost/"/>
     
     
-    <category term="示例" scheme="https://geekswg-hexo.netlify.app/tags/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://hexo.geekswg.top/tags/%E7%A4%BA%E4%BE%8B/"/>
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="Hexo-Theme-Anzhiyu" scheme="https://geekswg-hexo.netlify.app/tags/Hexo-Theme-Anzhiyu/"/>
+    <category term="Hexo-Theme-Anzhiyu" scheme="https://hexo.geekswg.top/tags/Hexo-Theme-Anzhiyu/"/>
     
-    <category term="转载" scheme="https://geekswg-hexo.netlify.app/tags/%E8%BD%AC%E8%BD%BD/"/>
+    <category term="转载" scheme="https://hexo.geekswg.top/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>Hexo主题及Anzhiyu常见问题处理</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/3a28.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/3a28.html</id>
+    <link href="https://hexo.geekswg.top/posts/3a28.html"/>
+    <id>https://hexo.geekswg.top/posts/3a28.html</id>
     <published>2023-06-06T08:07:18.000Z</published>
     <updated>2023-07-07T11:10:10.000Z</updated>
     
@@ -191,19 +191,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="Hexo-Theme-Anzhiyu" scheme="https://geekswg-hexo.netlify.app/tags/Hexo-Theme-Anzhiyu/"/>
+    <category term="Hexo-Theme-Anzhiyu" scheme="https://hexo.geekswg.top/tags/Hexo-Theme-Anzhiyu/"/>
     
   </entry>
   
   <entry>
     <title>Hexo常用命令</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/3e38.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/3e38.html</id>
+    <link href="https://hexo.geekswg.top/posts/3e38.html"/>
+    <id>https://hexo.geekswg.top/posts/3e38.html</id>
     <published>2023-06-04T02:05:09.000Z</published>
     <updated>2023-07-07T11:10:10.000Z</updated>
     
@@ -219,19 +219,19 @@
     
     
     
-    <category term="hexo" scheme="https://geekswg-hexo.netlify.app/categories/hexo/"/>
+    <category term="hexo" scheme="https://hexo.geekswg.top/categories/hexo/"/>
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>史上最牛Hello World</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/7ce5.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/7ce5.html</id>
+    <link href="https://hexo.geekswg.top/posts/7ce5.html"/>
+    <id>https://hexo.geekswg.top/posts/7ce5.html</id>
     <published>2023-06-04T01:58:43.000Z</published>
     <updated>2023-06-04T01:58:43.000Z</updated>
     
@@ -248,21 +248,21 @@
     
     
     
-    <category term="share" scheme="https://geekswg-hexo.netlify.app/categories/share/"/>
+    <category term="share" scheme="https://hexo.geekswg.top/categories/share/"/>
     
     
-    <category term="分享" scheme="https://geekswg-hexo.netlify.app/tags/%E5%88%86%E4%BA%AB/"/>
+    <category term="分享" scheme="https://hexo.geekswg.top/tags/%E5%88%86%E4%BA%AB/"/>
     
-    <category term="js" scheme="https://geekswg-hexo.netlify.app/tags/js/"/>
+    <category term="js" scheme="https://hexo.geekswg.top/tags/js/"/>
     
-    <category term="hello world" scheme="https://geekswg-hexo.netlify.app/tags/hello-world/"/>
+    <category term="hello world" scheme="https://hexo.geekswg.top/tags/hello-world/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-theme-Anzhiyu Tag-Plugins Demo</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/3071.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/3071.html</id>
+    <link href="https://hexo.geekswg.top/posts/3071.html"/>
+    <id>https://hexo.geekswg.top/posts/3071.html</id>
     <published>2023-05-30T05:04:05.000Z</published>
     <updated>2023-05-30T05:04:05.000Z</updated>
     
@@ -278,25 +278,25 @@
     
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/categories/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/categories/demo/"/>
     
     
-    <category term="示例" scheme="https://geekswg-hexo.netlify.app/tags/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://hexo.geekswg.top/tags/%E7%A4%BA%E4%BE%8B/"/>
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="Hexo-Theme-Anzhiyu" scheme="https://geekswg-hexo.netlify.app/tags/Hexo-Theme-Anzhiyu/"/>
+    <category term="Hexo-Theme-Anzhiyu" scheme="https://hexo.geekswg.top/tags/Hexo-Theme-Anzhiyu/"/>
     
-    <category term="Tag-Plugins" scheme="https://geekswg-hexo.netlify.app/tags/Tag-Plugins/"/>
+    <category term="Tag-Plugins" scheme="https://hexo.geekswg.top/tags/Tag-Plugins/"/>
     
   </entry>
   
   <entry>
     <title>hexo-blog-encrypt加密测试Demo</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/9667.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/9667.html</id>
+    <link href="https://hexo.geekswg.top/posts/9667.html"/>
+    <id>https://hexo.geekswg.top/posts/9667.html</id>
     <published>2023-05-29T19:04:05.000Z</published>
     <updated>2023-05-29T19:04:05.000Z</updated>
     
@@ -307,23 +307,23 @@
     
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/categories/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/categories/demo/"/>
     
     
-    <category term="示例" scheme="https://geekswg-hexo.netlify.app/tags/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://hexo.geekswg.top/tags/%E7%A4%BA%E4%BE%8B/"/>
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
-    <category term="Hexo" scheme="https://geekswg-hexo.netlify.app/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hexo.geekswg.top/tags/Hexo/"/>
     
-    <category term="encrypt" scheme="https://geekswg-hexo.netlify.app/tags/encrypt/"/>
+    <category term="encrypt" scheme="https://hexo.geekswg.top/tags/encrypt/"/>
     
   </entry>
   
   <entry>
     <title>Funny 404 Gif</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/5cb.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/5cb.html</id>
+    <link href="https://hexo.geekswg.top/posts/5cb.html"/>
+    <id>https://hexo.geekswg.top/posts/5cb.html</id>
     <published>2023-05-27T04:20:00.000Z</published>
     <updated>2023-05-27T04:20:00.000Z</updated>
     
@@ -334,19 +334,19 @@
     
     
     
-    <category term="share" scheme="https://geekswg-hexo.netlify.app/categories/share/"/>
+    <category term="share" scheme="https://hexo.geekswg.top/categories/share/"/>
     
     
-    <category term="分享" scheme="https://geekswg-hexo.netlify.app/tags/%E5%88%86%E4%BA%AB/"/>
+    <category term="分享" scheme="https://hexo.geekswg.top/tags/%E5%88%86%E4%BA%AB/"/>
     
-    <category term="404" scheme="https://geekswg-hexo.netlify.app/tags/404/"/>
+    <category term="404" scheme="https://hexo.geekswg.top/tags/404/"/>
     
   </entry>
   
   <entry>
     <title>Git常用命令</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/1b99.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/1b99.html</id>
+    <link href="https://hexo.geekswg.top/posts/1b99.html"/>
+    <id>https://hexo.geekswg.top/posts/1b99.html</id>
     <published>2023-04-16T22:45:50.000Z</published>
     <updated>2023-04-16T22:45:50.000Z</updated>
     
@@ -357,19 +357,19 @@
     
     
     
-    <category term="notes" scheme="https://geekswg-hexo.netlify.app/categories/notes/"/>
+    <category term="notes" scheme="https://hexo.geekswg.top/categories/notes/"/>
     
     
-    <category term="git" scheme="https://geekswg-hexo.netlify.app/tags/git/"/>
+    <category term="git" scheme="https://hexo.geekswg.top/tags/git/"/>
     
-    <category term="笔记" scheme="https://geekswg-hexo.netlify.app/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://hexo.geekswg.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>我的第一个域名</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/9269.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/9269.html</id>
+    <link href="https://hexo.geekswg.top/posts/9269.html"/>
+    <id>https://hexo.geekswg.top/posts/9269.html</id>
     <published>2023-04-13T01:05:47.000Z</published>
     <updated>2023-04-13T01:05:47.000Z</updated>
     
@@ -380,19 +380,19 @@
     
     
     
-    <category term="notes" scheme="https://geekswg-hexo.netlify.app/categories/notes/"/>
+    <category term="notes" scheme="https://hexo.geekswg.top/categories/notes/"/>
     
     
-    <category term="笔记" scheme="https://geekswg-hexo.netlify.app/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://hexo.geekswg.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="建站" scheme="https://geekswg-hexo.netlify.app/tags/%E5%BB%BA%E7%AB%99/"/>
+    <category term="建站" scheme="https://hexo.geekswg.top/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>关于Docker</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/43c0.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/43c0.html</id>
+    <link href="https://hexo.geekswg.top/posts/43c0.html"/>
+    <id>https://hexo.geekswg.top/posts/43c0.html</id>
     <published>2023-04-02T02:30:40.000Z</published>
     <updated>2023-04-02T02:30:40.000Z</updated>
     
@@ -403,21 +403,21 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="Cursor" scheme="https://geekswg-hexo.netlify.app/tags/Cursor/"/>
+    <category term="Cursor" scheme="https://hexo.geekswg.top/tags/Cursor/"/>
     
-    <category term="Docker" scheme="https://geekswg-hexo.netlify.app/tags/Docker/"/>
+    <category term="Docker" scheme="https://hexo.geekswg.top/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>Cursor帮我写的代码</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/43b8.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/43b8.html</id>
+    <link href="https://hexo.geekswg.top/posts/43b8.html"/>
+    <id>https://hexo.geekswg.top/posts/43b8.html</id>
     <published>2023-03-26T02:30:40.000Z</published>
     <updated>2023-03-26T02:30:40.000Z</updated>
     
@@ -428,23 +428,23 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="Cursor" scheme="https://geekswg-hexo.netlify.app/tags/Cursor/"/>
+    <category term="Cursor" scheme="https://hexo.geekswg.top/tags/Cursor/"/>
     
-    <category term="ChatGPT" scheme="https://geekswg-hexo.netlify.app/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://hexo.geekswg.top/tags/ChatGPT/"/>
     
-    <category term="Code" scheme="https://geekswg-hexo.netlify.app/tags/Code/"/>
+    <category term="Code" scheme="https://hexo.geekswg.top/tags/Code/"/>
     
   </entry>
   
   <entry>
     <title>关于ChatGPT</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/66f3.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/66f3.html</id>
+    <link href="https://hexo.geekswg.top/posts/66f3.html"/>
+    <id>https://hexo.geekswg.top/posts/66f3.html</id>
     <published>2023-03-26T02:30:40.000Z</published>
     <updated>2023-03-26T02:30:40.000Z</updated>
     
@@ -455,21 +455,21 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="Cursor" scheme="https://geekswg-hexo.netlify.app/tags/Cursor/"/>
+    <category term="Cursor" scheme="https://hexo.geekswg.top/tags/Cursor/"/>
     
-    <category term="ChatGPT" scheme="https://geekswg-hexo.netlify.app/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://hexo.geekswg.top/tags/ChatGPT/"/>
     
   </entry>
   
   <entry>
     <title>Electron是什么？</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/524f.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/524f.html</id>
+    <link href="https://hexo.geekswg.top/posts/524f.html"/>
+    <id>https://hexo.geekswg.top/posts/524f.html</id>
     <published>2023-03-26T02:30:40.000Z</published>
     <updated>2023-03-26T02:30:40.000Z</updated>
     
@@ -480,21 +480,21 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="Cursor" scheme="https://geekswg-hexo.netlify.app/tags/Cursor/"/>
+    <category term="Cursor" scheme="https://hexo.geekswg.top/tags/Cursor/"/>
     
-    <category term="Electron" scheme="https://geekswg-hexo.netlify.app/tags/Electron/"/>
+    <category term="Electron" scheme="https://hexo.geekswg.top/tags/Electron/"/>
     
   </entry>
   
   <entry>
     <title>Share Cursor</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/e71d.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/e71d.html</id>
+    <link href="https://hexo.geekswg.top/posts/e71d.html"/>
+    <id>https://hexo.geekswg.top/posts/e71d.html</id>
     <published>2023-03-23T02:15:27.000Z</published>
     <updated>2023-03-23T02:15:27.000Z</updated>
     
@@ -505,21 +505,21 @@
     
     
     
-    <category term="share" scheme="https://geekswg-hexo.netlify.app/categories/share/"/>
+    <category term="share" scheme="https://hexo.geekswg.top/categories/share/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="Cursor" scheme="https://geekswg-hexo.netlify.app/tags/Cursor/"/>
+    <category term="Cursor" scheme="https://hexo.geekswg.top/tags/Cursor/"/>
     
-    <category term="ChatGPT" scheme="https://geekswg-hexo.netlify.app/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://hexo.geekswg.top/tags/ChatGPT/"/>
     
   </entry>
   
   <entry>
     <title>New Bing 国内正常访问方法</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/b191.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/b191.html</id>
+    <link href="https://hexo.geekswg.top/posts/b191.html"/>
+    <id>https://hexo.geekswg.top/posts/b191.html</id>
     <published>2023-03-18T00:49:11.000Z</published>
     <updated>2023-03-18T00:49:11.000Z</updated>
     
@@ -530,19 +530,19 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/tags/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/tags/AI/"/>
     
-    <category term="New Bing" scheme="https://geekswg-hexo.netlify.app/tags/New-Bing/"/>
+    <category term="New Bing" scheme="https://hexo.geekswg.top/tags/New-Bing/"/>
     
   </entry>
   
   <entry>
     <title>分享VSCode插件</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/61d5.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/61d5.html</id>
+    <link href="https://hexo.geekswg.top/posts/61d5.html"/>
+    <id>https://hexo.geekswg.top/posts/61d5.html</id>
     <published>2023-03-03T23:34:45.000Z</published>
     <updated>2023-03-03T23:34:45.000Z</updated>
     
@@ -553,21 +553,21 @@
     
     
     
-    <category term="share" scheme="https://geekswg-hexo.netlify.app/categories/share/"/>
+    <category term="share" scheme="https://hexo.geekswg.top/categories/share/"/>
     
     
-    <category term="分享" scheme="https://geekswg-hexo.netlify.app/tags/%E5%88%86%E4%BA%AB/"/>
+    <category term="分享" scheme="https://hexo.geekswg.top/tags/%E5%88%86%E4%BA%AB/"/>
     
-    <category term="vscode" scheme="https://geekswg-hexo.netlify.app/tags/vscode/"/>
+    <category term="vscode" scheme="https://hexo.geekswg.top/tags/vscode/"/>
     
-    <category term="plugins" scheme="https://geekswg-hexo.netlify.app/tags/plugins/"/>
+    <category term="plugins" scheme="https://hexo.geekswg.top/tags/plugins/"/>
     
   </entry>
   
   <entry>
     <title>ShareAnything-分享一切</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/f18e.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/f18e.html</id>
+    <link href="https://hexo.geekswg.top/posts/f18e.html"/>
+    <id>https://hexo.geekswg.top/posts/f18e.html</id>
     <published>2023-02-28T16:52:54.000Z</published>
     <updated>2023-02-28T16:52:54.000Z</updated>
     
@@ -578,21 +578,21 @@
     
     
     
-    <category term="share" scheme="https://geekswg-hexo.netlify.app/categories/share/"/>
+    <category term="share" scheme="https://hexo.geekswg.top/categories/share/"/>
     
     
-    <category term="分享" scheme="https://geekswg-hexo.netlify.app/tags/%E5%88%86%E4%BA%AB/"/>
+    <category term="分享" scheme="https://hexo.geekswg.top/tags/%E5%88%86%E4%BA%AB/"/>
     
-    <category term="资源" scheme="https://geekswg-hexo.netlify.app/tags/%E8%B5%84%E6%BA%90/"/>
+    <category term="资源" scheme="https://hexo.geekswg.top/tags/%E8%B5%84%E6%BA%90/"/>
     
-    <category term="软件" scheme="https://geekswg-hexo.netlify.app/tags/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://hexo.geekswg.top/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>notes1</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/8c33.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/8c33.html</id>
+    <link href="https://hexo.geekswg.top/posts/8c33.html"/>
+    <id>https://hexo.geekswg.top/posts/8c33.html</id>
     <published>2023-02-27T09:51:53.000Z</published>
     <updated>2023-02-27T09:51:53.000Z</updated>
     
@@ -603,19 +603,19 @@
     
     
     
-    <category term="notes" scheme="https://geekswg-hexo.netlify.app/categories/notes/"/>
+    <category term="notes" scheme="https://hexo.geekswg.top/categories/notes/"/>
     
     
-    <category term="笔记" scheme="https://geekswg-hexo.netlify.app/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://hexo.geekswg.top/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="notes" scheme="https://geekswg-hexo.netlify.app/tags/notes/"/>
+    <category term="notes" scheme="https://hexo.geekswg.top/tags/notes/"/>
     
   </entry>
   
   <entry>
     <title>New Bing 申请教程</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/7c79.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/7c79.html</id>
+    <link href="https://hexo.geekswg.top/posts/7c79.html"/>
+    <id>https://hexo.geekswg.top/posts/7c79.html</id>
     <published>2023-02-19T22:51:53.000Z</published>
     <updated>2023-02-19T22:51:53.000Z</updated>
     
@@ -626,19 +626,19 @@
     
     
     
-    <category term="AI" scheme="https://geekswg-hexo.netlify.app/categories/AI/"/>
+    <category term="AI" scheme="https://hexo.geekswg.top/categories/AI/"/>
     
     
-    <category term="ChatGPT" scheme="https://geekswg-hexo.netlify.app/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://hexo.geekswg.top/tags/ChatGPT/"/>
     
-    <category term="bing" scheme="https://geekswg-hexo.netlify.app/tags/bing/"/>
+    <category term="bing" scheme="https://hexo.geekswg.top/tags/bing/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://geekswg-hexo.netlify.app/posts/3eeb.html"/>
-    <id>https://geekswg-hexo.netlify.app/posts/3eeb.html</id>
+    <link href="https://hexo.geekswg.top/posts/3eeb.html"/>
+    <id>https://hexo.geekswg.top/posts/3eeb.html</id>
     <published>2011-01-13T08:00:00.000Z</published>
     <updated>2011-01-13T08:00:00.000Z</updated>
     
@@ -652,12 +652,12 @@
     
     
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/categories/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/categories/demo/"/>
     
     
-    <category term="示例" scheme="https://geekswg-hexo.netlify.app/tags/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://hexo.geekswg.top/tags/%E7%A4%BA%E4%BE%8B/"/>
     
-    <category term="demo" scheme="https://geekswg-hexo.netlify.app/tags/demo/"/>
+    <category term="demo" scheme="https://hexo.geekswg.top/tags/demo/"/>
     
   </entry>
   
