@@ -15,7 +15,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://geekswg-hexo.netlify.app
+# https://geekswg-hexo.netlify.app
+url: https://hexo.geekswg.top
 # :hash/ 短链接，posts文章无法引用相对路径的图片。
 # https://github.com/rozbo/hexo-abbrlink
 # abbrlink config
