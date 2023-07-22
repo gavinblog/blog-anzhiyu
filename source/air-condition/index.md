@@ -16,4 +16,8 @@ top_img: false
 </style>
 
 <div id="air-conditioner-vue"></div>
-<script defer data-pjax src='/custom/anzhiyu-air-conditioner@1.0.1.js'></script>
+<!-- npm -->
+<!---->
+<script defer data-pjax src='https://npm.elemecdn.com/anzhiyu-air-conditioner@1.0.1/index.3f125bc6.js'></script>
+
+<script defer data-pjax src='/custom/air-conditioner/anzhiyu-air-conditioner-1.0.1.js'></script>
