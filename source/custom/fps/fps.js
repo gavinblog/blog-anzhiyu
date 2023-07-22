@@ -22,22 +22,29 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
         allFrameCount++;
         frame++;
 
+        let fpsColor = '#bd0000';
         if (now > 1000 + lastTime) {
             var fps = Math.round((frame * 1000) / (now - lastTime));
             if (fps <= 5) {
-                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
+                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`;
             } else if (fps <= 15) {
-                var kd = `<span style="color:red">电竞级帧率😖</span>`
+                fpsColor = "red";
+                var kd = `<span style="color:red">电竞级帧率😖</span>`;
             } else if (fps <= 25) {
-                var kd = `<span style="color:orange">有点难受😨</span>`
+                var kd = `<span style="color:orange">有点难受😨</span>`;
+                fpsColor = "orange";
             } else if (fps < 35) {
-                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
+                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`;
+                fpsColor = "#9338e6";
             } else if (fps <= 45) {
-                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`
+                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`;
+                fpsColor = "#08b7e4";
             } else {
-                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`
+                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`;
+                fpsColor = "#39c5bb";
             }
-            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
+            //document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
+            document.getElementById("fps").innerHTML = "<div style='color:"+fpsColor+";'>FPS<br>"+fps+"</div>";
             frame = 0;
             lastTime = now;
         };
