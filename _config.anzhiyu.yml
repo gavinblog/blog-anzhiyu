@@ -500,7 +500,7 @@ footer:
   owner:
     enable: true
     since: 2006
-  custom_text: CopyRight @ geekswg 2006 ~ Now
+  custom_text:  # CopyRight @ geekswg 2006 ~ Now
   runtime:
     enable: true
     launch_time: 01/02/2006 15:04:05 # 网站上线时间 go2006-01-02 03:04:05
