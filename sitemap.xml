@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://hexo.geekswg.top/custom/history/json/11.json</loc>
+    
+    <lastmod>2023-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.geekswg.top/custom/history/json/12.json</loc>
     
     <lastmod>2023-07-23</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>https://hexo.geekswg.top/custom/history/json/09.json</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.geekswg.top/custom/history/json/11.json</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -710,6 +710,13 @@
   </url>
   
   <url>
+    <loc>https://hexo.geekswg.top/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <lastmod>2023-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.geekswg.top/tags/404/</loc>
     <lastmod>2023-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -732,13 +739,6 @@
   
   <url>
     <loc>https://hexo.geekswg.top/tags/Electron/</loc>
-    <lastmod>2023-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.geekswg.top/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
