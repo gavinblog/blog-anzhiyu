@@ -19,6 +19,13 @@
       siteshot:  /imgs/default-cover.webp
       color: vip
       tag: Hexo
+    - name: 毕少侠-主页
+      link: https://home.geekswg.top/
+      avatar: /imgs/t1.webp
+      descr: 毕少侠的主页By Vue。 
+      siteshot:  /imgs/default-cover.webp
+      #color: vip
+      tag: Home
 
 - class_name: Favor
   class_desc: "God helps those who help themselves."
