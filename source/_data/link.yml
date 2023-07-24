@@ -1,10 +1,17 @@
 # 友链配置文件
-- class_name: Blog
+- class_name: Sites
   class_desc: "Talk is Cheap, Show me the Code."
   # 可以自行配置 hundredSuffix: "!w120"    flink_style: flexcard || anzhiyu
   flink_style: telescopic
   #hundredSuffix: "!w120"
   link_list:
+    - name: 毕少侠-主页
+      link: https://home.geekswg.top/
+      avatar: /imgs/avatar.webp
+      descr: 毕少侠的主页By Vue。 
+      siteshot:  /imgs/default-cover.webp
+      #color: vip
+      tag: Home
     - name: 毕少侠-Hugo
       link: https://geekswg.js.cool/
       avatar: /imgs/avatar.webp
@@ -12,20 +19,28 @@
       siteshot: /imgs/default-cover.webp
       color: vip
       tag: Hugo
-    - name: 毕少侠-Hexo-Anzhiyu
+    - name: 毕少侠-Hexo
       link: https://hexo.geekswg.top/
       avatar: /imgs/t1.webp
       descr: 毕少侠也在江湖，毕少侠的主站，由Hexo驱动，Anzhiyu主题。 
       siteshot:  /imgs/default-cover.webp
-      color: vip
+      color: speed
       tag: Hexo
-    - name: 毕少侠-主页
-      link: https://home.geekswg.top/
+    - name: 毕少侠-导航
+      link: https://nav.geekswg.top/
       avatar: /imgs/t1.webp
-      descr: 毕少侠的主页By Vue。 
+      descr: 毕少侠也导航 Powered By Hugo。 
       siteshot:  /imgs/default-cover.webp
-      #color: vip
-      tag: Home
+      color: vip
+      tag: Hugo
+    - name: 毕少侠-监控
+      link: https://status.geekswg.top/
+      avatar: /imgs/t1.webp
+      descr: 毕少侠也监控 Powered By Vue 
+      siteshot:  /imgs/default-cover.webp
+      color: vip
+      tag: Vue
+    
 
 - class_name: Favor
   class_desc: "God helps those who help themselves."
