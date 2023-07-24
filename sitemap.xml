@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.geekswg.top/custom/history/json/10.json</loc>
+    <loc>https://hexo.geekswg.top/custom/history/json/11.json</loc>
     
     <lastmod>2023-07-24</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.geekswg.top/custom/history/json/11.json</loc>
+    <loc>https://hexo.geekswg.top/custom/history/json/10.json</loc>
     
     <lastmod>2023-07-24</lastmod>
     
@@ -101,6 +101,15 @@
   </url>
   
   <url>
+    <loc>https://hexo.geekswg.top/custom/history/json/01.json</loc>
+    
+    <lastmod>2023-07-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.geekswg.top/custom/history/json/02.json</loc>
     
     <lastmod>2023-07-24</lastmod>
@@ -120,15 +129,6 @@
   
   <url>
     <loc>https://hexo.geekswg.top/custom/history/json/04.json</loc>
-    
-    <lastmod>2023-07-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.geekswg.top/custom/history/json/01.json</loc>
     
     <lastmod>2023-07-24</lastmod>
     
@@ -654,13 +654,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.geekswg.top/tags/Hexo-Theme-Anzhiyu/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.geekswg.top/tags/Hexo/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -668,14 +661,21 @@
   </url>
   
   <url>
-    <loc>https://hexo.geekswg.top/tags/Tag-Plugins/</loc>
+    <loc>https://hexo.geekswg.top/tags/encrypt/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hexo.geekswg.top/tags/encrypt/</loc>
+    <loc>https://hexo.geekswg.top/tags/Hexo-Theme-Anzhiyu/</loc>
+    <lastmod>2023-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.geekswg.top/tags/Tag-Plugins/</loc>
     <lastmod>2023-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
