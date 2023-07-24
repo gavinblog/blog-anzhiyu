@@ -9,7 +9,7 @@ keywords:
   - 毕少侠
   - hexo
 ai:
-  - "Hexo博客使用gulp插件压缩网站资源（html,css,js,font）,本文摘要由ChatGPT智能生成。"
+  - "Hexo博客使用gulp插件压缩网站资源（html、css、js、font）"
 abbrlink: 103c
 date: 2023-06-30 21:36:59
 description:
