@@ -38,7 +38,11 @@ pre>code {
   cursor: url(/imgs/cursor/text.cur), default;
 }
 
-
+/* 友链样式 */
+.is-center {
+  text-align: center;
+  display: none !important;
+}
 
 /*  ------------------ 留言板评论弹幕 ------------------ */
 .barrage {
