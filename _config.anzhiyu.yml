@@ -174,7 +174,7 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /imgs/favicon.ico
+favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
