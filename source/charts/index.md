@@ -9,7 +9,7 @@ top_img: false
 
 <img src="https://ghchart.rshah.org/409ba5/geekswg" alt="geekswg's Blue Github Chart" />
 
-[![geekswg](https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg "geekswg's Github")](https://github.com/geekswg)
+[![geekswg](https://cdn.jsdelivr.net/gh/geekswg/geekswg/profile-snake-contrib/github-contribution-grid-snake.svg "geekswg's Github")](https://github.com/geekswg)
 
 <!--
 https://blog.eurkon.com/post/1213ef82.html?highlight=%E7%BB%9F%E8%AE%A1
