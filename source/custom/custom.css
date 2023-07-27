@@ -44,6 +44,10 @@ pre>code {
   display: none !important;
 }
 
+.swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top{
+  background: transparent;
+}
+
 /*  ------------------ 留言板评论弹幕 ------------------ */
 .barrage {
   position: fixed;

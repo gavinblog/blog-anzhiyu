@@ -5,7 +5,7 @@ var swiper = new Swiper(".blog-slider", {
   loop: true,
   autoplay: {
     disableOnInteraction: true,
-    delay: 3000,
+    delay: 4000,
   },
   mousewheel: true,
   // autoHeight: true,
