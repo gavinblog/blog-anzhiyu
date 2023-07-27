@@ -75,7 +75,7 @@
       link: https://blog.leonus.cn/
       avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
       descr: 进一寸有进一寸的欢喜。
-      siteshot: /imgs/default-cover.webp
+      siteshot: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.leonus.cn/
     - name: 杜老师说
       link: https://dusays.com
       avatar: https://cdn.dusays.com/avatar.png
@@ -85,7 +85,7 @@
       link: https://www.qcqx.cn
       avatar: https://www.qcqx.cn/img/head.webp
       descr: 漫天倾尘,风中轻笑
-      siteshot: https://www.qcqx.cn/img/chuckle.webp
+      siteshot: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://www.qcqx.cn
     - name: Cartafi
       link: https://www.startly.cn
       avatar: https://startly.s3.bitiful.net/links/avatar/avatar.webp
