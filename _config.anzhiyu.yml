@@ -1017,8 +1017,8 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: 2
   # 模式开始结束时间
-  start: 6 # 8
-  end: 17 # 22
+  start: 9 # 8
+  end: 19 # 22
 
 # Don't modify the following settings unless you know how they work (非必要请不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
