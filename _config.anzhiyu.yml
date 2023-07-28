@@ -124,10 +124,10 @@ copy:
 #   icon: link || the description || Animation
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
-  Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
+  #Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
   RSS: atom.xml || anzhiyu-icon-rss
-  BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
-  QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
+  #BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
+  #QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
 # 作者状态
 author_status:
   enable: true
@@ -135,6 +135,15 @@ author_status:
   alias: writing_hand
   fallback_src: https://github.githubassets.com/images/icons/emoji/unicode/270d.png
   text: on Studying
+  skills:
+    - 🤖️ 数码科技爱好者
+    - 🔍 分享与热心帮助
+    - 🏠 智能家居小能手
+    - 🔨 设计开发一条龙
+    - 🤝 专修交互与设计
+    - 🏃 脚踏实地行动派
+    - 🧱 团队小组发动机
+    - 💢 壮汉人狠话不多
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系统
@@ -280,6 +289,7 @@ post_meta:
 mainTone:
   enable: true # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取
+  # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
   cover_change: true 
 
@@ -326,7 +336,7 @@ post_copyright:
   avatarSinks: true # hover时头像下沉
   copyright_author_img_back:
   copyright_author_img_front:
-  copyright_author_link: /
+  copyright_author_link: /about
 
 #打赏信息
 # Sponsor/reward
@@ -884,7 +894,7 @@ preloader:
   # 1. fullpage-loading
   # 2. pace (progress bar)
   # else all
-  source: 3
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
   # /imgs/avatar.webp # 自定义头像 /imgs/loading/loading.gif
@@ -906,14 +916,10 @@ aside:
     category: false
   card_author:
     enable: true
-    type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
+    #type: 1 # 1为使用头像card 2为不适用头像card  #使用头像 description无效
     description: 人生得意须尽欢，莫使金樽空对月
-    info_background: /imgs/default/transparent.png
-    button:
-      enable: true
-      icon: anzhiyu-icon-arrow-circle-right
-      text: 了解更多
-      link: /about/
+    name_link: /about
+
   card_announcement:
     enable: true
     content: '<div id="welcome-info"></div>'

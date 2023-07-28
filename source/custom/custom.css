@@ -39,14 +39,36 @@ pre>code {
 }
 
 /* 友链样式 */
-.is-center {
+.img-alt.is-center {
   text-align: center;
   display: none !important;
 }
-
+/* 去年今日透明 */
 .swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top{
   background: transparent;
 }
+/* 作者卡片透明 */
+#aside-content >.card-widget.card-info::before {
+  background: transparent !important;
+  /* background: -webkit-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -moz-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -o-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -ms-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: linear-gradient(-25deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  background-size: 400%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  -ms-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+}
+
 
 /*  ------------------ 留言板评论弹幕 ------------------ */
 .barrage {
@@ -239,7 +261,7 @@ div#post {
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
   --anzhiyu-fontcolor: #363636;
-  --anzhiyu-background: linear-gradient(to bottom, rgba(236, 122, 14, 0.493) 20%, #FFD 80%);
+  --anzhiyu-background: linear-gradient(145deg, rgba(236, 25, 14, 0.5) 40%, #FFD 80%);
   --anzhiyu-reverse: #000;
   --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);
   --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);
