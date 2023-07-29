@@ -503,11 +503,6 @@ daovoice:
   enable: false
   app_id:
 
-# gitter
-# https://gitter.im/
-gitter:
-  enable: false
-  room:
 
 # crisp
 # https://crisp.chat/en/
@@ -894,7 +889,7 @@ preloader:
   # 1. fullpage-loading
   # 2. pace (progress bar)
   # else all
-  source: 2
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
   # /imgs/avatar.webp # 自定义头像 /imgs/loading/loading.gif

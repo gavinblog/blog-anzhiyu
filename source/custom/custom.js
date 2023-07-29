@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     Blog.hellworld();
     //setInterval(Blog.setControlIcon,5*1000);
 
-    Blog.welcomeAlrt();
+    //Blog.welcomeAlrt();
     
 });
 
