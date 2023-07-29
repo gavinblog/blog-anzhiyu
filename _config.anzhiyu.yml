@@ -124,10 +124,10 @@ copy:
 #   icon: link || the description || Animation
 social:
   Github: https://github.com/geekswg || anzhiyu-icon-github
-  #Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
+  Email: mailto://geekswg@qq.com || anzhiyu-icon-envelope
   RSS: atom.xml || anzhiyu-icon-rss
-  #BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
-  #QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
+  BiliBili: https://space.bilibili.com/39865904 || anzhiyu-icon-bilibili
+  QQ: tencent://Message/?Uin=1101303970&amp;websiteName=local.edu.com:8888=&amp;Menu=yes || anzhiyu-icon-qq
 # 作者状态
 author_status:
   enable: true
@@ -197,7 +197,7 @@ disable_top_img: false
 # 首页图片，这里控制了，一图流的开关，BUG,false-不显示，配置图片后
 # 注意这里的值是 style="{}" {}这个值
 #index_img: "background:url(/imgs/t2.webp) no-repeat center;background-size:cover;"
-index_img: /imgs/t2.webp
+index_img: '/imgs/default-cover.webp'
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: /imgs/default-cover.webp
@@ -287,7 +287,7 @@ post_meta:
 
 # 主色调相关配置 >1.4.2
 mainTone:
-  enable: true # true or false 文章是否启用获取图片主色调
+  enable: false # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
@@ -902,7 +902,7 @@ preloader:
   # 1. fullpage-loading
   # 2. pace (progress bar)
   # else all
-  source: 1
+  source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
   # /imgs/avatar.webp # 自定义头像 /imgs/loading/loading.gif
@@ -1211,17 +1211,17 @@ home_top:
   default_descr: default_descr-default_descr
   
   swiper:
-    enable: true
+    enable: false
     #https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
-    swiper_css: /custom/swiper/swiper-bundle-9.4.1.min.css
+    swiper_css: /custom/swiper/swiper.min.css #/custom/swiper/swiper-bundle-9.4.1.min.css
     #https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
-    swiper_js: /custom/swiper/swiper-bundle-9.4.1.min.js
+    swiper_js: /custom/swiper/swiper-bundle-9.4.1.min.js #/custom/swiper/swiper-bundle-9.4.1.min.js
     swiper_init: /custom/swiper/swiper_init.js # swiper初始化方法
   # 首页轮播 与 swiper 二选一
   banner:
     tips: 春花秋月何时了，往事知多少。
     title: 问君能有几多愁，恰似一江春水向东流。
-    image: https://tool.lu/netcard/ # /imgs/default/cover4.webp
+    image: /imgs/default/cover4.webp # /imgs/default/cover4.webp https://tool.lu/netcard/
     link: https://home.geekswg.top
 
 # 朋友圈配置
@@ -1424,7 +1424,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://npm.elemecdn.com/${name}@latest/${file}
+  custom_format: #https://npm.elemecdn.com/${name}@latest/${file}
 
   option:
     # main_css:
