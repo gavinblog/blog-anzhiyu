@@ -625,6 +625,7 @@ footer:
   # 新页脚
   footerBar:
     enable: true
+    authorLink: /
     cc: 
       enable: true
       link: /about
