@@ -1384,11 +1384,10 @@ inject:
     - <link rel="stylesheet" href="/custom/welcome/welcome.css" media="defer" onload="this.media='all'">
     - <script src="/custom/comm/jquery_3.6.0.min.js"></script>
 
-  # https://analytics.umami.is/share/oYFZ7f60BbLmKd6b/geekswg-hexo
-    - <script async src="https://analytics.umami.is/script.js" data-website-id="12b10d95-8761-47e3-9bc9-257f796cc5f0"></script>
-
     
   bottom:
+    # https://analytics.umami.is/share/oYFZ7f60BbLmKd6b/geekswg-hexo
+    - <script async src="https://analytics.umami.is/script.js" data-website-id="12b10d95-8761-47e3-9bc9-257f796cc5f0"></script>
     # 自定义js
     - <script src="/custom/custom.js"></script>
 
