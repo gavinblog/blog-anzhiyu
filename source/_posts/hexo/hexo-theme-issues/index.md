@@ -15,6 +15,9 @@ updated: 2023-07-07 19:10:10
 # 首页卡片配置: top_group_index, 数字越小越靠前
 swiper_index: 1
 top_group_index: 1
+
+# 文章置顶 数字越大越靠前
+sticky: 100
 ---
 
 <!-- more -->
