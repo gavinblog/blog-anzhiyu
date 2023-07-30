@@ -639,7 +639,7 @@ footer:
         text: 源码
       - link: https://gavinblog.github.io/anzhiyu-docs/
         text: 文档
-      - https://analytics.umami.is/share/oYFZ7f60BbLmKd6b/geekswg-hexo
+      - link: https://analytics.umami.is/share/oYFZ7f60BbLmKd6b/geekswg-hexo
         text: 访客
       # - link: https://image.anheyu.com
       #   text: 图床
