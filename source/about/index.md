@@ -33,7 +33,7 @@ type: "about"
 
 <div style="width:100%;text-align:center;">
 <a href="https://github.com/geekswg">
-<img src="https://cdn.jsdelivr.net/gh/geekswg/geekswg/assets/github-contribution-grid-snake.svg">
+<img src="https://cdn.jsdelivr.net/gh/geekswg/geekswg/profile-snake-contrib/github-contribution-grid-snake.svg">
 </a></div>
 
 ## 访客信息
