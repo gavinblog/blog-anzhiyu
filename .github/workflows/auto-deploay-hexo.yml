@@ -86,6 +86,7 @@ jobs:
           hexo clean
           hexo generate
           gulp
+          hexo swpp
       
       #  修复文章最后更新时间
       - name: Git Configuration  ## git配置信息，避免所有的文件发布日期都改变了
