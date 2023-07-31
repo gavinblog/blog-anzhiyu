@@ -166,8 +166,8 @@ module.exports.config = {
      */
     replace: [
       {
-        source: ["source0", "source1"],
-        dist: "dist",
+        source: ["npm.elemecdn.com", "unpkg.zhimg.com"],
+        dist: "cdn.jsdelivr.net/npm",
       },
     ],
   },
