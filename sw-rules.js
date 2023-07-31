@@ -166,8 +166,8 @@ module.exports.config = {
      */
     replace: [
       {
-        source: ["npm.elemecdn.com", "unpkg.zhimg.com"],
-        dist: "cdn.jsdelivr.net/npm",
+        source: ["npm.elemecdn.com"],
+        dist: "cdn.cbd.int",
       },
     ],
   },
@@ -213,7 +213,7 @@ module.exports.cacheList = {
     },
   },
   cdn: {
-    clean: false,
+    clean: true,
     match: url =>
       [
         "cdn.cbd.int",
