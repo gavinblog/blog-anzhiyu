@@ -13,7 +13,7 @@ copyright_url: https://www.cursor.so/
 copyright_info: 文章转载于[Cusor](https://www.cursor.so/)
 
 keywords:
-  - ''
+  - '毕少侠'
 tags:
   - AI
   - Cursor
