@@ -1,10 +1,17 @@
 # 友链配置文件
 - class_name: Sites
   class_desc: "Talk is Cheap, Show me the Code."
-  # 可以自行配置 hundredSuffix: "!w120"    flink_style: flexcard || anzhiyu
+  # 可以自行配置 hundredSuffix: "!w120"    flink_style:  telescopic || flexcard || anzhiyu
   flink_style: telescopic
   #hundredSuffix: "!w120"
   link_list:
+    - name: 在线添加友联
+      link: https://github.com/gavinblog/blog-anzhiyu/edit/master/source/_data/link.yml
+      avatar: /imgs/avatar.webp
+      descr: 毕少侠在线添加友联地址 
+      siteshot: /imgs/avatar.webp
+      color: vip
+      tag: ADD
     - name: 毕少侠-主页
       link: https://home.geekswg.top/
       avatar: /imgs/avatar.webp
@@ -46,6 +53,11 @@
   class_desc: "God helps those who help themselves."
   flink_style: flexcard
   link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
       avatar: https://www.fomal.cc/assets/avatar.webp
@@ -101,6 +113,11 @@
   class_desc: "Many hands make light work."
   flink_style: anzhiyu
   link_list:
+    - name: 青桔气球
+      link: https://blog.qjqq.cn/
+      avatar: https://avatar.qjqq.cn/1/646cdb372913c.webp!avatar
+      descr: 分享网络安全与科技生活
+      siteshot: https://avatar.qjqq.cn/1/647571edf20a9.webp!avatar
     - name: 张洪Heo
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
