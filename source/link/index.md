@@ -15,7 +15,7 @@ type: link # 友链页面
   link: https://hexo.geekswg.top/
   avatar: https://hexo.geekswg.top/imgs/avatar.webp
   descr: 毕少侠也在江湖。
-  siteshot: 
+  siteshot: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://hexo.geekswg.top/
 ```
 <!-- endtab -->
 
