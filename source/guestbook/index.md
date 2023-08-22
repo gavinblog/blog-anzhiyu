@@ -7,6 +7,7 @@ aside: false
 top_img: false
 ---
 
+<!-- 
 <script src="/custom/barrage/jquery_3.6.0_jquery.min.js"></script>
 <script src="/custom/barrage/jquery.barrager-1.1.min.js"></script>
 <script src="/custom/barrage/barrage-twikoo.js"></script>
@@ -56,9 +57,26 @@ top_img: false
     text-decoration: underline;
 }
 </style>
+-->
+
+<script src="/custom/easy-danmaku/easy-Danmaku.js"></script>
+<script src="/custom/easy-danmaku/danmu.css"></script>
+<script src="/custom/easy-danmaku/danmu.js"></script>
+
+{% note success  flat %}
+如果有什么 **想说的**、**想问的** 或者 **发现了本站的BUG**，欢迎留言告知😊。
+{% endnote %}
+
+{% note pink 'fa-solid fa-link'  flat %}
+若想 **添加友链** 请前往 [友情链接](/link/) 页面进行友链申请😄
+{% endnote %}
+
+<div id="danmuBtn"></div>
+<div id="danmu"></div>
 
 > 欢迎留言
 
+<!-- 
 <div class="btn-center">
 {% btn 'javascript:openBarrage();',"开启弹幕",anzhiyufont anzhiyu-icon-circle-arrow-right,outline green larger %}
 {% btn 'javascript:closeBarrage();',关闭弹幕,anzhiyufont anzhiyu-icon-circle-arrow-right,outline red larger %}
@@ -80,7 +98,7 @@ window.addEventListener('load', (event) => {
     openBarrage('https://twikoo.geekswg.top/');
 });
 </script>
-
+-->
 
 {% poem 水调歌头,苏轼 %}
 丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。
@@ -190,3 +208,6 @@ window.addEventListener('load', (event) => {
   </script>
 </div>
 <!-- =================================诗词================================= -->
+
+
+
