@@ -59,9 +59,14 @@ top_img: false
 </style>
 -->
 
+<div id="danmuBtn"></div>
+<div id="danmu"></div>
+
+
+<link rel="stylesheet" type="text/css" href="/custom/easy-danmaku/danmu.css">
 <script src="/custom/easy-danmaku/easy-Danmaku.js"></script>
-<script src="/custom/easy-danmaku/danmu.css"></script>
 <script src="/custom/easy-danmaku/danmu.js"></script>
+
 
 {% note success  flat %}
 如果有什么 **想说的**、**想问的** 或者 **发现了本站的BUG**，欢迎留言告知😊。
@@ -70,9 +75,6 @@ top_img: false
 {% note pink 'fa-solid fa-link'  flat %}
 若想 **添加友链** 请前往 [友情链接](/link/) 页面进行友链申请😄
 {% endnote %}
-
-<div id="danmuBtn"></div>
-<div id="danmu"></div>
 
 > 欢迎留言
 
@@ -114,7 +116,7 @@ window.addEventListener('load', (event) => {
 {% endpoem %}
 
 
-<!-- =================================诗词================================= -->
+<!-- =================================诗词================================= 
 <style>
 /*诗*/
 .poem-wrap {
@@ -206,8 +208,5 @@ window.addEventListener('load', (event) => {
       document.getElementById("info").value(info);  
   });
   </script>
-</div>
+</div> -->
 <!-- =================================诗词================================= -->
-
-
-

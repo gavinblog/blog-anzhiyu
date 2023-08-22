@@ -1,6 +1,6 @@
 function danmu() {
-    if (location.pathname != '/guestbook/' || document.body.clientWidth < 100) return; //判断是否是留言板页面
-    console.log(danmu);
+    //if (location.pathname != '/guestbook/' || document.body.clientWidth < 100) return; //判断是否是留言板页面
+    console.info(1111);
     const Danmaku = new EasyDanmaku({
       page: '/guestbook/', // 即留言板地址
       el: '#danmu', //弹幕挂载节点
@@ -17,7 +17,7 @@ function danmu() {
         method: "POST",
         body: JSON.stringify({
           "event": "GET_RECENT_COMMENTS",
-          "includeReply": false,
+          "includeReply": true,
           "pageSize": 100
         }),
         headers: { 'Content-Type': 'application/json' }
@@ -39,7 +39,7 @@ function danmu() {
         return str
       }
     }
-    document.getElementById('danmuBtn').innerHTML = `<button class="hideBtn" onclick="document.getElementById('danmu').classList.remove('hidedanmu')">显示弹幕</button> <button class="hideBtn" onclick="document.getElementById('danmu').classList.add('hidedanmu')">隐藏弹幕</button>`
+    //document.getElementById('danmuBtn').innerHTML = `<button class="hideBtn" onclick="document.getElementById('danmu').classList.remove('hidedanmu')">显示弹幕</button> <button class="hideBtn" onclick="document.getElementById('danmu').classList.add('hidedanmu')">隐藏弹幕</button>`
   }
   danmu();
   document.addEventListener("pjax:complete", danmu);
