@@ -27,7 +27,7 @@
 * 根据自己需求修改主题分支，main-稳定，dev-新功能提前体验，bug多
 * 修改主题主要配置文件`_config.anzhyu.yml`。
 * ~~配置自动部署中github_token。~~
-* 提交到mater分支自动部署博客到gh-pages。
+* 提交到master分支自动部署博客到gh-pages。
 * 设置GitHub Page,选择gh-pages分支。
 
 ## 进阶使用
