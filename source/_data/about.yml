@@ -25,6 +25,13 @@
       - EDU,计算机软件
       - EDU,AI人工智能
     img: /imgs/about-edu.png
+    list:
+      - time: 2015
+        desc: 软件工程专业
+      - time: 2017
+        desc: 软件工程专业
+      - time: 2020
+        desc: AI人工智能
 
   statistic:
     link: /archives/
