@@ -756,12 +756,14 @@ theme_color:
   #inside_sidebar_background: "#607d8b"
 # 移动端侧栏 @since 1.5.4
 sidebar:
-  avatar: true
-  archive: true
-  tag: true
-  category: true
+  site_data:
+    archive: true
+    tag: true
+    category: true
   menus_items: true
   tags_cloud: true
+  display_mode: true
+  nav_menu_project: true
 
 
 # 文章h2添加分隔线
