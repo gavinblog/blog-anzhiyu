@@ -14,7 +14,7 @@
 
 #danmu {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     position: fixed;
     left: 0;
     top: 60px;
@@ -78,7 +78,7 @@ div#danmuBtn button {
     line-height: 1;
     pointer-events: none;
     margin: 0 !important;
-    max-width: 300px;
+    max-width: 500px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

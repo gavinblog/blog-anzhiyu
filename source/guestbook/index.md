@@ -58,25 +58,24 @@ top_img: false
 }
 </style>
 -->
-
-<div id="danmuBtn"></div>
-<div id="danmu"></div>
-
-
 <link rel="stylesheet" type="text/css" href="/custom/easy-danmaku/danmu.css">
 <script src="/custom/easy-danmaku/easy-Danmaku.js"></script>
-<script src="/custom/easy-danmaku/danmu.js"></script>
-
 
 {% note success  flat %}
 如果有什么 **想说的**、**想问的** 或者 **发现了本站的BUG**，欢迎留言告知😊。
 {% endnote %}
 
 {% note pink 'fa-solid fa-link'  flat %}
-若想 **添加友链** 请前往 [友情链接](/link/) 页面进行友链申请😄
+若想 **添加友链** 请前往 [友情链接](/link/) 页面进行友链申请😄1111
 {% endnote %}
 
-> 欢迎留言
+<div id="danmuBtn"></div>
+<div id="danmu"></div>
+
+
+
+<script src="/custom/easy-danmaku/danmu.js"></script>
+
 
 <!-- 
 <div class="btn-center">
@@ -114,7 +113,6 @@ window.addEventListener('load', (event) => {
 人有悲欢离合，月有阴晴圆缺，此事古难全。
 但愿人长久，千里共婵娟。
 {% endpoem %}
-
 
 <!-- =================================诗词================================= 
 <style>
