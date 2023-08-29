@@ -463,11 +463,46 @@ waline:
   serverURL: https://waline.geekswg.top # https://geek-waline.zeabur.app # Waline server address url
   bg: /imgs/zhifeiji.gif # waline background
   pageview: true
-  option:
-    meta: ["nick", "mail", "link"]
-    locale:
-      placeholder: 但行好事，莫问前程
 
+  # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
+  option:
+    pageSize: 10
+    requiredMeta: ["nick", "mail"]
+    login: enable
+    copyright: true
+    # turnstileKey:
+    locale:
+      admin: 安知鱼
+      sofa: 欢迎使用 安知鱼 主题！
+      placeholder: "生活明朗，万物可爱"
+    #   reactionTitle: 就现在，表明你的态度！
+    #   reaction0: 0
+    #   reaction1: 1
+    #   reaction2: 2
+    #   reaction3: 3
+    #   reaction4: 4
+    #   reaction5: 5
+    #   level0: 0
+    #   level1: 1
+    #   level2: 2
+    #   level3: 3
+    #   level4: 4
+    #   level5: 5
+    #   level6: 6
+    #   level7: ...
+    # emoji:
+    #   [
+    #     "https://example.com/.../Sticker-100/",
+    #   ]
+    # reaction:
+    #   [
+    #     "https://example.com/.../Sticker-100/0.png",
+    #     "https://example.com/.../Sticker-100/1.png",
+    #     "https://example.com/.../Sticker-100/2.png",
+    #     "https://example.com/.../Sticker-100/3.png",
+    #     "https://example.com/.../Sticker-100/4.png",
+    #     "https://example.com/.../Sticker-100/5.png",
+    #   ]
 
 
 # Artalk
@@ -1402,6 +1437,8 @@ rightClickMenu:
 dynamicEffect:
   postTopWave: true # 文章顶部波浪效果
   postTopRollZoomInfo: true # 文章顶部滚动时缩放
+  pageCommentsRollZoom: true # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
+
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
