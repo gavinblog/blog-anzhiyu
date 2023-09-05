@@ -23,9 +23,9 @@ jobs:
         with:
           submodules: true # 加载子模块，避免初始化过程中的额外加载。
 
-       - name: Sync local file timestamps
-          run: |
-            git ls-files -z | while read -d '' path; do touch -d $(git log -1 --format="@%ct" "$path") "$path"; done
+      - name: Sync local file timestamps
+        run: |
+          git ls-files -z | while read -d '' path; do touch -d $(git log -1 --format="@%ct" "$path") "$path"; done
 
       - name: Setup node
         # 设置 node.js 环境
