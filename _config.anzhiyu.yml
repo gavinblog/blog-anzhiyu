@@ -1428,8 +1428,8 @@ pageThumbnailSuffix: ''
 
 # 隐私协议弹窗
 agreementPopup:
-  enable: false
-  url: /privacy
+  enable: true
+  url: /about/
 
 # 右键菜单
 rightClickMenu:
