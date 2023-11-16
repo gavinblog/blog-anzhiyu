@@ -1323,7 +1323,7 @@ comment_barrage_config:
   # 同时最多显示弹幕数
   maxBarrage: 1
   # 弹幕显示间隔时间ms
-  barrageTime: 3000
+  barrageTime: 5000
   # token，在控制台中获取
   accessToken: "a237426c5e1099af41370c4b0afe0a3e"
   # 博主邮箱md5值
