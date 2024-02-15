@@ -48,10 +48,5 @@
   ],
   "frontMatter.framework.id": "hexo",
   "frontMatter.preview.host": "http://localhost:4000",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "_posts",
-      "path": "[[workspace]]/source/_posts"
-    }
-  ]
+  "frontMatter.content.pageFolders": []
 }
