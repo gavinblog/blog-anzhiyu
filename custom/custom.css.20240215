@@ -1,0 +1,358 @@
+/*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
+body {
+  cursor: url(/imgs/cursor/normal.cur), default;
+}
+
+select {
+  cursor: url(/imgs/cursor/Universal.cur), pointer;
+}
+
+button,
+a:hover {
+  cursor: url(/imgs/cursor/link.cur), pointer;
+}
+
+a {
+  cursor: url(/imgs/cursor/link.cur), pointer !important;
+}
+
+button,
+a {
+  cursor: url(/imgs/cursor/link.cur), pointer;
+}
+
+input {
+  cursor: url(/imgs/cursor/help.cur), text;
+}
+
+textarea,
+input:focus {
+  cursor: url(/imgs/cursor/text.cur), text;
+}
+
+code {
+  cursor: url(/imgs/cursor/text.cur), default;
+}
+
+pre>code {
+  cursor: url(/imgs/cursor/text.cur), default;
+}
+
+/* 友链样式 */
+.img-alt.is-center {
+  text-align: center;
+  display: none !important;
+}
+/* 去年今日透明 */
+.swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top{
+  background: transparent;
+}
+/* 作者卡片透明 */
+#aside-content >.card-widget.card-info::before {
+  background: transparent !important;
+  /* background: -webkit-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -moz-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -o-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: -ms-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  /* background: linear-gradient(-25deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep)); */
+  background-size: 400%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  -ms-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+}
+
+
+/*  ------------------ 留言板评论弹幕 ------------------ */
+.barrage {
+  position: fixed;
+  right: -500px;
+  display: inline-block;
+  width: fit-content;
+  z-index: 99
+}
+.barrage_box {
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  padding-right: 8px;
+  height: 40px;
+  border-radius: 25px;
+}
+.barrage_box .portrait {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.barrage_box .portrait img {
+  width: 100%;
+  height: 100%;
+}
+.barrage_box div.p a {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 25rem;
+  margin-right: 2px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+.barrage_box div.p a:hover {
+  text-decoration: underline;
+} 
+/*  ------------------ 留言板评论弹幕 ------------------ */
+
+/* 微信卡片背景透明 */
+#aside-content .card-widget#card-wechat {
+  background: transparent !important;
+}
+#aside-content #flip-wrapper #flip-content .face {
+  background-size: cover !important;
+}
+#flip-wrapper {
+  width: 100% !important;
+}
+
+.topGroup .todayCard .todayCard-cover {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat !important;
+  background-size: auto !important;
+  z-index: -1;
+  transition: 0.3s;
+  background-color: transparent !important;
+}
+
+/* 首页一图流，打字字体 */
+#page-header #site-title {
+  margin: 0;
+  color: #2ecc71;
+  font-size: 5em !important;
+  font-family: '楷体';
+  margin-top: -100px;
+}
+
+#page-header #site-subtitle {
+  color: #5ca1ff;
+  font-size: 2em;
+  font-family: '楷体';
+}
+
+/* 天气插件位置 */
+#he-plugin-simple>div.s-sticker {
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 14px !important;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 20px; */
+  /* line-height: 17em; */
+}
+
+/* 文章底部原创 */
+#post .post-copyright__original,
+#post .post-copyright__reprint {
+  /* background: var(--anzhiyu-fontcolor); */
+  color: hotpink;
+  background: transparent !important;
+  border: 1px solid;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#about-page .myInfoAndSayHello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--anzhiyu-white);
+  background: transparent !important;
+  background-size: 200%;
+  animation: gradient 15s ease infinite;
+  width: 59%;
+}
+
+.author-content-item.buff {
+  height: 200px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent !important;
+  color: var(--anzhiyu-white);
+  background-size: 200%;
+  animation: gradient 15s ease infinite;
+  min-height: 200px;
+  height: fit-content;
+  width: 59%;
+}
+
+/* 热评 */
+.comment-barrage-item .barrageHead .barrageTitle {
+  color: hotpink;
+  margin-right: 8px;
+  background: var(--anzhiyu-fontcolor);
+  line-height: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* 申请友链 */
+#flink-banners .banner-button-group .banner-button {
+  color: var(--anzhiyu-fontcolor);
+  background: var(--anzhiyu-secondbg);
+  border: var(--style-border-always);
+  color: var(--anzhiyu-lighttext);
+  margin-right: 1rem;
+  -webkit-box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--anzhiyu-shadow-border);
+}
+
+div#post {
+  background: transparent;
+}
+
+#aside-content>.card-widget.card-info {
+  background: transparent;
+  position: relative;
+}
+
+/* 自定义主题配色 */
+[data-theme="light"] {
+
+  background: transparent;
+  --global-bg: transparent;
+  --anzhiyu-meta-theme-post-color: #fff;
+  --anzhiyu-meta-theme-color: #f7f9fe;
+  --anzhiyu-theme-op-deep: rgba(66, 89, 239, 0.867);
+  --global-bg: trnasparent;
+
+  --anzhiyu-theme-deep: #1856fb;
+  --anzhiyu-theme-op: rgba(66, 89, 239, 0.137);
+  --anzhiyu-blue: #5ca1ff;
+  --anzhiyu-blue-tint: rgba(92, 161, 255, 0.1);
+  --anzhiyu-red: #d8213c;
+  --anzhiyu-pink: #ff7c7c;
+  --anzhiyu-green: #57bd6a;
+  --anzhiyu-fontcolor: #363636;
+  --anzhiyu-background: linear-gradient(145deg, rgba(236, 25, 14, 0.5) 40%, #FFD 80%);
+  --anzhiyu-reverse: #000;
+  --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);
+  --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);
+  --anzhiyu-scrollbar: rgba(60, 60, 67, 0.4);
+  --anzhiyu-hovertext: var(--anzhiyu-theme);
+  --anzhiyu-ahoverbg: #f7f7fa;
+  --anzhiyu-lighttext: var(--anzhiyu-main);
+  --anzhiyu-secondtext: rgba(60, 60, 67, 0.6);
+  --anzhiyu-scrollbar: rgba(60, 60, 67, 0.4);
+  --anzhiyu-card-btn-bg: #edf0f7;
+  --anzhiyu-post-blockquote-bg: #fafcff;
+  --anzhiyu-post-tabs-bg: #f2f5f8;
+  --anzhiyu-secondbg: #f1f3f8;
+  --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
+  --anzhiyu-card-bg: transparent;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-card-border: #e3e8f7;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+
+}
+
+[data-theme="dark"] {
+  --global-bg: transparent;
+  --anzhiyu-meta-theme-post-color: #1d1e22;
+  --anzhiyu-meta-theme-color: #000;
+  --anzhiyu-blue: #5ca1ff;
+  --anzhiyu-blue-tint: rgba(92, 161, 255, 0.1);
+  --anzhiyu-theme-op-deep: rgba(0, 132, 255, 0.867);
+  --global-bg: transparent;
+  --anzhiyu-theme: #5ca1ff;
+  --anzhiyu-theme-deep: #0076e5;
+  --anzhiyu-theme-op: rgba(0, 132, 255, 0.137);
+  --anzhiyu-blue: #0084ff;
+  --anzhiyu-red: #ff3842;
+  --anzhiyu-pink: #ff7c7c;
+  --anzhiyu-green: #57bd6a;
+  --anzhiyu-fontcolor: #f7f7fa;
+  --anzhiyu-background: #18171d;
+  --anzhiyu-reverse: #fff;
+  --anzhiyu-maskbg: rgba(0, 0, 0, 0.6);
+  --anzhiyu-maskbgdeep: rgba(0, 0, 0, 0.85);
+  --anzhiyu-hovertext: #0a84ff;
+  --anzhiyu-ahoverbg: #fff;
+  --anzhiyu-scrollbar: rgba(200, 200, 223, 0.4);
+  --anzhiyu-lighttext: #f2b94b;
+  --anzhiyu-secondtext: #a1a2b8;
+  --anzhiyu-scrollbar: rgba(200, 200, 223, 0.4);
+  --anzhiyu-card-btn-bg: #30343f;
+  --anzhiyu-post-blockquote-bg: #000;
+  --anzhiyu-post-tabs-bg: #121212;
+  --anzhiyu-secondbg: #30343f;
+  --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
+  --anzhiyu-card-bg: transparent;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-card-border: #42444a;
+  --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+}
+
+/* 页脚图标 */
+#footer-wrap #footer_deal .deal_link {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 1rem 27px;
+  color: hotpink;
+  border-radius: 3rem;
+  width: 32px;
+  height: 32px;
+  background: var(--anzhiyu-fontcolor);
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
