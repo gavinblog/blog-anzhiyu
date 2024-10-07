@@ -21,7 +21,7 @@ function createtime1() {
         "小站已经苟活",
         dnum,
         "天啦!",
-        "@2006 By 毕少侠-geekswg mailto://geekswg.qq.com",
+        "@2006 By 毕少侠-geekswg mailto://geekswg@qq.com",
     ];
 
     setTimeout(
