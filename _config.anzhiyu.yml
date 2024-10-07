@@ -53,7 +53,7 @@ menu:
 nav:
   enable: true
   travelling: true
-  clock: true  # 左上角天气挂件开关
+  clock: false  # 左上角天气挂件开关
   menu:
     - title: 站点
       item:
